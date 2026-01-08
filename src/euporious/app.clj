@@ -1,0 +1,151 @@
+(ns euporious.app
+  (:require
+   [cheshire.core :as cheshire]
+   [com.biffweb :as biff]
+   [com.biffweb.experimental :as biffx]
+   [euporious.middleware :as mid]
+   [euporious.settings :as settings]
+   [euporious.ui :as ui]
+   [ring.websocket :as ws]
+   [rum.core :as rum]
+   [tick.core :as tick]))
+
+(defn set-foo [{:keys [session params] :as ctx}]
+  (biffx/submit-tx ctx
+    [[:patch-docs :user {:xt/id (:uid session)
+                         :user/foo (:foo params)}]])
+  {:status 303
+   :headers {"location" "/app"}})
+
+(defn bar-form [{:keys [value]}]
+  (biff/form
+   {:hx-post "/app/set-bar"
+    :hx-swap "outerHTML"}
+   [:label.block {:for "bar"} "Bar: "
+    [:span.font-mono (pr-str value)]]
+   [:.h-1]
+   [:.flex
+    [:input.w-full#bar {:type "text" :name "bar" :value value}]
+    [:.w-3]
+    [:button.btn {:type "submit"} "Update"]]
+   [:.h-1]
+   [:.text-sm.text-gray-600
+    "This demonstrates updating a value with HTMX."]))
+
+(defn set-bar [{:keys [session params] :as ctx}]
+  (time (biffx/submit-tx ctx
+    [[:patch-docs :user {:xt/id (:uid session) :user/bar (:bar params)}]]))
+  (biff/render (bar-form {:value (:bar params)})))
+
+(defn message [{:msg/keys [content sent-at]}]
+  [:.mt-3 {:_ "init send newMessage to #message-header"}
+   [:.text-gray-600 (tick/format "dd MMM yyyy HH:mm:ss" sent-at)]
+   [:div content]])
+
+(defn notify-clients [{:keys [euporious/chat-clients]} record]
+  (when (= "msg" (:biff.xtdb/table record))
+    (let [html (rum/render-static-markup
+                [:div#messages {:hx-swap-oob "afterbegin"}
+                 (message record)])]
+      (doseq [ws @chat-clients]
+        (ws/send ws html)))))
+
+(defn send-message [{:keys [session] :as ctx} {:keys [text]}]
+  (let [{:keys [content]} (cheshire/parse-string text true)]
+    (biffx/submit-tx ctx
+      [[:put-docs :msg {:xt/id (random-uuid)
+                        :msg/user (:uid session)
+                        :msg/content content
+                        :msg/sent-at (tick/zoned-date-time)}]])))
+
+(defn chat [{:keys [biff/conn]}]
+  (let [messages (biffx/q conn
+                          {:select [:msg/content :msg/sent-at]
+                           :from :msg
+                           :where [:>= :msg/sent-at (tick/<< (tick/now)
+                                                             (tick/of-minutes 10))]})]
+    [:div {:hx-ext "ws" :ws-connect "/app/chat"}
+     [:form.mb-0 {:ws-send true
+                  :_ "on submit set value of #message to ''"}
+      [:label.block {:for "message"} "Write a message"]
+      [:.h-1]
+      [:textarea.w-full#message {:name "content"}]
+      [:.h-1]
+      [:.text-sm.text-gray-600
+       "Sign in with an incognito window to have a conversation with yourself."]
+      [:.h-2]
+      [:div [:button.btn {:type "submit"} "Send message"]]]
+     [:.h-6]
+     [:div#message-header
+      {:_ "on newMessage put 'Messages sent in the past 10 minutes:' into me"}
+      (if (empty? messages)
+        "No messages yet."
+        "Messages sent in the past 10 minutes:")]
+     [:div#messages
+      (map message (sort-by :msg/sent-at #(compare %2 %1) messages))]]))
+
+(defn app [{:keys [biff/conn session] :as ctx}]
+  (let [[{:user/keys [email foo bar]}] (biffx/q conn
+                                                {:select [:user/email
+                                                          :user/foo
+                                                          :user/bar]
+                                                 :from :user
+                                                 :where [:= :xt/id (:uid session)]})]
+    (ui/page
+     {}
+     [:div "Signed in as " email ". "
+      (biff/form
+       {:action "/auth/signout"
+        :class "inline"}
+       [:button.text-blue-500.hover:text-blue-800 {:type "submit"}
+        "Sign out"])
+      "."]
+     [:.h-6]
+     (biff/form
+      {:action "/app/set-foo"}
+      [:label.block {:for "foo"} "Foo: "
+       [:span.font-mono (pr-str foo)]]
+      [:.h-1]
+      [:.flex
+       [:input.w-full#foo {:type "text" :name "foo" :value foo}]
+       [:.w-3]
+       [:button.btn {:type "submit"} "Update"]]
+      [:.h-1]
+      [:.text-sm.text-gray-600
+       "This demonstrates updating a value with a plain old form."])
+     [:.h-6]
+     (bar-form {:value bar})
+     [:.h-6]
+     (chat ctx))))
+
+(defn ws-handler [{:keys [euporious/chat-clients] :as ctx}]
+  {:status 101
+   :headers {"upgrade" "websocket"
+             "connection" "upgrade"}
+   ::ws/listener {:on-open (fn [ws]
+                             (swap! chat-clients conj ws))
+                  :on-message (fn [ws text-message]
+                                (send-message ctx {:ws ws :text text-message}))
+                  :on-close (fn [ws _status-code _reason]
+                              (swap! chat-clients disj ws))}})
+
+(def about-page
+  (ui/page
+   {:base/title (str "About " settings/app-name)}
+   [:p "This app was made with "
+    [:a.link {:href "https://biffweb.com"} "Biff"] "."]))
+
+(defn echo [{:keys [params]}]
+  {:status 200
+   :headers {"content-type" "application/json"}
+   :body params})
+
+(def module
+  {:static {"/about/" about-page}
+   :routes ["/app" {:middleware [mid/wrap-signed-in]}
+            ["" {:get app}]
+            ["/set-foo" {:post set-foo}]
+            ["/set-bar" {:post set-bar}]
+            ["/chat" {:get ws-handler}]]
+   :api-routes [["/api/echo" {:post echo}]]
+   :on-tx notify-clients})

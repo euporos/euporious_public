@@ -1,0 +1,9 @@
+{
+  "name": "euporious",
+  "version": "0.1.0",
+  "description": "Euporious web application",
+  "private": true,
+  "devDependencies": {
+    "daisyui": "^5.0.0-beta.8"
+  }
+}
