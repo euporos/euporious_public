@@ -1,18 +1,18 @@
 (ns euporious
-  (:require [com.biffweb :as biff]
-            [com.biffweb.experimental :as biffx]
-            [com.biffweb.experimental.auth :as biff-auth]
-            [euporious.email :as email]
-            [euporious.app :as app]
-            [euporious.home :as home]
-            [euporious.secrets :as secrets]
-            [euporious.middleware :as mid]
-            [euporious.ui :as ui]
-            [euporious.worker :as worker]
-            [euporious.schema :as schema]
-            [clojure.test :as test]
+  (:require [clojure.test :as test]
             [clojure.tools.logging :as log]
             [clojure.tools.namespace.repl :as tn-repl]
+            [com.biffweb :as biff]
+            [com.biffweb.experimental :as biffx]
+            [com.biffweb.experimental.auth :as biff-auth]
+            [euporious.app :as app]
+            [euporious.email :as email]
+            [euporious.home :as home]
+            [euporious.middleware :as mid]
+            [euporious.schema :as schema]
+            [euporious.secrets :as secrets]
+            [euporious.ui :as ui]
+            [euporious.worker :as worker]
             [malli.core :as malc]
             [malli.registry :as malr]
             [nrepl.cmdline :as nrepl-cmd])
@@ -20,7 +20,11 @@
 
 (def modules
   [app/module
-   (biff-auth/module {})
+   (biff-auth/module {:biff.auth/email-validator
+                      (fn [ctx email]
+                        (and
+                         (biff-auth/email-valid? ctx email)
+                         (contains? #{"services@olivermotz.com"} email)))})
    home/module
    secrets/module
    schema/module
