@@ -1,3 +1,3 @@
 (ns euporious.settings)
 
-(def app-name "My Application")
+(def app-name "Euporos JAT")
