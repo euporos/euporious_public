@@ -40,7 +40,7 @@
     (let [base-url (str (name (:scheme ctx))
                         "://"
                         (:server-name ctx)
-                        (when not (contains? #{443 80} (:server-port ctx)) (str ":"(:server-port ctx))))
+                        (when-not (contains? #{443 80} (:server-port ctx)) (str ":"(:server-port ctx))))
           retrieve-path (-> (reitit/match-by-name router ::retrieve-secret {:uuid secret-id})
                             :path)
           secret-link (str base-url retrieve-path)]
