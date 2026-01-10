@@ -57,6 +57,9 @@
            :readonly true
            :value secret-link
            :onclick "this.select()"}]]
+        [:button.btn.btn-secondary.mb-4
+         {:onclick "navigator.clipboard.writeText(this.previousElementSibling.querySelector('input').value)"}
+         "Copy to Clipboard"]
         [:p.text-sm.text-gray-600.mb-4
          "This link will expire in 2 hours and can only be viewed once."]
         [:a.btn.btn-primary {:href "/ots/new"} "Create Another Secret"]]))))
