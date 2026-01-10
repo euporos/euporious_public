@@ -101,6 +101,9 @@
         "Sign out"])
       "."]
      [:.h-6]
+     [:div
+      [:a.link {:href "/ots/new"} "Create a one-time secret"]]
+     [:.h-6]
      (biff/form
       {:action "/app/set-foo"}
       [:label.block {:for "foo"} "Foo: "
