@@ -1,37 +1,453 @@
-* 007 – Casino Royale (Daniel Craig) 
+* 007 – Casino Royale (Daniel Craig)
 :PROPERTIES:
-:RATING: 1
-:WIKIPEDIA_LINK: https://de.wikipedia.org/wiki/James_Bond_007:_Casino_Royale
-:YEAR: 2006
-:LENGTH: 144
-:ORIGINAL_TITLE: Casino Royale
-:ORIGINAL_LANGUAGE: en
-:DIRECTOR: Martin Campbell
+:RATING:   1
+:DADS_TITLE: 007 – Casino Royale (Daniel Craig)
+:TMDB_ID: 36557
+:TMDB_TITLE: James Bond 007 - Casino Royale
+:TMDB_CONFIDENCE: 81.25
+:NEEDS_REVIEW: true
 :END:
-
-Casino Royale zeigt James Bonds Weg zum vollwertigen 00-Agenten. Nach einem ersten Auftrag gegen einen Verräter erhält Bond seine Lizenz und stößt auf den Terrorfinanzier Le Chiffre, der Geld eines afrikanischen Warlords verspielt hat. Bonds Ermittlungen führen von Madagaskar über die Bahamas nach Miami, wo er ein Attentat verhindert und Le Chiffre finanziell ruiniert. Um das verlorene Geld zurückzugewinnen, setzt Le Chiffre alles auf ein hochdotiertes Pokerturnier in Montenegro. Bond tritt dort mit Unterstützung des MI6, des CIA und der Schatzamtsbeamtin Vesper Lynd an, zu der er eine Beziehung entwickelt. Trotz Rückschlägen, Verrat, Vergiftung und Folter gewinnt Bond das Turnier. Le Chiffre wird daraufhin von Mr. White getötet. Bond und Vesper planen ein gemeinsames Leben, doch in Venedig entpuppt sich Vesper als erpresste Verräterin und stirbt. Bond verfolgt die Spur bis zu Mr. White und präsentiert sich endgültig als James Bond.
 
 * 007 - Quantum Trost (Ein_Daniel Craig)
 :PROPERTIES:
-:RATING: +
+:RATING:   1
+:DADS_TITLE: 007 - Quantum Trost (Ein_Daniel Craig)
+:TMDB_ID: 10764
+:TMDB_TITLE: James Bond 007 - Ein Quantum Trost
+:TMDB_CONFIDENCE: 71.7
+:NEEDS_REVIEW: true
 :END:
 
 * 100.000 Dollar in der Sonne (F/IT ´1964_/Trailer)
 :PROPERTIES:
-:RATING: + (?)
+:RATING:   1
+:DADS_TITLE: 100.000 Dollar in der Sonne (F/IT ´1964_/Trailer)
+:TMDB_ID: 34059
+:TMDB_TITLE: 100.000 Dollar in der Sonne
+:TMDB_CONFIDENCE: 100
+:YEAR: 1964
+:RUNTIME: 108
+:ORIGINAL_TITLE: Cent Mille Dollars au soleil
+:ORIGINAL_LANGUAGE: FR
+:DIRECTOR: Henri Verneuil
+:ACTORS: Jean-Paul Belmondo, Lino Ventura, Bernard Blier
+:COUNTRIES: FR, IT
+:PRODUCTION_COMPANIES: Trianon Films, Gaumont International, Ultra Film
+:GENRES: Action, Abenteuer, Komödie
+:IMDB_ID: tt0056917
+:TMDB_RATING: 7.085
+:VOTE_COUNT: 153
+:BACKFILLED: true
 :END:
 
 * 1000 Arten, Regen zu beschreiben (D ´2017)
 :PROPERTIES:
-:RATING: +
+:RATING:   1
+:DADS_TITLE: 1000 Arten, Regen zu beschreiben (D ´2017)
+:TMDB_ID: 432676
+:TMDB_TITLE: 1000 Arten Regen zu beschreiben
+:TMDB_CONFIDENCE: 98.41
+:YEAR: 2018
+:RUNTIME: 87
+:ORIGINAL_TITLE: 1000 Arten Regen zu beschreiben
+:ORIGINAL_LANGUAGE: DE
+:DIRECTOR: Isabel Prahl
+:ACTORS: Bjarne Mädel, Bibiana Beglau, Emma Bading
+:COUNTRIES: DE
+:PRODUCTION_COMPANIES: Made In Germany Filmproduktion
+:GENRES: Drama
+:IMDB_ID: tt5667296
+:TMDB_RATING: 6.5
+:VOTE_COUNT: 21
+:BACKFILLED: true
 :END:
 
-* 1000 Mexikaner (D '2016_/Trailer)
+* 1.000 Mexikaner (D '2016_/Trailer)
 :PROPERTIES:
-:RATING: -
+:RATING:   -1
+:DADS_TITLE: 1.000 Mexikaner (D '2016_/Trailer)
+:NEEDS_REVIEW: true
 :END:
 
 * 1001 Gramm (N/D ´2014_/Trailer)
 :PROPERTIES:
 :RATING:
+:DADS_TITLE: 1001 Gramm (N/D ´2014_/Trailer)
+:TMDB_ID: 285181
+:TMDB_TITLE: 1001 Gramm
+:TMDB_CONFIDENCE: 100.0
+:YEAR: 2014
+:RUNTIME: 93
+:ORIGINAL_TITLE: 1001 gram
+:ORIGINAL_LANGUAGE: NO
+:DIRECTOR: Bent Hamer
+:ACTORS: Ane Dahl Torp, Laurent Stocker, Per Christian Ellefsen
+:COUNTRIES: DE, NO
+:PRODUCTION_COMPANIES: Bulbul Films, CinePostproduction
+:GENRES: Drama
+:IMDB_ID: tt3346824
+:TMDB_RATING: 5.538
+:VOTE_COUNT: 40
+:BACKFILLED: true
+:END:
+
+* 100% Coco (NL´2017_/Trailer)
+:PROPERTIES:
+:RATING:   -1
+:DADS_TITLE: 100% Coco (NL´2017_/Trailer)
+:TMDB_ID: 461590
+:TMDB_TITLE: 100% Coco
+:TMDB_CONFIDENCE: 100
+:YEAR: 2017
+:RUNTIME: 100
+:ORIGINAL_TITLE: 100% Coco
+:ORIGINAL_LANGUAGE: NL
+:DIRECTOR: Tessa Schram
+:ACTORS: Nola Kemper, Valentijn Avé, Eva Duijvestein
+:COUNTRIES: FR, NL
+:PRODUCTION_COMPANIES: Tom de Mol Productions, Nickelodeon
+:GENRES: Familie, Komödie
+:IMDB_ID: tt5803528
+:TMDB_RATING: 6.3
+:VOTE_COUNT: 29
+:BACKFILLED: true
+:END:
+
+* 100 Gewehre (USA ´1969_/Trailer)
+:PROPERTIES:
+:RATING:   -1
+:DADS_TITLE: 100 Gewehre (USA ´1969_/Trailer)
+:TMDB_ID: 37308
+:TMDB_TITLE: 100 Gewehre
+:TMDB_CONFIDENCE: 100
+:YEAR: 1969
+:RUNTIME: 109
+:ORIGINAL_TITLE: 100 Rifles
+:ORIGINAL_LANGUAGE: EN
+:DIRECTOR: Tom Gries
+:ACTORS: Jim Brown, Raquel Welch, Burt Reynolds
+:COUNTRIES: US
+:PRODUCTION_COMPANIES: Marvin Schwartz Productions, 20th Century Fox
+:GENRES: Abenteuer, Action, Western, Kriegsfilm
+:IMDB_ID: tt0063970
+:TMDB_RATING: 5.9
+:VOTE_COUNT: 102
+:BACKFILLED: true
+:END:
+
+* 100 Pro (D '2001)
+:PROPERTIES:
+:RATING:   1
+:DADS_TITLE: 100 Pro (D '2001)
+:TMDB_ID: 118974
+:TMDB_TITLE: 100 Pro
+:TMDB_CONFIDENCE: 100
+:YEAR: 2001
+:RUNTIME: 85
+:ORIGINAL_TITLE: 100 Pro
+:ORIGINAL_LANGUAGE: DE
+:DIRECTOR: Simon Verhoeven
+:ACTORS: Ken Duken, Luca Verhoeven, Mavie Hörbiger
+:COUNTRIES: DE
+:PRODUCTION_COMPANIES: Tatfilm Produktionsges. mbH, Sentana Filmproduktion
+:GENRES: Komödie
+:IMDB_ID: tt0294239
+:TMDB_RATING: 3.5
+:VOTE_COUNT: 2
+:BACKFILLED: true
+:END:
+
+* 1:0 für das Glück
+:PROPERTIES:
+:RATING:   1
+:DADS_TITLE: 1:0 für das Glück
+:TMDB_ID: 262291
+:TMDB_TITLE: 1:0 für das Glück
+:TMDB_CONFIDENCE: 100.0
+:YEAR: 2008
+:RUNTIME: 88
+:ORIGINAL_TITLE: 1:0 für das Glück
+:ORIGINAL_LANGUAGE: DE
+:DIRECTOR: Walter Bannert
+:ACTORS: Thekla Carola Wied, Peter Sattmann, Eva Pflug
+:COUNTRIES: DE
+:PRODUCTION_COMPANIES: ARD, Ziegler Film
+:GENRES: Komödie
+:IMDB_ID: tt1127880
+:TMDB_RATING: 6.0
+:VOTE_COUNT: 4
+:BACKFILLED: true
+:END:
+
+* 10. Mai (Der_CH ´1957)
+:PROPERTIES:
+:RATING:   1
+:DADS_TITLE: 10. Mai (Der_CH ´1957)
+:TMDB_ID: 269288
+:TMDB_TITLE: Der 10. Mai
+:TMDB_CONFIDENCE: 87.78
+:YEAR: 1957
+:RUNTIME: 95
+:ORIGINAL_TITLE: Der 10. Mai
+:ORIGINAL_LANGUAGE: DE
+:DIRECTOR: Franz Schnyder
+:ACTORS: Heinz Reincke, Therese Giehse, Heinrich Gretler
+:COUNTRIES: CH
+:PRODUCTION_COMPANIES: Neue Film AG
+:GENRES: Drama
+:IMDB_ID: tt0305149
+:TMDB_RATING: 0.0
+:VOTE_COUNT: 0
+:BACKFILLED: true
+:END:
+
+* 10 Sekunden
+:PROPERTIES:
+:RATING:   1
+:DADS_TITLE: 10 Sekunden
+:TMDB_ID: 8891
+:TMDB_TITLE: 10 Sekunden
+:TMDB_CONFIDENCE: 100.0
+:YEAR: 2008
+:RUNTIME: 89
+:ORIGINAL_TITLE: 10 Sekunden
+:ORIGINAL_LANGUAGE: DE
+:DIRECTOR: Nicolai Rohde
+:ACTORS: Marie Bäumer, Sebastian Blomberg, Filip Peeters
+:COUNTRIES: DE
+:PRODUCTION_COMPANIES: ARTE, ZDF
+:GENRES: Drama
+:IMDB_ID: tt1284971
+:TMDB_RATING: 4.625
+:VOTE_COUNT: 8
+:BACKFILLED: true
+:END:
+
+* 11 Blumen (China)
+:PROPERTIES:
+:RATING:   0
+:DADS_TITLE: 11 Blumen (China)
+:TMDB_ID: 98232
+:TMDB_TITLE: 11 Blumen
+:TMDB_CONFIDENCE: 100.0
+:YEAR: 2012
+:RUNTIME: 110
+:ORIGINAL_TITLE: 我11
+:ORIGINAL_LANGUAGE: ZH
+:DIRECTOR: 王小帅
+:ACTORS: Liu Wenqing, 闫妮, Shini Mo
+:COUNTRIES: CN, FR, HK
+:PRODUCTION_COMPANIES: WXS Productions, Chinese Shadows, Full House
+:GENRES: Drama, Krimi, Historie
+:IMDB_ID: tt2042432
+:TMDB_RATING: 6.5
+:VOTE_COUNT: 26
+:BACKFILLED: true
+:END:
+
+* 11. Gebot (Das)
+:PROPERTIES:
+:RATING:   1
+:DADS_TITLE: 11. Gebot (Das)
+:TMDB_ID: 20021
+:TMDB_TITLE: The King oder das 11. Gebot
+:TMDB_CONFIDENCE: 50.0
+:NEEDS_REVIEW: true
+:END:
+
+* 120 BPM (F ´2017_137min._/Trailer)
+:PROPERTIES:
+:RATING:   -1
+:DADS_TITLE: 120 BPM (F ´2017_137min._/Trailer)
+:TMDB_ID: 451945
+:TMDB_TITLE: 120 BPM
+:TMDB_CONFIDENCE: 100
+:YEAR: 2017
+:RUNTIME: 140
+:ORIGINAL_TITLE: 120 battements par minute
+:ORIGINAL_LANGUAGE: FR
+:DIRECTOR: Robin Campillo
+:ACTORS: Nahuel Pérez Biscayart, Arnaud Valois, Adèle Haenel
+:COUNTRIES: FR
+:PRODUCTION_COMPANIES: Les Films de Pierre, Page 114, Memento Films Production
+:GENRES: Drama
+:IMDB_ID: tt6135348
+:TMDB_RATING: 7.706
+:VOTE_COUNT: 1370
+:BACKFILLED: true
+:END:
+
+* 12 Monkeys (USA)
+:PROPERTIES:
+:RATING:   -1
+:DADS_TITLE: 12 Monkeys (USA)
+:TMDB_ID: 63
+:TMDB_TITLE: 12 Monkeys
+:TMDB_CONFIDENCE: 100.0
+:YEAR: 1995
+:RUNTIME: 129
+:ORIGINAL_TITLE: Twelve Monkeys
+:ORIGINAL_LANGUAGE: EN
+:DIRECTOR: Terry Gilliam
+:ACTORS: Bruce Willis, Madeleine Stowe, Brad Pitt
+:COUNTRIES: US
+:PRODUCTION_COMPANIES: Universal Pictures, Atlas Entertainment, Classico
+:GENRES: Science Fiction, Thriller, Mystery
+:IMDB_ID: tt0114746
+:TMDB_RATING: 7.602
+:VOTE_COUNT: 8843
+:BACKFILLED: true
+:END:
+
+* 12 Tage Sommer (D ´2021_/Trailer)
+:PROPERTIES:
+:RATING:   1
+:DADS_TITLE: 12 Tage Sommer (D ´2021_/Trailer)
+:TMDB_ID: 895234
+:TMDB_TITLE: 12 Tage Sommer
+:TMDB_CONFIDENCE: 100
+:YEAR: 2021
+:RUNTIME: 89
+:ORIGINAL_TITLE: 12 Tage Sommer
+:ORIGINAL_LANGUAGE: DE
+:DIRECTOR: Dirk Kummer
+:ACTORS: Mehdi Nebbou, Yoran Leicher, Lore XV.
+:COUNTRIES: DE
+:PRODUCTION_COMPANIES: ARD
+:GENRES: TV-Film, Abenteuer
+:IMDB_ID: tt15908726
+:TMDB_RATING: 5.6
+:VOTE_COUNT: 7
+:BACKFILLED: true
+:END:
+
+* 12 Years a Slave (USA ´2012)
+:PROPERTIES:
+:RATING:   2
+:DADS_TITLE: 12 Years a Slave (USA ´2012)
+:TMDB_ID: 76203
+:TMDB_TITLE: 12 Years a Slave
+:TMDB_CONFIDENCE: 100
+:YEAR: 2013
+:RUNTIME: 134
+:ORIGINAL_TITLE: 12 Years a Slave
+:ORIGINAL_LANGUAGE: EN
+:DIRECTOR: Steve McQueen
+:ACTORS: Chiwetel Ejiofor, Michael Fassbender, Lupita Nyong'o
+:COUNTRIES: GB, US
+:PRODUCTION_COMPANIES: New Regency Pictures, Plan B Entertainment, River Road Entertainment
+:GENRES: Drama, Historie
+:IMDB_ID: tt2024544
+:TMDB_RATING: 7.935
+:VOTE_COUNT: 11744
+:BACKFILLED: true
+:END:
+
+* 137 Karat – Ein fast perfekter Coup
+:PROPERTIES:
+:RATING:   1
+:DADS_TITLE: 137 Karat – Ein fast perfekter Coup
+:TMDB_ID: 269714
+:TMDB_TITLE: 137 Karat - Ein fast perfekter Coup
+:TMDB_CONFIDENCE: 97.14
+:YEAR: 2014
+:RUNTIME: 108
+:ORIGINAL_TITLE: Le Dernier diamant
+:ORIGINAL_LANGUAGE: FR
+:DIRECTOR: Eric Barbier
+:ACTORS: Yvan Attal, Bérénice Bejo, Jean-François Stévenin
+:COUNTRIES: BE, FR, LU
+:PRODUCTION_COMPANIES: Belgacom, SCOPE Pictures, Bidibul Productions
+:GENRES: Drama, Krimi, Thriller
+:IMDB_ID: tt3136752
+:TMDB_RATING: 6.3
+:VOTE_COUNT: 81
+:BACKFILLED: true
+:END:
+
+* 13 Semester
+:PROPERTIES:
+:RATING:   0
+:DADS_TITLE: 13 Semester
+:TMDB_ID: 38813
+:TMDB_TITLE: 13 Semester
+:TMDB_CONFIDENCE: 100.0
+:YEAR: 2009
+:RUNTIME: 101
+:ORIGINAL_TITLE: 13 Semester
+:ORIGINAL_LANGUAGE: DE
+:DIRECTOR: Frieder Wittich
+:ACTORS: Max Riemelt, Robert Gwisdek, Claudia Eisinger
+:COUNTRIES: DE
+:PRODUCTION_COMPANIES: Instinctive Film, HR, ARTE
+:GENRES: Komödie, Drama, Liebesfilm
+:IMDB_ID: tt1216275
+:TMDB_RATING: 6.438
+:VOTE_COUNT: 40
+:BACKFILLED: true
+:END:
+
+* 13 Uhr mittags (D ´2017)
+:PROPERTIES:
+:RATING:   1
+:DADS_TITLE: 13 Uhr mittags (D ´2017)
+:TMDB_ID: 500687
+:TMDB_TITLE: 13 Uhr mittags
+:TMDB_CONFIDENCE: 100
+:YEAR: 2018
+:RUNTIME: 80
+:ORIGINAL_TITLE: 13 Uhr mittags
+:ORIGINAL_LANGUAGE: DE
+:DIRECTOR: Martina Plura
+:ACTORS: Rosalie Thomass, Jörg Schüttauf, Peter Franke
+:COUNTRIES: DE
+:PRODUCTION_COMPANIES: Aspekt Telefilm
+:GENRES: Drama
+:IMDB_ID: tt7765718
+:TMDB_RATING: 6.2
+:VOTE_COUNT: 4
+:BACKFILLED: true
+:END:
+
+* 14 Tage lebenslänglich
+:PROPERTIES:
+:RATING:   2
+:DADS_TITLE: 14 Tage lebenslänglich
+:TMDB_ID: 10369
+:TMDB_TITLE: 14 Tage lebenslänglich
+:TMDB_CONFIDENCE: 100.0
+:YEAR: 1997
+:RUNTIME: 103
+:ORIGINAL_TITLE: 14 Tage lebenslänglich
+:ORIGINAL_LANGUAGE: DE
+:DIRECTOR: Roland Suso Richter
+:ACTORS: Kai Wiesinger, Michael Mendl, Katharina Meinecke
+:COUNTRIES: DE
+:GENRES: Drama
+:IMDB_ID: tt0118529
+:TMDB_RATING: 4.893
+:VOTE_COUNT: 14
+:BACKFILLED: true
+:END:
+
+* 17 Mädchen
+:PROPERTIES:
+:RATING:   -1
+:DADS_TITLE: 17 Mädchen
+:TMDB_ID: 87368
+:TMDB_TITLE: 17 Mädchen
+:TMDB_CONFIDENCE: 100.0
+:YEAR: 2011
+:RUNTIME: 86
+:ORIGINAL_TITLE: 17 filles
+:ORIGINAL_LANGUAGE: FR
+:DIRECTOR: Delphine Coulin
+:ACTORS: Louise Grinberg, Juliette Darche, Roxane Duran
+:COUNTRIES: FR
+:PRODUCTION_COMPANIES: Archipel 33>35, ARTE France Cinéma
+:GENRES: Drama
+:IMDB_ID: tt1860152
+:TMDB_RATING: 5.457
+:VOTE_COUNT: 322
+:BACKFILLED: true
 :END:
