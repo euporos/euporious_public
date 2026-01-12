@@ -59971,7 +59971,7 @@
 
 * Knochenjäger (Der_USA/KAN ´1999_/Trailer)
 :PROPERTIES:
-:RATING:
+:RATING: 0
 :DADS_TITLE: Knochenjäger (Der_USA/KAN ´1999_/Trailer)
 :TMDB_ID: 9481
 :TMDB_TITLE: Der Knochenjäger
@@ -115504,26 +115504,20 @@
 :ID:       cbbcc11b-301b-485a-b6c2-1f0895e7db49
 :END:
 
-* (USA)
+* Kids Run (D ´2020_box_DNF)
 :PROPERTIES:
-:DADS_TITLE: (USA)
 :NEEDS_REVIEW: true
 :ID:       7c162ac3-4a59-453d-bd25-f99ec73f94ee
-:END:
-Kids Run (D ´2020_box_DNF)
-:PROPERTIES:
-:RATING: -
+:RATING: -1
+:DADS_TITLE: Kids Run (D ´2020_box_DNF)
 :END:
 
-* (USA)
+* Knochenmann (Der_Ö ´2009_Hader /Bierbichler)
 :PROPERTIES:
-:DADS_TITLE: (USA)
+:DADS_TITLE: Knochenmann (Der_Ö ´2009_Hader /Bierbichler)
 :NEEDS_REVIEW: true
 :ID:       b0f31afc-981e-479a-8390-1f7b1764f626
-:END:
-Knochenmann (Der_Ö ´2009_Hader /Bierbichler)
-:PROPERTIES:
-:RATING: +
+:RATING: 1
 :END:
 
 * Usfahrt Oerlike (CH ´2015_/Trailer)
