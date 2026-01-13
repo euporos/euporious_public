@@ -47,6 +47,14 @@
      :page (parse-int (:page params) 1)
      :per-page (parse-int (:per-page params) 50)}))
 
+
+(defn format-rating  [num]
+  (cond
+    (pos? num) (repeat num "+")
+    (neg? num) (repeat num "-")
+    :else "+/-"))
+
+
 ;; UI Components
 
 (defn movie-item
@@ -61,7 +69,7 @@
     (when year
       [:span.year.text-gray-600.ml-2 "(" year ")"])
     (when rating
-      [:span.rating.ml-2.text-yellow-600 "★ " rating])]
+      [:span.rating.ml-2.text-yellow-600 " " (format-rating rating)])]
 
    [:div.movie-details.mt-3.ml-4.space-y-2.text-sm
     (when (and tmdb_title (not= tmdb_title dads_title))
