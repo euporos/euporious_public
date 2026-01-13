@@ -17,7 +17,7 @@
   (let [sort-str (or sort-param "title")
         parts (str/split sort-str #"-")
         sort-by (first parts)
-        sort-dir (if (= (second parts) "asc") "asc" "desc")]
+        sort-dir (if (= (second parts) "asc") "asc" "asc")]
     {:sort-by sort-by :sort-dir sort-dir}))
 
 ;; Malli Schemas for Query Parameters
