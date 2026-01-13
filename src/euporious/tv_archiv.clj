@@ -9,17 +9,6 @@
    [ring.util.response :as response]
    [rum.core :as rum]))
 
-;; Helper functions
-
-(defn parse-sort
-  "Parse sort param which can be 'field' or 'field-dir'"
-  [sort-param]
-  (let [sort-str (or sort-param "title")
-        parts (str/split sort-str #"-")
-        sort-by (first parts)
-        sort-dir (if (= (second parts) "asc") "asc" "asc")]
-    {:sort-by sort-by :sort-dir sort-dir}))
-
 ;; Malli Schemas for Query Parameters
 
 (def query-params-schema
@@ -30,25 +19,38 @@
    [:director {:optional true} [:maybe [:vector :string]]]
    [:country {:optional true} [:maybe [:vector :string]]]
    [:search {:optional true} [:maybe :string]]
-   [:sort {:optional true, :default "title"} :string]
+   [:sort-by {:optional true, :default "title"} [:enum "title" "year" "rating" "tmdb_rating"]]
+   [:sort-dir {:optional true, :default "asc"} [:enum "asc" "desc"]]
    [:page {:optional true, :default 1} [:int {:min 1}]]
    [:per-page {:optional true, :default 50} [:int {:min 1, :max 200}]]])
 
 (defn coerce-query-params
   "Transform coerced Malli params into our internal format, removing nils"
   [params]
-  (let [{:keys [sort-by sort-dir]} (parse-sort (:sort params))
-        remove-nils (fn [m] (into {} (filter (comp some? val) m)))]
+  (let [remove-nils (fn [m] (into {} (filter (comp some? val) m)))]
     (remove-nils
      {:genres (:genre params)
       :actors (:actor params)
       :directors (:director params)
       :countries (:country params)
       :search (:search params)
-      :sort-by sort-by
-      :sort-dir sort-dir
+      :sort-by (:sort-by params)
+      :sort-dir (:sort-dir params)
       :page (:page params)
       :per-page (:per-page params)})))
+
+(defn build-query-string
+  "Build a query string from params map"
+  [params]
+  (let [param-pairs (for [[k v] params
+                          :when (some? v)]
+                      (if (sequential? v)
+                        (map #(str (name k) "=" (java.net.URLEncoder/encode (str %) "UTF-8")) v)
+                        [(str (name k) "=" (java.net.URLEncoder/encode (str v) "UTF-8"))]))
+        flat-pairs (flatten param-pairs)]
+    (if (seq flat-pairs)
+      (str "?" (str/join "&" flat-pairs))
+      "")))
 
 (defn format-rating  [num]
   (cond
@@ -107,32 +109,27 @@
   [type value all-params]
   (let [remove-params (-> all-params
                           (update (keyword type) #(vec (remove #{value} %)))
-                          (assoc :page 1))]
+                          (assoc :page 1))
+        query-string (build-query-string remove-params)]
     [:span.filter-chip.inline-flex.items-center.gap-1.px-3.py-1.bg-blue-100.text-blue-800.rounded-full.text-sm.mr-2.mb-2
      [:span value]
-     [:button.remove-chip.hover:text-blue-900.font-bold
-      {:hx-get "/tv-archiv/list"
-       :hx-target "#movie-list-container"
-       :hx-push-url "true"
-       :hx-vals (cheshire/generate-string remove-params)
-       :type "button"}
+     [:a.remove-chip.hover:text-blue-900.font-bold
+      {:href (str "/tv-archiv" query-string)}
       "×"]]))
 
 (defn active-filters
   "Display active filters as removable chips"
   [params]
   (let [{:keys [genres actors directors countries search]} params
-        has-filters? (or (seq genres) (seq actors) (seq directors) (seq countries) search)]
+        has-filters? (or (seq genres) (seq actors) (seq directors) (seq countries) search)
+        clear-params {:page 1 :sort-by (:sort-by params) :sort-dir (:sort-dir params) :per-page (:per-page params)}
+        clear-query-string (build-query-string clear-params)]
     (when has-filters?
       [:div.active-filters.mb-4.p-3.bg-gray-50.rounded
        [:div.flex.items-center.justify-between.mb-2
         [:span.font-semibold.text-sm.text-gray-700 "Active Filters:"]
-        [:button.text-sm.text-blue-600.hover:text-blue-800
-         {:hx-get "/tv-archiv/list"
-          :hx-target "#movie-list-container"
-          :hx-push-url "true"
-          :hx-vals (cheshire/generate-string {:page 1 :sort-by (:sort-by params) :sort-dir (:sort-dir params) :per-page (:per-page params)})
-          :type "button"}
+        [:a.text-sm.text-blue-600.hover:text-blue-800
+         {:href (str "/tv-archiv" clear-query-string)}
          "Clear all"]]
        [:div.flex.flex-wrap
         (for [genre genres]
@@ -144,43 +141,35 @@
         (for [country countries]
           (filter-chip "country" country params))
         (when search
-          [:span.filter-chip.inline-flex.items-center.gap-1.px-3.py-1.bg-blue-100.text-blue-800.rounded-full.text-sm.mr-2.mb-2
-           [:span "Search: " search]
-           [:button.remove-chip.hover:text-blue-900.font-bold
-            {:hx-get "/tv-archiv/list"
-             :hx-target "#movie-list-container"
-             :hx-push-url "true"
-             :hx-vals (cheshire/generate-string (-> params
-                                                    (dissoc :search)
-                                                    (assoc :page 1)))
-             :type "button"}
-            "×"]])]])))
+          (let [remove-search-params (-> params
+                                         (dissoc :search)
+                                         (assoc :page 1))
+                query-string (build-query-string remove-search-params)]
+            [:span.filter-chip.inline-flex.items-center.gap-1.px-3.py-1.bg-blue-100.text-blue-800.rounded-full.text-sm.mr-2.mb-2
+             [:span "Search: " search]
+             [:a.remove-chip.hover:text-blue-900.font-bold
+              {:href (str "/tv-archiv" query-string)}
+              "×"]]))]])))
 
 (defn pagination-controls
   "Render pagination controls"
   [{:keys [page total-pages]} params]
   (when (> total-pages 1)
-    [:div.pagination.flex.items-center.justify-center.gap-4.mt-6.mb-4
-     (when (> page 1)
-       [:button.page-btn.px-4.py-2.bg-blue-500.text-white.rounded.hover:bg-blue-600
-        {:hx-get "/tv-archiv/list"
-         :hx-target "#movie-list-container"
-         :hx-push-url "true"
-         :hx-vals (cheshire/generate-string (assoc params :page (dec page)))
-         :type "button"}
-        "← Previous"])
+    (let [prev-query-string (build-query-string (assoc params :page (dec page)))
+          next-query-string (build-query-string (assoc params :page (inc page)))]
+      [:div.pagination.flex.items-center.justify-center.gap-4.mt-6.mb-4
+       (when (> page 1)
+         [:a.page-btn.px-4.py-2.bg-blue-500.text-white.rounded.hover:bg-blue-600.inline-block.text-center
+          {:href (str "/tv-archiv" prev-query-string)}
+          "← Previous"])
 
-     [:span.page-info.text-gray-700
-      (format "Page %d of %d" page total-pages)]
+       [:span.page-info.text-gray-700
+        (format "Page %d of %d" page total-pages)]
 
-     (when (< page total-pages)
-       [:button.page-btn.px-4.py-2.bg-blue-500.text-white.rounded.hover:bg-blue-600
-        {:hx-get "/tv-archiv/list"
-         :hx-target "#movie-list-container"
-         :hx-push-url "true"
-         :hx-vals (cheshire/generate-string (assoc params :page (inc page)))
-         :type "button"}
-        "Next →"])]))
+       (when (< page total-pages)
+         [:a.page-btn.px-4.py-2.bg-blue-500.text-white.rounded.hover:bg-blue-600.inline-block.text-center
+          {:href (str "/tv-archiv" next-query-string)}
+          "Next →"])])))
 
 (defn movie-list-with-pagination
   "Render movie list with stats and pagination"
@@ -221,11 +210,8 @@
       [:h1.text-3xl.font-bold.mb-6 "TV Archive"]
 
       [:form#filters.mb-6.space-y-4
-       {:hx-get "/tv-archiv/list"
-        :hx-target "#movie-list-container"
-        :hx-push-url "true"
-        ;; :hx-trigger "input delay:500ms from:.search-input, change from:.filter-select"
-        }
+       {:method "get"
+        :action "/tv-archiv"}
 
        ;; Search box
        [:div.search-group
@@ -240,22 +226,36 @@
        ;; Sort and per-page controls
        [:div.flex.gap-4.flex-wrap
           [:div.flex-1 {:style {:min-width "200px"}}
-           [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort"} "Sort By"]
+           [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-by"} "Sort By"]
            [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
-            {:name "sort" :id "sort"}
-            [:option {:value "title" :selected (= (:sort-by query-params) "title")} "Title (A-Z)"]
-            [:option {:value "year-desc" :selected (= (:sort-by query-params) "year-desc")} "Year (Newest First)"]
-            [:option {:value "year-asc" :selected (= (:sort-by query-params) "year-asc")} "Year (Oldest First)"]
-            [:option {:value "rating-desc" :selected (= (:sort-by query-params) "rating-desc")} "My Rating (Highest)"]
-            [:option {:value "tmdb_rating-desc" :selected (= (:sort-by query-params) "tmdb_rating-desc")} "TMDB Rating (Highest)"]]]
+            {:name "sort-by" :id "sort-by" :onchange "this.form.submit()"}
+            [:option {:value "title" :selected (= (:sort-by query-params) "title")} "Title"]
+            [:option {:value "year" :selected (= (:sort-by query-params) "year")} "Year"]
+            [:option {:value "rating" :selected (= (:sort-by query-params) "rating")} "My Rating"]
+            [:option {:value "tmdb_rating" :selected (= (:sort-by query-params) "tmdb_rating")} "TMDB Rating"]]]
+
+          [:div.w-40
+           [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-dir"} "Direction"]
+           [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
+            {:name "sort-dir" :id "sort-dir" :onchange "this.form.submit()"}
+            [:option {:value "asc" :selected (= (:sort-dir query-params) "asc")} "Ascending ↑"]
+            [:option {:value "desc" :selected (= (:sort-dir query-params) "desc")} "Descending ↓"]]]
 
           [:div.w-32
            [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "per-page"} "Per Page"]
            [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
-            {:name "per-page" :id "per-page"}
+            {:name "per-page" :id "per-page" :onchange "this.form.submit()"}
             [:option {:value "25" :selected (= (:per-page query-params) 25)} "25"]
             [:option {:value "50" :selected (= (:per-page query-params) 50)} "50"]
             [:option {:value "100" :selected (= (:per-page query-params) 100)} "100"]]]]
+
+       [:div.flex.gap-2
+        [:button.px-4.py-2.bg-blue-500.text-white.rounded.hover:bg-blue-600
+         {:type "submit"}
+         "Search"]
+        [:a.px-4.py-2.bg-gray-300.text-gray-700.rounded.hover:bg-gray-400
+         {:href "/tv-archiv"}
+         "Clear"]]
 
        ;; TODO: Tag-based filter inputs will go here
        [:div.text-sm.text-gray-500.italic
