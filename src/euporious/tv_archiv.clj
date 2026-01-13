@@ -238,8 +238,8 @@
           :value (or (:search query-params) "")}]]
 
        ;; Sort and per-page controls
-       #_[:div.flex.gap-4.flex-wrap
-          [:div.flex-1 {:style "min-width: 200px"}
+       [:div.flex.gap-4.flex-wrap
+          #_[:div.flex-1 {:style "min-width: 200px"}
            [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort"} "Sort By"]
            [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
             {:name "sort" :id "sort"}
