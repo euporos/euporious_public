@@ -54,7 +54,7 @@
                        (fn [sofar nextup]
                          (assoc sofar (:id (:properties nextup)) (build-entity nextup)))
                        {}
-                       (-> "/media/lapdaten/ARBEITSSD/dev/euporious/euporious_public/resources/tv_liste.org"
+                       (-> "resources/tv_liste.org"
                            org/parse
                            :content))
         more-info (reduce
