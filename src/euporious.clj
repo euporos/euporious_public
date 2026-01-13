@@ -11,6 +11,7 @@
             [euporious.middleware :as mid]
             [euporious.schema :as schema]
             [euporious.secrets :as secrets]
+            [euporious.tv-archiv :as tv-archiv]
             [euporious.ui :as ui]
             [euporious.worker :as worker]
             [malli.core :as malc]
@@ -27,6 +28,7 @@
                          (contains? #{"services@olivermotz.com"} email)))})
    home/module
    secrets/module
+   tv-archiv/module
    schema/module
    worker/module])
 
