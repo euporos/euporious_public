@@ -5,24 +5,11 @@
    [com.biffweb :as biff]
    [euporious.tv-archiv.db-interaction :as db]
    [euporious.ui :as ui]
+   [reitit.coercion.malli]
    [ring.util.response :as response]
    [rum.core :as rum]))
 
 ;; Helper functions
-
-(defn parse-multi-param
-  "Parse multiple values from query params (e.g., ?genre=Comedy&genre=Drama)"
-  [params key]
-  (let [val (get params key)]
-    (cond
-      (vector? val) (vec val)
-      (string? val) [val]
-      :else nil)))
-
-(defn parse-int [s default]
-  (try
-    (Integer/parseInt s)
-    (catch Exception _ default)))
 
 (defn parse-sort
   "Parse sort param which can be 'field' or 'field-dir'"
@@ -33,27 +20,41 @@
         sort-dir (if (= (second parts) "asc") "asc" "desc")]
     {:sort-by sort-by :sort-dir sort-dir}))
 
-(defn parse-query-params
-  "Extract and parse all query parameters for filtering/sorting"
-  [params]
-  (let [{:keys [sort-by sort-dir]} (parse-sort (:sort params))]
-    {:genres (parse-multi-param params :genre)
-     :actors (parse-multi-param params :actor)
-     :directors (parse-multi-param params :director)
-     :countries (parse-multi-param params :country)
-     :search (:search params)
-     :sort-by sort-by
-     :sort-dir sort-dir
-     :page (parse-int (:page params) 1)
-     :per-page (parse-int (:per-page params) 50)}))
+;; Malli Schemas for Query Parameters
 
+(def query-params-schema
+  "Schema for query parameters with proper coercion and defaults"
+  [:map
+   [:genre {:optional true} [:maybe [:vector :string]]]
+   [:actor {:optional true} [:maybe [:vector :string]]]
+   [:director {:optional true} [:maybe [:vector :string]]]
+   [:country {:optional true} [:maybe [:vector :string]]]
+   [:search {:optional true} [:maybe :string]]
+   [:sort {:optional true, :default "title"} :string]
+   [:page {:optional true, :default 1} [:int {:min 1}]]
+   [:per-page {:optional true, :default 50} [:int {:min 1, :max 200}]]])
+
+(defn coerce-query-params
+  "Transform coerced Malli params into our internal format, removing nils"
+  [params]
+  (let [{:keys [sort-by sort-dir]} (parse-sort (:sort params))
+        remove-nils (fn [m] (into {} (filter (comp some? val) m)))]
+    (remove-nils
+     {:genres (:genre params)
+      :actors (:actor params)
+      :directors (:director params)
+      :countries (:country params)
+      :search (:search params)
+      :sort-by sort-by
+      :sort-dir sort-dir
+      :page (:page params)
+      :per-page (:per-page params)})))
 
 (defn format-rating  [num]
   (cond
     (pos? num) (repeat num "+")
     (neg? num) (repeat num "-")
     :else "+/-"))
-
 
 ;; UI Components
 
@@ -203,15 +204,16 @@
 
 (defn filtered-list
   "HTMX endpoint - returns just the movie list HTML"
-  [{:keys [params]}]
-  (let [query-params (parse-query-params params)
+  [{:keys [parameters]}]
+  (let [query-params (coerce-query-params (:query parameters))
         result (db/filter-and-sort-movies query-params)]
     (biff/render (movie-list-with-pagination result query-params))))
 
 (defn list-page
   "Main TV archive page"
-  [{:keys [params] :as ctx}]
-  (let [query-params (parse-query-params params)
+  [{:keys [parameters] :as ctx}]
+  (println "RUNNING ")
+  (let [query-params (coerce-query-params (:query parameters))
         result (db/filter-and-sort-movies query-params)]
     (ui/page
      ctx
@@ -285,6 +287,10 @@
 
 (def module
   {:routes ["/tv-archiv"
-            ["" {:get list-page}]
-            ["/list" {:get filtered-list}]
+            ["" {:get {:handler list-page
+                       :coercion reitit.coercion.malli/coercion
+                       :parameters {:query query-params-schema}}}]
+            ["/list" {:get {:handler filtered-list
+                            :coercion reitit.coercion.malli/coercion
+                            :parameters {:query query-params-schema}}}]
             ["/filter-options" {:get filter-options}]]})

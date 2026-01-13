@@ -16,7 +16,8 @@
             [euporious.worker :as worker]
             [malli.core :as malc]
             [malli.registry :as malr]
-            [nrepl.cmdline :as nrepl-cmd])
+            [nrepl.cmdline :as nrepl-cmd]
+            [reitit.ring.coercion :as coercion])
   (:gen-class))
 
 (def modules
@@ -32,7 +33,9 @@
    schema/module
    worker/module])
 
-(def routes [["" {:middleware [mid/wrap-site-defaults]}
+(def routes [["" {:middleware [mid/wrap-site-defaults
+                                   coercion/coerce-request-middleware
+                                   coercion/coerce-response-middleware]}
               (keep :routes modules)]
              ["" {:middleware [mid/wrap-api-defaults]}
               (keep :api-routes modules)]])

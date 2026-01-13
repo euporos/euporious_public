@@ -9,6 +9,7 @@
         com.xtdb/xtdb-core  {:mvn/version "2.x-SNAPSHOT"}
         com.zaxxer/HikariCP {:mvn/version "7.0.2"}
         cheshire/cheshire   {:mvn/version "6.1.0"}
+        metosin/reitit-malli {:mvn/version "0.7.2"}
 
         org.clojure/clojure {:mvn/version "1.12.0"}
 
