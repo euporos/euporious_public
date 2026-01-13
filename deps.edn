@@ -29,7 +29,7 @@
                    "-XX:-OmitStackTraceInFastThrow"
                    "-XX:+CrashOnOutOfMemoryError"
                    "-Dbiff.env.BIFF_PROFILE=dev"]
-        :main-opts ["-e" "((requiring-resolve 'hashp.install/install!))"
+        :main-opts [;; "-e" "((requiring-resolve 'hashp.install/install!))"
                     "-m" "com.biffweb.task-runner" "tasks/tasks"]}
   :prod {:jvm-opts ["--add-opens=java.base/java.nio=ALL-UNNAMED"
                    "-Dio.netty.tryReflectionSetAccessible=true"
