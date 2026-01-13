@@ -141,7 +141,9 @@
             {:hx-get "/tv-archiv/list"
              :hx-target "#movie-list-container"
              :hx-push-url "true"
-             :hx-vals (cheshire/generate-string (assoc params :search nil :page 1))
+             :hx-vals (cheshire/generate-string (-> params
+                                                    (dissoc :search)
+                                                    (assoc :page 1)))
              :type "button"}
             "×"]])]])))
 
