@@ -212,7 +212,8 @@
        {:hx-get "/tv-archiv/list"
         :hx-target "#movie-list-container"
         :hx-push-url "true"
-        :hx-trigger "input delay:500ms from:.search-input, change from:.filter-select"}
+        ;; :hx-trigger "input delay:500ms from:.search-input, change from:.filter-select"
+        }
 
        ;; Search box
        [:div.search-group
@@ -221,28 +222,28 @@
          {:type "text"
           :name "search"
           :id "search"
-          :placeholder "Search by title..."
+          :placeholder "Nach Titel suchen…"
           :value (or (:search query-params) "")}]]
 
        ;; Sort and per-page controls
-       [:div.flex.gap-4.flex-wrap
-        [:div.flex-1 {:style "min-width: 200px"}
-         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort"} "Sort By"]
-         [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
-          {:name "sort" :id "sort"}
-          [:option {:value "title" :selected (= (:sort-by query-params) "title")} "Title (A-Z)"]
-          [:option {:value "year-desc" :selected (= (:sort-by query-params) "year-desc")} "Year (Newest First)"]
-          [:option {:value "year-asc" :selected (= (:sort-by query-params) "year-asc")} "Year (Oldest First)"]
-          [:option {:value "rating-desc" :selected (= (:sort-by query-params) "rating-desc")} "My Rating (Highest)"]
-          [:option {:value "tmdb_rating-desc" :selected (= (:sort-by query-params) "tmdb_rating-desc")} "TMDB Rating (Highest)"]]]
+       #_[:div.flex.gap-4.flex-wrap
+          [:div.flex-1 {:style "min-width: 200px"}
+           [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort"} "Sort By"]
+           [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
+            {:name "sort" :id "sort"}
+            [:option {:value "title" :selected (= (:sort-by query-params) "title")} "Title (A-Z)"]
+            [:option {:value "year-desc" :selected (= (:sort-by query-params) "year-desc")} "Year (Newest First)"]
+            [:option {:value "year-asc" :selected (= (:sort-by query-params) "year-asc")} "Year (Oldest First)"]
+            [:option {:value "rating-desc" :selected (= (:sort-by query-params) "rating-desc")} "My Rating (Highest)"]
+            [:option {:value "tmdb_rating-desc" :selected (= (:sort-by query-params) "tmdb_rating-desc")} "TMDB Rating (Highest)"]]]
 
-        [:div.w-32
-         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "per-page"} "Per Page"]
-         [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
-          {:name "per-page" :id "per-page"}
-          [:option {:value "25" :selected (= (:per-page query-params) 25)} "25"]
-          [:option {:value "50" :selected (= (:per-page query-params) 50)} "50"]
-          [:option {:value "100" :selected (= (:per-page query-params) 100)} "100"]]]]
+          [:div.w-32
+           [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "per-page"} "Per Page"]
+           [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
+            {:name "per-page" :id "per-page"}
+            [:option {:value "25" :selected (= (:per-page query-params) 25)} "25"]
+            [:option {:value "50" :selected (= (:per-page query-params) 50)} "50"]
+            [:option {:value "100" :selected (= (:per-page query-params) 100)} "100"]]]]
 
        ;; TODO: Tag-based filter inputs will go here
        [:div.text-sm.text-gray-500.italic
