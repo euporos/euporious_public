@@ -36,6 +36,13 @@
                                     head))))
    body))
 
+(defn footer []
+  [:footer.bg-gray-100.border-t.border-gray-300.mt-8.py-4
+   [:div.max-w-screen-xl.mx-auto.px-4
+    [:div.flex.justify-center.gap-6.text-sm.text-gray-600
+     [:a.hover:text-gray-900.hover:underline {:href "/impressum"} "Impressum"]
+     [:a.hover:text-gray-900.hover:underline {:href "/datenschutz"} "Datenschutz"]]]])
+
 (defn page [ctx & body]
   (base
    ctx
@@ -46,7 +53,8 @@
                     {:x-csrf-token csrf/*anti-forgery-token*})})
     body]
    [:.flex-grow]
-   [:.flex-grow]))
+   [:.flex-grow]
+   (footer)))
 
 (defn on-error [{:keys [status ex] :as ctx}]
   {:status status

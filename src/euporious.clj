@@ -8,6 +8,7 @@
             [euporious.app :as app]
             [euporious.email :as email]
             [euporious.home :as home]
+            [euporious.legal :as legal]
             [euporious.middleware :as mid]
             [euporious.schema :as schema]
             [euporious.secrets :as secrets]
@@ -28,6 +29,7 @@
                          (biff-auth/email-valid? ctx email)
                          (contains? #{"services@olivermotz.com"} email)))})
    home/module
+   legal/module
    secrets/module
    tv-archiv/module
    schema/module
