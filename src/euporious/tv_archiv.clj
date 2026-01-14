@@ -64,49 +64,65 @@
   [{:keys [id dads_title year rating runtime director
            genres actors countries imdb_id tmdb_id
            tmdb_title original_title tmdb_rating]}]
-  [:details.movie-entry.border-b.border-gray-200.py-3
-   {:data-id id}
-   [:summary.movie-summary.cursor-pointer.hover:bg-gray-50.p-2.rounded
-    [:span.title.font-semibold.text-lg dads_title]
-    (when year
-      [:span.year.text-gray-600.ml-2 "(" year ")"])
-    (when rating
-      [:span.rating.ml-2.text-yellow-600 " " (format-rating rating)])]
+  (let [wikipedia-search-title (or tmdb_title dads_title)
+        wikipedia-url (str "https://de.wikipedia.org/wiki/Special:Search/"
+                          (str/replace (java.net.URLEncoder/encode wikipedia-search-title "UTF-8") "+" "%20"))]
+    [:details.movie-entry.border-b.border-gray-200.py-3
+     {:data-id id}
+     [:summary.movie-summary.cursor-pointer.hover:bg-gray-50.p-2.rounded
+      [:span.title.font-semibold.text-lg dads_title]
+      (when year
+        [:span.year.text-gray-600.ml-2 "(" year ")"])
+      (when rating
+        [:span.rating.ml-2.text-yellow-600 " " (format-rating rating)])]
 
-   [:div.movie-details.mt-3.ml-4.space-y-2.text-sm
-    (when (and tmdb_title (not= tmdb_title dads_title))
-      [:p [:strong.text-gray-700 "TMDB Title: "] [:span.text-gray-600 tmdb_title]])
-    (when (and original_title
-               (not= original_title dads_title)
-               (not= original_title tmdb_title))
-      [:p [:strong.text-gray-700 "Original Title: "] [:span.text-gray-600 original_title]])
+     [:div.movie-details.mt-3.ml-4.space-y-2.text-sm
+      (when (and tmdb_title (not= tmdb_title dads_title))
+        [:p [:strong.text-gray-700 "TMDB Title: "] [:span.text-gray-600 tmdb_title]])
+      (when (and original_title
+                 (not= original_title dads_title)
+                 (not= original_title tmdb_title))
+        [:p [:strong.text-gray-700 "Original Title: "] [:span.text-gray-600 original_title]])
 
-    (when director
-      [:p [:strong.text-gray-700 "Director: "] [:span.text-gray-600 director]])
-    (when year
-      [:p [:strong.text-gray-700 "Year: "] [:span.text-gray-600 year]])
-    (when runtime
-      [:p [:strong.text-gray-700 "Runtime: "] [:span.text-gray-600 runtime " min"]])
-    (when (seq genres)
-      [:p [:strong.text-gray-700 "Genres: "] [:span.text-gray-600 (str/join ", " genres)]])
-    (when (seq actors)
-      [:p [:strong.text-gray-700 "Actors: "] [:span.text-gray-600 (str/join ", " (take 8 actors))]])
-    (when (seq countries)
-      [:p [:strong.text-gray-700 "Countries: "] [:span.text-gray-600 (str/join ", " countries)]])
+      (when director
+        [:p [:strong.text-gray-700 "Director: "]
+         [:a.text-blue-600.hover:text-blue-800.hover:underline
+          {:href (str "/tv-archiv?director=" (java.net.URLEncoder/encode director "UTF-8"))}
+          director]])
+      (when year
+        [:p [:strong.text-gray-700 "Year: "] [:span.text-gray-600 year]])
+      (when runtime
+        [:p [:strong.text-gray-700 "Runtime: "] [:span.text-gray-600 runtime " min"]])
+      (when (seq genres)
+        [:p [:strong.text-gray-700 "Genres: "] [:span.text-gray-600 (str/join ", " genres)]])
+      (when (seq actors)
+        [:p [:strong.text-gray-700 "Actors: "]
+         (interpose ", "
+                    (for [actor (take 8 actors)]
+                      [:a.text-blue-600.hover:text-blue-800.hover:underline
+                       {:href (str "/tv-archiv?actor=" (java.net.URLEncoder/encode actor "UTF-8"))}
+                       actor]))])
+      (when (seq countries)
+        [:p [:strong.text-gray-700 "Countries: "] [:span.text-gray-600 (str/join ", " countries)]])
 
-    [:p.text-xs.text-gray-500
-     (when imdb_id [:span "IMDB: " imdb_id " "])
-     (when tmdb_id [:span "TMDB: " tmdb_id])]
-    (when tmdb_rating
-      [:p [:strong.text-gray-700 "TMDB Rating: "] [:span.text-gray-600 (format "%.1f/10" tmdb_rating)]])
+      [:p.text-xs.text-gray-500
+       (when imdb_id [:span "IMDB: " imdb_id " "])
+       (when tmdb_id [:span "TMDB: " tmdb_id])]
+      (when tmdb_rating
+        [:p [:strong.text-gray-700 "TMDB Rating: "] [:span.text-gray-600 (format "%.1f/10" tmdb_rating)]])
 
-    (when tmdb_id
-      [:div.description.mt-3.p-2.bg-gray-50.rounded
-       {:id (str "description-" id)
-        :hx-get (str "/tv-archiv/tmdb-description/" tmdb_id)
-        :hx-trigger "intersect once"
-        :hx-swap "innerHTML"}
-       [:span.text-gray-500.italic "Loading description from TMDB..."]])]])
+      [:p.mt-2
+       [:a.text-blue-600.hover:text-blue-800.hover:underline.text-sm
+        {:href wikipedia-url :target "_blank" :rel "noopener noreferrer"}
+        "🔍 Search on Wikipedia (de)"]]
+
+      (when tmdb_id
+        [:div.description.mt-3.p-2.bg-gray-50.rounded
+         {:id (str "description-" id)
+          :hx-get (str "/tv-archiv/tmdb-description/" tmdb_id)
+          :hx-trigger "intersect once"
+          :hx-swap "innerHTML"}
+         [:span.text-gray-500.italic "Loading description from TMDB..."]])]]))
 
 (defn filter-chip
   "Render a removable filter chip"
