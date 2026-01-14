@@ -365,15 +365,15 @@
 
 (defn wrap-remove-empty-query-params [handler]
   (fn [request]
-    (handler (update request :query-params (fn [m] #p (into {} (remove (comp empty? val) #p m)))))))
+    (handler (update-in request [:params :query] (fn [m] (into {} (remove (comp empty? val) m)))))))
 
 (def module
   {:routes ["/tv-archiv"
             {:middleware [wrap-remove-empty-query-params]}
-            ["" {:get {:handler list-page
+            ["" {:get {:handler #'list-page
                        :coercion reitit.coercion.malli/coercion
                        :parameters {:query query-params-schema}}}]
-            ["/list" {:get {:handler filtered-list
+            ["/list" {:get {:handler #'filtered-list
                             :coercion reitit.coercion.malli/coercion
                             :parameters {:query query-params-schema}}}]
-            ["/filter-options" {:get filter-options}]]})
+            ["/filter-options" {:get #'filter-options}]]})
