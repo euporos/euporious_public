@@ -66,6 +66,20 @@
         query-string (build-query-string params)]
     (str base-path query-string)))
 
+(defn filter-options-url
+  "Generate URL for filter options endpoint with query parameters"
+  [router params]
+  (let [match (reitit/match-by-name router ::filter-options)
+        base-path (:path match)
+        query-string (build-query-string params)]
+    (str base-path query-string)))
+
+(defn tmdb-description-url
+  "Generate URL for TMDB description endpoint"
+  [router tmdb-id]
+  (let [match (reitit/match-by-name router ::tmdb-description {:tmdb-id tmdb-id})]
+    (:path match)))
+
 (defn format-rating  [num]
   (cond
     (pos? num) (repeat num "+")
@@ -135,7 +149,7 @@
       (when tmdb_id
         [:div.description.mt-3.p-2.bg-gray-50.rounded
          {:id (str "description-" id)
-          :hx-get (str "/tv-archiv/tmdb-description/" tmdb_id)
+          :hx-get (tmdb-description-url router tmdb_id)
           :hx-trigger "intersect once"
           :hx-swap "innerHTML"}
          [:span.text-gray-500.italic "Lade Beschreibung von TMDB..."]])]]))
@@ -236,7 +250,8 @@
   [{:keys [parameters reitit.core/router] :as ctx}]
   (let [query-params (coerce-query-params (:query parameters))
         result (db/filter-and-sort-movies query-params)
-        form-action (list-page-url router {})]
+        form-action (list-page-url router {})
+        reset-url (:path (reitit/match-by-name router ::list-page))]
     (ui/page
      (assoc ctx :euporious.ui/noindex true)
      [:div.tv-archiv
@@ -287,7 +302,7 @@
          {:type "submit"}
          "Suchen"]
         [:a.px-4.py-2.bg-gray-300.text-gray-700.rounded.hover:bg-gray-400
-         {:href (list-page-url router {})}
+         {:href reset-url}
          "Zurücksetzen"]]
 
        ;; Advanced filters
@@ -312,7 +327,7 @@
             :id "actor-search"
             :placeholder "Schauspieler suchen..."
             :autocomplete "off"
-            :hx-get "/tv-archiv/filter-options?type=actors"
+            :hx-get (filter-options-url router {:type "actors"})
             :hx-trigger "keyup changed delay:300ms"
             :hx-target "#actor-results"
             :hx-include "[name='actor']"
@@ -334,7 +349,7 @@
             :id "director-search"
             :placeholder "Regie suchen..."
             :autocomplete "off"
-            :hx-get "/tv-archiv/filter-options?type=directors"
+            :hx-get (filter-options-url router {:type "directors"})
             :hx-trigger "keyup changed delay:300ms"
             :hx-target "#director-results"
             :hx-include "[name='director']"
@@ -353,9 +368,9 @@
 
 (defn autocomplete-result-item
   "Render a single autocomplete result item"
-  [option filter-name]
+  [router option filter-name]
   [:div.autocomplete-result-item.px-4.py-2.hover:bg-gray-100.cursor-pointer.text-gray-900
-   {:hx-get (str "/tv-archiv?" filter-name "=" (java.net.URLEncoder/encode option "UTF-8"))
+   {:hx-get (list-page-url router {(keyword filter-name) option})
     :hx-target "body"
     :hx-push-url "true"
     :onclick (str "document.querySelector('input[name=" filter-name "]').value='" (str/replace option "'" "\\'") "';")
@@ -364,7 +379,7 @@
 
 (defn filter-options
   "HTMX endpoint for autocomplete suggestions - returns HTML"
-  [{:keys [params]}]
+  [{:keys [params reitit.core/router]}]
   (let [type (keyword (:type params))
         query-param (or (:genre-search params) (:actor-search params) (:director-search params) "")
         query (str/lower-case query-param)
@@ -385,7 +400,7 @@
        :body ""}
       (biff/render
        [:div
-        (map #(autocomplete-result-item % filter-name) limited)]))))
+        (map #(autocomplete-result-item router % filter-name) limited)]))))
 
 (defn tmdb-description
   "HTMX endpoint - fetches and returns movie description from TMDB"
