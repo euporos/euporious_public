@@ -66,12 +66,17 @@
      ["" {:middleware [mid/wrap-api-defaults]}
       (keep :api-routes modules)]]))
 
+;; Pre-compile routers for each site at module load time
+(def site-handlers
+  (into {}
+        (for [site [:tv-archiv :secrets]]
+          [site (biff/reitit-handler {:routes (site-routes site)})])))
+
 (defn site-aware-handler
   "Handler that routes based on the :site key in the request."
   [req]
   (let [site (:site req :tv-archiv)  ; Default to tv-archiv if :site is missing
-        routes (site-routes site)
-        handler (biff/reitit-handler {:routes routes})]
+        handler (get site-handlers site)]
     (handler req)))
 
 (def handler (-> site-aware-handler
