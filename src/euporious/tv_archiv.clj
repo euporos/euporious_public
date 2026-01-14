@@ -4,6 +4,7 @@
    [clojure.string :as str]
    [com.biffweb :as biff]
    [euporious.tv-archiv.db-interaction :as db]
+   [euporious.tmdb :as tmdb]
    [euporious.ui :as ui]
    [reitit.coercion.malli]
    [ring.util.response :as response]
@@ -99,8 +100,13 @@
     (when tmdb_rating
       [:p [:strong.text-gray-700 "TMDB Rating: "] [:span.text-gray-600 (format "%.1f/10" tmdb_rating)]])
 
-    [:div.description.mt-3.p-2.bg-gray-50.rounded.text-gray-500.italic
-     "Description will be loaded from TMDB..."]]])
+    (when tmdb_id
+      [:div.description.mt-3.p-2.bg-gray-50.rounded
+       {:id (str "description-" id)
+        :hx-get (str "/tv-archiv/tmdb-description/" tmdb_id)
+        :hx-trigger "intersect once"
+        :hx-swap "innerHTML"}
+       [:span.text-gray-500.italic "Loading description from TMDB..."]])]])
 
 (defn filter-chip
   "Render a removable filter chip"
@@ -351,6 +357,29 @@
        [:div
         (map #(autocomplete-result-item % filter-name) limited)]))))
 
+(defn tmdb-description
+  "HTMX endpoint - fetches and returns movie description from TMDB"
+  [{:keys [path-params biff/secret] :as ctx}]
+  (let [tmdb-id (:tmdb-id path-params)
+        api-key (secret :tmdb/api-key)]
+    (if-not api-key
+      (biff/render
+       [:div.text-gray-500.italic
+        "TMDB API key not configured. Add your API key to config.env to enable movie descriptions."])
+      (if-let [movie-details (tmdb/fetch-movie-details api-key tmdb-id)]
+        (let [description (tmdb/get-movie-description movie-details)]
+          (biff/render
+           (if (and description (not (str/blank? description)))
+             [:div
+              [:div.text-gray-700 description]
+              [:div.text-xs.text-gray-400.mt-2.italic
+               "Data provided by "
+               [:a.underline {:href "https://www.themoviedb.org" :target "_blank" :rel "noopener noreferrer"}
+                "The Movie Database (TMDB)"]]]
+             [:div.text-gray-500.italic "No description available."])))
+        (biff/render
+         [:div.text-gray-500.italic "Could not load description from TMDB."])))))
+
 ;; Module definition
 
 ;; Initialize database when module loads
@@ -373,4 +402,5 @@
             ["/list" {:get {:handler #'filtered-list
                             :coercion reitit.coercion.malli/coercion
                             :parameters {:query query-params-schema}}}]
-            ["/filter-options" {:get #'filter-options}]]})
+            ["/filter-options" {:get #'filter-options}]
+            ["/tmdb-description/:tmdb-id" {:get #'tmdb-description}]]})
