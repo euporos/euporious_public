@@ -20,25 +20,31 @@
    [:director {:optional true} [:maybe :string]]
    [:country {:optional true} [:maybe :string]]
    [:search {:optional true} [:maybe :string]]
-   [:sort-by {:optional true, :default "title"} [:enum "title" "year" "rating" "tmdb_rating"]]
-   [:sort-dir {:optional true, :default "asc"} [:enum "asc" "desc"]]
+   [:sort-by {:optional true, :default "rating"} [:enum "title" "year" "rating" "tmdb_rating"]]
+   [:sort-dir {:optional true, :default "desc"} [:enum "asc" "desc"]]
    [:page {:optional true, :default 1} [:int {:min 1}]]
    [:per-page {:optional true, :default 50} [:int {:min 1, :max 200}]]])
 
 (defn coerce-query-params
-  "Transform coerced Malli params into our internal format, removing nils and empty strings"
+  "Transform coerced Malli params into our internal format, removing nils and empty strings.
+   Ensures defaults are applied for sort-by, sort-dir, page, and per-page."
   [params]
   (let [remove-empty (fn [m] (into {} (filter (fn [[_ v]] (and (some? v) (not (and (string? v) (str/blank? v))))) m)))]
-    (remove-empty
-     {:genre (:genre params)
-      :actor (:actor params)
-      :director (:director params)
-      :country (:country params)
-      :search (:search params)
-      :sort-by (:sort-by params)
-      :sort-dir (:sort-dir params)
-      :page (:page params)
-      :per-page (:per-page params)})))
+    (merge
+     {:sort-by "rating"
+      :sort-dir "desc"
+      :page 1
+      :per-page 50}
+     (remove-empty
+      {:genre (:genre params)
+       :actor (:actor params)
+       :director (:director params)
+       :country (:country params)
+       :search (:search params)
+       :sort-by (:sort-by params)
+       :sort-dir (:sort-dir params)
+       :page (:page params)
+       :per-page (:per-page params)}))))
 
 (defn build-query-string
   "Build a query string from params map"
