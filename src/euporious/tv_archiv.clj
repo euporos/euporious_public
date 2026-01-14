@@ -199,8 +199,7 @@
 (defn list-page
   "Main TV archive page"
   [{:keys [parameters] :as ctx}]
-  (println "RUNNING ")
-  (let [query-params (coerce-query-params (:query parameters))
+  (let [query-params (:query parameters)
         result (db/filter-and-sort-movies query-params)]
     (ui/page
      ctx
@@ -364,8 +363,13 @@
 ;; Initialize database when module loads
 (db/build-db)
 
+(defn wrap-remove-empty-query-params [handler]
+  (fn [request]
+    (handler (update request :query-params (fn [m] #p (into {} (remove (comp empty? val) #p m)))))))
+
 (def module
   {:routes ["/tv-archiv"
+            {:middleware [wrap-remove-empty-query-params]}
             ["" {:get {:handler list-page
                        :coercion reitit.coercion.malli/coercion
                        :parameters {:query query-params-schema}}}]
