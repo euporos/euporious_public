@@ -277,16 +277,9 @@
            {:type "hidden"
             :name "genre"
             :value (:genre query-params)}]
-          [:div#genre-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto.hidden]]
-         (when-let [selected-genre (:genre query-params)]
-           [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
-            [:span selected-genre]
-            [:button.remove-selection.hover:text-blue-900.font-bold
-             {:type "button"
-              :onclick "document.querySelector('input[name=genre]').value=''; this.form.submit();"}
-             "×"]])]
+          [:div#genre-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto.hidden]]]
 
-        ;; Actor autocomplete
+;; Actor autocomplete
         [:div.actor-filter
          [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "actor-search"} "Actor (single selection)"]
          [:div.autocomplete-wrapper.relative
@@ -304,16 +297,9 @@
            {:type "hidden"
             :name "actor"
             :value (:actor query-params)}]
-          [:div#actor-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
-         (when-let [selected-actor (:actor query-params)]
-           [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
-            [:span selected-actor]
-            [:button.remove-selection.hover:text-blue-900.font-bold
-             {:type "button"
-              :onclick "document.querySelector('input[name=actor]').value=''; this.form.submit();"}
-             "×"]])]
+          [:div#actor-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]]
 
-        ;; Director autocomplete
+;; Director autocomplete
         [:div.director-filter
          [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "director-search"} "Director (single selection)"]
          [:div.autocomplete-wrapper.relative
@@ -331,16 +317,9 @@
            {:type "hidden"
             :name "director"
             :value (:director query-params)}]
-          [:div#director-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
-         (when-let [selected-director (:director query-params)]
-           [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
-            [:span selected-director]
-            [:button.remove-selection.hover:text-blue-900.font-bold
-             {:type "button"
-              :onclick "document.querySelector('input[name=director]').value=''; this.form.submit();"}
-             "×"]])]]]
+          [:div#director-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]]]]
 
-      ;; Movie list container (HTMX swap target)
+;; Movie list container (HTMX swap target)
       [:div#movie-list-container
        (movie-list-with-pagination result query-params)]])))
 
