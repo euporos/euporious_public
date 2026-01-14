@@ -281,10 +281,12 @@
             :hx-target "#actor-results"
             :hx-include "[name='actor']"
             :name "actor-search"}]
-          [:input.hidden-filter-value
-           {:type "hidden"
-            :name "actor"
-            :value (:actor query-params)}]
+          (when-let [actor (:actor query-params)]
+            (when (not (str/blank? actor))
+              [:input.hidden-filter-value
+               {:type "hidden"
+                :name "actor"
+                :value actor}]))
           [:div#actor-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]]
 
 ;; Director autocomplete
@@ -301,10 +303,12 @@
             :hx-target "#director-results"
             :hx-include "[name='director']"
             :name "director-search"}]
-          [:input.hidden-filter-value
-           {:type "hidden"
-            :name "director"
-            :value (:director query-params)}]
+          (when-let [director (:director query-params)]
+            (when (not (str/blank? director))
+              [:input.hidden-filter-value
+               {:type "hidden"
+                :name "director"
+                :value director}]))
           [:div#director-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]]]]
 
 ;; Movie list container (HTMX swap target)
@@ -354,7 +358,11 @@
 
 (defn wrap-remove-empty-query-params [handler]
   (fn [request]
-    (handler (update-in request [:params :query] (fn [m] (into {} (remove (comp empty? val) m)))))))
+    (let [cleaned-query-params (into {} (remove (comp str/blank? val) (:query-params request)))
+          cleaned-params (into {} (remove (comp str/blank? val) (:params request)))]
+      (handler (assoc request
+                      :query-params cleaned-query-params
+                      :params cleaned-params)))))
 
 (def module
   {:routes ["/tv-archiv"
