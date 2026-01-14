@@ -223,29 +223,29 @@
 
        ;; Sort and per-page controls
        [:div.flex.gap-4.flex-wrap
-          [:div.flex-1 {:style {:min-width "200px"}}
-           [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-by"} "Sort By"]
-           [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
-            {:name "sort-by" :id "sort-by" :onchange "this.form.submit()"}
-            [:option {:value "title" :selected (= (:sort-by query-params) "title")} "Title"]
-            [:option {:value "year" :selected (= (:sort-by query-params) "year")} "Year"]
-            [:option {:value "rating" :selected (= (:sort-by query-params) "rating")} "My Rating"]
-            [:option {:value "tmdb_rating" :selected (= (:sort-by query-params) "tmdb_rating")} "TMDB Rating"]]]
+        [:div.flex-1 {:style {:min-width "200px"}}
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-by"} "Sort By"]
+         [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
+          {:name "sort-by" :id "sort-by" :onchange "this.form.submit()"}
+          [:option {:value "title" :selected (= (:sort-by query-params) "title")} "Title"]
+          [:option {:value "year" :selected (= (:sort-by query-params) "year")} "Year"]
+          [:option {:value "rating" :selected (= (:sort-by query-params) "rating")} "My Rating"]
+          [:option {:value "tmdb_rating" :selected (= (:sort-by query-params) "tmdb_rating")} "TMDB Rating"]]]
 
-          [:div.w-40
-           [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-dir"} "Direction"]
-           [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
-            {:name "sort-dir" :id "sort-dir" :onchange "this.form.submit()"}
-            [:option {:value "asc" :selected (= (:sort-dir query-params) "asc")} "Ascending ↑"]
-            [:option {:value "desc" :selected (= (:sort-dir query-params) "desc")} "Descending ↓"]]]
+        [:div.w-40
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-dir"} "Direction"]
+         [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
+          {:name "sort-dir" :id "sort-dir" :onchange "this.form.submit()"}
+          [:option {:value "asc" :selected (= (:sort-dir query-params) "asc")} "Ascending ↑"]
+          [:option {:value "desc" :selected (= (:sort-dir query-params) "desc")} "Descending ↓"]]]
 
-          [:div.w-32
-           [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "per-page"} "Per Page"]
-           [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
-            {:name "per-page" :id "per-page" :onchange "this.form.submit()"}
-            [:option {:value "25" :selected (= (:per-page query-params) 25)} "25"]
-            [:option {:value "50" :selected (= (:per-page query-params) 50)} "50"]
-            [:option {:value "100" :selected (= (:per-page query-params) 100)} "100"]]]]
+        [:div.w-32
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "per-page"} "Per Page"]
+         [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
+          {:name "per-page" :id "per-page" :onchange "this.form.submit()"}
+          [:option {:value "25" :selected (= (:per-page query-params) 25)} "25"]
+          [:option {:value "50" :selected (= (:per-page query-params) 50)} "50"]
+          [:option {:value "100" :selected (= (:per-page query-params) 100)} "100"]]]]
 
        [:div.flex.gap-2
         [:button.px-4.py-2.bg-blue-500.text-white.rounded.hover:bg-blue-600
