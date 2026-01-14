@@ -75,7 +75,7 @@
                           (str/replace (java.net.URLEncoder/encode wikipedia-search-title "UTF-8") "+" "%20"))]
     [:details.movie-entry.border-b.border-gray-200.py-3
      {:data-id id}
-     [:summary.movie-summary.cursor-pointer.hover:bg-gray-50.p-2.rounded
+     [:summary.movie-summary.cursor-pointer.hover:bg-gray-600.p-2.rounded
       [:span.title.font-semibold.text-lg dads_title]
       (when year
         [:span.year.text-gray-600.ml-2 "(" year ")"])
@@ -289,7 +289,7 @@
         ;; Genre select dropdown
         [:div.genre-filter
          [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "genre"} "Genre"]
-         [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
+         [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded.text-gray-900
           {:name "genre" :id "genre" :onchange "this.form.submit()"}
           [:option {:value "" :selected (nil? (:genre query-params))} "Alle Genres"]
           (for [genre (:genres (db/get-filter-options))]
@@ -299,7 +299,7 @@
         [:div.actor-filter
          [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "actor-search"} "Schauspieler (Einzelauswahl)"]
          [:div.autocomplete-wrapper.relative
-          [:input.autocomplete-input.w-full.px-4.py-2.border.border-gray-300.rounded
+          [:input.autocomplete-input.w-full.px-4.py-2.border.border-gray-300.rounded.text-gray-900
            {:type "text"
             :id "actor-search"
             :placeholder "Schauspieler suchen..."
@@ -321,7 +321,7 @@
         [:div.director-filter
          [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "director-search"} "Regie (Einzelauswahl)"]
          [:div.autocomplete-wrapper.relative
-          [:input.autocomplete-input.w-full.px-4.py-2.border.border-gray-300.rounded
+          [:input.autocomplete-input.w-full.px-4.py-2.border.border-gray-300.rounded.text-gray-900
            {:type "text"
             :id "director-search"
             :placeholder "Regie suchen..."
@@ -346,7 +346,7 @@
 (defn autocomplete-result-item
   "Render a single autocomplete result item"
   [option filter-name]
-  [:div.autocomplete-result-item.px-4.py-2.hover:bg-gray-100.cursor-pointer
+  [:div.autocomplete-result-item.px-4.py-2.hover:bg-gray-100.cursor-pointer.text-gray-900
    {:hx-get (str "/tv-archiv?" filter-name "=" (java.net.URLEncoder/encode option "UTF-8"))
     :hx-target "body"
     :hx-push-url "true"
