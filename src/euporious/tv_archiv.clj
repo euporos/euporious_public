@@ -250,7 +250,7 @@
   [{:keys [parameters reitit.core/router] :as ctx}]
   (let [query-params (coerce-query-params (:query parameters))
         result (db/filter-and-sort-movies query-params)
-        form-action (list-page-url router {})
+        form-action  (list-page-url router {})
         reset-url (:path (reitit/match-by-name router ::list-page))]
     (ui/page
      (assoc ctx :euporious.ui/noindex true)
@@ -340,7 +340,7 @@
                 :value actor}]))
           [:div#actor-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]]
 
-;; Director autocomplete
+        ;; Director autocomplete
         [:div.director-filter
          [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "director-search"} "Regie (Einzelauswahl)"]
          [:div.autocomplete-wrapper.relative
@@ -362,7 +362,7 @@
                 :value director}]))
           [:div#director-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]]]]
 
-;; Movie list container (HTMX swap target)
+      ;; Movie list container (HTMX swap target)
       [:div#movie-list-container
        (movie-list-with-pagination router result query-params)]])))
 
@@ -440,15 +440,15 @@
 
 (def module
   {:routes ["" {:middleware [wrap-remove-empty-query-params]}
-            ["/" {:get {:handler #'list-page
+            ["/" {:name ::list-page
+                  :get {:handler #'list-page
                         :coercion reitit.coercion.malli/coercion
-                        :parameters {:query query-params-schema}
-                        :name ::list-page}}]
-            ["/list" {:get {:handler #'filtered-list
+                        :parameters {:query query-params-schema}}}]
+            ["/list" {:name ::filtered-list
+                      :get {:handler #'filtered-list
                             :coercion reitit.coercion.malli/coercion
-                            :parameters {:query query-params-schema}
-                            :name ::filtered-list}}]
-            ["/filter-options" {:get #'filter-options
-                                :name ::filter-options}]
-            ["/tmdb-description/:tmdb-id" {:get #'tmdb-description
-                                            :name ::tmdb-description}]]})
+                            :parameters {:query query-params-schema}}}]
+            ["/filter-options" {:name ::filter-options
+                                :get #'filter-options}]
+            ["/tmdb-description/:tmdb-id" {:name ::tmdb-description
+                                           :get #'tmdb-description}]]})
