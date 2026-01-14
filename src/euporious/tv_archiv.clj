@@ -14,17 +14,17 @@
 (def query-params-schema
   "Schema for query parameters with proper coercion and defaults"
   [:map
-   [:genre {:optional true} [:maybe :string]]
+   [:genre {:optional true} [:maybe [:set :string]]]
    [:actor {:optional true} [:maybe :string]]
    [:director {:optional true} [:maybe :string]]
-   [:country {:optional true} [:maybe :string]]
+   [:country {:optional true} [:maybe [:set :string]]]
    [:search {:optional true} [:maybe :string]]
    [:sort-by {:optional true, :default "title"} [:enum "title" "year" "rating" "tmdb_rating"]]
    [:sort-dir {:optional true, :default "asc"} [:enum "asc" "desc"]]
    [:page {:optional true, :default 1} [:int {:min 1}]]
    [:per-page {:optional true, :default 50} [:int {:min 1, :max 200}]]])
 
-(defn coerce-query-params
+(defn coerce-query-params ;TODO: does hardly any meaningful work
   "Transform coerced Malli params into our internal format, removing nils"
   [params]
   (let [remove-nils (fn [m] (into {} (filter (comp some? val) m)))]
@@ -44,7 +44,7 @@
   [params]
   (let [param-pairs (for [[k v] params
                           :when (some? v)]
-                      (if (sequential? v)
+                      (if (or (sequential? v) (set? v))
                         (map #(str (name k) "=" (java.net.URLEncoder/encode (str %) "UTF-8")) v)
                         [(str (name k) "=" (java.net.URLEncoder/encode (str v) "UTF-8"))]))
         flat-pairs (flatten param-pairs)]
@@ -108,7 +108,7 @@
   "Render a removable filter chip"
   [type value all-params]
   (let [remove-params (-> all-params
-                          (update (keyword type) #(vec (remove #{value} %)))
+                          (update (keyword type) #(when % (disj % value)))
                           (assoc :page 1))
         query-string (build-query-string remove-params)]
     [:span.filter-chip.inline-flex.items-center.gap-1.px-3.py-1.bg-blue-100.text-blue-800.rounded-full.text-sm.mr-2.mb-2
@@ -266,7 +266,7 @@
          [:label.block.text-sm.font-medium.text-gray-700.mb-2 "Genres (select multiple - AND logic)"]
          [:div.genre-checkboxes.grid.grid-cols-2.sm:grid-cols-3.md:grid-cols-4.gap-2
           (let [all-genres (:genres (db/get-filter-options))
-                selected-genres (set (:genres query-params))]
+                selected-genres (or (:genres query-params) #{})]
             (for [genre all-genres]
               [:label.flex.items-center.gap-2.text-sm
                [:input.genre-checkbox

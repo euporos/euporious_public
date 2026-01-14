@@ -1,5 +1,6 @@
 (ns euporious.tv-archiv.db-interaction
   (:require
+   [clojure.set :as set]
    [clojure.string :as str]
    [orgmode.core :as org]))
 
@@ -85,36 +86,32 @@
             (str/includes? (str/lower-case ot) search-lower))))))
 
 (defn apply-filters
-  "Apply AND logic filters to movies"
+  "Apply filters to movies. Genres uses subset logic (all selected genres must be in movie's genres)"
   [movies {:keys [genres actors directors countries search]}]
-  (let [genre-set (when (seq genres) (set genres))
-        actor-set (when (seq actors) (set actors))
-        director-set (when (seq directors) (set directors))
-        country-set (when (seq countries) (set countries))]
-    (filter
-     (fn [movie]
-       (and
-        ;; Genre filter - movie must have ALL selected genres (AND logic)
-        (if genre-set
-          (every? (:genres movie) genre-set)
-          true)
-        ;; Actor filter - movie must have at least one of the selected actors
-        (if actor-set
-          (some actor-set (:actors movie))
-          true)
-        ;; Director filter - movie director must be one of selected
-        (if director-set
-          (director-set (:director movie))
-          true)
-        ;; Country filter - movie must have at least one of the selected countries
-        (if country-set
-          (some country-set (:countries movie))
-          true)
-        ;; Search filter - check all title fields
-        (if search
-          (title-matches? movie search)
-          true)))
-     movies)))
+  (filter
+   (fn [movie]
+     (and
+      ;; Genre filter - selected genres must be a subset of movie's genres (AND logic)
+      (if (seq genres)
+        (set/subset? genres (:genres movie))
+        true)
+      ;; Actor filter - single actor selection
+      (if actors
+        (contains? (:actors movie) actors)
+        true)
+      ;; Director filter - single director selection
+      (if directors
+        (= (:director movie) directors)
+        true)
+      ;; Country filter - selected countries must be a subset of movie's countries
+      (if (seq countries)
+        (set/subset? countries (:countries movie))
+        true)
+      ;; Search filter - check all title fields
+      (if search
+        (title-matches? movie search)
+        true)))
+   movies))
 
 (defn sort-movies
   "Sort movies by the specified field and direction"
