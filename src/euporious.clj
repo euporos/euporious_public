@@ -35,14 +35,39 @@
    schema/module
    worker/module])
 
-(def routes [["" {:middleware [mid/wrap-site-defaults
-                                   coercion/coerce-request-middleware
-                                   coercion/coerce-response-middleware]}
-              (keep :routes modules)]
-             ["" {:middleware [mid/wrap-api-defaults]}
-              (keep :api-routes modules)]])
+;; Site-specific module assignments
+;; Each site gets its modules plus access to the full routes for backward compatibility
+(def site-modules
+  {:tv-archiv [tv-archiv/module legal/module home/module schema/module]
+   :secrets   [secrets/module app/module legal/module home/module schema/module
+               (biff-auth/module {:biff.auth/email-validator
+                                  (fn [ctx email]
+                                    (and
+                                     (biff-auth/email-valid? ctx email)
+                                     (contains? #{"services@olivermotz.com"} email)))})]
+   :shared    [home/module legal/module schema/module]})
 
-(def handler (-> (biff/reitit-handler {:routes routes})
+(defn site-routes
+  "Generates routes filtered by the site context."
+  [site]
+  (let [modules-for-site (get site-modules site (:shared site-modules))]
+    [["" {:middleware [mid/wrap-site-defaults
+                       coercion/coerce-request-middleware
+                       coercion/coerce-response-middleware]}
+      (keep :routes modules-for-site)]
+     ["" {:middleware [mid/wrap-api-defaults]}
+      (keep :api-routes modules-for-site)]]))
+
+(defn site-aware-handler
+  "Handler that routes based on the :site key in the request."
+  [req]
+  (let [site (:site req :shared)
+        routes (site-routes site)
+        handler (biff/reitit-handler {:routes routes})]
+    (handler req)))
+
+(def handler (-> site-aware-handler
+                 mid/wrap-site-context
                  mid/wrap-base-defaults))
 
 (def static-pages (apply biff/safe-merge (map :static modules)))
