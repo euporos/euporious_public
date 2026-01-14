@@ -14,25 +14,25 @@
 (def query-params-schema
   "Schema for query parameters with proper coercion and defaults"
   [:map
-   [:genre {:optional true} [:maybe [:set :string]]]
+   [:genre {:optional true} [:maybe :string]]
    [:actor {:optional true} [:maybe :string]]
    [:director {:optional true} [:maybe :string]]
-   [:country {:optional true} [:maybe [:set :string]]]
+   [:country {:optional true} [:maybe :string]]
    [:search {:optional true} [:maybe :string]]
    [:sort-by {:optional true, :default "title"} [:enum "title" "year" "rating" "tmdb_rating"]]
    [:sort-dir {:optional true, :default "asc"} [:enum "asc" "desc"]]
    [:page {:optional true, :default 1} [:int {:min 1}]]
    [:per-page {:optional true, :default 50} [:int {:min 1, :max 200}]]])
 
-(defn coerce-query-params ;TODO: does hardly any meaningful work
+(defn coerce-query-params
   "Transform coerced Malli params into our internal format, removing nils"
   [params]
   (let [remove-nils (fn [m] (into {} (filter (comp some? val) m)))]
     (remove-nils
-     {:genres (:genre params)
-      :actors (:actor params)
-      :directors (:director params)
-      :countries (:country params)
+     {:genre (:genre params)
+      :actor (:actor params)
+      :director (:director params)
+      :country (:country params)
       :search (:search params)
       :sort-by (:sort-by params)
       :sort-dir (:sort-dir params)
@@ -44,9 +44,7 @@
   [params]
   (let [param-pairs (for [[k v] params
                           :when (some? v)]
-                      (if (or (sequential? v) (set? v))
-                        (map #(str (name k) "=" (java.net.URLEncoder/encode (str %) "UTF-8")) v)
-                        [(str (name k) "=" (java.net.URLEncoder/encode (str v) "UTF-8"))]))
+                      [(str (name k) "=" (java.net.URLEncoder/encode (str v) "UTF-8"))])
         flat-pairs (flatten param-pairs)]
     (if (seq flat-pairs)
       (str "?" (str/join "&" flat-pairs))
@@ -108,7 +106,7 @@
   "Render a removable filter chip"
   [type value all-params]
   (let [remove-params (-> all-params
-                          (update (keyword type) #(when % (disj % value)))
+                          (dissoc (keyword type))
                           (assoc :page 1))
         query-string (build-query-string remove-params)]
     [:span.filter-chip.inline-flex.items-center.gap-1.px-3.py-1.bg-blue-100.text-blue-800.rounded-full.text-sm.mr-2.mb-2
@@ -120,8 +118,8 @@
 (defn active-filters
   "Display active filters as removable chips"
   [params]
-  (let [{:keys [genres actors directors countries search]} params
-        has-filters? (or (seq genres) (seq actors) (seq directors) (seq countries) search)
+  (let [{:keys [genre actor director country search]} params
+        has-filters? (or genre actor director country search)
         clear-params {:page 1 :sort-by (:sort-by params) :sort-dir (:sort-dir params) :per-page (:per-page params)}
         clear-query-string (build-query-string clear-params)]
     (when has-filters?
@@ -132,13 +130,13 @@
          {:href (str "/tv-archiv" clear-query-string)}
          "Clear all"]]
        [:div.flex.flex-wrap
-        (for [genre genres]
+        (when genre
           (filter-chip "genre" genre params))
-        (for [actor actors]
+        (when actor
           (filter-chip "actor" actor params))
-        (for [director directors]
+        (when director
           (filter-chip "director" director params))
-        (for [country countries]
+        (when country
           (filter-chip "country" country params))
         (when search
           (let [remove-search-params (-> params
@@ -261,21 +259,28 @@
        [:div.advanced-filters.space-y-4.mt-4.p-4.bg-gray-50.rounded
         [:h3.font-semibold.text-gray-700.mb-2 "Advanced Filters"]
 
-        ;; Genre checkboxes
+        ;; Genre autocomplete
         [:div.genre-filter
-         [:label.block.text-sm.font-medium.text-gray-700.mb-2 "Genres (select multiple - AND logic)"]
-         [:div.genre-checkboxes.grid.grid-cols-2.sm:grid-cols-3.md:grid-cols-4.gap-2
-          (let [all-genres (:genres (db/get-filter-options))
-                selected-genres (or (:genres query-params) #{})]
-            (for [genre all-genres]
-              [:label.flex.items-center.gap-2.text-sm
-               [:input.genre-checkbox
-                {:type "checkbox"
-                 :name "genre"
-                 :value genre
-                 :checked (contains? selected-genres genre)
-                 :onchange "this.form.submit()"}]
-               [:span genre]]))]]
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "genre-search"} "Genre (single selection)"]
+         [:div.autocomplete-wrapper.relative
+          [:input.autocomplete-input.w-full.px-4.py-2.border.border-gray-300.rounded
+           {:type "text"
+            :id "genre-search"
+            :placeholder "Type to search genres..."
+            :autocomplete "off"
+            :data-filter-type "genres"}]
+          [:input.hidden-filter-value
+           {:type "hidden"
+            :name "genre"
+            :value (:genre query-params)}]
+          [:div.autocomplete-results.hidden.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
+         (when-let [selected-genre (:genre query-params)]
+           [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
+            [:span selected-genre]
+            [:button.remove-selection.hover:text-blue-900.font-bold
+             {:type "button"
+              :onclick "document.querySelector('input[name=genre]').value=''; this.form.submit();"}
+             "×"]])]
 
         ;; Actor autocomplete
         [:div.actor-filter
@@ -290,9 +295,9 @@
           [:input.hidden-filter-value
            {:type "hidden"
             :name "actor"
-            :value (first (:actors query-params))}]
+            :value (:actor query-params)}]
           [:div.autocomplete-results.hidden.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
-         (when-let [selected-actor (first (:actors query-params))]
+         (when-let [selected-actor (:actor query-params)]
            [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
             [:span selected-actor]
             [:button.remove-selection.hover:text-blue-900.font-bold
@@ -313,9 +318,9 @@
           [:input.hidden-filter-value
            {:type "hidden"
             :name "director"
-            :value (first (:directors query-params))}]
+            :value (:director query-params)}]
           [:div.autocomplete-results.hidden.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
-         (when-let [selected-director (first (:directors query-params))]
+         (when-let [selected-director (:director query-params)]
            [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
             [:span selected-director]
             [:button.remove-selection.hover:text-blue-900.font-bold

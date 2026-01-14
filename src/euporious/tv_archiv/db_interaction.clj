@@ -1,6 +1,5 @@
 (ns euporious.tv-archiv.db-interaction
   (:require
-   [clojure.set :as set]
    [clojure.string :as str]
    [orgmode.core :as org]))
 
@@ -86,26 +85,26 @@
             (str/includes? (str/lower-case ot) search-lower))))))
 
 (defn apply-filters
-  "Apply filters to movies. Genres uses subset logic (all selected genres must be in movie's genres)"
-  [movies {:keys [genres actors directors countries search]}]
+  "Apply filters to movies. All filters are single-value selections."
+  [movies {:keys [genre actor director country search]}]
   (filter
    (fn [movie]
      (and
-      ;; Genre filter - selected genres must be a subset of movie's genres (AND logic)
-      (if (seq genres)
-        (set/subset? genres (:genres movie))
+      ;; Genre filter - single genre selection
+      (if genre
+        (contains? (:genres movie) genre)
         true)
       ;; Actor filter - single actor selection
-      (if actors
-        (contains? (:actors movie) actors)
+      (if actor
+        (contains? (:actors movie) actor)
         true)
       ;; Director filter - single director selection
-      (if directors
-        (= (:director movie) directors)
+      (if director
+        (= (:director movie) director)
         true)
-      ;; Country filter - selected countries must be a subset of movie's countries
-      (if (seq countries)
-        (set/subset? countries (:countries movie))
+      ;; Country filter - single country selection
+      (if country
+        (contains? (:countries movie) country)
         true)
       ;; Search filter - check all title fields
       (if search
@@ -158,14 +157,14 @@
 
 (defn filter-and-sort-movies
   "Main query function - filter, sort, and paginate movies"
-  [{:keys [genres actors directors countries search
+  [{:keys [genre actor director country search
            sort-by sort-dir page per-page]
     :or {sort-by "title" sort-dir "asc" page 1 per-page 50}}]
   (let [all-movies (vals (:movies @db))
-        filtered (apply-filters all-movies {:genres genres
-                                            :actors actors
-                                            :directors directors
-                                            :countries countries
+        filtered (apply-filters all-movies {:genre genre
+                                            :actor actor
+                                            :director director
+                                            :country country
                                             :search search})
         sorted (sort-movies filtered sort-by sort-dir)
         result (paginate sorted page per-page)]
