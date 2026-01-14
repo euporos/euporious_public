@@ -304,7 +304,7 @@
            {:type "hidden"
             :name "actor"
             :value (:actor query-params)}]
-          [:div#actor-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto.hidden]]
+          [:div#actor-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
          (when-let [selected-actor (:actor query-params)]
            [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
             [:span selected-actor]
@@ -331,7 +331,7 @@
            {:type "hidden"
             :name "director"
             :value (:director query-params)}]
-          [:div#director-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto.hidden]]
+          [:div#director-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
          (when-let [selected-director (:director query-params)]
            [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
             [:span selected-director]
