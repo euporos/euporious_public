@@ -268,12 +268,16 @@
             :id "genre-search"
             :placeholder "Type to search genres..."
             :autocomplete "off"
-            :data-filter-type "genres"}]
+            :hx-get "/tv-archiv/filter-options?type=genres"
+            :hx-trigger "keyup changed delay:300ms"
+            :hx-target "#genre-results"
+            :hx-include "[name='genre']"
+            :name "genre-search"}]
           [:input.hidden-filter-value
            {:type "hidden"
             :name "genre"
             :value (:genre query-params)}]
-          [:div.autocomplete-results.hidden.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
+          [:div#genre-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto.hidden]]
          (when-let [selected-genre (:genre query-params)]
            [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
             [:span selected-genre]
@@ -291,12 +295,16 @@
             :id "actor-search"
             :placeholder "Type to search actors..."
             :autocomplete "off"
-            :data-filter-type "actors"}]
+            :hx-get "/tv-archiv/filter-options?type=actors"
+            :hx-trigger "keyup changed delay:300ms"
+            :hx-target "#actor-results"
+            :hx-include "[name='actor']"
+            :name "actor-search"}]
           [:input.hidden-filter-value
            {:type "hidden"
             :name "actor"
             :value (:actor query-params)}]
-          [:div.autocomplete-results.hidden.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
+          [:div#actor-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto.hidden]]
          (when-let [selected-actor (:actor query-params)]
            [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
             [:span selected-actor]
@@ -314,12 +322,16 @@
             :id "director-search"
             :placeholder "Type to search directors..."
             :autocomplete "off"
-            :data-filter-type "directors"}]
+            :hx-get "/tv-archiv/filter-options?type=directors"
+            :hx-trigger "keyup changed delay:300ms"
+            :hx-target "#director-results"
+            :hx-include "[name='director']"
+            :name "director-search"}]
           [:input.hidden-filter-value
            {:type "hidden"
             :name "director"
             :value (:director query-params)}]
-          [:div.autocomplete-results.hidden.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
+          [:div#director-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto.hidden]]
          (when-let [selected-director (:director query-params)]
            [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
             [:span selected-director]
@@ -330,79 +342,43 @@
 
       ;; Movie list container (HTMX swap target)
       [:div#movie-list-container
-       (movie-list-with-pagination result query-params)]
+       (movie-list-with-pagination result query-params)]])))
 
-      ;; Autocomplete JavaScript
-      [:script
-       "
-(function() {
-  // Setup autocomplete for all autocomplete inputs
-  document.querySelectorAll('.autocomplete-input').forEach(input => {
-    const wrapper = input.closest('.autocomplete-wrapper');
-    const resultsDiv = wrapper.querySelector('.autocomplete-results');
-    const hiddenInput = wrapper.querySelector('.hidden-filter-value');
-    const filterType = input.dataset.filterType;
-    let debounceTimer;
-
-    input.addEventListener('input', function() {
-      clearTimeout(debounceTimer);
-      const query = this.value.trim();
-
-      if (query.length < 2) {
-        resultsDiv.classList.add('hidden');
-        return;
-      }
-
-      debounceTimer = setTimeout(() => {
-        fetch(`/tv-archiv/filter-options?type=${filterType}&q=${encodeURIComponent(query)}`)
-          .then(res => res.json())
-          .then(data => {
-            resultsDiv.innerHTML = '';
-            if (data.options && data.options.length > 0) {
-              data.options.forEach(option => {
-                const div = document.createElement('div');
-                div.className = 'autocomplete-result-item px-4 py-2 hover:bg-gray-100 cursor-pointer';
-                div.textContent = option;
-                div.addEventListener('click', () => {
-                  hiddenInput.value = option;
-                  input.value = '';
-                  resultsDiv.classList.add('hidden');
-                  input.closest('form').submit();
-                });
-                resultsDiv.appendChild(div);
-              });
-              resultsDiv.classList.remove('hidden');
-            } else {
-              resultsDiv.classList.add('hidden');
-            }
-          });
-      }, 300);
-    });
-
-    // Close results when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!wrapper.contains(e.target)) {
-        resultsDiv.classList.add('hidden');
-      }
-    });
-  });
-})();
-"]])))
+(defn autocomplete-result-item
+  "Render a single autocomplete result item"
+  [option filter-name]
+  [:div.autocomplete-result-item.px-4.py-2.hover:bg-gray-100.cursor-pointer
+   {:hx-get (str "/tv-archiv?" filter-name "=" (java.net.URLEncoder/encode option "UTF-8"))
+    :hx-target "body"
+    :hx-push-url "true"
+    :onclick (str "document.querySelector('input[name=" filter-name "]').value='" (str/replace option "'" "\\'") "';")
+    :style "cursor: pointer;"}
+   option])
 
 (defn filter-options
-  "JSON endpoint for autocomplete suggestions"
+  "HTMX endpoint for autocomplete suggestions - returns HTML"
   [{:keys [params]}]
   (let [type (keyword (:type params))
-        query (str/lower-case (or (:q params) ""))
+        query-param (or (:genre-search params) (:actor-search params) (:director-search params) "")
+        query (str/lower-case query-param)
         all-options (db/get-filter-options)
         options (get all-options type)
-        filtered (if (seq query)
+        filtered (if (and (seq query) (>= (count query) 2))
                    (filter #(str/includes? (str/lower-case %) query) options)
-                   options)
-        limited (take 20 filtered)]
-    {:status 200
-     :headers {"content-type" "application/json"}
-     :body (cheshire/generate-string {:options (vec limited)})}))
+                   [])
+        limited (take 20 filtered)
+        filter-name (case type
+                      :genres "genre"
+                      :actors "actor"
+                      :directors "director"
+                      "")]
+    (if (empty? limited)
+      {:status 200
+       :headers {"content-type" "text/html"}
+       :body ""}
+      (biff/render
+       [:div
+        (map #(autocomplete-result-item % filter-name) limited)]))))
 
 ;; Module definition
 
