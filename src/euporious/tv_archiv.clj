@@ -352,7 +352,7 @@
     :hx-target "body"
     :hx-push-url "true"
     :onclick (str "document.querySelector('input[name=" filter-name "]').value='" (str/replace option "'" "\\'") "';")
-    :style "cursor: pointer;"}
+    :style {:cursor "pointer"}}
    option])
 
 (defn filter-options
