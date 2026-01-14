@@ -258,27 +258,16 @@
        [:div.advanced-filters.space-y-4.mt-4.p-4.bg-gray-50.rounded
         [:h3.font-semibold.text-gray-700.mb-2 "Advanced Filters"]
 
-        ;; Genre autocomplete
+        ;; Genre select dropdown
         [:div.genre-filter
-         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "genre-search"} "Genre (single selection)"]
-         [:div.autocomplete-wrapper.relative
-          [:input.autocomplete-input.w-full.px-4.py-2.border.border-gray-300.rounded
-           {:type "text"
-            :id "genre-search"
-            :placeholder "Type to search genres..."
-            :autocomplete "off"
-            :hx-get "/tv-archiv/filter-options?type=genres"
-            :hx-trigger "keyup changed delay:300ms"
-            :hx-target "#genre-results"
-            :hx-include "[name='genre']"
-            :name "genre-search"}]
-          [:input.hidden-filter-value
-           {:type "hidden"
-            :name "genre"
-            :value (:genre query-params)}]
-          [:div#genre-results.autocomplete-results.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto.hidden]]]
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "genre"} "Genre"]
+         [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
+          {:name "genre" :id "genre" :onchange "this.form.submit()"}
+          [:option {:value "" :selected (nil? (:genre query-params))} "All Genres"]
+          (for [genre (:genres (db/get-filter-options))]
+            [:option {:value genre :selected (= (:genre query-params) genre)} genre])]]
 
-;; Actor autocomplete
+        ;; Actor autocomplete
         [:div.actor-filter
          [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "actor-search"} "Actor (single selection)"]
          [:div.autocomplete-wrapper.relative
