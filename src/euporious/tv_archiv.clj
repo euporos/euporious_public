@@ -72,7 +72,8 @@
            tmdb_title original_title tmdb_rating]}]
   (let [wikipedia-search-title (or tmdb_title dads_title)
         wikipedia-url (str "https://de.wikipedia.org/wiki/Special:Search/"
-                          (str/replace (java.net.URLEncoder/encode wikipedia-search-title "UTF-8") "+" "%20"))]
+                           (str/replace (java.net.URLEncoder/encode wikipedia-search-title "UTF-8") "+" "%20")
+                           "%20" year)]
     [:details.movie-entry.border-b.border-gray-200.py-3
      {:data-id id}
      [:summary.movie-summary.cursor-pointer.hover:bg-gray-600.p-2.rounded
