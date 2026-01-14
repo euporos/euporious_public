@@ -231,7 +231,7 @@
   (let [query-params (coerce-query-params (:query parameters))
         result (db/filter-and-sort-movies query-params)]
     (ui/page
-     ctx
+     (assoc ctx :euporious.ui/noindex true)
      [:div.tv-archiv
       [:h1.text-3xl.font-bold.mb-6 "Tobys TV-Archiv"]
 

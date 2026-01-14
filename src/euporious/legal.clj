@@ -3,7 +3,7 @@
 
 (defn impressum-page [ctx]
   (ui/page
-   ctx
+   (assoc ctx :euporious.ui/noindex true)
    [:div.legal-page
     [:h1.text-3xl.font-bold.mb-6 "Impressum"]
 
@@ -36,7 +36,7 @@
 
 (defn datenschutz-page [ctx]
   (ui/page
-   ctx
+   (assoc ctx :euporious.ui/noindex true)
    [:div.legal-page
     [:h1.text-3xl.font-bold.mb-6 "Datenschutzerklärung"]
 
