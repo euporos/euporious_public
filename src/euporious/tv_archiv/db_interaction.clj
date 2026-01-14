@@ -94,9 +94,9 @@
     (filter
      (fn [movie]
        (and
-        ;; Genre filter - movie must have at least one of the selected genres
+        ;; Genre filter - movie must have ALL selected genres (AND logic)
         (if genre-set
-          (some genre-set (:genres movie))
+          (every? (:genres movie) genre-set)
           true)
         ;; Actor filter - movie must have at least one of the selected actors
         (if actor-set

@@ -257,13 +257,132 @@
          {:href "/tv-archiv"}
          "Clear"]]
 
-       ;; TODO: Tag-based filter inputs will go here
-       [:div.text-sm.text-gray-500.italic
-        "Advanced filters (genres, actors, directors, countries) coming soon..."]]
+       ;; Advanced filters
+       [:div.advanced-filters.space-y-4.mt-4.p-4.bg-gray-50.rounded
+        [:h3.font-semibold.text-gray-700.mb-2 "Advanced Filters"]
+
+        ;; Genre checkboxes
+        [:div.genre-filter
+         [:label.block.text-sm.font-medium.text-gray-700.mb-2 "Genres (select multiple - AND logic)"]
+         [:div.genre-checkboxes.grid.grid-cols-2.sm:grid-cols-3.md:grid-cols-4.gap-2
+          (let [all-genres (:genres (db/get-filter-options))
+                selected-genres (set (:genres query-params))]
+            (for [genre all-genres]
+              [:label.flex.items-center.gap-2.text-sm
+               [:input.genre-checkbox
+                {:type "checkbox"
+                 :name "genre"
+                 :value genre
+                 :checked (contains? selected-genres genre)
+                 :onchange "this.form.submit()"}]
+               [:span genre]]))]]
+
+        ;; Actor autocomplete
+        [:div.actor-filter
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "actor-search"} "Actor (single selection)"]
+         [:div.autocomplete-wrapper.relative
+          [:input.autocomplete-input.w-full.px-4.py-2.border.border-gray-300.rounded
+           {:type "text"
+            :id "actor-search"
+            :placeholder "Type to search actors..."
+            :autocomplete "off"
+            :data-filter-type "actors"}]
+          [:input.hidden-filter-value
+           {:type "hidden"
+            :name "actor"
+            :value (first (:actors query-params))}]
+          [:div.autocomplete-results.hidden.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
+         (when-let [selected-actor (first (:actors query-params))]
+           [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
+            [:span selected-actor]
+            [:button.remove-selection.hover:text-blue-900.font-bold
+             {:type "button"
+              :onclick "document.querySelector('input[name=actor]').value=''; this.form.submit();"}
+             "×"]])]
+
+        ;; Director autocomplete
+        [:div.director-filter
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "director-search"} "Director (single selection)"]
+         [:div.autocomplete-wrapper.relative
+          [:input.autocomplete-input.w-full.px-4.py-2.border.border-gray-300.rounded
+           {:type "text"
+            :id "director-search"
+            :placeholder "Type to search directors..."
+            :autocomplete "off"
+            :data-filter-type "directors"}]
+          [:input.hidden-filter-value
+           {:type "hidden"
+            :name "director"
+            :value (first (:directors query-params))}]
+          [:div.autocomplete-results.hidden.absolute.z-10.w-full.bg-white.border.border-gray-300.rounded.mt-1.max-h-60.overflow-y-auto]]
+         (when-let [selected-director (first (:directors query-params))]
+           [:div.selected-value.mt-2.inline-flex.items-center.gap-2.px-3.py-1.bg-blue-100.text-blue-800.rounded
+            [:span selected-director]
+            [:button.remove-selection.hover:text-blue-900.font-bold
+             {:type "button"
+              :onclick "document.querySelector('input[name=director]').value=''; this.form.submit();"}
+             "×"]])]]]
 
       ;; Movie list container (HTMX swap target)
       [:div#movie-list-container
-       (movie-list-with-pagination result query-params)]])))
+       (movie-list-with-pagination result query-params)]
+
+      ;; Autocomplete JavaScript
+      [:script
+       "
+(function() {
+  // Setup autocomplete for all autocomplete inputs
+  document.querySelectorAll('.autocomplete-input').forEach(input => {
+    const wrapper = input.closest('.autocomplete-wrapper');
+    const resultsDiv = wrapper.querySelector('.autocomplete-results');
+    const hiddenInput = wrapper.querySelector('.hidden-filter-value');
+    const filterType = input.dataset.filterType;
+    let debounceTimer;
+
+    input.addEventListener('input', function() {
+      clearTimeout(debounceTimer);
+      const query = this.value.trim();
+
+      if (query.length < 2) {
+        resultsDiv.classList.add('hidden');
+        return;
+      }
+
+      debounceTimer = setTimeout(() => {
+        fetch(`/tv-archiv/filter-options?type=${filterType}&q=${encodeURIComponent(query)}`)
+          .then(res => res.json())
+          .then(data => {
+            resultsDiv.innerHTML = '';
+            if (data.options && data.options.length > 0) {
+              data.options.forEach(option => {
+                const div = document.createElement('div');
+                div.className = 'autocomplete-result-item px-4 py-2 hover:bg-gray-100 cursor-pointer';
+                div.textContent = option;
+                div.addEventListener('click', () => {
+                  hiddenInput.value = option;
+                  input.value = '';
+                  resultsDiv.classList.add('hidden');
+                  input.closest('form').submit();
+                });
+                resultsDiv.appendChild(div);
+              });
+              resultsDiv.classList.remove('hidden');
+            } else {
+              resultsDiv.classList.add('hidden');
+            }
+          });
+      }, 300);
+    });
+
+    // Close results when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!wrapper.contains(e.target)) {
+        resultsDiv.classList.add('hidden');
+      }
+    });
+  });
+})();
+"]])))
 
 (defn filter-options
   "JSON endpoint for autocomplete suggestions"
