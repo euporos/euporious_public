@@ -14,10 +14,10 @@
 (def query-params-schema
   "Schema for query parameters with proper coercion and defaults"
   [:map
-   [:genre {:optional true} [:maybe [:vector :string]]]
-   [:actor {:optional true} [:maybe [:vector :string]]]
-   [:director {:optional true} [:maybe [:vector :string]]]
-   [:country {:optional true} [:maybe [:vector :string]]]
+   [:genre {:optional true} [:maybe :string]]
+   [:actor {:optional true} [:maybe :string]]
+   [:director {:optional true} [:maybe :string]]
+   [:country {:optional true} [:maybe :string]]
    [:search {:optional true} [:maybe :string]]
    [:sort-by {:optional true, :default "title"} [:enum "title" "year" "rating" "tmdb_rating"]]
    [:sort-dir {:optional true, :default "asc"} [:enum "asc" "desc"]]
