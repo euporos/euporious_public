@@ -26,10 +26,10 @@
    [:per-page {:optional true, :default 50} [:int {:min 1, :max 200}]]])
 
 (defn coerce-query-params
-  "Transform coerced Malli params into our internal format, removing nils"
+  "Transform coerced Malli params into our internal format, removing nils and empty strings"
   [params]
-  (let [remove-nils (fn [m] (into {} (filter (comp some? val) m)))]
-    (remove-nils
+  (let [remove-empty (fn [m] (into {} (filter (fn [[_ v]] (and (some? v) (not (and (string? v) (str/blank? v))))) m)))]
+    (remove-empty
      {:genre (:genre params)
       :actor (:actor params)
       :director (:director params)
@@ -221,7 +221,7 @@
 (defn list-page
   "Main TV archive page"
   [{:keys [parameters] :as ctx}]
-  (let [query-params (:query parameters)
+  (let [query-params (coerce-query-params (:query parameters))
         result (db/filter-and-sort-movies query-params)]
     (ui/page
      ctx
