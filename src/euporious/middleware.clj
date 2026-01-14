@@ -1,5 +1,6 @@
 (ns euporious.middleware
-  (:require [com.biffweb :as biff]
+  (:require [clojure.string :as str]
+            [com.biffweb :as biff]
             [muuntaja.middleware :as muuntaja]
             [ring.middleware.anti-forgery :as csrf]
             [ring.middleware.defaults :as rd]))
@@ -58,3 +59,26 @@
       biff/wrap-internal-error
       biff/wrap-ssl
       biff/wrap-log-requests))
+
+(defn determine-site
+  "Determines which site to serve based on the Host header.
+  Returns :tv-archiv or :secrets."
+  [host]
+  (cond
+    ;; Production domains
+    (str/includes? host "tobys-archiv") :tv-archiv
+    (str/includes? host "ots") :secrets
+    ;; Development domains (tv.localhost, ots.localhost)
+    (str/starts-with? host "tv.") :tv-archiv
+    (str/starts-with? host "ots.") :secrets
+    ;; Default fallback - shouldn't happen in normal operation
+    :else :tv-archiv))
+
+(defn wrap-site-context
+  "Middleware that adds :site key to the request context based on Host header."
+  [handler]
+  (fn [req]
+    (let [host (get-in req [:headers "host"] "")
+          site (determine-site host)
+          req-with-site (assoc req :site site)]
+      (handler req-with-site))))

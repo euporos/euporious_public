@@ -35,33 +35,40 @@
    schema/module
    worker/module])
 
-;; Site-specific module assignments
-;; Each site gets its modules plus access to the full routes for backward compatibility
+;; Shared modules available on all sites
+(def shared-modules
+  [home/module
+   legal/module
+   schema/module])
+
+;; Site-specific modules (with shared modules already concatenated)
 (def site-modules
-  {:tv-archiv [tv-archiv/module legal/module home/module schema/module]
-   :secrets   [secrets/module app/module legal/module home/module schema/module
-               (biff-auth/module {:biff.auth/email-validator
-                                  (fn [ctx email]
-                                    (and
-                                     (biff-auth/email-valid? ctx email)
-                                     (contains? #{"services@olivermotz.com"} email)))})]
-   :shared    [home/module legal/module schema/module]})
+  {:tv-archiv (concat shared-modules
+                      [tv-archiv/module])
+   :secrets   (concat shared-modules
+                      [secrets/module
+                       app/module
+                       (biff-auth/module {:biff.auth/email-validator
+                                          (fn [ctx email]
+                                            (and
+                                             (biff-auth/email-valid? ctx email)
+                                             (contains? #{"services@olivermotz.com"} email)))})])})
 
 (defn site-routes
   "Generates routes filtered by the site context."
   [site]
-  (let [modules-for-site (get site-modules site (:shared site-modules))]
+  (let [modules (get site-modules site [])]
     [["" {:middleware [mid/wrap-site-defaults
                        coercion/coerce-request-middleware
                        coercion/coerce-response-middleware]}
-      (keep :routes modules-for-site)]
+      (keep :routes modules)]
      ["" {:middleware [mid/wrap-api-defaults]}
-      (keep :api-routes modules-for-site)]]))
+      (keep :api-routes modules)]]))
 
 (defn site-aware-handler
   "Handler that routes based on the :site key in the request."
   [req]
-  (let [site (:site req :shared)
+  (let [site (:site req :tv-archiv)  ; Default to tv-archiv if :site is missing
         routes (site-routes site)
         handler (biff/reitit-handler {:routes routes})]
     (handler req)))

@@ -166,9 +166,38 @@
             {:type "submit"})
      "Weiteren Code senden"])))
 
+(defn tv-archiv-home [{:keys [params] :as ctx}]
+  (ui/page
+   ctx
+   [:div.max-w-4xl.mx-auto.p-6
+    [:h1.text-4xl.font-bold.mb-4 "TV Archiv"]
+    [:p.mb-6.text-lg.text-gray-600
+     "Durchsuchen Sie die Filmsammlung meines Vaters."]
+    [:a.btn.btn-primary.btn-lg {:href "/tv-archiv"} "Zur Filmsammlung"]]))
+
+(defn secrets-home [{:keys [params] :as ctx}]
+  (ui/page
+   ctx
+   [:div.max-w-4xl.mx-auto.p-6
+    [:h1.text-4xl.font-bold.mb-4 "One-Time Secrets"]
+    [:p.mb-6.text-lg.text-gray-600
+     "Teilen Sie vertrauliche Informationen sicher mit einmalig abrufbaren Links."]
+    [:div.space-y-4
+     [:a.btn.btn-primary.btn-lg {:href "/ots/new"} "Neues Secret erstellen"]
+     [:div.text-sm.text-gray-500
+      [:p "Secrets werden nach 2 Stunden gelöscht"]
+      [:p "Jedes Secret kann nur einmal abgerufen werden"]]]]))
+
+(defn site-home [ctx]
+  (case (:site ctx)
+    :tv-archiv (tv-archiv-home ctx)
+    :secrets   (secrets-home ctx)
+    ;; Default/shared: show signup page
+    (home-page ctx)))
+
 (def module
   {:routes [["" {:middleware [mid/wrap-redirect-signed-in]}
-             ["/"                  {:get home-page}]]
+             ["/"                  {:get site-home}]]
             ["/link-sent"          {:get link-sent}]
             ["/verify-link"        {:get verify-email-page}]
             ["/signin"             {:get signin-page}]
