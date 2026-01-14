@@ -7,6 +7,7 @@
    [euporious.tv-archiv.db-interaction :as db]
    [euporious.ui :as ui]
    [reitit.coercion.malli]
+   [reitit.core :as reitit]
    [ring.util.response :as response]
    [rum.core :as rum]))
 
@@ -57,6 +58,14 @@
       (str "?" (str/join "&" flat-pairs))
       "")))
 
+(defn list-page-url
+  "Generate URL for list page with query parameters using reverse routing"
+  [router params]
+  (let [match (reitit/match-by-name router ::list-page)
+        base-path (:path match)
+        query-string (build-query-string params)]
+    (str base-path query-string)))
+
 (defn format-rating  [num]
   (cond
     (pos? num) (repeat num "+")
@@ -67,9 +76,9 @@
 
 (defn movie-item
   "Render a single movie as an expandable details element"
-  [{:keys [id dads_title year rating runtime director
-           genres actors countries imdb_id tmdb_id
-           tmdb_title original_title tmdb_rating]}]
+  [router {:keys [id dads_title year rating runtime director
+                  genres actors countries imdb_id tmdb_id
+                  tmdb_title original_title tmdb_rating]}]
   (let [wikipedia-search-title (or tmdb_title dads_title)
         wikipedia-url (str "https://de.wikipedia.org/wiki/Special:Search/"
                            (str/replace (java.net.URLEncoder/encode wikipedia-search-title "UTF-8") "+" "%20")
@@ -94,7 +103,7 @@
       (when director
         [:p [:strong.text-gray-700 "Regie: "]
          [:a.text-blue-600.hover:text-blue-800.hover:underline
-          {:href (str "/tv-archiv?director=" (java.net.URLEncoder/encode director "UTF-8"))}
+          {:href (list-page-url router {:director director})}
           director]])
       (when year
         [:p [:strong.text-gray-700 "Jahr: "] [:span.text-gray-600 year]])
@@ -107,7 +116,7 @@
          (interpose ", "
                     (for [actor (take 8 actors)]
                       [:a.text-blue-600.hover:text-blue-800.hover:underline
-                       {:href (str "/tv-archiv?actor=" (java.net.URLEncoder/encode actor "UTF-8"))}
+                       {:href (list-page-url router {:actor actor})}
                        actor]))])
       (when (seq countries)
         [:p [:strong.text-gray-700 "Länder: "] [:span.text-gray-600 (str/join ", " countries)]])
@@ -133,61 +142,58 @@
 
 (defn filter-chip
   "Render a removable filter chip"
-  [type value all-params]
+  [router type value all-params]
   (let [remove-params (-> all-params
                           (dissoc (keyword type))
-                          (assoc :page 1))
-        query-string (build-query-string remove-params)]
+                          (assoc :page 1))]
     [:span.filter-chip.inline-flex.items-center.gap-1.px-3.py-1.bg-blue-100.text-blue-800.rounded-full.text-sm.mr-2.mb-2
      [:span value]
      [:a.remove-chip.hover:text-blue-900.font-bold
-      {:href (str "/tv-archiv" query-string)}
+      {:href (list-page-url router remove-params)}
       "×"]]))
 
 (defn active-filters
   "Display active filters as removable chips"
-  [params]
+  [router params]
   (let [{:keys [genre actor director country search]} params
         has-filters? (or genre actor director country search)
-        clear-params {:page 1 :sort-by (:sort-by params) :sort-dir (:sort-dir params) :per-page (:per-page params)}
-        clear-query-string (build-query-string clear-params)]
+        clear-params {:page 1 :sort-by (:sort-by params) :sort-dir (:sort-dir params) :per-page (:per-page params)}]
     (when has-filters?
       [:div.active-filters.mb-4.p-3.bg-gray-50.rounded
        [:div.flex.items-center.justify-between.mb-2
         [:span.font-semibold.text-sm.text-gray-700 "Aktive Filter:"]
         [:a.text-sm.text-blue-600.hover:text-blue-800
-         {:href (str "/tv-archiv" clear-query-string)}
+         {:href (list-page-url router clear-params)}
          "Alle entfernen"]]
        [:div.flex.flex-wrap
         (when genre
-          (filter-chip "genre" genre params))
+          (filter-chip router "genre" genre params))
         (when actor
-          (filter-chip "actor" actor params))
+          (filter-chip router "actor" actor params))
         (when director
-          (filter-chip "director" director params))
+          (filter-chip router "director" director params))
         (when country
-          (filter-chip "country" country params))
+          (filter-chip router "country" country params))
         (when search
           (let [remove-search-params (-> params
                                          (dissoc :search)
-                                         (assoc :page 1))
-                query-string (build-query-string remove-search-params)]
+                                         (assoc :page 1))]
             [:span.filter-chip.inline-flex.items-center.gap-1.px-3.py-1.bg-blue-100.text-blue-800.rounded-full.text-sm.mr-2.mb-2
              [:span "Suche: " search]
              [:a.remove-chip.hover:text-blue-900.font-bold
-              {:href (str "/tv-archiv" query-string)}
+              {:href (list-page-url router remove-search-params)}
               "×"]]))]])))
 
 (defn pagination-controls
   "Render pagination controls"
-  [{:keys [page total-pages]} params]
+  [router {:keys [page total-pages]} params]
   (when (> total-pages 1)
-    (let [prev-query-string (build-query-string (assoc params :page (dec page)))
-          next-query-string (build-query-string (assoc params :page (inc page)))]
+    (let [prev-params (assoc params :page (dec page))
+          next-params (assoc params :page (inc page))]
       [:div.pagination.flex.items-center.justify-center.gap-4.mt-6.mb-4
        (when (> page 1)
          [:a.page-btn.px-4.py-2.bg-blue-500.text-white.rounded.hover:bg-blue-600.inline-block.text-center
-          {:href (str "/tv-archiv" prev-query-string)}
+          {:href (list-page-url router prev-params)}
           "← Zurück"])
 
        [:span.page-info.text-gray-700
@@ -195,41 +201,42 @@
 
        (when (< page total-pages)
          [:a.page-btn.px-4.py-2.bg-blue-500.text-white.rounded.hover:bg-blue-600.inline-block.text-center
-          {:href (str "/tv-archiv" next-query-string)}
+          {:href (list-page-url router next-params)}
           "Weiter →"])])))
 
 (defn movie-list-with-pagination
   "Render movie list with stats and pagination"
-  [{:keys [movies page total-pages total-count start end] :as result} params]
+  [router {:keys [movies page total-pages total-count start end] :as result} params]
   [:div
    [:div.stats-bar.text-sm.text-gray-600.mb-4
     (if (zero? total-count)
       "Keine Filme gefunden."
       (format "Zeige %d-%d von %d Filmen" start end total-count))]
 
-   (active-filters params)
+   (active-filters router params)
 
    [:div#movie-list
     (if (empty? movies)
       [:p.empty-state.text-center.text-gray-500.py-8 "Keine Filme mit diesen Filtern gefunden."]
-      (map movie-item movies))]
+      (map (partial movie-item router) movies))]
 
-   (pagination-controls result params)])
+   (pagination-controls router result params)])
 
 ;; HTTP Handlers
 
 (defn filtered-list
   "HTMX endpoint - returns just the movie list HTML"
-  [{:keys [parameters]}]
+  [{:keys [parameters reitit.core/router]}]
   (let [query-params (coerce-query-params (:query parameters))
         result (db/filter-and-sort-movies query-params)]
-    (biff/render (movie-list-with-pagination result query-params))))
+    (biff/render (movie-list-with-pagination router result query-params))))
 
 (defn list-page
   "Main TV archive page"
-  [{:keys [parameters] :as ctx}]
+  [{:keys [parameters reitit.core/router] :as ctx}]
   (let [query-params (coerce-query-params (:query parameters))
-        result (db/filter-and-sort-movies query-params)]
+        result (db/filter-and-sort-movies query-params)
+        form-action (list-page-url router {})]
     (ui/page
      (assoc ctx :euporious.ui/noindex true)
      [:div.tv-archiv
@@ -237,7 +244,7 @@
 
       [:form#filters.mb-6.space-y-4
        {:method "get"
-        :action "/tv-archiv"}
+        :action form-action}
 
        ;; Search box
        [:div.search-group
@@ -280,7 +287,7 @@
          {:type "submit"}
          "Suchen"]
         [:a.px-4.py-2.bg-gray-300.text-gray-700.rounded.hover:bg-gray-400
-         {:href "/tv-archiv"}
+         {:href (list-page-url router {})}
          "Zurücksetzen"]]
 
        ;; Advanced filters
@@ -342,7 +349,7 @@
 
 ;; Movie list container (HTMX swap target)
       [:div#movie-list-container
-       (movie-list-with-pagination result query-params)]])))
+       (movie-list-with-pagination router result query-params)]])))
 
 (defn autocomplete-result-item
   "Render a single autocomplete result item"
@@ -420,9 +427,13 @@
   {:routes ["" {:middleware [wrap-remove-empty-query-params]}
             ["/" {:get {:handler #'list-page
                         :coercion reitit.coercion.malli/coercion
-                        :parameters {:query query-params-schema}}}]
+                        :parameters {:query query-params-schema}
+                        :name ::list-page}}]
             ["/list" {:get {:handler #'filtered-list
                             :coercion reitit.coercion.malli/coercion
-                            :parameters {:query query-params-schema}}}]
-            ["/filter-options" {:get #'filter-options}]
-            ["/tmdb-description/:tmdb-id" {:get #'tmdb-description}]]})
+                            :parameters {:query query-params-schema}
+                            :name ::filtered-list}}]
+            ["/filter-options" {:get #'filter-options
+                                :name ::filter-options}]
+            ["/tmdb-description/:tmdb-id" {:get #'tmdb-description
+                                            :name ::tmdb-description}]]})
