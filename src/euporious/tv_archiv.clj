@@ -417,11 +417,10 @@
                       :params cleaned-params)))))
 
 (def module
-  {:routes ["/tv-archiv"
-            {:middleware [wrap-remove-empty-query-params]}
-            ["" {:get {:handler #'list-page
-                       :coercion reitit.coercion.malli/coercion
-                       :parameters {:query query-params-schema}}}]
+  {:routes ["" {:middleware [wrap-remove-empty-query-params]}
+            ["/" {:get {:handler #'list-page
+                        :coercion reitit.coercion.malli/coercion
+                        :parameters {:query query-params-schema}}}]
             ["/list" {:get {:handler #'filtered-list
                             :coercion reitit.coercion.malli/coercion
                             :parameters {:query query-params-schema}}}]

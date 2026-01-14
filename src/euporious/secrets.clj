@@ -10,6 +10,19 @@
 ;; In-memory atom to store secrets ephemerally
 (defonce secrets (atom {}))
 
+(defn secrets-home [{:keys [params] :as ctx}]
+  (ui/page
+   ctx
+   [:div.max-w-4xl.mx-auto.p-6
+    [:h1.text-4xl.font-bold.mb-4 "One-Time Secrets"]
+    [:p.mb-6.text-lg.text-gray-600
+     "Teilen Sie vertrauliche Informationen sicher mit einmalig abrufbaren Links."]
+    [:div.space-y-4
+     [:a.btn.btn-primary.btn-lg {:href "/ots/new"} "Neues Secret erstellen"]
+     [:div.text-sm.text-gray-500
+      [:p "Secrets werden nach 2 Stunden gelöscht"]
+      [:p "Jedes Secret kann nur einmal abgerufen werden"]]]]))
+
 (defn new-secret-page [{:keys [session] :as ctx}]
   (ui/page
    {}
@@ -143,7 +156,8 @@
          [:span "This secret does not exist or has already been viewed."]]]))))
 
 (def module
-  {:routes [["/ots" {:middleware [mid/wrap-signed-in]}
+  {:routes [["/" {:get #'secrets-home}]
+            ["/ots" {:middleware [mid/wrap-signed-in]}
              ["/new" {:get #'new-secret-page
                       :post #'create-secret
                       :name ::new-secret}]]

@@ -37,16 +37,17 @@
 
 ;; Shared modules available on all sites
 (def shared-modules
-  [home/module
-   legal/module
+  [legal/module
    schema/module])
 
 ;; Site-specific modules (with shared modules already concatenated)
 (def site-modules
   {:tv-archiv (concat shared-modules
-                      [tv-archiv/module])
+                      [home/module
+                       tv-archiv/module])
    :secrets   (concat shared-modules
-                      [secrets/module
+                      [home/module
+                       secrets/module
                        app/module
                        (biff-auth/module {:biff.auth/email-validator
                                           (fn [ctx email]
