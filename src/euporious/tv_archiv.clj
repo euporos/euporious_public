@@ -3,8 +3,8 @@
    [cheshire.core :as cheshire]
    [clojure.string :as str]
    [com.biffweb :as biff]
-   [euporious.tv-archiv.db-interaction :as db]
    [euporious.tmdb :as tmdb]
+   [euporious.tv-archiv.db-interaction :as db]
    [euporious.ui :as ui]
    [reitit.coercion.malli]
    [ring.util.response :as response]
@@ -226,7 +226,7 @@
     (ui/page
      ctx
      [:div.tv-archiv
-      [:h1.text-3xl.font-bold.mb-6 "TV-Archiv"]
+      [:h1.text-3xl.font-bold.mb-6 "Tobys TV-Archiv"]
 
       [:form#filters.mb-6.space-y-4
        {:method "get"
@@ -250,7 +250,7 @@
           {:name "sort-by" :id "sort-by" :onchange "this.form.submit()"}
           [:option {:value "title" :selected (= (:sort-by query-params) "title")} "Titel"]
           [:option {:value "year" :selected (= (:sort-by query-params) "year")} "Jahr"]
-          [:option {:value "rating" :selected (= (:sort-by query-params) "rating")} "Meine Bewertung"]
+          [:option {:value "rating" :selected (= (:sort-by query-params) "rating")} "Tobys Bewertung"]
           [:option {:value "tmdb_rating" :selected (= (:sort-by query-params) "tmdb_rating")} "TMDB Bewertung"]]]
 
         [:div.w-40
