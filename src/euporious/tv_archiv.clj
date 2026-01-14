@@ -78,43 +78,43 @@
 
      [:div.movie-details.mt-3.ml-4.space-y-2.text-sm
       (when (and tmdb_title (not= tmdb_title dads_title))
-        [:p [:strong.text-gray-700 "TMDB Title: "] [:span.text-gray-600 tmdb_title]])
+        [:p [:strong.text-gray-700 "TMDB Titel: "] [:span.text-gray-600 tmdb_title]])
       (when (and original_title
                  (not= original_title dads_title)
                  (not= original_title tmdb_title))
-        [:p [:strong.text-gray-700 "Original Title: "] [:span.text-gray-600 original_title]])
+        [:p [:strong.text-gray-700 "Originaltitel: "] [:span.text-gray-600 original_title]])
 
       (when director
-        [:p [:strong.text-gray-700 "Director: "]
+        [:p [:strong.text-gray-700 "Regie: "]
          [:a.text-blue-600.hover:text-blue-800.hover:underline
           {:href (str "/tv-archiv?director=" (java.net.URLEncoder/encode director "UTF-8"))}
           director]])
       (when year
-        [:p [:strong.text-gray-700 "Year: "] [:span.text-gray-600 year]])
+        [:p [:strong.text-gray-700 "Jahr: "] [:span.text-gray-600 year]])
       (when runtime
-        [:p [:strong.text-gray-700 "Runtime: "] [:span.text-gray-600 runtime " min"]])
+        [:p [:strong.text-gray-700 "Laufzeit: "] [:span.text-gray-600 runtime " Min."]])
       (when (seq genres)
         [:p [:strong.text-gray-700 "Genres: "] [:span.text-gray-600 (str/join ", " genres)]])
       (when (seq actors)
-        [:p [:strong.text-gray-700 "Actors: "]
+        [:p [:strong.text-gray-700 "Schauspieler: "]
          (interpose ", "
                     (for [actor (take 8 actors)]
                       [:a.text-blue-600.hover:text-blue-800.hover:underline
                        {:href (str "/tv-archiv?actor=" (java.net.URLEncoder/encode actor "UTF-8"))}
                        actor]))])
       (when (seq countries)
-        [:p [:strong.text-gray-700 "Countries: "] [:span.text-gray-600 (str/join ", " countries)]])
+        [:p [:strong.text-gray-700 "Länder: "] [:span.text-gray-600 (str/join ", " countries)]])
 
       [:p.text-xs.text-gray-500
        (when imdb_id [:span "IMDB: " imdb_id " "])
        (when tmdb_id [:span "TMDB: " tmdb_id])]
       (when tmdb_rating
-        [:p [:strong.text-gray-700 "TMDB Rating: "] [:span.text-gray-600 (format "%.1f/10" tmdb_rating)]])
+        [:p [:strong.text-gray-700 "TMDB Bewertung: "] [:span.text-gray-600 (format "%.1f/10" tmdb_rating)]])
 
       [:p.mt-2
        [:a.text-blue-600.hover:text-blue-800.hover:underline.text-sm
         {:href wikipedia-url :target "_blank" :rel "noopener noreferrer"}
-        "🔍 Search on Wikipedia (de)"]]
+        "🔍 Auf Wikipedia suchen"]]
 
       (when tmdb_id
         [:div.description.mt-3.p-2.bg-gray-50.rounded
@@ -122,7 +122,7 @@
           :hx-get (str "/tv-archiv/tmdb-description/" tmdb_id)
           :hx-trigger "intersect once"
           :hx-swap "innerHTML"}
-         [:span.text-gray-500.italic "Loading description from TMDB..."]])]]))
+         [:span.text-gray-500.italic "Lade Beschreibung von TMDB..."]])]]))
 
 (defn filter-chip
   "Render a removable filter chip"
@@ -147,10 +147,10 @@
     (when has-filters?
       [:div.active-filters.mb-4.p-3.bg-gray-50.rounded
        [:div.flex.items-center.justify-between.mb-2
-        [:span.font-semibold.text-sm.text-gray-700 "Active Filters:"]
+        [:span.font-semibold.text-sm.text-gray-700 "Aktive Filter:"]
         [:a.text-sm.text-blue-600.hover:text-blue-800
          {:href (str "/tv-archiv" clear-query-string)}
-         "Clear all"]]
+         "Alle entfernen"]]
        [:div.flex.flex-wrap
         (when genre
           (filter-chip "genre" genre params))
@@ -166,7 +166,7 @@
                                          (assoc :page 1))
                 query-string (build-query-string remove-search-params)]
             [:span.filter-chip.inline-flex.items-center.gap-1.px-3.py-1.bg-blue-100.text-blue-800.rounded-full.text-sm.mr-2.mb-2
-             [:span "Search: " search]
+             [:span "Suche: " search]
              [:a.remove-chip.hover:text-blue-900.font-bold
               {:href (str "/tv-archiv" query-string)}
               "×"]]))]])))
@@ -181,15 +181,15 @@
        (when (> page 1)
          [:a.page-btn.px-4.py-2.bg-blue-500.text-white.rounded.hover:bg-blue-600.inline-block.text-center
           {:href (str "/tv-archiv" prev-query-string)}
-          "← Previous"])
+          "← Zurück"])
 
        [:span.page-info.text-gray-700
-        (format "Page %d of %d" page total-pages)]
+        (format "Seite %d von %d" page total-pages)]
 
        (when (< page total-pages)
          [:a.page-btn.px-4.py-2.bg-blue-500.text-white.rounded.hover:bg-blue-600.inline-block.text-center
           {:href (str "/tv-archiv" next-query-string)}
-          "Next →"])])))
+          "Weiter →"])])))
 
 (defn movie-list-with-pagination
   "Render movie list with stats and pagination"
@@ -197,14 +197,14 @@
   [:div
    [:div.stats-bar.text-sm.text-gray-600.mb-4
     (if (zero? total-count)
-      "No movies found."
-      (format "Showing %d-%d of %d movies" start end total-count))]
+      "Keine Filme gefunden."
+      (format "Zeige %d-%d von %d Filmen" start end total-count))]
 
    (active-filters params)
 
    [:div#movie-list
     (if (empty? movies)
-      [:p.empty-state.text-center.text-gray-500.py-8 "No movies found matching your filters."]
+      [:p.empty-state.text-center.text-gray-500.py-8 "Keine Filme mit diesen Filtern gefunden."]
       (map movie-item movies))]
 
    (pagination-controls result params)])
@@ -226,7 +226,7 @@
     (ui/page
      ctx
      [:div.tv-archiv
-      [:h1.text-3xl.font-bold.mb-6 "TV Archive"]
+      [:h1.text-3xl.font-bold.mb-6 "TV-Archiv"]
 
       [:form#filters.mb-6.space-y-4
        {:method "get"
@@ -234,7 +234,7 @@
 
        ;; Search box
        [:div.search-group
-        [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "search"} "Search Titles"]
+        [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "search"} "Titel durchsuchen"]
         [:input.search-input.w-full.px-4.py-2.border.border-gray-300.rounded
          {:type "text"
           :name "search"
@@ -245,23 +245,23 @@
        ;; Sort and per-page controls
        [:div.flex.gap-4.flex-wrap
         [:div.flex-1 {:style {:min-width "200px"}}
-         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-by"} "Sort By"]
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-by"} "Sortieren nach"]
          [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
           {:name "sort-by" :id "sort-by" :onchange "this.form.submit()"}
-          [:option {:value "title" :selected (= (:sort-by query-params) "title")} "Title"]
-          [:option {:value "year" :selected (= (:sort-by query-params) "year")} "Year"]
-          [:option {:value "rating" :selected (= (:sort-by query-params) "rating")} "My Rating"]
-          [:option {:value "tmdb_rating" :selected (= (:sort-by query-params) "tmdb_rating")} "TMDB Rating"]]]
+          [:option {:value "title" :selected (= (:sort-by query-params) "title")} "Titel"]
+          [:option {:value "year" :selected (= (:sort-by query-params) "year")} "Jahr"]
+          [:option {:value "rating" :selected (= (:sort-by query-params) "rating")} "Meine Bewertung"]
+          [:option {:value "tmdb_rating" :selected (= (:sort-by query-params) "tmdb_rating")} "TMDB Bewertung"]]]
 
         [:div.w-40
-         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-dir"} "Direction"]
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-dir"} "Reihenfolge"]
          [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
           {:name "sort-dir" :id "sort-dir" :onchange "this.form.submit()"}
-          [:option {:value "asc" :selected (= (:sort-dir query-params) "asc")} "Ascending ↑"]
-          [:option {:value "desc" :selected (= (:sort-dir query-params) "desc")} "Descending ↓"]]]
+          [:option {:value "asc" :selected (= (:sort-dir query-params) "asc")} "Aufsteigend ↑"]
+          [:option {:value "desc" :selected (= (:sort-dir query-params) "desc")} "Absteigend ↓"]]]
 
         [:div.w-32
-         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "per-page"} "Per Page"]
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "per-page"} "Pro Seite"]
          [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
           {:name "per-page" :id "per-page" :onchange "this.form.submit()"}
           [:option {:value "25" :selected (= (:per-page query-params) 25)} "25"]
@@ -271,32 +271,32 @@
        [:div.flex.gap-2
         [:button.px-4.py-2.bg-blue-500.text-white.rounded.hover:bg-blue-600
          {:type "submit"}
-         "Search"]
+         "Suchen"]
         [:a.px-4.py-2.bg-gray-300.text-gray-700.rounded.hover:bg-gray-400
          {:href "/tv-archiv"}
-         "Clear"]]
+         "Zurücksetzen"]]
 
        ;; Advanced filters
        [:div.advanced-filters.space-y-4.mt-4.p-4.bg-gray-50.rounded
-        [:h3.font-semibold.text-gray-700.mb-2 "Advanced Filters"]
+        [:h3.font-semibold.text-gray-700.mb-2 "Erweiterte Filter"]
 
         ;; Genre select dropdown
         [:div.genre-filter
          [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "genre"} "Genre"]
          [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
           {:name "genre" :id "genre" :onchange "this.form.submit()"}
-          [:option {:value "" :selected (nil? (:genre query-params))} "All Genres"]
+          [:option {:value "" :selected (nil? (:genre query-params))} "Alle Genres"]
           (for [genre (:genres (db/get-filter-options))]
             [:option {:value genre :selected (= (:genre query-params) genre)} genre])]]
 
         ;; Actor autocomplete
         [:div.actor-filter
-         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "actor-search"} "Actor (single selection)"]
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "actor-search"} "Schauspieler (Einzelauswahl)"]
          [:div.autocomplete-wrapper.relative
           [:input.autocomplete-input.w-full.px-4.py-2.border.border-gray-300.rounded
            {:type "text"
             :id "actor-search"
-            :placeholder "Type to search actors..."
+            :placeholder "Schauspieler suchen..."
             :autocomplete "off"
             :hx-get "/tv-archiv/filter-options?type=actors"
             :hx-trigger "keyup changed delay:300ms"
@@ -313,12 +313,12 @@
 
 ;; Director autocomplete
         [:div.director-filter
-         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "director-search"} "Director (single selection)"]
+         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "director-search"} "Regie (Einzelauswahl)"]
          [:div.autocomplete-wrapper.relative
           [:input.autocomplete-input.w-full.px-4.py-2.border.border-gray-300.rounded
            {:type "text"
             :id "director-search"
-            :placeholder "Type to search directors..."
+            :placeholder "Regie suchen..."
             :autocomplete "off"
             :hx-get "/tv-archiv/filter-options?type=directors"
             :hx-trigger "keyup changed delay:300ms"
@@ -381,7 +381,7 @@
     (if-not api-key
       (biff/render
        [:div.text-gray-500.italic
-        "TMDB API key not configured. Add your API key to config.env to enable movie descriptions."])
+        "TMDB API-Schlüssel nicht konfiguriert. Fügen Sie Ihren API-Schlüssel zu config.env hinzu, um Filmbeschreibungen zu aktivieren."])
       (if-let [movie-details (tmdb/fetch-movie-details api-key tmdb-id)]
         (let [description (tmdb/get-movie-description movie-details)]
           (biff/render
@@ -389,12 +389,12 @@
              [:div
               [:div.text-gray-700 description]
               [:div.text-xs.text-gray-400.mt-2.italic
-               "Data provided by "
+               "Daten bereitgestellt von "
                [:a.underline {:href "https://www.themoviedb.org" :target "_blank" :rel "noopener noreferrer"}
                 "The Movie Database (TMDB)"]]]
-             [:div.text-gray-500.italic "No description available."])))
+             [:div.text-gray-500.italic "Keine Beschreibung verfügbar."])))
         (biff/render
-         [:div.text-gray-500.italic "Could not load description from TMDB."])))))
+         [:div.text-gray-500.italic "Beschreibung konnte nicht von TMDB geladen werden."])))))
 
 ;; Module definition
 
