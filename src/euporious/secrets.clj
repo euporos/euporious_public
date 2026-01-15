@@ -12,7 +12,7 @@
 
 (defn secrets-home [{:keys [params] :as ctx}]
   (ui/page
-   ctx
+   (assoc ctx :base/title "Olis OTS")
    [:div.max-w-4xl.mx-auto.p-6
     [:h1.text-4xl.font-bold.mb-4 "One-Time Secrets"]
     [:p.mb-6.text-lg.text-gray-600

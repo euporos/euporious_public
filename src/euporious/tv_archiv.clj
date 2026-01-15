@@ -253,7 +253,9 @@
         form-action  (list-page-url router {})
         reset-url (:path (reitit/match-by-name router ::list-page))]
     (ui/page
-     (assoc ctx :euporious.ui/noindex true)
+     (assoc ctx
+            :euporious.ui/noindex true
+            :base/title "Tobys Archiv")
      [:div.tv-archiv
       [:h1.text-3xl.font-bold.mb-6 "Tobys TV-Archiv"]
 
