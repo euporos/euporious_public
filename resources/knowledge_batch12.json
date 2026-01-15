@@ -1,9 +1,9 @@
 [
   {"line": 14500, "title": "Wicker Park – Sehnsüchtig", "corrected": "Wicker Park", "tmdb_id": 11208, "notes": "2004 psychological thriller with Josh Hartnett", "suggested_search": "Wicker Park", "year": 2004},
-  {"line": 14547, "title": "Wie ein Blitz vom Weihnachtshimmel (F ´2018_/TR)", "corrected": "Mon beau-père, mes parents et moi", "tmdb_id": null, "notes": "French Christmas film, needs verification", "suggested_search": "Mon beau-père mes parents", "year": 2018},
+  {"line": 14547, "title": "Wie ein Blitz vom Weihnachtshimmel (F ´2018_/TR)", "corrected": "Mon beau-père, mes parents et moi", "tmdb_id": null, "notes": "French Christmas film, needs verification", "suggested_search": "Mon beau-père, mes parents et moi", "year": 2018},
   {"line": 14559, "title": "Wie ein einzigerTag (USA ´2004_/Trailer)", "corrected": "The Notebook", "tmdb_id": 11036, "notes": "2004 romance, German: Wie ein einziger Tag (spacing typo)", "suggested_search": "The Notebook", "year": 2004},
   {"line": 14605, "title": "Wild Bunch (The) – Sie kannten k. Gesetz (USA´69)", "corrected": "The Wild Bunch", "tmdb_id": 335, "notes": "1969 Sam Peckinpah western, abbreviation: kein", "suggested_search": "The Wild Bunch", "year": 1969},
-  {"line": 14615, "title": "Wilddiebin (Die)", "corrected": "Die Wilddiebin", "tmdb_id": null, "notes": "German TV movie", "suggested_search": "Wilddiebin", "year": null},
+  {"line": 14615, "title": "Wilddiebin (Die)", "corrected": "Die Wilddiebin", "tmdb_id": null, "notes": "German TV movie", "suggested_search": "Die Wilddiebin", "year": null},
   {"line": 14637, "title": "Wilde Dynastien (1-5)", "corrected": "Dynasties", "tmdb_id": 77466, "notes": "2018 BBC nature documentary series", "suggested_search": "Dynasties", "year": 2018},
   {"line": 14647, "title": "Wilden Boys (Die_F ´2016)", "corrected": "Les Garçons sauvages", "tmdb_id": 387599, "notes": "2017 French drama", "suggested_search": "Les Garçons sauvages", "year": 2017},
   {"line": 15013, "title": "Zensierte Stimmen (6-Tage-Krieg)", "corrected": "Censored Voices", "tmdb_id": 316531, "notes": "2015 documentary about Six-Day War", "suggested_search": "Censored Voices", "year": 2015},
@@ -11,5 +11,5 @@
   {"line": 15035, "title": "Zeugen in Angst – Zero Tolerance", "corrected": "Zero Tolerance", "tmdb_id": 21072, "notes": "Swedish crime film", "suggested_search": "Zero Tolerance", "year": null},
   {"line": 15047, "title": "Zomer – Nichts wie raus (NL´2014_queer_/Trailer)", "corrected": "Zomer", "tmdb_id": 295485, "notes": "2014 Dutch coming-of-age film", "suggested_search": "Zomer", "year": 2014},
   {"line": 15059, "title": "Zorn des Jägers (Der)", "corrected": "The Hunter", "tmdb_id": null, "notes": "Generic title, needs context", "suggested_search": "The Hunter", "year": null},
-  {"line": 15095, "title": "Zulu – Blutiges Erbe (F/SAFR ´2013)", "corrected": "Zulu", "tmdb_id": 185567, "notes": "2013 crime thriller with Orlando Bloom", "suggested_search": "Zulu 2013", "year": 2013}
+  {"line": 15095, "title": "Zulu – Blutiges Erbe (F/SAFR ´2013)", "corrected": "Zulu", "tmdb_id": 185567, "notes": "2013 crime thriller with Orlando Bloom", "suggested_search": "Zulu", "year": 2013}
 ]
