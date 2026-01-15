@@ -96,7 +96,8 @@
   (let [wikipedia-search-title (or tmdb_title dads_title)
         wikipedia-url (str "https://de.wikipedia.org/wiki/Special:Search/"
                            (str/replace (java.net.URLEncoder/encode wikipedia-search-title "UTF-8") "+" "%20")
-                           "%20" year)]
+                           "%20" year)
+        tmdb-url (str "https://www.themoviedb.org/movie/" tmdb_id "?language=de")]
     [:details.movie-entry.border-b.border-gray-200.py-3
      {:data-id id}
      [:summary.movie-summary.cursor-pointer.hover:bg-gray-400.p-2.rounded
@@ -145,6 +146,11 @@
        [:a.text-blue-400.hover:text-blue-800.hover:underline.text-sm
         {:href wikipedia-url :target "_blank" :rel "noopener noreferrer"}
         "🔍 Auf Wikipedia suchen"]]
+
+      [:p.mt-2
+       [:a.text-blue-400.hover:text-blue-800.hover:underline.text-sm
+        {:href tmdb-url :target "_blank" :rel "noopener noreferrer"}
+        "🔍 Auf TMDB ansehen"]]
 
       (when tmdb_id
         [:div.description.mt-3.p-2.bg-gray-50.rounded
