@@ -251,11 +251,27 @@
   (let [query-params (coerce-query-params (:query parameters))
         result (db/filter-and-sort-movies query-params)
         form-action  (list-page-url router {})
-        reset-url (:path (reitit/match-by-name router ::list-page))]
+        reset-url (:path (reitit/match-by-name router ::list-page))
+        og-title "Tobys TV-Archiv"
+        og-description "Tobys persönliche Film- und Seriensammlung - durchsuchbar nach Genre, Schauspielern, Regisseuren und mehr"
+        og-image "https://tobys-archiv.de/toby_spike_og.jpg"]
     (ui/page
-     (assoc ctx
-            :euporious.ui/noindex true
-            :base/title "Tobys Archiv")
+     (-> ctx
+         (assoc :euporious.ui/noindex true
+                :base/title og-title
+                :base/description og-description
+                :base/image og-image)
+         (update :base/head (fn [head]
+                              (concat head
+                                      [;; Additional Open Graph tags
+                                       [:meta {:property "og:type" :content "website"}]
+                                       [:meta {:property "og:site_name" :content "Tobys TV-Archiv"}]
+                                       [:meta {:property "og:locale" :content "de_DE"}]
+                                       ;; Twitter Card additional tags
+                                       [:meta {:name "twitter:title" :content og-title}]
+                                       [:meta {:name "twitter:description" :content og-description}]
+                                       [:meta {:name "twitter:image" :content og-image}]
+                                       [:meta {:name "twitter:image:alt" :content "Tobys TV-Archiv Logo"}]]))))
      [:div.tv-archiv
       [:h1.text-3xl.font-bold.mb-6 "Tobys TV-Archiv"]
 

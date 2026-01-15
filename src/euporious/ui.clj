@@ -18,12 +18,12 @@
 (defn base [{:keys [::recaptcha ::noindex] :as ctx} & body]
   (apply
    biff/base-html
-   (-> ctx
-       (merge #:base{:title settings/app-name
+   (-> (merge #:base{:title settings/app-name
                      :lang "en-US"
                      :icon "/img/glider.png"
                      :description (str settings/app-name " Description")
-                     :image "https://clojure.org/images/clojure-logo-120b.png"})
+                     :image "https://clojure.org/images/clojure-logo-120b.png"}
+              ctx)
        (update :base/head (fn [head]
                             (concat [[:link {:rel "stylesheet" :href (static-path "/css/main.css")}]
                                      [:script {:src (static-path "/js/main.js")}]
