@@ -295,10 +295,10 @@
          [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-by"} "Sortieren nach"]
          [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
           {:name "sort-by" :id "sort-by" :onchange "this.form.submit()"}
-          [:option {:value "title" :selected (= (:sort-by query-params) "title")} "Titel"]
-          [:option {:value "year" :selected (= (:sort-by query-params) "year")} "Jahr"]
-          [:option {:value "rating" :selected (= (:sort-by query-params) "rating")} "Tobys Bewertung"]
-          [:option {:value "tmdb_rating" :selected (= (:sort-by query-params) "tmdb_rating")} "TMDB Bewertung"]]]
+          [:option.text-gray-700 {:value "title" :selected (= (:sort-by query-params) "title")} "Titel"]
+          [:option.text-gray-700 {:value "year" :selected (= (:sort-by query-params) "year")} "Jahr"]
+          [:option.text-gray-700 {:value "rating" :selected (= (:sort-by query-params) "rating")} "Tobys Bewertung"]
+          [:option.text-gray-700 {:value "tmdb_rating" :selected (= (:sort-by query-params) "tmdb_rating")} "TMDB Bewertung"]]]
 
         [:div.w-40
          [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-dir"} "Reihenfolge"]
