@@ -1,5 +1,6 @@
 (ns euporious.tv-archiv.db-interaction
   (:require
+   [clojure.java.io :as io]
    [clojure.string :as str]
    [orgmode.core :as org]))
 
@@ -54,8 +55,9 @@
                        (fn [sofar nextup]
                          (assoc sofar (:id (:properties nextup)) (build-entity nextup)))
                        {}
-                       (-> "resources/tv_liste.org"
-                           org/parse
+                       (-> (io/resource "tv_liste.org")
+                           slurp
+                           org/parse-str
                            :content))
         more-info (reduce
                    (fn [sofar nextup]
