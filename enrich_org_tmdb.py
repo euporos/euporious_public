@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 """
-Phase 1: Match org file movie entries to TMDB and write IDs directly to org file.
+Match org file movie entries to TMDB and write IDs directly to org file.
 Adds TMDB_ID to properties blocks for review and future enrichment.
+
+Features:
+- Uses SUGGESTED_SEARCH property when present (from AI verification)
+- Skips entries already verified by AI (AI_VERIFIED: true, NEEDS_REVIEW: false)
+- Removes SUGGESTED_SEARCH property after successful match
+- Skips entries that already have TMDB_ID
 """
 
 import re
@@ -196,7 +202,9 @@ def process_org_file(org_path: Path, api_key: str, backup: bool = True) -> Dict:
         'medium_confidence': 0,
         'low_confidence': 0,
         'no_match': 0,
-        'skipped': 0
+        'skipped': 0,
+        'skipped_verified': 0,
+        'used_suggested_search': 0
     }
 
     # Re-read file each time to get latest state (in case of previous incremental writes)
@@ -220,34 +228,51 @@ def process_org_file(org_path: Path, api_key: str, backup: bool = True) -> Dict:
                 has_properties = (i + 1 < len(lines) and
                                 lines[i + 1].strip() == ':PROPERTIES:')
 
-                # If properties exist, check if TMDB_ID already set
+                # Parse properties if they exist
+                properties = {}
                 if has_properties:
-                    # Look for existing TMDB_ID in properties
                     j = i + 2
-                    has_tmdb_id = False
                     while j < len(lines) and not lines[j].strip() == ':END:':
-                        if lines[j].strip().startswith(':TMDB_ID:'):
-                            has_tmdb_id = True
-                            break
+                        prop_match = re.match(r'^:(\w+):\s*(.*)$', lines[j].strip())
+                        if prop_match:
+                            key = prop_match.group(1)
+                            value = prop_match.group(2).strip()
+                            properties[key] = value
                         j += 1
 
-                    if has_tmdb_id:
-                        # Skip entries that already have TMDB_ID
-                        # Copy the entire entry (heading + properties + content) as-is
-                        print(f"[{stats['total']}] Skipping (already has TMDB_ID): {cleaned_title}")
-                        stats['skipped'] += 1
-                        output_lines.append(line)  # heading
+                # Check if already verified by AI
+                if properties.get('AI_VERIFIED') == 'true' and properties.get('NEEDS_REVIEW') == 'false':
+                    print(f"[{stats['total']}] Skipping (AI verified): {cleaned_title}")
+                    stats['skipped_verified'] += 1
+                    output_lines.append(line)
+                    i += 1
+                    while i < len(lines) and not lines[i].strip().startswith('*'):
+                        output_lines.append(lines[i])
                         i += 1
+                    continue
 
-                        # Copy everything until we hit the next heading or EOF
-                        while i < len(lines) and not lines[i].strip().startswith('*'):
-                            output_lines.append(lines[i])
-                            i += 1
-                        continue
+                # Check if already has TMDB_ID
+                if 'TMDB_ID' in properties:
+                    print(f"[{stats['total']}] Skipping (already has TMDB_ID): {cleaned_title}")
+                    stats['skipped'] += 1
+                    output_lines.append(line)
+                    i += 1
+                    while i < len(lines) and not lines[i].strip().startswith('*'):
+                        output_lines.append(lines[i])
+                        i += 1
+                    continue
+
+                # Check for SUGGESTED_SEARCH property
+                search_query = cleaned_title
+                if 'SUGGESTED_SEARCH' in properties:
+                    search_query = properties['SUGGESTED_SEARCH']
+                    stats['used_suggested_search'] += 1
+                    print(f"[{stats['total']}] Processing (using suggested): {search_query}", end='')
+                else:
+                    print(f"[{stats['total']}] Processing: {cleaned_title}", end='')
 
                 # Search TMDB
-                print(f"[{stats['total']}] Processing: {cleaned_title}", end='')
-                match_info = find_best_match(cleaned_title, year_hint, api_key)
+                match_info = find_best_match(search_query, year_hint, api_key)
 
                 # Update stats
                 if match_info['tmdb_id'] is None:
@@ -272,10 +297,12 @@ def process_org_file(org_path: Path, api_key: str, backup: bool = True) -> Dict:
                     output_lines.append(lines[i + 1])  # :PROPERTIES:
                     i += 2
 
-                    # Copy existing properties and insert TMDB info at the end
+                    # Copy existing properties, but skip SUGGESTED_SEARCH if match found
                     props_lines = []
                     while i < len(lines) and not lines[i].strip() == ':END:':
-                        props_lines.append(lines[i])
+                        # Skip SUGGESTED_SEARCH if we found a match
+                        if not (lines[i].strip().startswith(':SUGGESTED_SEARCH:') and match_info['tmdb_id']):
+                            props_lines.append(lines[i])
                         i += 1
 
                     # Add all existing properties
@@ -355,12 +382,22 @@ def print_statistics(stats: Dict):
     print(f"Processing Complete!")
     print(f"{'='*60}")
     print(f"Total entries:        {total}")
-    print(f"High confidence:      {stats['high_confidence']} ({stats['high_confidence']/total*100:.1f}%)")
-    print(f"Medium confidence:    {stats['medium_confidence']} ({stats['medium_confidence']/total*100:.1f}%)")
-    print(f"Low confidence:       {stats['low_confidence']} ({stats['low_confidence']/total*100:.1f}%)")
-    print(f"No match found:       {stats['no_match']} ({stats['no_match']/total*100:.1f}%)")
+
+    if stats.get('skipped_verified', 0) > 0:
+        print(f"Skipped (AI verified): {stats['skipped_verified']}")
     if stats['skipped'] > 0:
         print(f"Skipped (has ID):     {stats['skipped']}")
+
+    processed = total - stats['skipped'] - stats.get('skipped_verified', 0)
+    if processed > 0:
+        print(f"\nProcessed:            {processed}")
+        if stats.get('used_suggested_search', 0) > 0:
+            print(f"  Used AI suggestions: {stats['used_suggested_search']}")
+        print(f"  High confidence:     {stats['high_confidence']} ({stats['high_confidence']/processed*100:.1f}%)")
+        print(f"  Medium confidence:   {stats['medium_confidence']} ({stats['medium_confidence']/processed*100:.1f}%)")
+        print(f"  Low confidence:      {stats['low_confidence']} ({stats['low_confidence']/processed*100:.1f}%)")
+        print(f"  No match found:      {stats['no_match']} ({stats['no_match']/processed*100:.1f}%)")
+
     print(f"\nReview needed:        {stats['medium_confidence'] + stats['low_confidence'] + stats['no_match']}")
     print(f"\nNext steps:")
     print(f"1. Review entries with :NEEDS_REVIEW: true in the org file")
