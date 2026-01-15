@@ -121895,16 +121895,6 @@
 :TMDB_ID: 776841
 :TMDB_TITLE: Xmas 1986
 :PROPERTIES:
-:PROPERTIES:
-:ID: d2223986-d5dc-4c3b-bf6b-89a44fdc1c05
-:AI_VERIFIED: true
-:TMDB_ID: 957894
-:TMDB_TITLE: Everything Will Change
-:TMDB_CONFIDENCE: 100
-:AI_KNOWLEDGE_VERIFIED: true
-:NEEDS_REVIEW: false
-:AI_NOTES: Typo fix: Everything not Everthing
-:END:
 
 * 2001 – Odyssee im Weltall
 :PROPERTIES:
@@ -121920,11 +121910,14 @@
 
 * 2050er – Everthing will change (The_D ´2022)
 :PROPERTIES:
-:RATING: 3
-:DADS_TITLE: 2050er – Everthing will change (The_D ´2022)
-:NEEDS_REVIEW: true
-:ID: 501b497b-00ec-4ffc-baad-4fba85ae236e
-:SUGGESTED_SEARCH: The 2050er – Everthing will change
+:ID: d2223986-d5dc-4c3b-bf6b-89a44fdc1c05
+:AI_VERIFIED: true
+:TMDB_ID: 957894
+:TMDB_TITLE: Everything Will Change
+:TMDB_CONFIDENCE: 100
+:AI_KNOWLEDGE_VERIFIED: true
+:NEEDS_REVIEW: false
+:AI_NOTES: Typo fix: Everything not Everthing
 :END:
 
 * 21 Bridges – Jagd durch Manhattan (USA/CHIN´19)
