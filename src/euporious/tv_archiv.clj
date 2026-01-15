@@ -99,50 +99,50 @@
                            "%20" year)]
     [:details.movie-entry.border-b.border-gray-200.py-3
      {:data-id id}
-     [:summary.movie-summary.cursor-pointer.hover:bg-gray-600.p-2.rounded
+     [:summary.movie-summary.cursor-pointer.hover:bg-gray-400.p-2.rounded
       [:span.title.font-semibold.text-lg dads_title]
       (when year
-        [:span.year.text-gray-600.ml-2 "(" year ")"])
+        [:span.year.text-gray-400.ml-2 "(" year ")"])
       (when rating
-        [:span.rating.ml-2.text-yellow-600 " " (format-rating rating)])]
+        [:span.rating.ml-2.text-yellow-400 " " (format-rating rating)])]
 
      [:div.movie-details.mt-3.ml-4.space-y-2.text-sm
       (when (and tmdb_title (not= tmdb_title dads_title))
-        [:p [:strong.text-gray-700 "TMDB Titel: "] [:span.text-gray-600 tmdb_title]])
+        [:p [:strong.text-gray-500 "TMDB Titel: "] [:span.text-gray-400 tmdb_title]])
       (when (and original_title
                  (not= original_title dads_title)
                  (not= original_title tmdb_title))
-        [:p [:strong.text-gray-700 "Originaltitel: "] [:span.text-gray-600 original_title]])
+        [:p [:strong.text-gray-500 "Originaltitel: "] [:span.text-gray-400 original_title]])
 
       (when director
-        [:p [:strong.text-gray-700 "Regie: "]
-         [:a.text-blue-600.hover:text-blue-800.hover:underline
+        [:p [:strong.text-gray-500 "Regie: "]
+         [:a.text-blue-400.hover:text-blue-800.hover:underline
           {:href (list-page-url router {:director director})}
           director]])
       (when year
-        [:p [:strong.text-gray-700 "Jahr: "] [:span.text-gray-600 year]])
+        [:p [:strong.text-gray-500 "Jahr: "] [:span.text-gray-400 year]])
       (when runtime
-        [:p [:strong.text-gray-700 "Laufzeit: "] [:span.text-gray-600 runtime " Min."]])
+        [:p [:strong.text-gray-500 "Laufzeit: "] [:span.text-gray-400 runtime " Min."]])
       (when (seq genres)
-        [:p [:strong.text-gray-700 "Genres: "] [:span.text-gray-600 (str/join ", " genres)]])
+        [:p [:strong.text-gray-500 "Genres: "] [:span.text-gray-400 (str/join ", " genres)]])
       (when (seq actors)
-        [:p [:strong.text-gray-700 "Schauspieler: "]
+        [:p [:strong.text-gray-500 "Schauspieler: "]
          (interpose ", "
                     (for [actor (take 8 actors)]
-                      [:a.text-blue-600.hover:text-blue-800.hover:underline
+                      [:a.text-blue-400.hover:text-blue-800.hover:underline
                        {:href (list-page-url router {:actor actor})}
                        actor]))])
       (when (seq countries)
-        [:p [:strong.text-gray-700 "Länder: "] [:span.text-gray-600 (str/join ", " countries)]])
+        [:p [:strong.text-gray-500 "Länder: "] [:span.text-gray-400 (str/join ", " countries)]])
 
       [:p.text-xs.text-gray-500
        (when imdb_id [:span "IMDB: " imdb_id " "])
        (when tmdb_id [:span "TMDB: " tmdb_id])]
       (when tmdb_rating
-        [:p [:strong.text-gray-700 "TMDB Bewertung: "] [:span.text-gray-600 (format "%.1f/10" tmdb_rating)]])
+        [:p [:strong.text-gray-500 "TMDB Bewertung: "] [:span.text-gray-400 (format "%.1f/10" tmdb_rating)]])
 
       [:p.mt-2
-       [:a.text-blue-600.hover:text-blue-800.hover:underline.text-sm
+       [:a.text-blue-400.hover:text-blue-800.hover:underline.text-sm
         {:href wikipedia-url :target "_blank" :rel "noopener noreferrer"}
         "🔍 Auf Wikipedia suchen"]]
 
@@ -222,7 +222,7 @@
   "Render movie list with stats and pagination"
   [router {:keys [movies page total-pages total-count start end] :as result} params]
   [:div
-   [:div.stats-bar.text-sm.text-gray-600.mb-4
+   [:div.stats-bar.text-sm.text-gray-300.mb-4
     (if (zero? total-count)
       "Keine Filme gefunden."
       (format "Zeige %d-%d von %d Filmen" start end total-count))]
@@ -281,7 +281,7 @@
 
        ;; Search box
        [:div.search-group
-        [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "search"} "Titel durchsuchen"]
+        [:label.block.text-sm.font-medium.text-gray-300.mb-1 {:for "search"} "Titel durchsuchen"]
         [:input.search-input.w-full.px-4.py-2.border.border-gray-300.rounded
          {:type "text"
           :name "search"
@@ -292,7 +292,7 @@
        ;; Sort and per-page controls
        [:div.flex.gap-4.flex-wrap
         [:div.flex-1 {:style {:min-width "200px"}}
-         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-by"} "Sortieren nach"]
+         [:label.block.text-sm.font-medium.text-gray-300.mb-1 {:for "sort-by"} "Sortieren nach"]
          [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
           {:name "sort-by" :id "sort-by" :onchange "this.form.submit()"}
           [:option.text-gray-700 {:value "title" :selected (= (:sort-by query-params) "title")} "Titel"]
@@ -301,14 +301,14 @@
           [:option.text-gray-700 {:value "tmdb_rating" :selected (= (:sort-by query-params) "tmdb_rating")} "TMDB Bewertung"]]]
 
         [:div.w-40
-         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "sort-dir"} "Reihenfolge"]
+         [:label.block.text-sm.font-medium.text-gray-300.mb-1 {:for "sort-dir"} "Reihenfolge"]
          [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
           {:name "sort-dir" :id "sort-dir" :onchange "this.form.submit()"}
           [:option {:value "asc" :selected (= (:sort-dir query-params) "asc")} "Aufsteigend ↑"]
           [:option {:value "desc" :selected (= (:sort-dir query-params) "desc")} "Absteigend ↓"]]]
 
         [:div.w-32
-         [:label.block.text-sm.font-medium.text-gray-700.mb-1 {:for "per-page"} "Pro Seite"]
+         [:label.block.text-sm.font-medium.text-gray-300.mb-1 {:for "per-page"} "Pro Seite"]
          [:select.filter-select.w-full.px-4.py-2.border.border-gray-300.rounded
           {:name "per-page" :id "per-page" :onchange "this.form.submit()"}
           [:option {:value "25" :selected (= (:per-page query-params) 25)} "25"]
