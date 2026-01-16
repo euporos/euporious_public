@@ -218,20 +218,6 @@ def enrich_org_file(org_path: Path, api_key: str, backup: bool = True) -> Dict:
                     i += 1
                 continue
 
-            if needs_review:
-                # Needs manual review, skip enrichment
-                stats['skipped_needs_review'] += 1
-                print(f"[{stats['total_entries']}] Skipping (needs review): TMDB ID {tmdb_id}")
-                output_lines.extend(props_lines)
-                if i < len(lines):
-                    output_lines.append(lines[i])  # :END:
-                    i += 1
-
-                # Copy rest of entry
-                while i < len(lines) and not lines[i].strip().startswith('*'):
-                    output_lines.append(lines[i])
-                    i += 1
-                continue
 
             if already_enriched:
                 # Already has enrichment, skip
