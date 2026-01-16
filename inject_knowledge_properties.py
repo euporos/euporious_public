@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Inject properties from knowledge_batch*.json files into review_required.org entries.
+Inject properties from batch*.json files into review_required.org entries.
 
 Maps:
   tmdb_id -> TMDB_ID (if not null)
@@ -15,10 +15,10 @@ import re
 from pathlib import Path
 
 
-def load_knowledge_batches(resources_dir: Path) -> dict[str, dict]:
-    """Load all knowledge_batch*.json files and return a dict keyed by title."""
+def load_knowledge_batches(batches_dir: Path) -> dict[str, dict]:
+    """Load all batch*.json files and return a dict keyed by title."""
     knowledge = {}
-    batch_files = sorted(resources_dir.glob("knowledge_batch*.json"))
+    batch_files = sorted(batches_dir.glob("batch*.json"))
 
     for batch_file in batch_files:
         print(f"Loading {batch_file.name}...")
@@ -138,13 +138,18 @@ def update_org_file(org_path: Path, knowledge: dict[str, dict]) -> int:
 def main():
     script_dir = Path(__file__).parent
     resources_dir = script_dir / "resources"
+    batches_dir = resources_dir / "knowledge_batches_set2"
     org_path = resources_dir / "review_required.org"
 
     if not org_path.exists():
         print(f"Error: {org_path} not found")
         return 1
 
-    knowledge = load_knowledge_batches(resources_dir)
+    if not batches_dir.exists():
+        print(f"Error: {batches_dir} not found")
+        return 1
+
+    knowledge = load_knowledge_batches(batches_dir)
 
     if not knowledge:
         print("No knowledge entries found")
