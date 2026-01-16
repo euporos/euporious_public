@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1476,
+    "title": "Berühr mich",
+    "corrected": "Berühr mich",
+    "tmdb_id": null,
+    "notes": "Generic German title, unclear which film - needs disambiguation",
+    "suggested_search": "Berühr mich",
+    "year": null
+  },
+  {
+    "line": 1567,
+    "title": "Bett (Im)",
+    "corrected": "Im Bett",
+    "tmdb_id": null,
+    "notes": "Generic German title 'In Bed' - very non-distinctive, needs context",
+    "suggested_search": "Im Bett",
+    "year": null
+  },
+  {
+    "line": 1580,
+    "title": "Bier Royal (1+2)",
+    "corrected": "Bier Royal",
+    "tmdb_id": null,
+    "notes": "2017 German TV miniseries about Bavarian brewery family drama - very distinctive title",
+    "suggested_search": "Bier Royal",
+    "year": 2017
+  },
+  {
+    "line": 1594,
+    "title": "Bier Royal (D ´2018_1+2_DNF)",
+    "corrected": "Bier Royal",
+    "tmdb_id": null,
+    "notes": "Same as line 1580 - 2017 German TV series, duplicate entry",
+    "suggested_search": "Bier Royal",
+    "year": 2017
+  },
+  {
+    "line": 1607,
+    "title": "Billy Bathgate – Im Sog der Mafia",
+    "corrected": "Billy Bathgate",
+    "tmdb_id": null,
+    "notes": "1991 Robert Benton gangster film with Dustin Hoffman, Nicole Kidman, Bruce Willis - based on E.L. Doctorow novel",
+    "suggested_search": "Billy Bathgate",
+    "year": 1991
+  },
+  {
+    "line": 1620,
+    "title": "Bin-Jip – Der Schattenmann",
+    "corrected": "Bin-jip",
+    "tmdb_id": null,
+    "notes": "2004 Kim Ki-duk film, Korean title distinctive, English: 3-Iron, about squatters in empty houses",
+    "suggested_search": "Bin-jip",
+    "year": 2004
+  },
+  {
+    "line": 1633,
+    "title": "Birdwatchers – Das Land der roten Menschen",
+    "corrected": "Birdwatchers - La terra degli uomini rossi",
+    "tmdb_id": null,
+    "notes": "2008 Marco Bechis film about Guarani-Kaiowá indigenous people in Brazil - Italian/Brazilian co-production",
+    "suggested_search": "Birdwatchers",
+    "year": 2008
+  },
+  {
+    "line": 1646,
+    "title": "Birth (USA ´2003_Nicole Kidman)",
+    "corrected": "Birth",
+    "tmdb_id": null,
+    "notes": "2004 Jonathan Glazer psychological drama with Nicole Kidman about woman who believes boy is her reincarnated husband",
+    "suggested_search": "Birth",
+    "year": 2004
+  },
+  {
+    "line": 1659,
+    "title": "Bis aufs Blut – Brüder auf Bewährung",
+    "corrected": "Bis aufs Blut",
+    "tmdb_id": null,
+    "notes": "German drama about brothers - distinctive idiom 'bis aufs Blut' (to the death)",
+    "suggested_search": "Bis aufs Blut",
+    "year": null
+  }
+]

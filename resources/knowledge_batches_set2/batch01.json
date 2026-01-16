@@ -1,0 +1,47 @@
+[
+  {
+    "line": 1750,
+    "title": "Blond bringt nichts",
+    "corrected": "Blond bringt nix",
+    "tmdb_id": null,
+    "notes": "2008 German comedy, colloquial spelling: nix",
+    "suggested_search": "Blond bringt nix",
+    "year": 2008
+  },
+  {
+    "line": 1764,
+    "title": "Blue Velvet – Verbotene Blicke (USA ´85_Rossellini)",
+    "corrected": "Blue Velvet",
+    "tmdb_id": null,
+    "notes": "1986 David Lynch psychological thriller with Isabella Rossellini, Kyle MacLachlan, Dennis Hopper - neo-noir masterpiece",
+    "suggested_search": "Blue Velvet",
+    "year": 1986
+  },
+  {
+    "line": 1781,
+    "title": "Bombardment (The_DK ´2021)",
+    "corrected": "Skyggen i mit øje",
+    "tmdb_id": null,
+    "notes": "2021 Danish war film about 1945 bombing of French School Copenhagen, original title more distinctive",
+    "suggested_search": "Skyggen i mit øje",
+    "year": 2021
+  },
+  {
+    "line": 1811,
+    "title": "Bonn - Alte Freunde, neue Feinde (D ´2023_1-6)",
+    "corrected": "Bonn - Alte Freunde, neue Feinde",
+    "tmdb_id": null,
+    "notes": "2023 German spy thriller series set in 1980s Cold War Bonn",
+    "suggested_search": "Bonn",
+    "year": 2023
+  },
+  {
+    "line": 1825,
+    "title": "Borga (D ´2020)",
+    "corrected": "Borga",
+    "tmdb_id": null,
+    "notes": "2020 German film about Ghanaian diaspora, 'borga' means someone returning from abroad - very distinctive title",
+    "suggested_search": "Borga",
+    "year": 2020
+  }
+]
