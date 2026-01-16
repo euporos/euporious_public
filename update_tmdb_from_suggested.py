@@ -7,18 +7,17 @@ Only processes entries with SUGGESTED_SEARCH that need review.
 import re
 import sys
 import time
+import subprocess
 from pathlib import Path
 from typing import Optional, List, Dict
 import requests
 from rapidfuzz import fuzz
 
 # TMDB API Configuration
-TMDB_API_KEY = None  # Will be set via command line
 TMDB_BASE_URL = "https://api.themoviedb.org/3"
 TMDB_SEARCH_URL = f"{TMDB_BASE_URL}/search/movie"
 
-# Matching thresholds
-HIGH_CONFIDENCE_THRESHOLD = 80
+# Rate limiting
 RATE_LIMIT_DELAY = 0.25  # 4 requests per second
 
 
@@ -109,6 +108,24 @@ def calculate_confidence(original: str, suggested: str, tmdb_title: str, year_hi
     return min(100, title_ratio + year_bonus)
 
 
+def get_api_key_from_pass() -> str:
+    """Retrieve TMDB API key from GNU pass store."""
+    try:
+        result = subprocess.run(
+            ['pass', 'tmdb/api-key'],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        return result.stdout.strip()
+    except subprocess.CalledProcessError as e:
+        print(f"Error retrieving API key from pass: {e}", file=sys.stderr)
+        sys.exit(1)
+    except FileNotFoundError:
+        print("Error: 'pass' command not found. Please install pass or provide API key as argument.", file=sys.stderr)
+        sys.exit(1)
+
+
 def update_org_entries(org_path: Path, api_key: str, dry_run: bool = False) -> int:
     """
     Update org file entries with TMDB_ID from SUGGESTED_SEARCH queries.
@@ -185,7 +202,7 @@ def update_org_entries(org_path: Path, api_key: str, dry_run: bool = False) -> i
                 best_confidence = confidence
                 best_match = result
 
-        if best_match and best_confidence >= HIGH_CONFIDENCE_THRESHOLD:
+        if best_match:
             tmdb_id = best_match["id"]
             tmdb_title = best_match.get("title", "")
             tmdb_year = best_match.get("release_date", "")[:4] if best_match.get("release_date") else ""
@@ -211,7 +228,7 @@ def update_org_entries(org_path: Path, api_key: str, dry_run: bool = False) -> i
 
                 updates += 1
         else:
-            print(f"  ✗ No confident match (best: {best_confidence:.1f})")
+            print(f"  ✗ No match found")
 
     # Write back if not dry run
     if not dry_run and updates > 0:
@@ -226,12 +243,10 @@ def update_org_entries(org_path: Path, api_key: str, dry_run: bool = False) -> i
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: update_tmdb_from_suggested.py <TMDB_API_KEY> [--dry-run]")
-        return 1
-
-    api_key = sys.argv[1]
     dry_run = "--dry-run" in sys.argv
+
+    print("Retrieving API key from pass store (tmdb/api-key)...")
+    api_key = get_api_key_from_pass()
 
     script_dir = Path(__file__).parent
     resources_dir = script_dir / "resources"
