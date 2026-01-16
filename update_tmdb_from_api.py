@@ -189,16 +189,6 @@ def update_org_file(org_file: str, api_key: str, dry_run: bool = False, limit: O
         print(f"Processing: {entry['headline'].strip()}")
         print(f"  Search: '{suggested_search}'" + (f" (year: {year})" if year else ""))
 
-        # Check if already has TMDB data
-        existing_id = entry['properties'].get('TMDB_ID', '').strip()
-        existing_title = entry['properties'].get('TMDB_TITLE', '').strip()
-
-        if existing_id and existing_title:
-            print(f"  Current: {existing_title} (ID: {existing_id})")
-            print(f"  Skipping (already has TMDB data)")
-            stats['skipped'] += 1
-            continue
-
         # Query TMDB
         stats['processed'] += 1
         results = search_tmdb(suggested_search, year, api_key)
