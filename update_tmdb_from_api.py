@@ -217,6 +217,7 @@ def update_org_file(org_file: str, api_key: str, dry_run: bool = False, limit: O
         # Find where to insert/update properties
         tmdb_id_line = entry['property_lines'].get('TMDB_ID')
         tmdb_title_line = entry['property_lines'].get('TMDB_TITLE')
+        manually_checked_line = entry['property_lines'].get('MANUALLY_CHECKED_BY_AI')
 
         if tmdb_id_line is not None:
             # Update existing TMDB_ID
@@ -235,6 +236,15 @@ def update_org_file(org_file: str, api_key: str, dry_run: bool = False, limit: O
             if props_end not in updates:
                 updates[props_end] = []
             updates[props_end].append(f":TMDB_TITLE: {tmdb_title}\n")
+
+        if manually_checked_line is not None:
+            # Update existing MANUALLY_CHECKED_BY_AI
+            updates[manually_checked_line] = f":MANUALLY_CHECKED_BY_AI: true\n"
+        else:
+            # Insert new MANUALLY_CHECKED_BY_AI before :END:
+            if props_end not in updates:
+                updates[props_end] = []
+            updates[props_end].append(f":MANUALLY_CHECKED_BY_AI: true\n")
 
         print(f"  ✓ Will update")
         stats['updated'] += 1
