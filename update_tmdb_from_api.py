@@ -221,7 +221,11 @@ def update_org_file(org_file: str, api_key: str, dry_run: bool = False, limit: O
 
         stats['found'] += 1
 
-        # Update the entry (no longer checking confidence threshold)
+        if confidence < CONFIDENCE_THRESHOLD:
+            print(f"  ⚠ Confidence below threshold ({CONFIDENCE_THRESHOLD}), skipping")
+            continue
+
+        # Update the entry
         props_end = entry['end_line']
 
         # Find where to insert/update properties
