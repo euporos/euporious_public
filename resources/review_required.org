@@ -855,13 +855,13 @@
 :PROPERTIES:
 :RATING: 3
 :DADS_TITLE: Apocalyptico
-:TMDB_ID: 680025
-:TMDB_TITLE: Kreator - London Apocalypticon
+:TMDB_ID: 1579
+:TMDB_TITLE: Apocalypto
 :TMDB_CONFIDENCE: 57.14
 :NEEDS_REVIEW: true
 :ID: 5e16802b-fb3c-4604-b667-107292bbf070
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Apocalypto
 :AI_TITLE: Apocalypto
 :YEAR: 2006
@@ -888,11 +888,12 @@
 :NEEDS_REVIEW: true
 :ID: a3e7a5f1-98b3-4f0d-b849-d480ed276040
 :SUGGESTED_SEARCH: Appaloosa
-:TMDB_ID: 9087
+:TMDB_ID: 12690
 :AI_TITLE: Appaloosa
 :YEAR: 2008
 :AI_NOTES: 2008 Western directed by and starring Ed Harris with Viggo Mortensen, based on Robert B. Parker novel
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_TITLE: Appaloosa
 :END:
 
 * Araf - Im Niemandsland
@@ -905,7 +906,7 @@
 :NEEDS_REVIEW: true
 :ID: 43dad3cb-6f05-4fac-b2f8-00068dcb6d78
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Araf
 :AI_TITLE: Araf
 :YEAR: 2012
@@ -922,7 +923,7 @@
 :NEEDS_REVIEW: true
 :ID: 625ffbfa-3537-4d94-a9ec-203ccf1b55bc
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Arbitrage
 :AI_TITLE: Arbitrage
 :YEAR: 2012
@@ -939,7 +940,7 @@
 :NEEDS_REVIEW: true
 :ID: 550e1235-c5d4-44fb-8c8d-dbf9ce4cb373
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Arbitrage
 :AI_TITLE: Arbitrage
 :YEAR: 2012
@@ -980,13 +981,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Armen (In Deinen_AUS/GB ´2019_/Trailer)
-:TMDB_ID: 590969
-:TMDB_TITLE: Neil Armstrong - Held wider Willen
+:TMDB_ID: 540414
+:TMDB_TITLE: In deinen Armen
 :TMDB_CONFIDENCE: 67.14
 :NEEDS_REVIEW: true
 :ID: 62cf2c68-cd19-4bf7-8125-fd0e5916b2dd
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: In Deinen Armen
 :AI_TITLE: In Deinen Armen
 :YEAR: 2019
@@ -1003,7 +1004,7 @@
 :NEEDS_REVIEW: true
 :ID: b349be64-74bd-408f-82e2-9c5c16574f59
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Armored
 :AI_TITLE: Armored
 :YEAR: 2009
@@ -1074,11 +1075,12 @@
 :NEEDS_REVIEW: true
 :ID: 161f8bad-8bba-4a74-b5f4-25f03fba2770
 :SUGGESTED_SEARCH: A Snake of June
-:TMDB_ID: 42881
+:TMDB_ID: 33431
 :AI_TITLE: A Snake of June
 :YEAR: 2002
 :AI_NOTES: 2002 Shinya Tsukamoto experimental film, Japanese: Rokugatsu no hebi - shot in blue-tinted black & white
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_TITLE: A Snake of June
 :END:
 
 * Atem (Ein_D/GR ´2017)
@@ -1117,7 +1119,7 @@
 :NEEDS_REVIEW: true
 :ID: 8f43b896-9af6-4840-b80f-73670084c2bc
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Comes a Horseman
 :AI_TITLE: Comes a Horseman
 :YEAR: 1978
@@ -1134,7 +1136,7 @@
 :NEEDS_REVIEW: true
 :ID: 64701352-5932-4015-8489-a829a451f143
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Animal Farm
 :AI_TITLE: Animal Farm
 :AI_NOTES: George Orwell adaptation - distinctive title, multiple versions exist
@@ -1163,7 +1165,7 @@
 :NEEDS_REVIEW: true
 :ID: 742c109d-ab7a-4aad-a878-8fe4627c919b
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Edge of Darkness
 :AI_TITLE: Edge of Darkness
 :YEAR: 2010
@@ -1200,13 +1202,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Augenblicke (F ´2017_/Trailer)
-:TMDB_ID: 375183
-:TMDB_TITLE: Das Glück des Augenblicks
+:TMDB_ID: 431017
+:TMDB_TITLE: Meine schöne innere Sonne
 :TMDB_CONFIDENCE: 60.56
 :NEEDS_REVIEW: true
 :ID: 5a9f4b9d-2aaf-452e-acf5-6a3914058bbb
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Un beau soleil intérieur
 :AI_TITLE: Un beau soleil intérieur
 :YEAR: 2017
@@ -1223,7 +1225,7 @@
 :NEEDS_REVIEW: true
 :ID: d6a9750c-fc92-4153-870d-d8f8fc035183
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Augustinus
 :AI_TITLE: Augustinus
 :AI_NOTES: TV miniseries about Saint Augustine of Hippo
@@ -1246,13 +1248,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Axt (Die_Le Couperet_F/SP/B ´2004)
-:TMDB_ID: 85
-:TMDB_TITLE: Jäger des verlorenen Schatzes
+:TMDB_ID: 34186
+:TMDB_TITLE: Die Axt
 :TMDB_CONFIDENCE: 15.38
 :NEEDS_REVIEW: true
 :ID: e23717a4-1507-4ec9-a022-43b15bf39bed
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Le Couperet
 :AI_TITLE: Le Couperet
 :YEAR: 2005
@@ -1286,7 +1288,7 @@
 :NEEDS_REVIEW: true
 :ID: 805debac-ed75-4ca7-8eed-82c17e20f237
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Neighbors
 :AI_TITLE: Neighbors
 :YEAR: 2014
@@ -1322,13 +1324,13 @@
 :PROPERTIES:
 :RATING: 2
 :DADS_TITLE: Barbara (D ´2011_Nina Hoss, Ronald Zehrfeld)
-:TMDB_ID: 79433
-:TMDB_TITLE: Ronal der Barbar
+:TMDB_ID: 88284
+:TMDB_TITLE: Barbara
 :TMDB_CONFIDENCE: 67.14
 :NEEDS_REVIEW: true
 :ID: 89cfd411-b194-4158-8ea5-5be2b66555c5
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Barbara
 :AI_TITLE: Barbara
 :YEAR: 2012
@@ -1392,20 +1394,22 @@
 :SUGGESTED_SEARCH: Bartolo
 :AI_TITLE: Bartolo
 :AI_NOTES: Italian documentary about street dog in Naples, distinctive name
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_ID: 1404118
+:TMDB_TITLE: Bartolo
 :END:
 
 * Baum (Der_The Tree_AUS/F/IT/D ´2010)
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Baum (Der_The Tree_AUS/F/IT/D ´2010)
-:TMDB_ID: 50542
-:TMDB_TITLE: Der Baum der Helden
+:TMDB_ID: 51409
+:TMDB_TITLE: The Tree
 :TMDB_CONFIDENCE: 44.78
 :NEEDS_REVIEW: true
 :ID: 3a44770f-17c7-421e-b723-fe08577a30b6
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: The Tree
 :AI_TITLE: The Tree
 :YEAR: 2010
@@ -1416,13 +1420,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Beben (Das_F/LUX/GUAT ´2019_OMU_hom_/TR)
-:TMDB_ID: 631766
-:TMDB_TITLE: Trommelwirbel
+:TMDB_ID: 515357
+:TMDB_TITLE: Temblores
 :TMDB_CONFIDENCE: 43.33
 :NEEDS_REVIEW: true
 :ID: e3a384fd-eac0-4f9f-9d60-5d9a981c9288
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Temblores
 :AI_TITLE: Temblores
 :YEAR: 2019
@@ -1439,7 +1443,7 @@
 :NEEDS_REVIEW: true
 :ID: 682fff80-6bba-4172-afc3-4ef9f8f891b8
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Fri os fra det onde
 :AI_TITLE: Fri os fra det onde
 :YEAR: 2009
@@ -1469,7 +1473,7 @@
 :NEEDS_REVIEW: true
 :ID: deaf36e0-ed46-42ce-ba22-15242600168a
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Bella Casa
 :AI_TITLE: Bella Casa
 :AI_NOTES: German TV movie/series, distinctive title
@@ -1498,7 +1502,7 @@
 :NEEDS_REVIEW: true
 :ID: dcae0a0e-9640-41ca-9924-00e0b72b02dd
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Belle
 :AI_TITLE: Belle
 :YEAR: 2013
@@ -1512,24 +1516,25 @@
 :NEEDS_REVIEW: true
 :ID: a17f201f-9ca8-4687-87e5-ba591b783610
 :SUGGESTED_SEARCH: Bent
-:TMDB_ID: 467308
+:TMDB_ID: 505579
 :AI_TITLE: Bent
 :YEAR: 2018
 :AI_NOTES: 2018 crime thriller with Karl Urban and Andy Garcia
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_TITLE: Bent - Korruption kennt keine Regeln
 :END:
 
 * Berlin – 1. Mai
 :PROPERTIES:
 :RATING: 2
 :DADS_TITLE: Berlin – 1. Mai
-:TMDB_ID: 133177
-:TMDB_TITLE: Berlin - Prenzlauer Berg
+:TMDB_ID: 1393409
+:TMDB_TITLE: 1. Mai Berlin-Kreuzberg
 :TMDB_CONFIDENCE: 46.15
 :NEEDS_REVIEW: true
 :ID: f3f2dc11-09e0-44e5-a5a2-55a3ddc94bff
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Berlin 1. Mai
 :AI_TITLE: Berlin - 1. Mai
 :AI_NOTES: Documentary about May Day in Berlin, distinctive subject
@@ -1565,13 +1570,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Berühr mich
-:TMDB_ID: 83343
-:TMDB_TITLE: Berühre nicht die weiße Frau
+:TMDB_ID: 216058
+:TMDB_TITLE: Das Berühren des Dudelsacks ist verboten
 :TMDB_CONFIDENCE: 51.28
 :NEEDS_REVIEW: true
 :ID: 6353d7fd-81ed-4b76-b7d9-6599137b85d1
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Berühr mich
 :AI_TITLE: Berühr mich
 :AI_NOTES: Generic German title, unclear which film - needs disambiguation
@@ -1659,13 +1664,13 @@
 :PROPERTIES:
 :RATING: -2
 :DADS_TITLE: Bett (Im)
-:TMDB_ID: 799766
-:TMDB_TITLE: Better Man - Die Robbie Williams Story
+:TMDB_ID: 1417222
+:TMDB_TITLE: Im Bett
 :TMDB_CONFIDENCE: 57.14
 :NEEDS_REVIEW: true
 :ID: d549e4cf-39d7-4993-b37a-344cb2f270f3
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Im Bett
 :AI_TITLE: Im Bett
 :AI_NOTES: Generic German title 'In Bed' - very non-distinctive, needs context
@@ -1708,7 +1713,7 @@
 :NEEDS_REVIEW: true
 :ID: 317b3c46-85e4-4a95-aa47-e498ce6d81a0
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Billy Bathgate
 :AI_TITLE: Billy Bathgate
 :YEAR: 1991
@@ -1725,7 +1730,7 @@
 :NEEDS_REVIEW: true
 :ID: e4e287f0-3717-4cd3-9a14-37ffaf661f76
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Bin-jip
 :AI_TITLE: Bin-jip
 :YEAR: 2004
@@ -1742,7 +1747,7 @@
 :NEEDS_REVIEW: true
 :ID: 1454e8e7-dc05-4b5a-bfe4-4fb828acb822
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Birdwatchers
 :AI_TITLE: Birdwatchers - La terra degli uomini rossi
 :YEAR: 2008
@@ -1753,13 +1758,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Birth (USA ´2003_Nicole Kidman)
-:TMDB_ID: 28182
-:TMDB_TITLE: Birth Rite
+:TMDB_ID: 10740
+:TMDB_TITLE: Birth
 :TMDB_CONFIDENCE: 76.67
 :NEEDS_REVIEW: false
 :ID: 2bfaf132-71ae-4191-a228-44272f8b8ff4
 :AI_VERIFIED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Birth
 :AI_TITLE: Birth
 :YEAR: 2004
@@ -1776,7 +1781,7 @@
 :NEEDS_REVIEW: true
 :ID: bb14b301-6bc3-4989-925b-4a10125c4936
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Bis aufs Blut
 :AI_TITLE: Bis aufs Blut
 :AI_NOTES: German drama about brothers - distinctive idiom 'bis aufs Blut' (to the death)
@@ -1792,7 +1797,7 @@
 :NEEDS_REVIEW: true
 :ID: 87ca3e90-c2db-4faa-8c03-8759e50fc216
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Blackhat
 :AI_TITLE: Blackhat
 :YEAR: 2015
@@ -1809,7 +1814,7 @@
 :NEEDS_REVIEW: true
 :ID: a7146d48-6450-4a96-8437-0c8d551d5213
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Black Mass
 :AI_TITLE: Black Mass
 :YEAR: 2015
@@ -1820,13 +1825,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Black out – Eine Leiche auf Reisen (NL ´2012)
-:TMDB_ID: 82028
-:TMDB_TITLE: Black Out
+:TMDB_ID: 100183
+:TMDB_TITLE: Outpost - Black Sun
 :TMDB_CONFIDENCE: 51.86
 :NEEDS_REVIEW: true
 :ID: b3704fb4-1c04-407d-8039-62e8591c4126
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Black Out
 :AI_TITLE: Black Out
 :YEAR: 2012
@@ -1850,13 +1855,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Bleibt auf der Strecke (Einer_F/IT ´1965_/DNF)
-:TMDB_ID: 74767
-:TMDB_TITLE: Die großen Schnauzen
+:TMDB_ID: 25253
+:TMDB_TITLE: Mein Onkel der Gangster
 :TMDB_CONFIDENCE: 53.9
 :NEEDS_REVIEW: true
 :ID: d4f6fe97-4d80-49e0-8b67-718af1c65d8d
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Les Tontons flingueurs
 :AI_TITLE: Les Tontons flingueurs
 :YEAR: 1963
@@ -1904,7 +1909,7 @@
 :AI_TITLE: Blue Velvet
 :YEAR: 1986
 :AI_NOTES: 1986 David Lynch psychological thriller with Isabella Rossellini, Kyle MacLachlan, Dennis Hopper - neo-noir masterpiece
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Bombardment (The_DK ´2021)
@@ -1921,7 +1926,7 @@
 :AI_TITLE: Skyggen i mit øje
 :YEAR: 2021
 :AI_NOTES: 2021 Danish war film about 1945 bombing of French School Copenhagen, original title more distinctive
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Bombshell – Das Ende de (KAN/USA ´19_fem_/TR)
@@ -1944,11 +1949,12 @@
 :NEEDS_REVIEW: true
 :ID: 4a599137-537a-48d6-96fb-b523bd07d7d2
 :SUGGESTED_SEARCH: Bonn
-:TMDB_ID: 211258
+:TMDB_ID: 995749
 :AI_TITLE: Bonn - Alte Freunde, neue Feinde
 :YEAR: 2023
 :AI_NOTES: 2023 German spy thriller series set in 1980s Cold War Bonn
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_TITLE: Die Bonnards – malen und lieben
 :END:
 
 * Borga (D ´2020)
@@ -1961,7 +1967,7 @@
 :NEEDS_REVIEW: true
 :ID: 7ed485a9-dca6-44a2-99ff-5eea51f84435
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Borga
 :AI_TITLE: Borga
 :YEAR: 2020
@@ -2120,7 +2126,7 @@
 :AI_TITLE: Buster
 :YEAR: 1988
 :AI_NOTES: 1988 British film with Phil Collins as Great Train Robbery's Buster Edwards
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Buster Keaton: Sieben Chancen (USA ´1925_sw)
@@ -2150,7 +2156,7 @@
 :AI_TITLE: Caché
 :YEAR: 2005
 :AI_NOTES: 2005 Michael Haneke masterpiece with Daniel Auteuil, Juliette Binoche - psychological thriller about surveillance and guilt
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Captivity – Tödliches Spiel
@@ -2167,7 +2173,7 @@
 :AI_TITLE: Captivity
 :YEAR: 2007
 :AI_NOTES: 2007 torture horror thriller with Elisha Cuthbert
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Cartagena – Zwischen Liebe und Tod
@@ -2184,7 +2190,7 @@
 :AI_TITLE: Cartagena
 :YEAR: 2009
 :AI_NOTES: 2009 Spanish film
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * César >>> Marius >> Fanny
@@ -2201,7 +2207,7 @@
 :AI_TITLE: Marius
 :YEAR: 1931
 :AI_NOTES: Marcel Pagnol's Marseille Trilogy: Marius (1931), Fanny (1932), César (1936) - this is collection entry, search for first film
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * C‘ est la vie – Das Leben ist ein Fest (B/F ´17_/TR)
@@ -2227,7 +2233,9 @@
 :AI_TITLE: Das andere Kind
 :YEAR: 2013
 :AI_NOTES: 2013 German TV movie with Marie Bäumer based on Charlotte Link thriller novel
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_ID: 38365
+:TMDB_TITLE: Kindsköpfe
 :END:
 
 * Chef (Der_F ´1972_Alain Delon)
@@ -3650,7 +3658,7 @@
 :AI_TITLE: The Fall
 :YEAR: 2006
 :AI_NOTES: 2006 Tarsem Singh visually stunning fantasy film with Lee Pace - masterpiece of cinematography
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Fall Marianne Koch (Der_D ´2023_Jörg Schüttauf)
@@ -3673,11 +3681,12 @@
 :NEEDS_REVIEW: true
 :ID: 30c7fbb1-81c9-40e6-b150-81df347dc9ee
 :SUGGESTED_SEARCH: Sauvage
-:TMDB_ID: 553133
+:TMDB_ID: 518496
 :AI_TITLE: Sauvage
 :YEAR: 2018
 :AI_NOTES: 2018 Camille Vidal-Naquet film about male prostitute, French title more distinctive
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_TITLE: Sauvage
 :END:
 
 * Fall Vera Brühne (Der_D ´2007_C. Harfouch_DNF)
@@ -3765,7 +3774,7 @@
 :NEEDS_REVIEW: true
 :ID: fd0e24d9-95d8-43a3-b742-3361e71ad1da
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: The Joneses
 :AI_TITLE: The Joneses
 :YEAR: 2009
@@ -3814,13 +3823,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Fanny >>> Marius >> César
-:TMDB_ID: 42818
-:TMDB_TITLE: Marius
+:TMDB_ID: 43146
+:TMDB_TITLE: Fanny
 :TMDB_CONFIDENCE: 38.71
 :NEEDS_REVIEW: true
 :ID: 5f84af85-ddee-43d3-98bb-c3145ab385a2
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Fanny
 :AI_TITLE: Fanny
 :YEAR: 1932
@@ -3831,13 +3840,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Fan (The_USA ´1996_Robert De Niro_DNF)
-:TMDB_ID: 173737
-:TMDB_TITLE: Prinzessin Fantaghirò V
+:TMDB_ID: 9566
+:TMDB_TITLE: The Fan
 :TMDB_CONFIDENCE: 50.0
 :NEEDS_REVIEW: true
 :ID: 7d76ab22-98e4-40f2-90ed-1bd22afe6846
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: The Fan
 :AI_TITLE: The Fan
 :YEAR: 1996
@@ -3963,13 +3972,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Final Cut (GB ´2014_/Trailer)
-:TMDB_ID: 222887
-:TMDB_TITLE: Final Cut - Die letzte Vorstellung
+:TMDB_ID: 126314
+:TMDB_TITLE: Final Cut - Ladies and Gentlemen
 :TMDB_CONFIDENCE: 51.86
 :NEEDS_REVIEW: true
 :ID: 457161aa-e590-4416-81a7-b89a9379eb49
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Final Cut
 :AI_TITLE: The Editor
 :YEAR: 2014
@@ -3993,10 +4002,12 @@
 :NEEDS_REVIEW: true
 :ID: 03db8e4d-921c-4e4b-adf5-38e6a5eaf9b0
 :SUGGESTED_SEARCH: Flags of Our Fathers
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Flags of Our Fathers
 :YEAR: 2006
 :AI_NOTES: 2006 Clint Eastwood WWII drama about Iwo Jima flag-raising photo with Ryan Phillippe - companion to Letters from Iwo Jima
+:TMDB_ID: 3683
+:TMDB_TITLE: Flags of Our Fathers
 :END:
 
 * Flawless – Ein tadelloses Verbrechen
@@ -4009,7 +4020,7 @@
 :NEEDS_REVIEW: true
 :ID: 96f32168-31d7-4a72-88fc-550c59e53e39
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Flawless
 :AI_TITLE: Flawless
 :YEAR: 2007
@@ -4146,8 +4157,10 @@
 :SUGGESTED_SEARCH: Zhenshchiny
 :AI_TITLE: Zhenshchiny
 :AI_NOTES: 1965 Pavel Lyubimov Soviet drama about women in Ryazan region during WWII - Russian title distinctive, spelling: Rjasan/Ryazan
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1965
+:TMDB_ID: 77770
+:TMDB_TITLE: Женщины
 :END:
 
 * Frau für Zwei (Eine)
@@ -4173,7 +4186,7 @@
 :NEEDS_REVIEW: true
 :ID: e5b4225e-5a57-4879-bce9-c5991df379da
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Anonyma Eine Frau in Berlin
 :AI_TITLE: Anonyma - Eine Frau in Berlin
 :YEAR: 2008
@@ -4242,7 +4255,7 @@
 :NEEDS_REVIEW: true
 :ID: de285015-1b67-46a8-b6d3-90b08324f8a0
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Strangers on a Train
 :AI_TITLE: Strangers on a Train
 :YEAR: 1951
@@ -4432,10 +4445,12 @@
 :NEEDS_REVIEW: true
 :ID: 738d3e29-ee59-4a18-8c1b-8d480aacdbb5
 :SUGGESTED_SEARCH: Comme un avion
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Comme un avion
 :YEAR: 2015
 :AI_NOTES: 2015 Bruno Podalydès French comedy about man escaping routine by running to China - distinctive whimsical road movie
+:TMDB_ID: 343702
+:TMDB_TITLE: Nur Fliegen ist schöner
 :END:
 
 * Fuchs (Der_Ö/D ´2023_Karl Markovics)
@@ -4471,10 +4486,12 @@
 :NEEDS_REVIEW: true
 :ID: 4d8ebb34-531e-495c-8136-562196adb1f7
 :SUGGESTED_SEARCH: Full Metal Jacket
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Full Metal Jacket
 :YEAR: 1987
 :AI_NOTES: 1987 Stanley Kubrick Vietnam War masterpiece with Matthew Modine, R. Lee Ermey - distinctive two-part structure boot camp to combat
+:TMDB_ID: 600
+:TMDB_TITLE: Full Metal Jacket
 :END:
 
 * Funny People – Wie das Leben so spielt (_/Trailer)
@@ -4513,7 +4530,7 @@
 :NEEDS_REVIEW: true
 :ID: 9a02b97c-8028-45fe-b534-ba811529b2be
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: My Son What Have Ye Done
 :AI_TITLE: My Son, My Son, What Have Ye Done
 :YEAR: 2009
@@ -4682,7 +4699,7 @@
 :NEEDS_REVIEW: true
 :ID: 8515e39e-41c2-45b6-ae6b-e01b808b030e
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Get Out
 :AI_TITLE: Get Out
 :YEAR: 2017
@@ -4812,7 +4829,7 @@
 :NEEDS_REVIEW: true
 :ID: d1d2279e-3f54-4d1a-86c8-5b754a0845b3
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Go Fast
 :AI_TITLE: Go Fast
 :YEAR: 2008
@@ -4860,7 +4877,7 @@
 :NEEDS_REVIEW: true
 :ID: fa25b4f2-9a34-4ffa-9df3-09fa5953bba3
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Goodfellas
 :AI_TITLE: Goodfellas
 :YEAR: 1990
@@ -4907,7 +4924,7 @@
 :NEEDS_REVIEW: true
 :ID: 622ebd85-9d02-4926-b17d-7938c92d4a81
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Gott Schirach
 :AI_TITLE: Gott
 :YEAR: 2020
@@ -4918,13 +4935,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Grabgeflüster
-:TMDB_ID: 10918
-:TMDB_TITLE: Grabgeflüster - Liebe versetzt Särge
+:TMDB_ID: 13160
+:TMDB_TITLE: Nur über ihre Leiche - Meine himmlische Verlobte
 :TMDB_CONFIDENCE: 53.06
 :NEEDS_REVIEW: true
 :ID: 35b22685-cc26-4f33-9092-83aabaf8c204
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Over Her Dead Body
 :AI_TITLE: Over Her Dead Body
 :YEAR: 2008
@@ -5167,7 +5184,7 @@
 :NEEDS_REVIEW: true
 :ID: 124abb39-65bf-4367-b4ec-2829276a3271
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Hagazussa
 :AI_TITLE: Hagazussa
 :YEAR: 2017
@@ -5210,7 +5227,7 @@
 :NEEDS_REVIEW: true
 :ID: 431ef77f-f731-478d-ab48-d941f6e5dc8d
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Hallam Foe
 :AI_TITLE: Hallam Foe
 :YEAR: 2007
@@ -5253,7 +5270,7 @@
 :NEEDS_REVIEW: true
 :ID: 56f14bd3-4eed-4ebc-a796-3bfb89af717f
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Mr. Woodcock
 :AI_TITLE: Mr. Woodcock
 :YEAR: 2007
@@ -5270,7 +5287,7 @@
 :NEEDS_REVIEW: true
 :ID: 40692314-9e47-4e8a-b11c-29a8e019aff4
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Lord of War
 :AI_TITLE: Lord of War
 :YEAR: 2005
@@ -5284,10 +5301,12 @@
 :NEEDS_REVIEW: true
 :ID: 9974409f-18dd-4c43-9083-7369927c1219
 :SUGGESTED_SEARCH: Hanna K
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Hanna K.
 :YEAR: 1983
 :AI_NOTES: 1983 Costa-Gavras Israeli-Palestinian conflict drama with Jill Clayburgh as lawyer - distinctive political examination of occupied territories
+:TMDB_ID: 63665
+:TMDB_TITLE: Hanna K.
 :END:
 
 * Hanna und ihre Bankräuber
@@ -5309,10 +5328,12 @@
 :NEEDS_REVIEW: true
 :ID: 0f2c65ed-7a80-48a1-aba4-0ba3188aab1d
 :SUGGESTED_SEARCH: Cold Pursuit
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Cold Pursuit
 :YEAR: 2019
 :AI_NOTES: 2019 Hans Petter Moland remake of his own Kraftidioten with Liam Neeson as snowplow driver avenging son - distinctive black comedy revenge thriller
+:TMDB_ID: 438650
+:TMDB_TITLE: Hard Powder
 :END:
 
 * Harmonium – Am Abgrund (JAP/F ´2016)
@@ -5322,10 +5343,12 @@
 :NEEDS_REVIEW: true
 :ID: 4c15b1d2-67d7-4380-96b8-bffc69ad0032
 :SUGGESTED_SEARCH: Fuchi ni tatsu
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Fuchi ni tatsu
 :YEAR: 2016
 :AI_NOTES: 2016 Kôji Fukada Japanese family drama about ex-con disrupting suburban life - Cannes Jury Prize, Japanese title distinctive
+:TMDB_ID: 392795
+:TMDB_TITLE: Harmonium
 :END:
 
 * Harry Pinter, Drecksau (Ö ´2017)
@@ -5348,10 +5371,12 @@
 :NEEDS_REVIEW: true
 :ID: 3b126a63-c00f-4444-8b6c-82872ab029e2
 :SUGGESTED_SEARCH: Harry Tracy Desperado
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Harry Tracy, Desperado
 :YEAR: 1982
 :AI_NOTES: 1982 William A. Graham Western with Bruce Dern as real-life outlaw in 1900s Pacific Northwest - distinctive historical bandit biopic
+:TMDB_ID: 110661
+:TMDB_TITLE: Harry Tracy - Der letzte Desperado
 :END:
 
 * Harry Wörz (D ´2010)
@@ -5690,7 +5715,7 @@
 :NEEDS_REVIEW: true
 :ID: 70bb613a-a95d-4095-8e19-a21a70326905
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Så som i himmelen
 :AI_TITLE: Så som i himmelen
 :YEAR: 2004
@@ -5825,7 +5850,7 @@
 :NEEDS_REVIEW: true
 :ID: 118161f8-12de-4ada-8280-d2267741dfd8
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Hope and Glory
 :AI_TITLE: Hope and Glory
 :YEAR: 1987
@@ -6008,7 +6033,7 @@
 :NEEDS_REVIEW: true
 :ID: 068e2874-b72a-434b-8d71-f391b59cdaf9
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Mekong Hotel
 :AI_TITLE: Mekong Hotel
 :YEAR: 2012
@@ -6065,11 +6090,12 @@
 :NEEDS_REVIEW: true
 :ID: 451b7e42-c629-42a8-9bc3-d4fea5ca3fed
 :SUGGESTED_SEARCH: Hundraettåringen smet från notan
-:TMDB_ID: 435808
+:TMDB_ID: 404791
 :AI_TITLE: Hundraettåringen som smet från notan och försvann
 :YEAR: 2016
 :AI_NOTES: 2016 Swedish sequel to 2013 hit comedy about Allan Karlsson's continued adventures - Swedish title distinctive
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_TITLE: Der Hunderteinjährige, der die Rechnung nicht bezahlte und verschwand
 :END:
 
 * Hustlers – Rache ist sexy (USA ´2019_/Trailer)
@@ -6116,7 +6142,7 @@
 :AI_TITLE: Haganenet
 :YEAR: 2014
 :AI_NOTES: 2014 Nadav Lapid Israeli film, English: The Kindergarten Teacher, about teacher obsessed with child prodigy poet
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Ich war zu Hause, aber … (D/SERB ´2019_DNF)
@@ -6202,7 +6228,7 @@
 :NEEDS_REVIEW: true
 :ID: a4535546-bec2-4aee-826d-d9941c983f81
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Into the Wild
 :AI_TITLE: Into the Wild
 :YEAR: 2007
@@ -6229,10 +6255,12 @@
 :NEEDS_REVIEW: true
 :ID: fe66ba38-8de1-45d6-9146-444d682de081
 :SUGGESTED_SEARCH: Irgendwann ist auch mal gut
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Irgendwann ist auch mal gut
 :YEAR: 2020
 :AI_NOTES: 2020 German film - typo: Irgendwann not Irgenwann, distinctive colloquial title
+:TMDB_ID: 655516
+:TMDB_TITLE: Irgendwann ist auch mal gut
 :END:
 
 * Irisches Intermezzo
@@ -6350,13 +6378,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Jagd durch London – Survivor (USA/GB ´2015)
-:TMDB_ID: 334074
-:TMDB_TITLE: Survivor
+:TMDB_ID: 369014
+:TMDB_TITLE: WWE Survivor Series 2015
 :TMDB_CONFIDENCE: 54.44
 :NEEDS_REVIEW: true
 :ID: 2073856f-d5ad-46b4-b682-422d2c84fb58
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Survivor 2015
 :AI_TITLE: Survivor
 :YEAR: 2015
@@ -6380,13 +6408,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Jean Florette – Die Wasser der Hügel
-:TMDB_ID: 4481
-:TMDB_TITLE: Manons Rache
+:TMDB_ID: 4480
+:TMDB_TITLE: Jean Florette
 :TMDB_CONFIDENCE: 37.74
 :NEEDS_REVIEW: true
 :ID: 5be3a5b1-f7d6-498a-865c-4307f6ee4180
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Jean de Florette
 :AI_TITLE: Jean de Florette
 :YEAR: 1986
@@ -6476,13 +6504,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: John Rabe – Der gute Deutsche von Nanking
-:TMDB_ID: 269462
-:TMDB_TITLE: John Rabe - Der Retter mit dem Hakenkreuz
+:TMDB_ID: 5937
+:TMDB_TITLE: John Rabe
 :TMDB_CONFIDENCE: 58.54
 :NEEDS_REVIEW: true
 :ID: c5b6336e-f62e-4eab-9604-e9a3859910a6
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: John Rabe
 :AI_TITLE: John Rabe
 :YEAR: 2009
@@ -6731,13 +6759,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Keine Lüge ohne Dich (F/B ´2005)
-:TMDB_ID: 38583
-:TMDB_TITLE: Geliebte Lügen
+:TMDB_ID: 51865
+:TMDB_TITLE: Die kleine Lili
 :TMDB_CONFIDENCE: 62.94
 :NEEDS_REVIEW: true
 :ID: 34928ae3-f337-48a6-8bf1-fdc9d4033a03
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: La petite Lili
 :AI_TITLE: La petite Lili
 :YEAR: 2003
@@ -6780,7 +6808,7 @@
 :NEEDS_REVIEW: true
 :ID: d840c73a-0ae6-4ce8-b816-5eec4601e5a5
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Keoma
 :AI_TITLE: Keoma
 :YEAR: 1976
@@ -6880,13 +6908,13 @@
 :PROPERTIES:
 :RATING: 0
 :DADS_TITLE: Klasse (Die)
-:TMDB_ID: 249078
-:TMDB_TITLE: Klassenleben
+:TMDB_ID: 8841
+:TMDB_TITLE: Die Klasse
 :TMDB_CONFIDENCE: 66.67
 :NEEDS_REVIEW: true
 :ID: 00ee5d7d-74af-4060-ab60-bb0498b8f0f4
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Entre les murs
 :AI_TITLE: Entre les murs
 :YEAR: 2008
@@ -6965,7 +6993,7 @@
 :NEEDS_REVIEW: true
 :ID: 8532ca0d-e200-42f3-b831-6ab02d53a821
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Kongen av Bastøy
 :AI_TITLE: Kongen av Bastøy
 :YEAR: 2010
@@ -6995,7 +7023,7 @@
 :NEEDS_REVIEW: true
 :ID: 921808a1-48da-49ad-89ec-2fb8bfca490a
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Kopftuchmafia
 :AI_TITLE: Kopftuchmafia
 :YEAR: 2024
@@ -7167,13 +7195,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Labyrinth (Das_USA ´1950_sw)
-:TMDB_ID: 43396
-:TMDB_TITLE: Menschen ohne Seele
+:TMDB_ID: 16958
+:TMDB_TITLE: Asphalt-Dschungel
 :TMDB_CONFIDENCE: 37.27
 :NEEDS_REVIEW: true
 :ID: 01be9b12-9fd7-4eab-92a7-0a25cb743216
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Asphalt Jungle
 :AI_TITLE: The Asphalt Jungle
 :YEAR: 1950
@@ -7240,10 +7268,12 @@
 :NEEDS_REVIEW: true
 :ID: 03e85c66-84c4-4b96-9c79-348dc7c4a7e2
 :SUGGESTED_SEARCH: La grande bellezza
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: La grande bellezza
 :YEAR: 2013
 :AI_NOTES: 2013 Paolo Sorrentino Italian masterpiece with Toni Servillo about jaded Rome journalist - Oscar winner, distinctive visual poem about decadence
+:TMDB_ID: 179144
+:TMDB_TITLE: La Grande Bellezza - Die große Schönheit
 :END:
 
 * La Luna – Deal mit dem Feind
@@ -7299,10 +7329,12 @@
 :NEEDS_REVIEW: true
 :ID: 823db761-7d30-4474-a290-bf8c4cc4f86a
 :SUGGESTED_SEARCH: Largo Winch
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Largo Winch
 :YEAR: 2008
 :AI_NOTES: 2008 Jérôme Salle French action thriller with Tomer Sisley as billionaire heir uncovering conspiracy - based on Belgian comic, distinctive corporate thriller
+:TMDB_ID: 14400
+:TMDB_TITLE: Largo Winch - Tödliches Erbe
 :END:
 
 * Lästige Witwe (Die_Ö ´2007_reihe)
@@ -7319,13 +7351,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Last Journey – Die letzte Reise der Me (F ´20_DNF)
-:TMDB_ID: 754765
-:TMDB_TITLE: The Last Journey
+:TMDB_ID: 785209
+:TMDB_TITLE: Playground
 :TMDB_CONFIDENCE: 44.44
 :NEEDS_REVIEW: true
 :ID: 2e768639-76d3-42a3-a73c-d1d6315dfded
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Un monde
 :AI_TITLE: Un monde
 :YEAR: 2021
@@ -7352,10 +7384,12 @@
 :NEEDS_REVIEW: true
 :ID: a525316f-1202-4d3d-ad43-a0332a6bb7e8
 :SUGGESTED_SEARCH: Late Bloomers
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Late Bloomers
 :YEAR: 2011
 :AI_NOTES: 2011 Julie Gavras French-Belgian comedy with William Hurt, Isabella Rossellini about couple facing aging - distinctive late-life crisis romance
+:TMDB_ID: 79995
+:TMDB_TITLE: Late Bloomers
 :END:
 
 * Laufen (D ´2023_Katharina Wackernagel))
@@ -7394,7 +7428,7 @@
 :NEEDS_REVIEW: true
 :ID: 99f322e3-6fc1-40fa-bbba-a18654a924c7
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: La Zona
 :AI_TITLE: La Zona
 :YEAR: 2007
@@ -7421,10 +7455,12 @@
 :NEEDS_REVIEW: true
 :ID: d6e602ee-eec8-4b96-90b0-07493df522ee
 :SUGGESTED_SEARCH: Life Less Ordinary
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: A Life Less Ordinary
 :YEAR: 1997
 :AI_NOTES: 1997 Danny Boyle romantic comedy with Ewan McGregor, Cameron Diaz about kidnapping orchestrated by angels - distinctive quirky rom-com
+:TMDB_ID: 8067
+:TMDB_TITLE: Lebe lieber ungewöhnlich
 :END:
 
 * Leben (Das_D ´2018_hom_/Trailer)
@@ -7486,10 +7522,12 @@
 :NEEDS_REVIEW: true
 :ID: 12ba5deb-ad48-4c26-a0a9-e9a0519230d7
 :SUGGESTED_SEARCH: Ba wang bie ji
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Ba wang bie ji
 :YEAR: 1993
 :AI_NOTES: 1993 Chen Kaige epic with Leslie Cheung about Peking Opera performers through 20th century China - Palme d'Or winner, distinctive historical drama
+:TMDB_ID: 10997
+:TMDB_TITLE: Lebewohl, meine Konkubine
 :END:
 
 * Lederhosen Affäre (Ö ´2021_DNF)
@@ -7506,13 +7544,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Legende (Die)
-:TMDB_ID: 4476
-:TMDB_TITLE: Legenden der Leidenschaft
+:TMDB_ID: 356216
+:TMDB_TITLE: Legend of the Krays
 :TMDB_CONFIDENCE: 53.85
 :NEEDS_REVIEW: true
 :ID: 4f2f5f59-23d2-41f0-aa6e-a8fd94be8bc5
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Legend Kray
 :AI_TITLE: Legend
 :YEAR: 2015
@@ -7552,11 +7590,12 @@
 :NEEDS_REVIEW: true
 :ID: 92894e78-f870-4bb3-a70c-30c66092c730
 :SUGGESTED_SEARCH: Etz Limon
-:TMDB_ID: 18462
+:TMDB_ID: 7860
 :AI_TITLE: Etz Limon
 :YEAR: 2008
 :AI_NOTES: 2008 Eran Riklis Israeli-German-French drama about Palestinian widow's lemon grove threatened by Israeli defense minister - distinctive Middle East conflict allegory
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_TITLE: Lemon Tree
 :END:
 
 * Lena Lorenz (D/Ö ´2024_heimatreihe_/Trailer)
@@ -7749,7 +7788,7 @@
 :NEEDS_REVIEW: true
 :ID: 4f00d280-106e-4e6c-af29-1a303fcf812e
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Behind the Candelabra
 :AI_TITLE: Behind the Candelabra
 :YEAR: 2013
@@ -7783,7 +7822,7 @@
 :NEEDS_REVIEW: true
 :ID: 2d5dbb6c-2957-42eb-8a77-94d6d53e6ffe
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Eagle vs Shark
 :AI_TITLE: Eagle vs Shark
 :YEAR: 2007
@@ -7860,13 +7899,13 @@
 :PROPERTIES:
 :RATING: 0
 :DADS_TITLE: Liebeskämpfe (F ´2013)
-:TMDB_ID: 167668
-:TMDB_TITLE: Love Battles - Mein erotischer Ringkampf
+:TMDB_ID: 270343
+:TMDB_TITLE: Liebe auf den ersten Schlag
 :TMDB_CONFIDENCE: 44.62
 :NEEDS_REVIEW: true
 :ID: c99ba412-8bcb-4272-8653-589dcb803e39
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Les combattants
 :AI_TITLE: Les combattants
 :YEAR: 2014
@@ -7896,7 +7935,7 @@
 :NEEDS_REVIEW: true
 :ID: 1f31137f-2b7e-4117-980a-41c7c8bb2dc5
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Enduring Love
 :AI_TITLE: Enduring Love
 :YEAR: 2004
@@ -7966,7 +8005,7 @@
 :NEEDS_REVIEW: true
 :ID: 3870e192-3120-4946-bd24-46d06ae01e01
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Limits of Control
 :AI_TITLE: The Limits of Control
 :YEAR: 2009
@@ -8022,7 +8061,7 @@
 :NEEDS_REVIEW: true
 :ID: 02fa34f6-9e83-4a13-be5c-c1f895e5eca3
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Little Voice
 :AI_TITLE: Little Voice
 :YEAR: 1998
@@ -8036,10 +8075,12 @@
 :NEEDS_REVIEW: true
 :ID: fbabe1e3-aa25-4e1f-b49b-c2bfd5606911
 :SUGGESTED_SEARCH: Lollipop Monster
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Lollipop Monster
 :YEAR: 2011
 :AI_NOTES: 2011 Ziska Riemann German coming-of-age drama about two girls escaping difficult homes - distinctive youth rebellion film
+:TMDB_ID: 91973
+:TMDB_TITLE: Lollipop Monster
 :END:
 
 * Louise by the Shore (F/KAN ´2016_/Trailer)
@@ -8107,7 +8148,7 @@
 :NEEDS_REVIEW: true
 :ID: 9b85ef4c-c7d6-42ed-9e73-7b9a049dc044
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Lymelife
 :AI_TITLE: Lymelife
 :YEAR: 2008
@@ -8137,7 +8178,7 @@
 :NEEDS_REVIEW: true
 :ID: 39bdadc6-1251-42c2-a952-58613f7db1cc
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Simindis kundzuli
 :AI_TITLE: Simindis kundzuli
 :YEAR: 2014
@@ -8154,7 +8195,7 @@
 :NEEDS_REVIEW: true
 :ID: d74444a8-064c-4848-be0b-e10b531179f8
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Papa ou maman
 :AI_TITLE: Papa ou maman
 :YEAR: 2015
@@ -8185,10 +8226,12 @@
 :NEEDS_REVIEW: true
 :ID: e615233b-f60e-41cb-9fe3-94334a18007a
 :SUGGESTED_SEARCH: Maman chez coiffeur
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Maman est chez le coiffeur
 :YEAR: 2008
 :AI_NOTES: 2008 Léa Pool Canadian-French film about family breakdown in 1960s - distinctive Quebec period drama
+:TMDB_ID: 58841
+:TMDB_TITLE: Maman ist kurz beim Friseur
 :END:
 
 * Mandantin (Die_Barbara Rudnik)
@@ -8231,7 +8274,7 @@
 :NEEDS_REVIEW: true
 :ID: 1ad121fd-713f-4c83-9f7d-7ae13372a6a8
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Manhunter
 :AI_TITLE: Manhunter
 :YEAR: 1986
@@ -8248,7 +8291,7 @@
 :NEEDS_REVIEW: true
 :ID: d42f8ae5-6716-4f27-a88b-45cb959429e8
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Mr Nobody
 :AI_TITLE: Mr. Nobody
 :YEAR: 2009
@@ -8327,10 +8370,12 @@
 :NEEDS_REVIEW: true
 :ID: 05a40610-85c7-43ca-9a4f-37144d8f7f22
 :SUGGESTED_SEARCH: Marcello Marcello
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Marcello Marcello
 :YEAR: 2008
 :AI_NOTES: 2008 Denis Dercourt French drama with Christa Théret as girl discovering love in Provence summer - distinctive coming-of-age story
+:TMDB_ID: 86713
+:TMDB_TITLE: Marcello Marcello - Alles Liebe
 :END:
 
 * Margin Call – Der große Crash
@@ -8343,7 +8388,7 @@
 :NEEDS_REVIEW: true
 :ID: 674a4ae4-db62-4399-b445-02a95581544d
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Margin Call
 :AI_TITLE: Margin Call
 :YEAR: 2011
@@ -8698,10 +8743,12 @@
 :NEEDS_REVIEW: true
 :ID: 6ba7407d-4a31-45c2-89c5-34d698dfc3bb
 :SUGGESTED_SEARCH: Mittsommernachtstango
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Mittsommernachtstango
 :YEAR: 2013
 :AI_NOTES: 2013 German romantic comedy - distinctive midsummer romance film
+:TMDB_ID: 250129
+:TMDB_TITLE: Mittsommernachtstango
 :END:
 
 * Model (The_DK ´2016)
@@ -8836,7 +8883,7 @@
 :NEEDS_REVIEW: true
 :ID: c703e6db-2a39-483c-b209-d1213c1634be
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Spinning Man
 :AI_TITLE: Spinning Man
 :YEAR: 2018
@@ -9093,10 +9140,12 @@
 :NEEDS_REVIEW: true
 :ID: 54d27e8e-dd19-4244-9b32-c11b9b7787d1
 :SUGGESTED_SEARCH: Nachbar Dackel
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Mein Nachbar, sein Dackel und ich
 :YEAR: 2009
 :AI_NOTES: 2009 German comedy about neighbor complications - distinctive lighthearted romantic comedy
+:TMDB_ID: 290894
+:TMDB_TITLE: Mein Nachbar, sein Dackel & ich
 :END:
 
 * Nachbar Totoro (Mein)
@@ -9132,10 +9181,12 @@
 :NEEDS_REVIEW: true
 :ID: 3ff82437-6e8d-4673-ab5b-9573fb07d4f8
 :SUGGESTED_SEARCH: Hippocrate
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Hippocrate
 :YEAR: 2018
 :AI_NOTES: 2018-2022 French medical TV series about young doctor in Paris hospital - distinctive medical drama
+:TMDB_ID: 502097
+:TMDB_TITLE: Hippocrate aux enfers
 :END:
 
 * Nacht bei Maud (Meine)
@@ -9161,7 +9212,7 @@
 :NEEDS_REVIEW: true
 :ID: d7c662c1-4d4c-4130-8c1b-df2366064547
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Trouble with Being Born
 :AI_TITLE: The Trouble with Being Born
 :YEAR: 2020
@@ -9244,10 +9295,12 @@
 :NEEDS_REVIEW: true
 :ID: 526b9d8e-b504-40f9-9298-b3ac9ff6e864
 :SUGGESTED_SEARCH: Kaze no tani no Naushika
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Kaze no tani no Naushika
 :YEAR: 1984
 :AI_NOTES: 1984 Hayao Miyazaki anime masterpiece about princess in post-apocalyptic world - distinctive environmental epic, pre-Ghibli
+:TMDB_ID: 81
+:TMDB_TITLE: Nausicaä aus dem Tal der Winde
 :END:
 
 * Neapolitanische Geschwister (OMU)
@@ -9274,10 +9327,12 @@
 :NEEDS_REVIEW: true
 :ID: 2091413d-30b3-4747-99c5-15fef9b58d6d
 :SUGGESTED_SEARCH: Nelly Monsieur Arnaud
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Nelly et Monsieur Arnaud
 :YEAR: 1995
 :AI_NOTES: 1995 Claude Sautet French drama with Emmanuelle Béart, Michel Serrault about May-December relationship - distinctive intimate character study
+:TMDB_ID: 12652
+:TMDB_TITLE: Nelly & Monsieur Arnaud
 :END:
 
 * Nerven – Deine Nerven (Meine)
@@ -9303,7 +9358,7 @@
 :NEEDS_REVIEW: true
 :ID: 40e2c8e3-f1df-4a33-81c1-60be7065f3ac
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Minus Man
 :AI_TITLE: The Minus Man
 :YEAR: 1999
@@ -9370,13 +9425,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Neue (Die_D ´2015_islam)
-:TMDB_ID: 38757
-:TMDB_TITLE: Rapunzel - Neu verföhnt
+:TMDB_ID: 417981
+:TMDB_TITLE: DJ's - Die neuen Superstars (2015)
 :TMDB_CONFIDENCE: 36.36
 :NEEDS_REVIEW: true
 :ID: cb4703fe-37b9-4bf8-9584-5518c38a1104
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Die Neue 2015
 :AI_TITLE: Die Neue
 :YEAR: 2015
@@ -9429,7 +9484,7 @@
 :NEEDS_REVIEW: true
 :ID: 18bee852-1ad1-4c38-9a90-15710e45e900
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Nice Guys
 :AI_TITLE: The Nice Guys
 :YEAR: 2016
@@ -9492,8 +9547,8 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: No escape – Renn um Dein Leben (USA ´15_DNF)
-:TMDB_ID: 192141
-:TMDB_TITLE: No Escape
+:TMDB_ID: 393992
+:TMDB_TITLE: RPW: No Escape 2015
 :TMDB_CONFIDENCE: 46.15
 :NEEDS_REVIEW: true
 :ID: 9f51271c-1bd2-4c00-a512-13c36850c7b3
@@ -9502,7 +9557,7 @@
 :AI_TITLE: No Escape
 :YEAR: 2015
 :AI_NOTES: 2015 John Erick Dowdle thriller about American family trapped in Southeast Asian coup - distinctive survival action
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Nomi Song (The)
@@ -9561,8 +9616,8 @@
 :PROPERTIES:
 :RATING: 2
 :DADS_TITLE: November – Paris im Fadenkreuz (F ´15_bataclan)
-:TMDB_ID: 823951
-:TMDB_TITLE: November
+:TMDB_ID: 1176264
+:TMDB_TITLE: 11/2/21 - 11/6/21
 :TMDB_CONFIDENCE: 42.11
 :NEEDS_REVIEW: true
 :ID: 4deb5048-df55-4727-9332-b91fc9737e45
@@ -9571,7 +9626,7 @@
 :AI_TITLE: Un + une
 :YEAR: 2021
 :AI_NOTES: 2021 Cédric Jimenez French police procedural about aftermath of 2015 Bataclan attacks - distinctive terrorism investigation thriller
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Now or Never (D ´2020)
@@ -9628,7 +9683,7 @@
 :NEEDS_REVIEW: true
 :ID: 4b86f2d5-c669-454b-8065-ebd306d6989c
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: dossier 51
 :AI_TITLE: Le dossier 51
 :YEAR: 1978
@@ -9715,7 +9770,7 @@
 :NEEDS_REVIEW: true
 :ID: 5fe62e6e-70d8-46aa-9ef0-fcd92662a818
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Elsker dig for evigt
 :AI_TITLE: Elsker dig for evigt
 :YEAR: 2002
@@ -9745,7 +9800,7 @@
 :NEEDS_REVIEW: true
 :ID: 244a27d1-4933-4b1b-bd14-0e7ee3ed168a
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Adventures Mathematician
 :AI_TITLE: Adventures of a Mathematician
 :YEAR: 2020
@@ -9762,7 +9817,7 @@
 :NEEDS_REVIEW: true
 :ID: 0a4437c5-c0b7-44cd-bf95-b569eacf29c8
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Orangentage
 :AI_TITLE: Orangentage
 :YEAR: 2019
@@ -9792,7 +9847,7 @@
 :NEEDS_REVIEW: true
 :ID: 087a9f48-6d05-4901-a626-9a48b6673f06
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Bizim Büyük Çaresizliğimiz
 :AI_TITLE: Bizim Büyük Çaresizliğimiz
 :YEAR: 2011
@@ -10009,7 +10064,7 @@
 :AI_TITLE: Perfect Sense
 :YEAR: 2011
 :AI_NOTES: 2011 David Mackenzie sci-fi romance about pandemic removing senses - distinctive apocalyptic love story
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Pfeiler der Macht (Die_D ´2016_1+2)
@@ -10043,8 +10098,8 @@
 :PROPERTIES:
 :RATING: 3
 :DADS_TITLE: Plan A (D/ISRAEL/GB ´2019_August Diehl)
-:TMDB_ID: 565701
-:TMDB_TITLE: Escape Plan 2 - Hades
+:TMDB_ID: 714968
+:TMDB_TITLE: Plan A
 :TMDB_CONFIDENCE: 51.15
 :NEEDS_REVIEW: true
 :ID: b0aafc9e-ba82-437e-b12d-c3940457e4d0
@@ -10053,7 +10108,7 @@
 :AI_TITLE: Plan A
 :YEAR: 2021
 :AI_NOTES: 2021 Yoav Paz/Doron Paz thriller about Jewish Holocaust survivors plotting revenge - distinctive post-WWII revenge drama
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Plan (Der_USA ´2011_/Trailer)
@@ -10096,7 +10151,7 @@
 :AI_TITLE: Gake no ue no Ponyo
 :YEAR: 2008
 :AI_NOTES: 2008 Hayao Miyazaki Studio Ghibli fantasy about goldfish becoming human - distinctive Little Mermaid-inspired anime
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Prall im Leben
@@ -10109,7 +10164,7 @@
 :NEEDS_REVIEW: true
 :ID: 7e82440c-79c4-489d-8890-127b5759fb73
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Gordos
 :AI_TITLE: Gordos
 :YEAR: 2009
@@ -10162,7 +10217,7 @@
 :NEEDS_REVIEW: true
 :ID: c8b82119-7bdf-4ba6-a401-d9f19c0cd00f
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Princesas
 :AI_TITLE: Princesas
 :YEAR: 2005
@@ -10179,7 +10234,7 @@
 :NEEDS_REVIEW: true
 :ID: 86e1d404-caca-4f14-93cf-f2d7a0b4e53b
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Professor 2018
 :AI_TITLE: The Professor
 :YEAR: 2018
@@ -10233,10 +10288,12 @@
 :NEEDS_REVIEW: true
 :ID: d22b691e-c59a-4610-810d-2d8ecc532e63
 :SUGGESTED_SEARCH: Public Enemies
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Public Enemies
 :YEAR: 2009
 :AI_NOTES: 2009 Michael Mann crime drama about John Dillinger - distinctive Depression-era gangster epic
+:TMDB_ID: 11322
+:TMDB_TITLE: Public Enemies
 :END:
 
 * Public Enemy No. 1
@@ -10259,10 +10316,12 @@
 :NEEDS_REVIEW: true
 :ID: e3516825-5c2c-41b7-a571-499d053ae11f
 :SUGGESTED_SEARCH: Pulp Fiction
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Pulp Fiction
 :YEAR: 1994
 :AI_NOTES: 1994 Quentin Tarantino nonlinear crime masterpiece - Palme d'Or winner, distinctive postmodern noir
+:TMDB_ID: 680
+:TMDB_TITLE: Pulp Fiction
 :END:
 
 * Puppe CH/D ´2013)
@@ -10292,10 +10351,12 @@
 :NEEDS_REVIEW: true
 :ID: 02cc4460-c1e0-4abe-9849-6405907d1d71
 :SUGGESTED_SEARCH: Qissa
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Qissa
 :YEAR: 2013
 :AI_NOTES: 2013 Anup Singh Indian Partition drama about Sikh man raising daughter as son - distinctive gender identity ghost story
+:TMDB_ID: 214348
+:TMDB_TITLE: Qissa. Der Geist ist ein einsamer Wanderer
 :END:
 
 * Quantum Trost (Ein_USA_007_Daniel Craig)
@@ -10315,13 +10376,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Quartett - Ewig junge Leidenschaft (GB '2012_/TR)
-:TMDB_ID: 121826
-:TMDB_TITLE: Quartett
+:TMDB_ID: 340025
+:TMDB_TITLE: Buster Williams Quartet Live At Blue Note Milan 2012
 :TMDB_CONFIDENCE: 48.1
 :NEEDS_REVIEW: true
 :ID: e4ee7b26-f46b-45df-9e4d-d79db8cac6be
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Quartet 2012
 :AI_TITLE: Quartet
 :YEAR: 2012
@@ -10364,7 +10425,7 @@
 :NEEDS_REVIEW: true
 :ID: 11a86af8-dc6c-44f6-8382-b9c02d5d20e9
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: source des femmes
 :AI_TITLE: La source des femmes
 :YEAR: 2011
@@ -10411,13 +10472,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Rache (CAN/N ´2015)
-:TMDB_ID: 369777
-:TMDB_TITLE: Gnadenlose Rache
+:TMDB_ID: 252822
+:TMDB_TITLE: Einer nach dem anderen
 :TMDB_CONFIDENCE: 52.62
 :NEEDS_REVIEW: true
 :ID: 449fdc98-d877-45a3-ada7-904f93e91722
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Kraftidioten
 :AI_TITLE: Kraftidioten
 :YEAR: 2014
@@ -10640,7 +10701,7 @@
 :NEEDS_REVIEW: true
 :ID: f4ccd35a-e690-4492-a61e-896a4eb70fb2
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Riesending
 :AI_TITLE: Das Riesending
 :YEAR: 2022
@@ -10838,13 +10899,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Samstag (An einem )
-:TMDB_ID: 64744
-:TMDB_TITLE: An einem Samstag
+:TMDB_ID: 37230
+:TMDB_TITLE: Samstagnacht bis Sonntagmorgen
 :TMDB_CONFIDENCE: 60.87
 :NEEDS_REVIEW: true
 :ID: 2e4e7495-977d-4791-a3d0-7099e78fd028
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Saturday Night Sunday Morning
 :AI_TITLE: Saturday Night and Sunday Morning
 :YEAR: 1960
@@ -10858,11 +10919,12 @@
 :NEEDS_REVIEW: true
 :ID: c182b1c0-ccc5-47df-b711-23ccce31de98
 :SUGGESTED_SEARCH: Saturday Night and Sunday Morning
-:TMDB_ID: 27095
+:TMDB_ID: 37230
 :AI_TITLE: Saturday Night and Sunday Morning
 :YEAR: 1960
 :AI_NOTES: 1960 Karel Reisz British kitchen sink realism with Albert Finney as rebellious factory worker - seminal New Wave film
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_TITLE: Samstagnacht bis Sonntagmorgen
 :END:
 
 * Samsung und Delilah (Australien)
@@ -10872,11 +10934,12 @@
 :NEEDS_REVIEW: true
 :ID: f82a60fd-7cb7-46ab-8be2-5e5bbba71cf6
 :SUGGESTED_SEARCH: Samson and Delilah
-:TMDB_ID: 28588
+:TMDB_ID: 47075
 :AI_TITLE: Samson and Delilah
 :YEAR: 2009
 :AI_NOTES: 2009 Warwick Thornton Australian film about Indigenous youth in central Australia - typo: Samson not Samsung, Caméra d'Or winner
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_TITLE: Samson and Delilah
 :END:
 
 * Savages – Im Auge des Kartells
@@ -10893,7 +10956,7 @@
 :AI_TITLE: Savages
 :YEAR: 2012
 :AI_NOTES: 2012 Oliver Stone crime thriller about California marijuana growers vs Mexican cartel with Taylor Kitsch, Blake Lively, Aaron Taylor-Johnson
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Savoy (ISR ´2022)
@@ -11052,7 +11115,7 @@
 :NEEDS_REVIEW: true
 :ID: 9dd08aae-a051-4b72-9e9d-89db261bafac
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: bella mugnaia
 :AI_TITLE: La bella mugnaia
 :YEAR: 1955
@@ -11082,7 +11145,7 @@
 :NEEDS_REVIEW: true
 :ID: be3c853f-401d-4c6c-88d4-166da0422d16
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: acacias
 :AI_TITLE: Las acacias
 :YEAR: 2011
@@ -11162,13 +11225,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Schusslinie (In der )
-:TMDB_ID: 163421
-:TMDB_TITLE: In der Schußlinie
+:TMDB_ID: 9386
+:TMDB_TITLE: In the Line of Fire - Die zweite Chance
 :TMDB_CONFIDENCE: 64.29
 :NEEDS_REVIEW: true
 :ID: c73898ad-cd1e-4ec3-a6e0-4e42739af287
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Line of Fire
 :AI_TITLE: In the Line of Fire
 :YEAR: 1993
@@ -11211,7 +11274,7 @@
 :NEEDS_REVIEW: true
 :ID: 0c895c45-8cfb-4d58-988f-4971980d61c6
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Black Dahlia
 :AI_TITLE: The Black Dahlia
 :YEAR: 2006
@@ -11258,7 +11321,7 @@
 :NEEDS_REVIEW: true
 :ID: 43784fe3-f7dd-41ec-ad53-7e31a32e7082
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Wicker Park
 :AI_TITLE: Wicker Park
 :YEAR: 2004
@@ -11269,13 +11332,13 @@
 :PROPERTIES:
 :RATING: 2
 :DADS_TITLE: Seilen (In den)
-:TMDB_ID: 632671
-:TMDB_TITLE: Das Seil
+:TMDB_ID: 833417
+:TMDB_TITLE: Julie - eine Frau gibt nicht auf
 :TMDB_CONFIDENCE: 57.14
 :NEEDS_REVIEW: true
 :ID: 8304c722-a780-405f-ab82-dedc2e39eabc
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: plein temps
 :AI_TITLE: À plein temps
 :YEAR: 2021
@@ -11292,7 +11355,7 @@
 :NEEDS_REVIEW: true
 :ID: d82b107a-d0b9-4f21-bd58-2129cd22a80e
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Seine Mutter und ich
 :AI_TITLE: Seine Mutter und ich
 :YEAR: 2020
@@ -11352,7 +11415,7 @@
 :NEEDS_REVIEW: true
 :ID: 4130aff3-a6e4-4f33-b6d3-bbcccd58d26c
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Seraphim Falls
 :AI_TITLE: Seraphim Falls
 :YEAR: 2006
@@ -11416,7 +11479,7 @@
 :AI_TITLE: Sexy Beast
 :YEAR: 2000
 :AI_NOTES: 2000 Jonathan Glazer British crime thriller with Ray Winstone, Ben Kingsley as terrifying gangster - distinctive violent character study
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Shattered Glass – Lüge und Wahrheit
@@ -11439,11 +11502,12 @@
 :NEEDS_REVIEW: true
 :ID: d6adbc48-1910-44df-ab23-cad600f8606b
 :SUGGESTED_SEARCH: Shéhérazade
-:TMDB_ID: 490285
+:TMDB_ID: 518671
 :AI_TITLE: Shéhérazade
 :YEAR: 2018
 :AI_NOTES: 2018 Jean-Bernard Marlin French social realism about young Marseille couple - distinctive contemporary French romance
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
+:TMDB_TITLE: Shéhérazade
 :END:
 
 * Shoplifters (JAP ´2018)
@@ -11460,7 +11524,7 @@
 :AI_TITLE: Manbiki kazoku
 :YEAR: 2018
 :AI_NOTES: 2018 Hirokazu Kore-eda Japanese family drama about makeshift family of shoplifters - Palme d'Or winner, distinctive social critique
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Siebte Sohn (Der_GB/USA/KAN ´2014)
@@ -11516,7 +11580,7 @@
 :AI_TITLE: Sin Nombre
 :YEAR: 2009
 :AI_NOTES: 2009 Cary Joji Fukunaga directorial debut about Central American migrants and gang member fleeing to US - Sundance winner, distinctive immigration drama
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Sisters – Die Schwestern des Bösen (USA ´72_/TR)
@@ -11591,10 +11655,12 @@
 :NEEDS_REVIEW: true
 :ID: f91ce5bb-a173-4a3f-a62e-63e8e49a2515
 :SUGGESTED_SEARCH: Snatch
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Snatch
 :YEAR: 2000
 :AI_NOTES: 2000 Guy Ritchie British crime comedy with ensemble cast about diamond heist gone wrong - distinctive stylized gangster film
+:TMDB_ID: 107
+:TMDB_TITLE: Snatch - Schweine und Diamanten
 :END:
 
 * Snowmen’s Land
@@ -11627,10 +11693,12 @@
 :NEEDS_REVIEW: true
 :ID: e1e01ac8-a9ea-4527-9fb0-bbc37425ceab
 :SUGGESTED_SEARCH: Solitary Man
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Solitary Man
 :YEAR: 2009
 :AI_NOTES: 2009 Brian Koppelman/David Levien drama with Michael Douglas as aging womanizer facing mortality - distinctive character study
+:TMDB_ID: 36691
+:TMDB_TITLE: Solitary Man
 :END:
 
 * Sommer, drei Frauen, ein Cafe (Ein)
@@ -11679,10 +11747,12 @@
 :NEEDS_REVIEW: true
 :ID: 5719eb86-457f-48cb-ba52-b12c2a8f6802
 :SUGGESTED_SEARCH: Sonny Boy
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Sonny Boy
 :YEAR: 2011
 :AI_NOTES: 2011 Maria Peters Dutch drama about interracial couple during Nazi occupation - distinctive WWII romance
+:TMDB_ID: 59424
+:TMDB_TITLE: Sonny Boy - Eine Liebe in dunkler Zeit
 :END:
 
 * SOS Feuer an Bord: Nur Engel ha... (USA ´39_/TR)
@@ -11692,10 +11762,12 @@
 :NEEDS_REVIEW: true
 :ID: 554cac84-b665-4a2a-b2dd-95a75eb90c90
 :SUGGESTED_SEARCH: Only Angels Have Wings
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Only Angels Have Wings
 :YEAR: 1939
 :AI_NOTES: 1939 Howard Hawks aviation adventure with Cary Grant about mail pilots in South America - distinctive romantic action drama
+:TMDB_ID: 43832
+:TMDB_TITLE: SOS Feuer an Bord
 :END:
 
 * Soweit kommt’s noch (D ´24_herzkinokomöd_DNF)
@@ -11731,7 +11803,7 @@
 :NEEDS_REVIEW: true
 :ID: b4d683bd-3152-4778-a617-a9ac43cd0f4c
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Late Bloomers
 :AI_TITLE: Late Bloomers
 :YEAR: 2011
@@ -11797,10 +11869,12 @@
 :NEEDS_REVIEW: true
 :ID: b63371ab-5e12-4af1-a3eb-bfedecf15265
 :SUGGESTED_SEARCH: Spinning Man
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Spinning Man
 :YEAR: 2018
 :AI_NOTES: 2018 Simon Kaijser thriller with Guy Pearce as professor suspected in student disappearance - distinctive psychological mystery
+:TMDB_ID: 458109
+:TMDB_TITLE: Spinning Man - Im Dunkel deiner Seele
 :END:
 
 * Spione von Warschau (1+2)
@@ -11915,13 +11989,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Spur führt ins Leere (Die)
-:TMDB_ID: 8743
-:TMDB_TITLE: Klaras Fall
+:TMDB_ID: 11560
+:TMDB_TITLE: High Crimes - Im Netz der Lügen
 :TMDB_CONFIDENCE: 25.81
 :NEEDS_REVIEW: true
 :ID: f75fd180-9788-4775-ba2f-2742f038a13c
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: High Crimes
 :AI_TITLE: High Crimes
 :YEAR: 2002
@@ -11938,7 +12012,7 @@
 :NEEDS_REVIEW: true
 :ID: de5c0606-9346-46a5-a1cd-93525a513093
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Agents secrets
 :AI_TITLE: Agents secrets
 :YEAR: 2004
@@ -11993,7 +12067,7 @@
 :AI_TITLE: The Dust of Time
 :YEAR: 2008
 :AI_NOTES: 2008 Theo Angelopoulos historical epic about 20th century Europe - distinctive poetic Greek cinema
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Stich des Skorpions (Der)
@@ -12145,7 +12219,7 @@
 :NEEDS_REVIEW: true
 :ID: 18e8f53f-4958-4a0d-923a-9c10309e5253
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: St. Vincent
 :AI_TITLE: St. Vincent
 :YEAR: 2014
@@ -12162,7 +12236,7 @@
 :NEEDS_REVIEW: true
 :ID: 44ea27fe-c75d-4259-9a8b-660dcf6a144a
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Suburbicon
 :AI_TITLE: Suburbicon
 :YEAR: 2017
@@ -12176,10 +12250,12 @@
 :NEEDS_REVIEW: true
 :ID: df5e4feb-1eb6-441d-86e1-d5f305f143dd
 :SUGGESTED_SEARCH: Seeking Friend End World
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Seeking a Friend for the End of the World
 :YEAR: 2012
 :AI_NOTES: 2012 Lorene Scafaria apocalyptic comedy-drama with Steve Carell - distinctive pre-apocalypse romance
+:TMDB_ID: 88005
+:TMDB_TITLE: Auf der Suche nach einem Freund fürs Ende der Welt
 :END:
 
 * Suche nach Simon Werner (Auf der)
@@ -12205,7 +12281,7 @@
 :NEEDS_REVIEW: true
 :ID: 5d05af1b-821d-4416-abbd-eba07eccb041
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Suicide Tourist
 :AI_TITLE: Suicide Tourist
 :YEAR: 2019
@@ -12219,10 +12295,12 @@
 :NEEDS_REVIEW: true
 :ID: d91b85fc-62e5-47d4-b2d2-57052d0293a7
 :SUGGESTED_SEARCH: Khorshid
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Khorshid
 :YEAR: 2020
 :AI_NOTES: 2020 Majid Majidi Iranian social realism about street children - distinctive contemporary Iranian cinema
+:TMDB_ID: 670343
+:TMDB_TITLE: Sun Children
 :END:
 
 * Sünderin (Die)
@@ -12268,13 +12346,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Survivor  - Jagd durch London  (USA/GB ´2015)
-:TMDB_ID: 334074
-:TMDB_TITLE: Survivor
+:TMDB_ID: 369014
+:TMDB_TITLE: WWE Survivor Series 2015
 :TMDB_CONFIDENCE: 54.44
 :NEEDS_REVIEW: true
 :ID: 7deb0d15-fbb9-4483-acc3-be04607f9bdd
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Survivor 2015
 :AI_TITLE: Survivor
 :YEAR: 2015
@@ -12340,10 +12418,12 @@
 :NEEDS_REVIEW: true
 :ID: 21d63c63-c129-4256-8ee0-7346264253ff
 :SUGGESTED_SEARCH: S.W.A.T. 2003
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: S.W.A.T.
 :YEAR: 2003
 :AI_NOTES: 2003 Clark Johnson action film about elite Los Angeles police unit - distinctive ensemble cop action
+:TMDB_ID: 9257
+:TMDB_TITLE: S.W.A.T. - Die Spezialeinheit
 :END:
 
 * Swingers – Sex auf Bestellung
@@ -12400,10 +12480,12 @@
 :NEEDS_REVIEW: true
 :ID: ddeb29be-3465-47d0-91ac-15132e08e1f7
 :SUGGESTED_SEARCH: Entre les murs
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Entre les murs
 :YEAR: 2008
 :AI_NOTES: 2008 Laurent Cantet Palme d'Or winner about Paris inner-city teacher - distinctive classroom realism
+:TMDB_ID: 8841
+:TMDB_TITLE: Die Klasse
 :END:
 
 * T
@@ -12455,7 +12537,7 @@
 :NEEDS_REVIEW: true
 :ID: 3720324d-541f-401b-800f-13c6772e6be7
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Takers
 :AI_TITLE: Takers
 :YEAR: 2010
@@ -12469,10 +12551,12 @@
 :NEEDS_REVIEW: true
 :ID: b160ec0a-1e92-4e81-8709-63c96ef0ffb8
 :SUGGESTED_SEARCH: Taaqat
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Taaqat
 :YEAR: 1995
 :AI_NOTES: 1995 Indian action thriller - distinctive Bollywood crime film, likely title variation
+:TMDB_ID: 302934
+:TMDB_TITLE: Taaqat
 :END:
 
 * Tale (The_USA/D ´2018_missbrauch_/Trailer)
@@ -12498,7 +12582,7 @@
 :NEEDS_REVIEW: true
 :ID: ab004229-b0f4-40ba-8340-02deaec26173
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Maimuni prez zimata
 :AI_TITLE: Maimuni prez zimata
 :YEAR: 2006
@@ -12512,10 +12596,12 @@
 :NEEDS_REVIEW: true
 :ID: 7122ef42-3cd6-426c-8a98-03270e99b53c
 :SUGGESTED_SEARCH: Tango Rashevski
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Tango Rashevski
 :YEAR: 2003
 :AI_NOTES: 2003 Sam Garbarski Belgian-French comedy about Jewish family - distinctive identity comedy-drama
+:TMDB_ID: 60616
+:TMDB_TITLE: Der Tango der Rashevskis
 :END:
 
 * Tannbach, Schicksal eines Dorfes (D ´????_1-3)
@@ -12663,7 +12749,7 @@
 :AI_TITLE: Thérèse Raquin
 :YEAR: 1953
 :AI_NOTES: 1953 Marcel Carné Italian-French adaptation of Zola novel with Simone Signoret, Raf Vallone - distinctive noir melodrama
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Thing (The_USA/KAN ´2011)
@@ -12693,7 +12779,7 @@
 :AI_TITLE: This Is England
 :YEAR: 2006
 :AI_NOTES: 2006 Shane Meadows British drama about 1983 skinhead culture - BAFTA winner, distinctive coming-of-age social realism
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Tiden – Kampf um die Zukunft (ISL ´17_krimi_DNF)
@@ -12760,10 +12846,12 @@
 :NEEDS_REVIEW: true
 :ID: 9457c65d-9526-42f1-9d68-cb43c20b06d3
 :SUGGESTED_SEARCH: Tier in mir
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Das Tier in mir
 :YEAR: 2009
 :AI_NOTES: 2009 German TV drama about man discovering his dark side - distinctive psychological thriller
+:TMDB_ID: 15338
+:TMDB_TITLE: Ace Ventura 3 - Der Tier-Detektiv
 :END:
 
 * Tierstimmensammler oder das Lie (Der_UKR_DNF)
@@ -12786,10 +12874,12 @@
 :NEEDS_REVIEW: true
 :ID: 9e0da851-1c60-41d0-b70f-ddf2de493168
 :SUGGESTED_SEARCH: Tiger von Eschnapur
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Der Tiger von Eschnapur
 :YEAR: 1959
 :AI_NOTES: 1959 Fritz Lang adventure epic set in India - distinctive two-part Orientalist spectacle
+:TMDB_ID: 71041
+:TMDB_TITLE: Der Tiger von Eschnapur
 :END:
 
 * Tilt, das Spiel ist erst aus, wenn Du aufgibst
@@ -12815,7 +12905,7 @@
 :NEEDS_REVIEW: true
 :ID: 54ccd0ea-38f8-4f53-9b91-17c3a4171509
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Dom za vešanje
 :AI_TITLE: Dom za vešanje
 :YEAR: 1988
@@ -12884,7 +12974,7 @@
 :NEEDS_REVIEW: true
 :ID: c4e39a32-064f-44f1-9b42-d33c12f157ee
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Nordsjøen
 :AI_TITLE: Nordsjøen
 :YEAR: 2021
@@ -12958,10 +13048,12 @@
 :NEEDS_REVIEW: true
 :ID: d9d1b2c6-4de7-4070-b6b2-3e96a7343678
 :SUGGESTED_SEARCH: Arizona 2018
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Arizona
 :YEAR: 2018
 :AI_NOTES: 2018 Jonathan Watson dark comedy thriller set during housing crisis - distinctive suburban noir
+:TMDB_ID: 490004
+:TMDB_TITLE: Arizona
 :END:
 
 * Tod ist kein Kinderspiel (Der)
@@ -12974,7 +13066,7 @@
 :NEEDS_REVIEW: true
 :ID: dcaa5aa9-87b7-4e4c-a7b3-4d06ba9c4585
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwart water
 :AI_TITLE: Zwart water
 :YEAR: 2010
@@ -13001,23 +13093,25 @@
 :NEEDS_REVIEW: true
 :ID: 5780d30f-7b89-4206-b444-47a7f8a98497
 :SUGGESTED_SEARCH: Unthinkable
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Unthinkable
 :YEAR: 2010
 :AI_NOTES: 2010 Gregor Jordan thriller about torture ethics with Samuel L. Jackson - distinctive interrogation drama
+:TMDB_ID: 38199
+:TMDB_TITLE: Unthinkable - Der Preis der Wahrheit
 :END:
 
 * Tödliches Gelübde
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Tödliches Gelübde
-:TMDB_ID: 10356
-:TMDB_TITLE: The Good Shepherd
+:TMDB_ID: 1247
+:TMDB_TITLE: Der gute Hirte
 :TMDB_CONFIDENCE: 41.18
 :NEEDS_REVIEW: true
 :ID: ca436713-30e5-4f05-8282-86114e134fc2
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Good Shepherd
 :AI_TITLE: The Good Shepherd
 :YEAR: 2006
@@ -13054,13 +13148,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Tod von Freunden (DK/DE ´2021_DNF)
-:TMDB_ID: 292664
-:TMDB_TITLE: Der Tod kennt keine Freundschaft
+:TMDB_ID: 663870
+:TMDB_TITLE: Helden der Wahrscheinlichkeit
 :TMDB_CONFIDENCE: 50.0
 :NEEDS_REVIEW: true
 :ID: 02d473a6-f5f9-4912-8df2-60c94229e53b
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Riders of Justice
 :AI_TITLE: Riders of Justice
 :YEAR: 2020
@@ -13110,7 +13204,7 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Tombstone – Wyatt Earp (USA ´1993)
-:TMDB_ID: 2034
+:TMDB_ID: 11969
 :TMDB_TITLE: Tombstone
 :TMDB_CONFIDENCE: 68.06
 :NEEDS_REVIEW: true
@@ -13120,7 +13214,7 @@
 :AI_TITLE: Tombstone
 :YEAR: 1993
 :AI_NOTES: 1993 George P. Cosmatos Western about Wyatt Earp and OK Corral - distinctive revisionist Western
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Tonio & Julia – Dem Himmel so nah (_DNF)
@@ -13224,7 +13318,7 @@
 :AI_TITLE: Transit
 :YEAR: 2012
 :AI_NOTES: 2012 Antonio Negret thriller with Jim Caviezel about road trip turning deadly - distinctive cat-and-mouse chase
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :END:
 
 * Trapped - Gefangen in Island (3 Staffeln_ISL_DNF)
@@ -13324,7 +13418,7 @@
 :NEEDS_REVIEW: true
 :ID: 47b83fae-7611-4480-a164-a7bc69e0c7f9
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Tucker Man Dream
 :AI_TITLE: Tucker: The Man and His Dream
 :YEAR: 1988
@@ -13341,7 +13435,7 @@
 :NEEDS_REVIEW: true
 :ID: 90ea2a65-2b11-419f-9224-e1ceba544527
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Door in the Floor
 :AI_TITLE: The Door in the Floor
 :YEAR: 2004
@@ -13352,13 +13446,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Tür (Die)
-:TMDB_ID: 623180
-:TMDB_TITLE: TUR
+:TMDB_ID: 51365
+:TMDB_TITLE: Die Tür
 :TMDB_CONFIDENCE: 66.67
 :NEEDS_REVIEW: true
 :ID: bbdbf681-43bf-4b1f-9d2b-9790e856b5ff
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Tür 2009
 :AI_TITLE: Die Tür
 :YEAR: 2009
@@ -13386,13 +13480,13 @@
 :PROPERTIES:
 :RATING: 0
 :DADS_TITLE: Twenty nine Palms
-:TMDB_ID: 58631
-:TMDB_TITLE: 29 Palms
+:TMDB_ID: 26636
+:TMDB_TITLE: Twentynine Palms
 :TMDB_CONFIDENCE: 48.0
 :NEEDS_REVIEW: true
 :ID: beb8d14a-802d-4cd5-b9cf-4542452ee1e8
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Twentynine Palms
 :AI_TITLE: Twentynine Palms
 :YEAR: 2003
@@ -13406,10 +13500,12 @@
 :NEEDS_REVIEW: true
 :ID: 9944d58d-52d9-440c-8c53-64876b549ec2
 :SUGGESTED_SEARCH: Run Silent Run Deep
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Run Silent, Run Deep
 :YEAR: 1958
 :AI_NOTES: 1958 Robert Wise submarine warfare drama with Clark Gable, Burt Lancaster - distinctive WWII Pacific theater tension
+:TMDB_ID: 18784
+:TMDB_TITLE: U 23 - Haie im Pazifik
 :END:
 
 * Über allen Gipfeln
@@ -13486,7 +13582,7 @@
 :NEEDS_REVIEW: true
 :ID: f8172a03-614d-4f7e-8188-c17142fee7a6
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: In der Überzahl
 :AI_TITLE: In der Überzahl
 :YEAR: 2013
@@ -13497,13 +13593,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: U-Boot (Til Schweiger)
-:TMDB_ID: 31948
-:TMDB_TITLE: U-Boot in Not
+:TMDB_ID: 387
+:TMDB_TITLE: Das Boot
 :TMDB_CONFIDENCE: 63.16
 :NEEDS_REVIEW: true
 :ID: 6c27051b-9391-4bfb-a9f8-d40db65b02ed
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Das Boot
 :AI_TITLE: Das Boot
 :YEAR: 1981
@@ -13517,10 +13613,12 @@
 :NEEDS_REVIEW: true
 :ID: 9c672300-c544-41c5-9ba8-47cf123d027a
 :SUGGESTED_SEARCH: unabsichtliche Entführung Elfriede Ott
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Die unabsichtliche Entführung der Frau Elfriede Ott
 :YEAR: 2010
 :AI_NOTES: 2010 Andreas Prochaska Austrian comedy about accidental kidnapping - distinctive quirky Austrian humor
+:TMDB_ID: 59255
+:TMDB_TITLE: Die unabsichtliche Entführung der Frau Elfriede Ott
 :END:
 
 * Unauffällige Mr. Crane (Der)
@@ -13533,7 +13631,7 @@
 :NEEDS_REVIEW: true
 :ID: cb69b5c1-4808-403a-855f-6912051c513b
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Man Who Wasn't There
 :AI_TITLE: The Man Who Wasn't There
 :YEAR: 2001
@@ -13563,7 +13661,7 @@
 :NEEDS_REVIEW: true
 :ID: df8a6842-ee53-4dae-a729-0bf8cd374f9c
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Lerd
 :AI_TITLE: Lerd
 :YEAR: 2017
@@ -13590,23 +13688,25 @@
 :NEEDS_REVIEW: true
 :ID: c68e3615-c6a5-45d6-bd16-57c4038d613e
 :SUGGESTED_SEARCH: einer auf öffnet Fenster
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Und dann steht einer auf und öffnet das Fenster
 :YEAR: 2022
 :AI_NOTES: 2022 Til Schweiger German drama based on Dirk Kurbjuweit novel about school shooting - distinctive contemporary social issue film
+:TMDB_ID: 982389
+:TMDB_TITLE: Und dann steht einer auf und öffnet das Fenster
 :END:
 
 * Undercover in Paris
 :PROPERTIES:
 :RATING: 0
 :DADS_TITLE: Undercover in Paris
-:TMDB_ID: 43479
-:TMDB_TITLE: Off Limits - Wir sind das Gesetz
+:TMDB_ID: 7291
+:TMDB_TITLE: 36 - Tödliche Rivalen
 :TMDB_CONFIDENCE: 31.58
 :NEEDS_REVIEW: true
 :ID: dddf63b7-820a-4237-9821-7745766a73ba
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: 36 Quai Orfèvres
 :AI_TITLE: 36 Quai des Orfèvres
 :YEAR: 2004
@@ -13623,7 +13723,7 @@
 :NEEDS_REVIEW: true
 :ID: f93b1dc9-f3a1-4b64-bd53-f59c84c75e7e
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Another Happy Day
 :AI_TITLE: Another Happy Day
 :YEAR: 2011
@@ -13634,13 +13734,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Ungewöhnliche Entführung (Eine)
-:TMDB_ID: 76317
-:TMDB_TITLE: Emmas Schatten
+:TMDB_ID: 1543
+:TMDB_TITLE: Emmas Glück
 :TMDB_CONFIDENCE: 26.32
 :NEEDS_REVIEW: true
 :ID: 11729fa0-dd0f-4cc3-92e6-51f18bbea41e
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Emmas Glück
 :AI_TITLE: Emmas Glück
 :YEAR: 2006
@@ -13832,7 +13932,7 @@
 :NEEDS_REVIEW: true
 :ID: 3cd67eab-87d2-4db0-9621-1cdb98874005
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Vaya con Dios
 :AI_TITLE: Vaya con Dios
 :YEAR: 2002
@@ -13849,7 +13949,7 @@
 :NEEDS_REVIEW: true
 :ID: 311c940a-1972-4a81-ab5a-17349ff93265
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Venus Talking
 :AI_TITLE: Venus Talking
 :YEAR: 2001
@@ -13866,7 +13966,7 @@
 :NEEDS_REVIEW: true
 :ID: c55bcc8d-58a4-4296-bf8d-bab0e48943fc
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Kakushi-ken oni no tsume
 :AI_TITLE: Kakushi-ken oni no tsume
 :YEAR: 2004
@@ -13948,7 +14048,7 @@
 :NEEDS_REVIEW: true
 :ID: 4ff008da-02d2-489e-9539-4e02417f4489
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Vinyan
 :AI_TITLE: Vinyan
 :YEAR: 2008
@@ -13991,7 +14091,7 @@
 :NEEDS_REVIEW: true
 :ID: 9355875d-a5c3-4e22-8701-99cdee1521ec
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Fool for Love
 :AI_TITLE: Fool for Love
 :YEAR: 1985
@@ -14100,10 +14200,12 @@
 :NEEDS_REVIEW: true
 :ID: 17ddb190-e35c-45dc-9dd9-6d919ddfa14f
 :SUGGESTED_SEARCH: Victoria 2015
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Victoria
 :YEAR: 2015
 :AI_NOTES: 2015 Sebastian Schipper German thriller shot in single continuous take about bank heist - distinctive real-time technical achievement
+:TMDB_ID: 320007
+:TMDB_TITLE: Victoria
 :END:
 
 * Vier Könige (D´2015)
@@ -14126,10 +14228,12 @@
 :NEEDS_REVIEW: true
 :ID: 659e34df-f731-429f-80d0-75485a931340
 :SUGGESTED_SEARCH: quattro volte
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Le quattro volte
 :YEAR: 2010
 :AI_NOTES: 2010 Michelangelo Frammartino Italian slow cinema about cycles of life - distinctive contemplative visual poem
+:TMDB_ID: 57389
+:TMDB_TITLE: Vier Leben
 :END:
 
 * Vier Tage im Mai
@@ -14216,8 +14320,10 @@
 :SUGGESTED_SEARCH: Sea of Trees
 :AI_TITLE: The Sea of Trees
 :AI_NOTES: 2015 Gus Van Sant drama about suicide forest Aokigahara - distinctive contemplative tragedy
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2015
+:TMDB_ID: 291351
+:TMDB_TITLE: The Sea of Trees
 :END:
 
 * Wäldern (D ´24_1+2_R. Thomass_local.horr_DNF)
@@ -14241,13 +14347,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: War nicht mehr ich (Das_F ´2022_DNF)
-:TMDB_ID: 576917
-:TMDB_TITLE: Wenn du nicht mehr bei mir bist
+:TMDB_ID: 38502
+:TMDB_TITLE: Ce qu'il faut pour vivre
 :TMDB_CONFIDENCE: 57.14
 :NEEDS_REVIEW: true
 :ID: 7a825e16-b1f6-4cbf-85d6-b542800ab03c
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: qu'il faut pour vivre
 :AI_TITLE: Ce qu'il faut pour vivre
 :YEAR: 2008
@@ -14264,7 +14370,7 @@
 :NEEDS_REVIEW: true
 :ID: 2c29c697-d7c2-43d7-a2e8-debc39e0b510
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: What Happened Monday
 :AI_TITLE: What Happened to Monday
 :YEAR: 2017
@@ -14278,23 +14384,25 @@
 :NEEDS_REVIEW: true
 :ID: 0f7010df-7621-42b8-b43f-a963c7bb64ca
 :SUGGESTED_SEARCH: Ras vkhedavt
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Ras vkhedavt, rodesac cas vukurebt?
 :YEAR: 2021
 :AI_NOTES: 2021 Alexandre Koberidze Georgian magical realist romance - distinctive whimsical Tbilisi tale
+:TMDB_ID: 795815
+:TMDB_TITLE: Was sehen wir, wenn wir zum Himmel schauen?
 :END:
 
 * Wasser der Hügel (Die) – Jean Florette
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Wasser der Hügel (Die) – Jean Florette
-:TMDB_ID: 4481
-:TMDB_TITLE: Manons Rache
+:TMDB_ID: 4480
+:TMDB_TITLE: Jean Florette
 :TMDB_CONFIDENCE: 32.65
 :NEEDS_REVIEW: true
 :ID: 7ebb85ab-6e8c-4b38-b4de-fc31c3f03053
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Jean de Florette
 :AI_TITLE: Jean de Florette
 :YEAR: 1986
@@ -14406,7 +14514,7 @@
 :NEEDS_REVIEW: true
 :ID: b280b9dc-f047-450c-9f2a-f91936d8fc9d
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Fehér isten
 :AI_TITLE: Fehér isten
 :YEAR: 2014
@@ -14479,7 +14587,7 @@
 :NEEDS_REVIEW: true
 :ID: a9e2e644-6893-401f-a79d-55cc18d54d30
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Welt ist noch zu retten
 :AI_TITLE: Die Welt ist noch zu retten
 :YEAR: 2018
@@ -14496,7 +14604,7 @@
 :NEEDS_REVIEW: true
 :ID: 99b0e421-dd1a-4398-b0dd-b459d68127c9
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zaytoun
 :AI_TITLE: Zaytoun
 :YEAR: 2012
@@ -14523,10 +14631,12 @@
 :NEEDS_REVIEW: true
 :ID: 3c4d6706-cf4f-4526-8b4f-02e8612a5020
 :SUGGESTED_SEARCH: Postman Always Rings Twice
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: The Postman Always Rings Twice
 :YEAR: 1946
 :AI_NOTES: 1946 Tay Garnett noir with Lana Turner, John Garfield about fatal attraction - distinctive James M. Cain adaptation
+:TMDB_ID: 25736
+:TMDB_TITLE: Im Netz der Leidenschaften
 :END:
 
 * Wer mit dem Teufel reitet
@@ -14539,7 +14649,7 @@
 :NEEDS_REVIEW: true
 :ID: 0ebc018f-75b6-4b83-90a5-30baab4c28a3
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Ride with Devil
 :AI_TITLE: Ride with the Devil
 :YEAR: 1999
@@ -14569,7 +14679,7 @@
 :NEEDS_REVIEW: true
 :ID: 84b2c1ac-cdea-4128-af12-7196010c15b8
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Westfront 1918
 :AI_TITLE: Westfront 1918
 :YEAR: 1930
@@ -14600,10 +14710,12 @@
 :NEEDS_REVIEW: true
 :ID: 0db7d7b6-9ff2-40d0-96d1-57a8516e8e9c
 :SUGGESTED_SEARCH: Scalphunters
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: The Scalphunters
 :YEAR: 1968
 :AI_NOTES: 1968 Sydney Pollack Western comedy with Burt Lancaster - distinctive racial satire
+:TMDB_ID: 32068
+:TMDB_TITLE: Mit eisernen Fäusten
 :END:
 
 * White Mischief – Die letzten Tage in Kenia
@@ -14780,7 +14892,7 @@
 :NEEDS_REVIEW: true
 :ID: 72f499a9-8952-414e-9044-11e57aa4bfca
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Wild Target
 :AI_TITLE: Wild Target
 :YEAR: 2010
@@ -14814,7 +14926,7 @@
 :NEEDS_REVIEW: true
 :ID: 5703ee99-a748-48f7-be18-834a52404b56
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Wind River
 :AI_TITLE: Wind River
 :YEAR: 2017
@@ -14841,23 +14953,25 @@
 :NEEDS_REVIEW: true
 :ID: 657bafb9-9e70-4054-953c-0469e3924c16
 :SUGGESTED_SEARCH: Winterherz
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Winterherz: Tod in einer kalten Nacht
 :YEAR: 2018
 :AI_NOTES: 2018 German TV thriller about winter murder - distinctive crime mystery
+:TMDB_ID: 512903
+:TMDB_TITLE: Winterherz: Tod in einer kalten Nacht
 :END:
 
 * Wirbel (F '2013)
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Wirbel (F '2013)
-:TMDB_ID: 96252
-:TMDB_TITLE: Wirbel um Judy
+:TMDB_ID: 190880
+:TMDB_TITLE: Maman und Ich
 :TMDB_CONFIDENCE: 60.0
 :NEEDS_REVIEW: true
 :ID: a83b528c-fc62-4bbc-b529-43ae1e4d6be9
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: garçons Guillaume table
 :AI_TITLE: Les garçons et Guillaume, à table!
 :YEAR: 2013
@@ -14868,13 +14982,13 @@
 :PROPERTIES:
 :RATING: 2
 :DADS_TITLE: Wir haben einen Deal (D ´2022)
-:TMDB_ID: 718919
-:TMDB_TITLE: The Deal - Der verwüstete Planet
+:TMDB_ID: 134411
+:TMDB_TITLE: Snitch - Ein riskanter Deal
 :TMDB_CONFIDENCE: 60.0
 :NEEDS_REVIEW: true
 :ID: b080a1a0-696f-4e1b-886f-624a0c97e510
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Wir haben einen Deal
 :AI_TITLE: Wir haben einen Deal
 :YEAR: 2022
@@ -14904,7 +15018,7 @@
 :NEEDS_REVIEW: true
 :ID: e9dfb0b6-00a2-46e7-a09e-6de24e90ddbc
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Cartas da Guerra
 :AI_TITLE: Cartas da Guerra
 :YEAR: 2016
@@ -14931,10 +15045,12 @@
 :NEEDS_REVIEW: true
 :ID: b4522659-4d39-4993-8206-dc58b7085377
 :SUGGESTED_SEARCH: sind dann wohl Angehörigen
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Wir sind dann wohl die Angehörigen
 :YEAR: 2022
 :AI_NOTES: 2022 Hans-Christian Schmid German documentary about Reemtsma kidnapping aftermath - distinctive true crime family portrait
+:TMDB_ID: 915983
+:TMDB_TITLE: Wir sind dann wohl die Angehörigen
 :END:
 
 * Wo in Paria die Sonne aufgeht (F ´2021_frng_DNF)
@@ -14960,7 +15076,7 @@
 :NEEDS_REVIEW: true
 :ID: f6eaf8a9-ef99-444a-a605-dd94eb651b45
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Cloud Atlas
 :AI_TITLE: Cloud Atlas
 :YEAR: 2012
@@ -14990,7 +15106,7 @@
 :NEEDS_REVIEW: true
 :ID: 399e14e1-1842-42fa-8b3d-24b18799868d
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Wuff
 :AI_TITLE: Wuff
 :YEAR: 2018
@@ -15001,13 +15117,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Wunder dauern etwas länger
-:TMDB_ID: 169541
-:TMDB_TITLE: Miracles - Ein ganz unglaubliches Abenteuer
+:TMDB_ID: 1474601
+:TMDB_TITLE: Mistérios de Lisboa
 :TMDB_CONFIDENCE: 31.88
 :NEEDS_REVIEW: true
 :ID: 35d27849-8dd6-4a01-842f-74c05532fb2c
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Mistérios de Lisboa
 :AI_TITLE: Mistérios de Lisboa
 :YEAR: 2010
@@ -15021,10 +15137,12 @@
 :NEEDS_REVIEW: true
 :ID: ac70c020-a030-409c-b2f6-bd0ec11cc7f1
 :SUGGESTED_SEARCH: Wiplala
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Wiplala
 :YEAR: 2014
 :AI_NOTES: 2014 Dutch children's fantasy about tiny man - distinctive European family film
+:TMDB_ID: 297963
+:TMDB_TITLE: Der wunderbare Wiplala
 :END:
 
 * Wuthering Heights – Emily Broentes (GB '2010)
@@ -15061,13 +15179,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Yiyi (OMU)
-:TMDB_ID: 1556267
-:TMDB_TITLE: Finding Yiyi
+:TMDB_ID: 25538
+:TMDB_TITLE: Yi Yi - A One and a Two
 :TMDB_CONFIDENCE: 50.0
 :NEEDS_REVIEW: true
 :ID: 30b54872-8da5-4550-a675-80dd14ac90b9
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Yi yi
 :AI_TITLE: Yi yi
 :YEAR: 2000
@@ -15101,7 +15219,7 @@
 :NEEDS_REVIEW: true
 :ID: 73b77a32-9142-4ac4-8acf-0e598b9046a6
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zardoz
 :AI_TITLE: Zardoz
 :YEAR: 1974
@@ -15128,10 +15246,12 @@
 :NEEDS_REVIEW: true
 :ID: e6f386e5-9e42-47fc-ab69-53f47fdb79e6
 :SUGGESTED_SEARCH: Ten Canoes
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Ten Canoes
 :YEAR: 2006
 :AI_NOTES: 2006 Rolf de Heer/Peter Djigirr Australian aboriginal tale - distinctive indigenous storytelling in Ganalbingu language
+:TMDB_ID: 14064
+:TMDB_TITLE: 10 Kanus, 150 Speere und 3 Frauen
 :END:
 
 * Zeit der Zigeuner – Time of the Gypsies
@@ -15144,7 +15264,7 @@
 :NEEDS_REVIEW: true
 :ID: 3da9728e-b3a2-4f66-8796-62425d76b2ae
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Dom za vešanje
 :AI_TITLE: Dom za vešanje
 :YEAR: 1988
@@ -15155,13 +15275,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Zeit des Aufbruchs (F ´2017_refug_DNF)
-:TMDB_ID: 462455
-:TMDB_TITLE: Mademoiselle Hanamura 1 - Aufbruch zu modernen Zeiten
+:TMDB_ID: 336805
+:TMDB_TITLE: Much Loved
 :TMDB_CONFIDENCE: 43.8
 :NEEDS_REVIEW: true
 :ID: b71181e4-0127-40c6-9ec1-b5f773e00352
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Much Loved
 :AI_TITLE: Much Loved
 :YEAR: 2015
@@ -15175,10 +15295,12 @@
 :NEEDS_REVIEW: true
 :ID: f7a4735b-a9b1-4f65-a979-a692efc970cd
 :SUGGESTED_SEARCH: Nuit de chien
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Nuit de chien
 :YEAR: 2008
 :AI_NOTES: 2008 Werner Schroeter French-German drama - distinctive late Schroeter work
+:TMDB_ID: 12422
+:TMDB_TITLE: Diese Nacht
 :END:
 
 * Zelle 211
@@ -15237,13 +15359,13 @@
 :PROPERTIES:
 :RATING: 1
 :DADS_TITLE: Zur Hölle mit den anderen (D ´2017)
-:TMDB_ID: 477623
-:TMDB_TITLE: Frau Holle - Der Fluch des Bösen
+:TMDB_ID: 453008
+:TMDB_TITLE: Krieg und Terror - In der Hölle Syriens
 :TMDB_CONFIDENCE: 62.63
 :NEEDS_REVIEW: true
 :ID: 313795b6-039e-477e-94be-15598971498f
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zur Hölle mit den anderen
 :AI_TITLE: Zur Hölle mit den anderen
 :YEAR: 2017
@@ -15273,7 +15395,7 @@
 :NEEDS_REVIEW: true
 :ID: f3f59172-96a6-4c17-b4d1-33162464b883
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwei Affären noch mehr Kinder
 :AI_TITLE: Zwei Affären und noch mehr Kinder
 :YEAR: 2002
@@ -15317,10 +15439,12 @@
 :NEEDS_REVIEW: true
 :ID: 0d3c8b27-abe4-4640-b38b-2d164c553ef7
 :SUGGESTED_SEARCH: Bankiersfrau
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Die Bankiersfrau
 :YEAR: 1980
 :AI_NOTES: 1980 Francis Girod French-German drama with Romy Schneider about banker's wife - distinctive final Schneider role
+:TMDB_ID: 4370
+:TMDB_TITLE: Die Bankiersfrau
 :END:
 
 * Zweigeteile Frau (Die_F/D ´2007)
@@ -15330,10 +15454,12 @@
 :NEEDS_REVIEW: true
 :ID: b05a578f-a744-45d0-b32a-6196cc95645d
 :SUGGESTED_SEARCH: flexible Frau
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Eine flexible Frau
 :YEAR: 2010
 :AI_NOTES: 2010 Tatjana Turanskyj German drama about woman's identity crisis - distinctive contemporary portrait
+:TMDB_ID: 75045
+:TMDB_TITLE: Eine flexible Frau
 :END:
 
 * Zwei rechnen ab – O.K. Corral (USA ´1957)
@@ -15369,10 +15495,12 @@
 :NEEDS_REVIEW: true
 :ID: f48a249f-0b6a-44cc-975c-6dcd1a61c726
 :SUGGESTED_SEARCH: Homme du train
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: L'Homme du train
 :YEAR: 2002
 :AI_NOTES: 2002 Patrice Leconte French drama about unlikely friendship - distinctive character study with Jean Rochefort
+:TMDB_ID: 22016
+:TMDB_TITLE: Das zweite Leben des Monsieur Manesquier
 :END:
 
 * Zweite Mal (Das)
@@ -15411,7 +15539,7 @@
 :NEEDS_REVIEW: true
 :ID: 8fb39458-664a-432e-82cf-759c2caeb946
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwingli
 :AI_TITLE: Zwingli
 :YEAR: 2019
@@ -15422,13 +15550,13 @@
 :PROPERTIES:
 :RATING: 2
 :DADS_TITLE: Zwischen den Jahren (D ´2016)
-:TMDB_ID: 978
-:TMDB_TITLE: Sieben Jahre in Tibet
+:TMDB_ID: 404806
+:TMDB_TITLE: Zwischen den Jahren
 :TMDB_CONFIDENCE: 55.0
 :NEEDS_REVIEW: true
 :ID: 59a7ce72-73dc-4387-b1b3-b2e737909456
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwischen den Jahren
 :AI_TITLE: Zwischen den Jahren
 :YEAR: 2017
@@ -15439,13 +15567,13 @@
 :PROPERTIES:
 :RATING: 2
 :DADS_TITLE: Zwischenwelten (Ronald Zehrfeld_afghanistan)
-:TMDB_ID: 11601
-:TMDB_TITLE: Echoes - Stimmen aus der Zwischenwelt
+:TMDB_ID: 256108
+:TMDB_TITLE: Zwischen Welten
 :TMDB_CONFIDENCE: 47.06
 :NEEDS_REVIEW: true
 :ID: d8b84e5c-fb9b-4c95-bbaa-544e5c705c01
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwischen Welten
 :AI_TITLE: Zwischen Welten
 :YEAR: 2014
@@ -15482,13 +15610,13 @@
 :PROPERTIES:
 :RATING: -1
 :DADS_TITLE: Zwölf Winter  *************************************
-:TMDB_ID: 42647
-:TMDB_TITLE: Die zwölf Monate
+:TMDB_ID: 62335
+:TMDB_TITLE: 12 Winter
 :TMDB_CONFIDENCE: 27.27
 :NEEDS_REVIEW: true
 :ID: bcdbb095-659e-494e-bff1-2e479096be6c
 :MANUAL_REVIEW_NEEDED: true
-:MANUALLY_CHECKED_BY_AI: false
+:MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwölf Winter
 :AI_TITLE: Zwölf Winter
 :YEAR: 2009
