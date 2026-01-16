@@ -121805,7 +121805,6 @@
 :SUGGESTED_SEARCH: Everything Will Change
 :TMDB_ID: 788921
 :AI_TITLE: Everything Will Change
-:YEAR: 2022
 :AI_NOTES: Typo fix: Everything not Everthing
 :TMDB_TITLE: Everything will change
 :MANUALLY_CHECKED_BY_AI: true
@@ -121860,7 +121859,6 @@
 :SUGGESTED_SEARCH: About a Girl 2014
 :TMDB_ID: 299353
 :AI_TITLE: About a Girl
-:YEAR: 2014
 :AI_NOTES: 2014 German film
 :TMDB_TITLE: About a Girl
 :MANUALLY_CHECKED_BY_AI: true
@@ -121888,7 +121886,6 @@
 :SUGGESTED_SEARCH: AEIOU Alphabet Liebe
 :TMDB_ID: 928709
 :AI_TITLE: A E I O U - Das schnelle Alphabet der Liebe
-:YEAR: 2022
 :AI_NOTES: Truncated title completed
 :TMDB_TITLE: A E I O U – Das schnelle Alphabet der Liebe
 :MANUALLY_CHECKED_BY_AI: true
@@ -121916,7 +121913,6 @@
 :SUGGESTED_SEARCH: Reversal of Fortune
 :TMDB_ID: 38718
 :AI_TITLE: Reversal of Fortune
-:YEAR: 1990
 :AI_NOTES: 1990 film, 'von Bülow' case
 :TMDB_TITLE: Die Affäre der Sunny von B.
 :MANUALLY_CHECKED_BY_AI: true
@@ -121998,7 +121994,6 @@
 :SUGGESTED_SEARCH: Altersglühen
 :TMDB_ID: 315587
 :AI_TITLE: Altersglühen - Speed Dating für Senioren
-:YEAR: 2014
 :AI_NOTES: 2014 German comedy
 :TMDB_TITLE: Altersglühen - Speed Dating für Senioren
 :MANUALLY_CHECKED_BY_AI: true
@@ -122026,7 +122021,6 @@
 :SUGGESTED_SEARCH: Sacro GRA
 :TMDB_ID: 216790
 :AI_TITLE: Sacro GRA
-:YEAR: 2013
 :AI_NOTES: 2013 Italian documentary
 :TMDB_TITLE: Sacro GRA
 :MANUALLY_CHECKED_BY_AI: true
@@ -122054,7 +122048,6 @@
 :SUGGESTED_SEARCH: Thought of Ecstasy
 :TMDB_ID: 464842
 :AI_TITLE: A Thought of Ecstasy
-:YEAR: 2017
 :AI_NOTES: 2017 German erotic thriller
 :TMDB_TITLE: A Thought of Ecstasy
 :MANUALLY_CHECKED_BY_AI: true
@@ -122082,7 +122075,6 @@
 :SUGGESTED_SEARCH: Rester vertical
 :TMDB_ID: 380622
 :AI_TITLE: Rester vertical
-:YEAR: 2016
 :AI_NOTES: 2016 French film
 :TMDB_TITLE: Haltung bewahren!
 :MANUALLY_CHECKED_BY_AI: true
@@ -122110,7 +122102,6 @@
 :SUGGESTED_SEARCH: Axolotl Overkill
 :TMDB_ID: 427025
 :AI_TITLE: Axolotl Overkill
-:YEAR: 2017
 :AI_NOTES: 2017 German film, one 't' in Axolotl
 :TMDB_TITLE: Axolotl Overkill
 :MANUALLY_CHECKED_BY_AI: true
@@ -122138,7 +122129,6 @@
 :SUGGESTED_SEARCH: Zulu Love Letter
 :TMDB_ID: 274974
 :AI_TITLE: A Zulu Love Letter
-:YEAR: 2004
 :AI_NOTES: 2004 South African film
 :TMDB_TITLE: Zulu Love Letter
 :MANUALLY_CHECKED_BY_AI: true
@@ -122166,7 +122156,6 @@
 :SUGGESTED_SEARCH: Favolacce
 :TMDB_ID: 614292
 :AI_TITLE: Favolacce
-:YEAR: 2020
 :AI_NOTES: 2020 Italian film, 'Bad Tales'
 :TMDB_TITLE: Bad Tales – Es war einmal ein Traum
 :MANUALLY_CHECKED_BY_AI: true
@@ -122194,7 +122183,6 @@
 :SUGGESTED_SEARCH: Als wir träumten
 :TMDB_ID: 311301
 :AI_TITLE: Als wir träumten
-:YEAR: 2015
 :AI_NOTES: 2015 German film
 :TMDB_TITLE: Als wir träumten
 :MANUALLY_CHECKED_BY_AI: true
@@ -122222,7 +122210,6 @@
 :SUGGESTED_SEARCH: Beautiful Creatures 2013
 :TMDB_ID: 109491
 :AI_TITLE: Beautiful Creatures
-:YEAR: 2013
 :AI_NOTES: 2013 supernatural film
 :TMDB_TITLE: Beautiful Creatures - Eine unsterbliche Liebe
 :MANUALLY_CHECKED_BY_AI: true
@@ -122250,7 +122237,6 @@
 :SUGGESTED_SEARCH: Beckenrand Sheriff
 :TMDB_ID: 856117
 :AI_TITLE: Beckenrand Sheriff
-:YEAR: 2021
 :AI_NOTES: 2021 German comedy
 :TMDB_TITLE: Beckenrand Sheriff
 :MANUALLY_CHECKED_BY_AI: true
@@ -122277,7 +122263,6 @@
 :ID: 30241bea-b46c-4368-af3e-e574f1c671ef
 :SUGGESTED_SEARCH: Bella Dilemma
 :AI_TITLE: Bella Dilemma
-:YEAR: 2013
 :AI_NOTES: German TV movie
 :TMDB_ID: 333951
 :TMDB_TITLE: Bella Dilemma
@@ -122306,7 +122291,6 @@
 :SUGGESTED_SEARCH: Bergman Island
 :TMDB_ID: 477044
 :AI_TITLE: Bergman Island
-:YEAR: 2021
 :AI_NOTES: 2021 Mia Hansen-Løve film
 :TMDB_TITLE: Bergman Island
 :MANUALLY_CHECKED_BY_AI: true
@@ -122333,7 +122317,6 @@
 :ID: d0148bdb-7790-4b75-a312-c6a4fcb0e813
 :SUGGESTED_SEARCH: Bis zum letzten Tropfen
 :AI_TITLE: Bis zum letzten Tropfen
-:YEAR: 2022
 :AI_NOTES: German documentary
 :TMDB_ID: 947451
 :TMDB_TITLE: Bis zum letzten Tropfen
@@ -122362,7 +122345,6 @@
 :SUGGESTED_SEARCH: Biutiful
 :TMDB_ID: 45958
 :AI_TITLE: Biutiful
-:YEAR: 2010
 :AI_NOTES: 2010 Alejandro González Iñárritu film with Javier Bardem, typo: Biutiful, Bardem
 :TMDB_TITLE: Biutiful
 :MANUALLY_CHECKED_BY_AI: true
@@ -122390,7 +122372,6 @@
 :SUGGESTED_SEARCH: Blade Runner
 :TMDB_ID: 78
 :AI_TITLE: Blade Runner
-:YEAR: 1982
 :AI_NOTES: 1982 Ridley Scott sci-fi classic, typo: Runner not Runners
 :TMDB_TITLE: Der Blade Runner
 :MANUALLY_CHECKED_BY_AI: true
@@ -122418,7 +122399,6 @@
 :SUGGESTED_SEARCH: Otto Weidt
 :TMDB_ID: 263771
 :AI_TITLE: Ein blinder Held - Die Liebe des Otto Weidt
-:YEAR: 2014
 :AI_NOTES: 2014 German TV movie about Otto Weidt
 :TMDB_TITLE: Ein blinder Held – Die Liebe des Otto Weidt
 :MANUALLY_CHECKED_BY_AI: true
@@ -122449,7 +122429,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: fleurs pour Algernon
 :AI_TITLE: Des fleurs pour Algernon
-:YEAR: 2006
 :AI_NOTES: Based on Daniel Keyes novel, French adaptation
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2006
@@ -122479,7 +122458,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Livvakterna
 :AI_TITLE: Livvakterna
-:YEAR: 2001
 :AI_NOTES: 2001 Swedish action film, German title: Die Bombe tickt
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2001
@@ -122506,7 +122484,6 @@
 :SUGGESTED_SEARCH: Buongiorno notte
 :TMDB_ID: 24164
 :AI_TITLE: Buongiorno, notte
-:YEAR: 2003
 :AI_NOTES: 2003 Marco Bellocchio film about Aldo Moro, typo: Buongiorno
 :TMDB_TITLE: Buongiorno, notte
 :MANUALLY_CHECKED_BY_AI: true
@@ -122534,7 +122511,6 @@
 :SUGGESTED_SEARCH: Borgman
 :TMDB_ID: 186929
 :AI_TITLE: Borgman
-:YEAR: 2013
 :AI_NOTES: 2013 Dutch psychological thriller, typo: Borgman not Borgmann
 :TMDB_TITLE: Borgman
 :MANUALLY_CHECKED_BY_AI: true
@@ -122589,7 +122565,6 @@
 :SUGGESTED_SEARCH: Breaking Surface
 :TMDB_ID: 616803
 :AI_TITLE: Breaking Surface
-:YEAR: 2020
 :AI_NOTES: 2020 Swedish thriller
 :TMDB_TITLE: Breaking Surface
 :MANUALLY_CHECKED_BY_AI: true
@@ -122620,7 +122595,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Brecht
 :AI_TITLE: Brecht
-:YEAR: 2019
 :AI_NOTES: German TV miniseries about Bertolt Brecht
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2019
@@ -122649,7 +122623,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Il Postino
 :AI_TITLE: Il Postino
-:YEAR: 1994
 :AI_NOTES: 1994 Italian film 'The Postman', German: Mit brennender Geduld
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1994
@@ -122679,7 +122652,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Bright Star
 :AI_TITLE: Bright Star
-:YEAR: 2009
 :AI_NOTES: 2009 Jane Campion film about Keats and Fanny Brawne
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2009
@@ -122709,7 +122681,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Broken City
 :AI_TITLE: Broken City
-:YEAR: 2013
 :AI_NOTES: 2013 crime thriller with Mark Wahlberg
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2013
@@ -122739,7 +122710,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Taegukgi
 :AI_TITLE: Taegukgi
-:YEAR: 2004
 :AI_NOTES: 2004 Korean War film 'Brotherhood of War'
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2004
@@ -122769,7 +122739,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Most
 :AI_TITLE: Most
-:YEAR: 2012
 :AI_NOTES: 2012 Macedonian-Kosovan film, English: The Bridge
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2012
@@ -122799,7 +122768,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Largo Winch II
 :AI_TITLE: Largo Winch II
-:YEAR: 2011
 :AI_NOTES: 2011 Belgian thriller, German: Die Burma-Verschwörung
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2011
@@ -122829,7 +122797,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Chaos-Queens
 :AI_TITLE: Chaos-Queens
-:YEAR: 2018
 :AI_NOTES: German TV series
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2018
@@ -122856,7 +122823,6 @@
 :SUGGESTED_SEARCH: Charlie Says Manson
 :TMDB_ID: 471859
 :AI_TITLE: Charlie Says
-:YEAR: 2018
 :AI_NOTES: 2018 Manson cult film, typo: Charlie not Charie
 :TMDB_TITLE: Charlie Says
 :MANUALLY_CHECKED_BY_AI: true
@@ -122883,7 +122849,6 @@
 :ID: 345ffc43-75bd-418d-9949-d477847a53ed
 :SUGGESTED_SEARCH: Chuzpe Klops
 :AI_TITLE: Chuzpe - Klops braucht der Mensch
-:YEAR: 2015
 :AI_NOTES: German comedy film, correct spelling: Chuzpe
 :TMDB_ID: 355810
 :TMDB_TITLE: Chuzpe - Klops braucht der Mensch!
@@ -122942,7 +122907,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Donde caben dos
 :AI_TITLE: Donde caben dos
-:YEAR: 2021
 :AI_NOTES: 2021 Spanish comedy
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2021
@@ -122972,7 +122936,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Crossing the Dust
 :AI_TITLE: Crossing the Dust
-:YEAR: 2006
 :AI_NOTES: 2006 Kurdish/Iraqi film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2006
@@ -122998,7 +122961,6 @@
 :ID: e223d823-d62f-4b9b-aa04-640f415d8c8b
 :SUGGESTED_SEARCH: Curling Eisenstadt
 :AI_TITLE: Curling für Eisenstadt
-:YEAR: 2019
 :AI_NOTES: Austrian comedy film
 :TMDB_ID: 631077
 :TMDB_TITLE: Curling für Eisenstadt
@@ -123030,7 +122992,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Dead Man Walking
 :AI_TITLE: Dead Man Walking
-:YEAR: 1995
 :AI_NOTES: 1995 Tim Robbins film with Susan Sarandon, truncated: Gang
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1995
@@ -123082,7 +123043,6 @@
 :SUGGESTED_SEARCH: Eyjafjallajökull
 :TMDB_ID: 219318
 :AI_TITLE: Eyjafjallajökull
-:YEAR: 2013
 :AI_NOTES: 2013 French comedy, typo in volcano name
 :TMDB_TITLE: Eyjafjallajökull - Der unaussprechliche Vulkanfilm
 :MANUALLY_CHECKED_BY_AI: true
@@ -123140,7 +123100,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Euer Ehren
 :AI_TITLE: Euer Ehren
-:YEAR: 2022
 :AI_NOTES: German adaptation of Your Honor series
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2008
@@ -123196,7 +123155,6 @@
 :SUGGESTED_SEARCH: Eyjafjallajökull
 :TMDB_ID: 219318
 :AI_TITLE: Eyjafjallajökull
-:YEAR: 2013
 :AI_NOTES: 2013 French comedy, typo in volcano spelling
 :TMDB_TITLE: Eyjafjallajökull - Der unaussprechliche Vulkanfilm
 :MANUALLY_CHECKED_BY_AI: true
@@ -123227,7 +123185,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Mein Falke
 :AI_TITLE: Mein Falke
-:YEAR: 2023
 :AI_NOTES: 2023 German film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2023
@@ -123257,7 +123214,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Milieu horizon
 :AI_TITLE: Le Milieu de l'horizon
-:YEAR: 2019
 :AI_NOTES: 2019 Swiss film with Laetitia Casta
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2020
@@ -123287,7 +123243,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Jean de Florette
 :AI_TITLE: Jean de Florette
-:YEAR: 1986
 :AI_NOTES: 1986 Claude Berri film, first part of duology
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1986
@@ -123314,7 +123269,6 @@
 :SUGGESTED_SEARCH: Escape from Alcatraz
 :TMDB_ID: 10734
 :AI_TITLE: Escape from Alcatraz
-:YEAR: 1979
 :AI_NOTES: Possibly about Alcatraz, needs context
 :TMDB_TITLE: Flucht von Alcatraz
 :MANUALLY_CHECKED_BY_AI: true
@@ -123345,7 +123299,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Forces spéciales
 :AI_TITLE: Forces spéciales
-:YEAR: 2011
 :AI_NOTES: 2011 French action film, English: Special Forces
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2011
@@ -123396,7 +123349,6 @@
 :SUGGESTED_SEARCH: Forgetting Dad
 :TMDB_ID: 134647
 :AI_TITLE: Forgetting Dad
-:YEAR: 2008
 :AI_NOTES: 2008 documentary about man who lost memory
 :TMDB_TITLE: Forgetting Dad
 :MANUALLY_CHECKED_BY_AI: true
@@ -123425,7 +123377,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Fraktus
 :AI_TITLE: Fraktus
-:YEAR: 2012
 :AI_NOTES: 2012 German mockumentary about techno band
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2012
@@ -123455,7 +123406,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: famille à louer
 :AI_TITLE: Une famille à louer
-:YEAR: 2015
 :AI_NOTES: 2015 French comedy, German: Eine französische Hochzeit
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2015
@@ -123485,7 +123435,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Monga
 :AI_TITLE: Monga
-:YEAR: 2010
 :AI_NOTES: 2010 Taiwanese gangster film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2010
@@ -123541,7 +123490,6 @@
 :SUGGESTED_SEARCH: Gefahr größter Not Mittelweg
 :TMDB_ID: 107558
 :AI_TITLE: In Gefahr und größter Not bringt der Mittelweg den Tod
-:YEAR: 1974
 :AI_NOTES: 1974 German film by Alexander Kluge
 :TMDB_TITLE: In Gefahr und größter Not bringt der Mittelweg den Tod
 :MANUALLY_CHECKED_BY_AI: true
@@ -123572,7 +123520,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Contre-courant
 :AI_TITLE: Contre-courant
-:YEAR: 2018
 :AI_NOTES: 2016 French-Icelandic film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2018
@@ -123627,7 +123574,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Un secret
 :AI_TITLE: Ein Geheimnis
-:YEAR: 2007
 :AI_NOTES: 2007 French film, 'Un secret'
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2007
@@ -123686,7 +123632,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Extra Ordinary
 :AI_TITLE: Extra Ordinary
-:YEAR: 2019
 :AI_NOTES: 2019 Irish horror comedy
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2019
@@ -123716,7 +123661,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Geronimo American Legend
 :AI_TITLE: Geronimo: An American Legend
-:YEAR: 1993
 :AI_NOTES: 1993 Walter Hill western
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1993
@@ -123743,7 +123687,6 @@
 :SUGGESTED_SEARCH: The Savages
 :TMDB_ID: 8272
 :AI_TITLE: Die Geschwister Savage
-:YEAR: 2007
 :AI_NOTES: 2007 film 'The Savages', typo: Savage not Savauge
 :TMDB_TITLE: Die Geschwister Savage
 :MANUALLY_CHECKED_BY_AI: true
@@ -123771,7 +123714,6 @@
 :SUGGESTED_SEARCH: Ghostbusters Afterlife
 :TMDB_ID: 425909
 :AI_TITLE: Ghostbusters: Afterlife
-:YEAR: 2021
 :AI_NOTES: 2021 sequel, typo: Ghostbusters not Ghostbuster
 :TMDB_TITLE: Ghostbusters: Legacy
 :MANUALLY_CHECKED_BY_AI: true
@@ -123799,7 +123741,6 @@
 :SUGGESTED_SEARCH: Gloria schönste Kuh
 :TMDB_ID: 574997
 :AI_TITLE: Gloria, die schönste Kuh meiner Schwester
-:YEAR: 2018
 :AI_NOTES: 2018 German film, abbreviation expanded: meiner
 :TMDB_TITLE: Gloria, die schönste Kuh meiner Schwester
 :MANUALLY_CHECKED_BY_AI: true
@@ -123827,7 +123768,6 @@
 :SUGGESTED_SEARCH: Gomorrha
 :TMDB_ID: 8882
 :AI_TITLE: Gomorrha
-:YEAR: 2008
 :AI_NOTES: 2008 Italian mafia film, typo: Camorra not Comorra
 :TMDB_TITLE: Gomorrha - Reise in das Reich der Camorra
 :MANUALLY_CHECKED_BY_AI: true
@@ -123855,7 +123795,6 @@
 :SUGGESTED_SEARCH: Goodbye Bafana
 :TMDB_ID: 1874
 :AI_TITLE: Goodbye Bafana
-:YEAR: 2007
 :AI_NOTES: 2007 Nelson Mandela biopic, spacing: Goodbye
 :TMDB_TITLE: Goodbye Bafana
 :MANUALLY_CHECKED_BY_AI: true
@@ -123883,7 +123822,6 @@
 :SUGGESTED_SEARCH: Good Night Good Luck
 :TMDB_ID: 3291
 :AI_TITLE: Good Night, and Good Luck
-:YEAR: 2005
 :AI_NOTES: 2005 George Clooney film, correct punctuation
 :TMDB_TITLE: Good Night, and Good Luck.
 :MANUALLY_CHECKED_BY_AI: true
@@ -123911,7 +123849,6 @@
 :SUGGESTED_SEARCH: Go Trabi Go 2
 :TMDB_ID: 11168
 :AI_TITLE: Go Trabi Go 2
-:YEAR: 1992
 :AI_NOTES: 1992 German comedy sequel, correct spelling: Trabi
 :TMDB_TITLE: Go Trabi Go 2 - Das war der wilde Osten
 :MANUALLY_CHECKED_BY_AI: true
@@ -123942,7 +123879,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: grande strada azzurra
 :AI_TITLE: La grande strada azzurra
-:YEAR: 1957
 :AI_NOTES: 1957 Italian film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1957
@@ -123972,7 +123908,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Big Easy 1986
 :AI_TITLE: The Big Easy
-:YEAR: 1986
 :AI_NOTES: 1986 Jim McBride crime film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1986
@@ -123999,7 +123934,6 @@
 :SUGGESTED_SEARCH: Heinzels Heinzelmännchen
 :TMDB_ID: 638220
 :AI_TITLE: Die Heinzels - Rückkehr der Heinzelmännchen
-:YEAR: 2019
 :AI_NOTES: 2019 German animated film, truncated title
 :TMDB_TITLE: Die Heinzels - Rückkehr der Heinzelmännchen
 :MANUALLY_CHECKED_BY_AI: true
@@ -124026,7 +123960,6 @@
 :ID: a156b000-b012-45ee-94ef-251d33cd174e
 :SUGGESTED_SEARCH: Hereditary
 :AI_TITLE: Hérédité
-:YEAR: 2018
 :AI_NOTES: Unclear title, possibly French horror
 :TMDB_ID: 493922
 :TMDB_TITLE: Hereditary - Das Vermächtnis
@@ -124058,7 +123991,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Herrhausen
 :AI_TITLE: Herrhausen
-:YEAR: 2024
 :AI_NOTES: 2024 German TV series about banker Alfred Herrhausen
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2024
@@ -124083,7 +124015,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Mülheim Texas Helge Schneider
 :AI_TITLE: Mülheim Texas - Helge Schneider hier und dort
-:YEAR: 2015
 :AI_NOTES: 2010 Helge Schneider documentary
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2015
@@ -124113,7 +124044,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Heavenly Creatures
 :AI_TITLE: Heavenly Creatures
-:YEAR: 1994
 :AI_NOTES: 1994 Peter Jackson film, German title
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1994
@@ -124140,7 +124070,6 @@
 :SUGGESTED_SEARCH: Hochzeitsstrudel Zwetschgenglück
 :TMDB_ID: 764640
 :AI_TITLE: Hochzeitsstrudel und Zwetschgenglück
-:YEAR: 2020
 :AI_NOTES: 2020 German TV movie, truncation: Zwetschgenglück
 :TMDB_TITLE: Hochzeitsstrudel und Zwetschgenglück
 :MANUALLY_CHECKED_BY_AI: true
@@ -124168,7 +124097,6 @@
 :SUGGESTED_SEARCH: Honest Thief
 :TMDB_ID: 553604
 :AI_TITLE: Honest Thief
-:YEAR: 2020
 :AI_NOTES: 2020 Liam Neeson action film
 :TMDB_TITLE: Honest Thief
 :MANUALLY_CHECKED_BY_AI: true
@@ -124196,7 +124124,6 @@
 :SUGGESTED_SEARCH: Honeymoon Killers
 :TMDB_ID: 10237
 :AI_TITLE: The Honeymoon Killers
-:YEAR: 1970
 :AI_NOTES: 1970 crime film, spacing: Honeymoon
 :TMDB_TITLE: Honeymoon Killers
 :MANUALLY_CHECKED_BY_AI: true
@@ -124251,7 +124178,6 @@
 :SUGGESTED_SEARCH: Quill
 :TMDB_ID: 49258
 :AI_TITLE: Quill
-:YEAR: 2004
 :AI_NOTES: 2004 Japanese film about guide dog
 :TMDB_TITLE: Quill - Ein Freund für´s Leben
 :MANUALLY_CHECKED_BY_AI: true
@@ -124279,7 +124205,6 @@
 :SUGGESTED_SEARCH: Ichi 2008
 :TMDB_ID: 19506
 :AI_TITLE: Ichi
-:YEAR: 2008
 :AI_NOTES: 2008 Japanese samurai film, female version of Zatoichi
 :TMDB_TITLE: Ichi – Die blinde Schwertkämpferin
 :MANUALLY_CHECKED_BY_AI: true
@@ -124337,7 +124262,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Ilo Ilo
 :AI_TITLE: Ilo Ilo
-:YEAR: 2013
 :AI_NOTES: 2013 Singaporean film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2013
@@ -124364,7 +124288,6 @@
 :SUGGESTED_SEARCH: Ennemi intime
 :TMDB_ID: 13507
 :AI_TITLE: L'Ennemi intime
-:YEAR: 2007
 :AI_NOTES: 2007 French Algerian War film
 :TMDB_TITLE: Intimate Enemies - Der Feind in den eigenen Reihen
 :MANUALLY_CHECKED_BY_AI: true
@@ -124421,7 +124344,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Kagemusha
 :AI_TITLE: Kagemusha
-:YEAR: 1980
 :AI_NOTES: 1980 Akira Kurosawa samurai epic
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1980
@@ -124451,7 +124373,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Rise Warrior Apes
 :AI_TITLE: Rise of the Warrior Apes
-:YEAR: 2017
 :AI_NOTES: Documentary about chimpanzees
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2017
@@ -124478,7 +124399,6 @@
 :SUGGESTED_SEARCH: Känguru-Chroniken
 :TMDB_ID: 639564
 :AI_TITLE: Die Känguru-Chroniken
-:YEAR: 2020
 :AI_NOTES: 2020 German comedy, correct spelling: Känguru
 :TMDB_TITLE: Die Känguru-Chroniken
 :MANUALLY_CHECKED_BY_AI: true
@@ -124509,7 +124429,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Liesl Karlstadt Karl Valentin
 :AI_TITLE: Liesl Karlstadt und Karl Valentin
-:YEAR: 2008
 :AI_NOTES: 2012 German TV movie
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2008
@@ -124536,7 +124455,6 @@
 :SUGGESTED_SEARCH: Erlösung
 :TMDB_ID: 534
 :AI_TITLE: Erlösung
-:YEAR: 2016
 :AI_NOTES: 2016 Danish thriller from Department Q series
 :TMDB_TITLE: Terminator: Die Erlösung
 :MANUALLY_CHECKED_BY_AI: true
@@ -124564,7 +124482,6 @@
 :SUGGESTED_SEARCH: Eisfieber
 :TMDB_ID: 33570
 :AI_TITLE: Eisfieber
-:YEAR: 2010
 :AI_NOTES: 2010 German TV miniseries, typo: Follett not Follets
 :TMDB_TITLE: Eisfieber 2
 :MANUALLY_CHECKED_BY_AI: true
@@ -124592,7 +124509,6 @@
 :SUGGESTED_SEARCH: petite Jérusalem
 :TMDB_ID: 50339
 :AI_TITLE: La petite Jérusalem
-:YEAR: 2005
 :AI_NOTES: 2005 French film, German: Mein kleines Jerusalem
 :TMDB_TITLE: La Petite Jérusalem
 :MANUALLY_CHECKED_BY_AI: true
@@ -124620,7 +124536,6 @@
 :SUGGESTED_SEARCH: Louise Boni Jäger Nacht
 :TMDB_ID: 384496
 :AI_TITLE: Kommissarin Louise Boni - Jäger in der Nacht
-:YEAR: 2016
 :AI_NOTES: 2016 German TV movie, abbreviation: in der Nacht
 :TMDB_TITLE: Kommissarin Louise Boni – Jäger in der Nacht
 :MANUALLY_CHECKED_BY_AI: true
@@ -124648,7 +124563,6 @@
 :SUGGESTED_SEARCH: Kontrakt Zeichners
 :TMDB_ID: 10831
 :AI_TITLE: Der Kontrakt des Zeichners
-:YEAR: 1982
 :AI_NOTES: 1982 Peter Greenaway film, possible German title confusion
 :TMDB_TITLE: Der Kontrakt des Zeichners
 :MANUALLY_CHECKED_BY_AI: true
@@ -124679,7 +124593,6 @@
 :AI_VERIFIED: true
 :SUGGESTED_SEARCH: Kopf ein Universum
 :AI_TITLE: In meinem Kopf ein Universum
-:YEAR: 2016
 :AI_NOTES: 2016 Polish film '11 Minutes', title reordered
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2013
@@ -124709,7 +124622,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Zweimal Judas
 :AI_TITLE: Zweimal Judas
-:YEAR: 1968
 :AI_NOTES: 1968 Spaghetti Western with Klaus Kinski
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1968
@@ -124816,7 +124728,6 @@
 :ID: 2c4c3132-109b-4e29-8bce-df1cb3874407
 :SUGGESTED_SEARCH: Leo Marie Weihnachtsliebe
 :AI_TITLE: Leo und Marie - Eine Weihnachtsliebe
-:YEAR: 2008
 :AI_NOTES: German TV movie, abbreviation: Eine
 :TMDB_ID: 266169
 :TMDB_TITLE: Leo und Marie – Eine Weihnachtsliebe
@@ -124845,7 +124756,6 @@
 :SUGGESTED_SEARCH: Le Mans 66
 :TMDB_ID: 359724
 :AI_TITLE: Le Mans 66 - Gegen jede Chance
-:YEAR: 2019
 :AI_NOTES: 2019 racing film, correct: Le Mans (not Les)
 :TMDB_TITLE: Le Mans 66 - Gegen jede Chance
 :MANUALLY_CHECKED_BY_AI: true
@@ -124905,7 +124815,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: White Mischief
 :AI_TITLE: White Mischief
-:YEAR: 1987
 :AI_NOTES: 1987 British drama about Kenya colonial scandal
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1987
@@ -124932,7 +124841,6 @@
 :SUGGESTED_SEARCH: Lilja 4-ever
 :TMDB_ID: 12093
 :AI_TITLE: Lilja 4-ever
-:YEAR: 2002
 :AI_NOTES: 2002 Swedish-Danish film by Lukas Moodysson, typo: Lilja
 :TMDB_TITLE: Lilja 4-ever
 :MANUALLY_CHECKED_BY_AI: true
@@ -124960,7 +124868,6 @@
 :SUGGESTED_SEARCH: Liebe ist kälter als der Tod
 :TMDB_ID: 12482
 :AI_TITLE: Liebe ist kälter als der Tod
-:YEAR: 1969
 :AI_NOTES: 1969 Fassbinder debut film
 :TMDB_TITLE: Liebe ist kälter als der Tod
 :MANUALLY_CHECKED_BY_AI: true
@@ -124988,7 +124895,6 @@
 :SUGGESTED_SEARCH: Carne trémula
 :TMDB_ID: 267
 :AI_TITLE: Carne trémula
-:YEAR: 1997
 :AI_NOTES: 1997 Almodóvar film, English: Live Flesh
 :TMDB_TITLE: Live Flesh - Mit Haut und Haar
 :MANUALLY_CHECKED_BY_AI: true
@@ -125019,7 +124925,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Lymelife
 :AI_TITLE: Lymelife
-:YEAR: 2008
 :AI_NOTES: 2008 indie drama
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2008
@@ -125046,7 +124951,6 @@
 :SUGGESTED_SEARCH: Lost in Beijing
 :TMDB_ID: 30112
 :AI_TITLE: Lost in Beijing
-:YEAR: 2007
 :AI_NOTES: 2007 Chinese film, typo: Beijing not Bejing
 :TMDB_TITLE: Lost in Beijing - Alles ist möglich
 :MANUALLY_CHECKED_BY_AI: true
@@ -125101,7 +125005,6 @@
 :SUGGESTED_SEARCH: Love Is the Devil
 :TMDB_ID: 4975
 :AI_TITLE: Love Is the Devil
-:YEAR: 1998
 :AI_NOTES: 1998 film about Francis Bacon, typo: the not he
 :TMDB_TITLE: Love is the Devil - Studie für ein Portrait von Francis Bacon
 :MANUALLY_CHECKED_BY_AI: true
@@ -125129,7 +125032,6 @@
 :SUGGESTED_SEARCH: Love Steaks
 :TMDB_ID: 239030
 :AI_TITLE: Love Steaks
-:YEAR: 2013
 :AI_NOTES: 2013 German film, typo: Steaks not Steakes
 :TMDB_TITLE: Love Steaks
 :MANUALLY_CHECKED_BY_AI: true
@@ -125209,7 +125111,6 @@
 :SUGGESTED_SEARCH: Lulu Jimi
 :TMDB_ID: 8887
 :AI_TITLE: Lulu & Jimi
-:YEAR: 2009
 :AI_NOTES: 2009 German film, correct spelling: Jimi
 :TMDB_TITLE: Lulu & Jimi
 :MANUALLY_CHECKED_BY_AI: true
@@ -125237,7 +125138,6 @@
 :SUGGESTED_SEARCH: Mackie Messer Dreigroschenfilm
 :TMDB_ID: 456618
 :AI_TITLE: Mackie Messer - Brechts Dreigroschenfilm
-:YEAR: 2018
 :AI_NOTES: 2018 film by Joachim A. Lang
 :TMDB_TITLE: Mackie Messer - Brechts Dreigroschenfilm
 :MANUALLY_CHECKED_BY_AI: true
@@ -125265,7 +125165,6 @@
 :SUGGESTED_SEARCH: Madagascar 2005
 :TMDB_ID: 953
 :AI_TITLE: Madagascar
-:YEAR: 2005
 :AI_NOTES: 2005 DreamWorks animated film
 :TMDB_TITLE: Madagascar
 :MANUALLY_CHECKED_BY_AI: true
@@ -125296,7 +125195,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Bande de filles
 :AI_TITLE: Bande de filles
-:YEAR: 2014
 :AI_NOTES: 2014 French film, English: Girlhood
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2014
@@ -125326,7 +125224,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Balada triste de trompeta
 :AI_TITLE: Mad Circus - Eine Ballade von Liebe und Tod
-:YEAR: 2010
 :AI_NOTES: 1993 German film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2010
@@ -125353,7 +125250,6 @@
 :SUGGESTED_SEARCH: Magical Mystery Karl Schmidt
 :TMDB_ID: 426562
 :AI_TITLE: Magical Mystery oder die Rückkehr des Karl Schmidt
-:YEAR: 2017
 :AI_NOTES: 2017 German comedy, abbreviations expanded
 :TMDB_TITLE: Magical Mystery oder die Rückkehr des Karl Schmidt
 :MANUALLY_CHECKED_BY_AI: true
@@ -125384,7 +125280,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Men on the Bridge
 :AI_TITLE: Men on the Bridge
-:YEAR: 2009
 :AI_NOTES: 2009 Turkish film 'Köprüdekiler'
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2009
@@ -125411,7 +125306,6 @@
 :SUGGESTED_SEARCH: Köprüdekiler
 :TMDB_ID: 115020
 :AI_TITLE: Köprüdekiler
-:YEAR: 2009
 :AI_NOTES: German title of 'Men on the Bridge'
 :TMDB_TITLE: Köprüdekiler
 :MANUALLY_CHECKED_BY_AI: true
@@ -125442,7 +125336,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Temporada de patos
 :AI_TITLE: Temporada de patos
-:YEAR: 2004
 :AI_NOTES: 2004 Mexican film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2004
@@ -125472,7 +125365,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Mickey Blue Eyes
 :AI_TITLE: Mickey Blue Eyes
-:YEAR: 1999
 :AI_NOTES: 1999 Hugh Grant comedy
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1999
@@ -125499,7 +125391,6 @@
 :SUGGESTED_SEARCH: Min Dît Diyarbakır
 :TMDB_ID: 78432
 :AI_TITLE: Min Dît - Die Kinder von Diyarbakır
-:YEAR: 2009
 :AI_NOTES: 2009 film, correct spelling: Diyarbakır
 :TMDB_TITLE: Min Dît - Die Kinder von Diyarbakir
 :MANUALLY_CHECKED_BY_AI: true
@@ -125527,7 +125418,6 @@
 :SUGGESTED_SEARCH: Mir nach Canaillen
 :TMDB_ID: 171325
 :AI_TITLE: Mir nach, Canaillen!
-:YEAR: 1964
 :AI_NOTES: 1964 East German musical, typo: Canaillen, punctuation
 :TMDB_TITLE: Mir nach, Canaillen
 :MANUALLY_CHECKED_BY_AI: true
@@ -125555,7 +125445,6 @@
 :SUGGESTED_SEARCH: Miss Fisher Gruft Tränen
 :TMDB_ID: 518978
 :AI_TITLE: Miss Fisher und die Gruft der Tränen
-:YEAR: 2020
 :AI_NOTES: 2020 Australian mystery film, abbreviation: der
 :TMDB_TITLE: Miss Fisher und die Gruft der Tränen
 :MANUALLY_CHECKED_BY_AI: true
@@ -125583,7 +125472,6 @@
 :SUGGESTED_SEARCH: Mission Impossible Fallout
 :TMDB_ID: 353081
 :AI_TITLE: Mission: Impossible - Fallout
-:YEAR: 2018
 :AI_NOTES: 2018 Tom Cruise action film, spacing: Fallout
 :TMDB_TITLE: Mission: Impossible - Fallout
 :MANUALLY_CHECKED_BY_AI: true
@@ -125611,7 +125499,6 @@
 :SUGGESTED_SEARCH: Mission Impossible Rogue Nation
 :TMDB_ID: 177677
 :AI_TITLE: Mission: Impossible - Rogue Nation
-:YEAR: 2015
 :AI_NOTES: 2015 Tom Cruise action film, typo: Rogue not Rouge
 :TMDB_TITLE: Mission: Impossible - Rogue Nation
 :MANUALLY_CHECKED_BY_AI: true
@@ -125639,7 +125526,6 @@
 :SUGGESTED_SEARCH: Misbehaviour
 :TMDB_ID: 567965
 :AI_TITLE: Misbehaviour
-:YEAR: 2020
 :AI_NOTES: 2020 British film about 1970 Miss World contest, German: Die Misswahl
 :TMDB_TITLE: Die Misswahl
 :MANUALLY_CHECKED_BY_AI: true
@@ -125692,7 +125578,6 @@
 :SUGGESTED_SEARCH: Die Behandlung
 :TMDB_ID: 251577
 :AI_TITLE: Die Behandlung
-:YEAR: 2014
 :AI_NOTES: 2014 Belgian thriller based on Mo Hayder novel
 :TMDB_TITLE: Die Behandlung
 :MANUALLY_CHECKED_BY_AI: true
@@ -125720,7 +125605,6 @@
 :SUGGESTED_SEARCH: Monsieur Lazhar
 :TMDB_ID: 78480
 :AI_TITLE: Monsieur Lazhar
-:YEAR: 2011
 :AI_NOTES: 2011 Canadian film, typo: Lazhar not Lhazar
 :TMDB_TITLE: Monsieur Lazhar
 :MANUALLY_CHECKED_BY_AI: true
@@ -125748,7 +125632,6 @@
 :SUGGESTED_SEARCH: Monte Verità
 :TMDB_ID: 846862
 :AI_TITLE: Monte Verità - Der Rausch der Freiheit
-:YEAR: 2021
 :AI_NOTES: 2021 Swiss-Austrian film, truncation: Freiheit
 :TMDB_TITLE: Monte Verità
 :MANUALLY_CHECKED_BY_AI: true
@@ -125776,7 +125659,6 @@
 :SUGGESTED_SEARCH: In the Mood for Love
 :TMDB_ID: 843
 :AI_TITLE: In the Mood for Love
-:YEAR: 2000
 :AI_NOTES: 2000 Wong Kar-wai masterpiece, abbreviation: der
 :TMDB_TITLE: In The Mood For Love
 :MANUALLY_CHECKED_BY_AI: true
@@ -125804,7 +125686,6 @@
 :SUGGESTED_SEARCH: Moonlight Mile
 :TMDB_ID: 31005
 :AI_TITLE: Moonlight Mile
-:YEAR: 2002
 :AI_NOTES: 2002 Jake Gyllenhaal drama, spacing: Moonlight
 :TMDB_TITLE: Moonlight Mile
 :MANUALLY_CHECKED_BY_AI: true
@@ -125888,7 +125769,6 @@
 :SUGGESTED_SEARCH: Esio Trot
 :TMDB_ID: 313867
 :AI_TITLE: Esio Trot
-:YEAR: 2015
 :AI_NOTES: 2015 Roald Dahl adaptation, typo: Geheimnis, wrong year
 :TMDB_TITLE: Mr. Hoppys Geheimnis
 :MANUALLY_CHECKED_BY_AI: true
@@ -125916,7 +125796,6 @@
 :SUGGESTED_SEARCH: Mittagsstunde
 :TMDB_ID: 950199
 :AI_TITLE: Mittagsstunde
-:YEAR: 2022
 :AI_NOTES: 2022 German film, typo: missing 'i' in Mittagsstunde
 :TMDB_TITLE: Mittagsstunde
 :MANUALLY_CHECKED_BY_AI: true
@@ -125946,7 +125825,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Mullewapp
 :AI_TITLE: Mullewapp
-:YEAR: 2016
 :AI_NOTES: German animated film, correct spelling: Mullewapp
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2016
@@ -126003,7 +125881,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Nicht ganz koscher
 :AI_TITLE: Nicht ganz koscher
-:YEAR: 2022
 :AI_NOTES: 2022 German film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2022
@@ -126055,7 +125932,6 @@
 :SUGGESTED_SEARCH: Okuribito
 :TMDB_ID: 16804
 :AI_TITLE: Nokan - Die Kunst des Ausklangs
-:YEAR: 2008
 :AI_NOTES: 2008 Japanese film 'Okuribito', German: Nokan
 :TMDB_TITLE: Nokan - Die Kunst des Ausklangs
 :MANUALLY_CHECKED_BY_AI: true
@@ -126112,7 +125988,6 @@
 :SUGGESTED_SEARCH: Onoda
 :TMDB_ID: 695089
 :AI_TITLE: Onoda: 10,000 Nights in the Jungle
-:YEAR: 2021
 :AI_NOTES: 2021 French film about Japanese soldier, typo: Onoda, truncation: Dschungel
 :TMDB_TITLE: Onoda - 10.000 Nächte im Dschungel
 :MANUALLY_CHECKED_BY_AI: true
@@ -126140,7 +126015,6 @@
 :SUGGESTED_SEARCH: Der Palast
 :TMDB_ID: 510455
 :AI_TITLE: Der Palast
-:YEAR: 2021
 :AI_NOTES: 2021 German miniseries with Heino Ferch
 :TMDB_TITLE: Der Palast des Postboten
 :MANUALLY_CHECKED_BY_AI: true
@@ -126171,7 +126045,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Papa Moll fliegenden Hundes
 :AI_TITLE: Papa Moll und die Entführung des fliegenden Hundes
-:YEAR: 2017
 :AI_NOTES: 2017 Swiss family film, truncation: fliegenden Hundes
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2017
@@ -126198,7 +126071,6 @@
 :SUGGESTED_SEARCH: Paper Moon
 :TMDB_ID: 11293
 :AI_TITLE: Paper Moon
-:YEAR: 1973
 :AI_NOTES: 1973 Peter Bogdanovich film, spacing: Paper Moon
 :TMDB_TITLE: Paper Moon
 :MANUALLY_CHECKED_BY_AI: true
@@ -126226,7 +126098,6 @@
 :SUGGESTED_SEARCH: Papicha
 :TMDB_ID: 592807
 :AI_TITLE: Papicha - Der Traum von Freiheit
-:YEAR: 2019
 :AI_NOTES: 2019 Algerian film, truncation: Traum
 :TMDB_TITLE: Papicha
 :MANUALLY_CHECKED_BY_AI: true
@@ -126257,7 +126128,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Godfather Part II
 :AI_TITLE: The Godfather Part II
-:YEAR: 1974
 :AI_NOTES: 1974 Coppola sequel
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1974
@@ -126284,7 +126154,6 @@
 :SUGGESTED_SEARCH: Pépé le Moko
 :TMDB_ID: 26252
 :AI_TITLE: Pépé le Moko
-:YEAR: 1937
 :AI_NOTES: 1937 French crime film, typo: Moko not Roko
 :TMDB_TITLE: Pépé le Moko – Im Dunkel von Algier
 :MANUALLY_CHECKED_BY_AI: true
@@ -126365,7 +126234,6 @@
 :SUGGESTED_SEARCH: Portrait of a Lady on Fire
 :TMDB_ID: 531428
 :AI_TITLE: Porträt einer jungen Frau in Flammen
-:YEAR: 2019
 :AI_NOTES: 2019 Céline Sciamma film, typo: Porträt not Poträt
 :TMDB_TITLE: Porträt einer jungen Frau in Flammen
 :MANUALLY_CHECKED_BY_AI: true
@@ -126393,7 +126261,6 @@
 :SUGGESTED_SEARCH: En liberté
 :TMDB_ID: 519106
 :AI_TITLE: En liberté!
-:YEAR: 2018
 :AI_NOTES: 2018 French film, German: Raubt mich ruhig aus
 :TMDB_TITLE: Lieber Antoine als gar keinen Ärger
 :MANUALLY_CHECKED_BY_AI: true
@@ -126421,7 +126288,6 @@
 :SUGGESTED_SEARCH: Reykjavik-Rotterdam
 :TMDB_ID: 63907
 :AI_TITLE: Reykjavik-Rotterdam
-:YEAR: 2008
 :AI_NOTES: 2008 thriller, typo: Reykjavik not Rejkjavik
 :TMDB_TITLE: Reykjavík Rotterdam
 :MANUALLY_CHECKED_BY_AI: true
@@ -126505,7 +126371,6 @@
 :SUGGESTED_SEARCH: Meet Joe Black
 :TMDB_ID: 297
 :AI_TITLE: Meet Joe Black
-:YEAR: 1998
 :AI_NOTES: 1998 Brad Pitt film, typo: Rendezvous
 :TMDB_TITLE: Rendezvous mit Joe Black
 :MANUALLY_CHECKED_BY_AI: true
@@ -126558,7 +126423,6 @@
 :SUGGESTED_SEARCH: Ridicule
 :TMDB_ID: 12709
 :AI_TITLE: Ridicule
-:YEAR: 1996
 :AI_NOTES: 1996 Patrice Leconte historical drama
 :TMDB_TITLE: Ridicule - Von der Lächerlichkeit des Scheins
 :MANUALLY_CHECKED_BY_AI: true
@@ -126589,7 +126453,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: The Road 2009
 :AI_TITLE: The Road
-:YEAR: 2009
 :AI_NOTES: 2009 post-apocalyptic film with Viggo Mortensen
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2009
@@ -126616,7 +126479,6 @@
 :SUGGESTED_SEARCH: Prairie Home Companion
 :TMDB_ID: 9526
 :AI_TITLE: A Prairie Home Companion
-:YEAR: 2006
 :AI_NOTES: 2006 Robert Altman film, typo: Altman not Altmann
 :TMDB_TITLE: Robert Altman's Last Radio Show
 :MANUALLY_CHECKED_BY_AI: true
@@ -126666,7 +126528,6 @@
 :SUGGESTED_SEARCH: Rashomon
 :TMDB_ID: 548
 :AI_TITLE: Rashomon
-:YEAR: 1950
 :AI_NOTES: 1950 Akira Kurosawa masterpiece, typo: Rashomon, subtitle
 :TMDB_TITLE: Rashomon - Das Lustwäldchen
 :MANUALLY_CHECKED_BY_AI: true
@@ -126694,7 +126555,6 @@
 :SUGGESTED_SEARCH: Saat des Terrors
 :TMDB_ID: 563490
 :AI_TITLE: Saat des Terrors
-:YEAR: 2018
 :AI_NOTES: 2018 German TV movie with Heiner Lauterbach
 :TMDB_TITLE: Saat des Terrors
 :MANUALLY_CHECKED_BY_AI: true
@@ -126722,7 +126582,6 @@
 :SUGGESTED_SEARCH: Das Sacher
 :TMDB_ID: 174321
 :AI_TITLE: Das Sacher. In bester Gesellschaft
-:YEAR: 2016
 :AI_NOTES: 2016 German-Austrian TV movie about Hotel Sacher
 :TMDB_TITLE: The English Teacher - Eine Lektion in Sachen Liebe
 :MANUALLY_CHECKED_BY_AI: true
@@ -126750,7 +126609,6 @@
 :SUGGESTED_SEARCH: Sacro GRA
 :TMDB_ID: 216790
 :AI_TITLE: Sacro GRA
-:YEAR: 2013
 :AI_NOTES: 2013 Italian documentary, won Golden Lion
 :TMDB_TITLE: Sacro GRA
 :MANUALLY_CHECKED_BY_AI: true
@@ -126778,7 +126636,6 @@
 :SUGGESTED_SEARCH: Seymour An Introduction
 :TMDB_ID: 291817
 :AI_TITLE: Seymour: An Introduction
-:YEAR: 2014
 :AI_NOTES: 2014 Ethan Hawke documentary about pianist Seymour Bernstein
 :TMDB_TITLE: Seymour: An Introduction
 :MANUALLY_CHECKED_BY_AI: true
@@ -126806,7 +126663,6 @@
 :SUGGESTED_SEARCH: Sally Lockhart
 :TMDB_ID: 46687
 :AI_TITLE: Sally Lockhart
-:YEAR: 2006
 :AI_NOTES: British TV adaptations of Philip Pullman novels, typo: Lockhart
 :TMDB_TITLE: Der Rubin im Rauch
 :MANUALLY_CHECKED_BY_AI: true
@@ -126834,7 +126690,6 @@
 :SUGGESTED_SEARCH: The Salvation
 :TMDB_ID: 266285
 :AI_TITLE: The Salvation
-:YEAR: 2014
 :AI_NOTES: 2014 Danish western with Mads Mikkelsen, abbreviation: der
 :TMDB_TITLE: The Salvation
 :MANUALLY_CHECKED_BY_AI: true
@@ -126891,7 +126746,6 @@
 :SUGGESTED_SEARCH: Santo Blue Demon Drácula
 :TMDB_ID: 55729
 :AI_TITLE: Santo y Blue Demon contra Drácula y el Hombre Lobo
-:YEAR: 1973
 :AI_NOTES: 1973 Mexican lucha libre horror
 :TMDB_TITLE: Santo und der blaue Dämon contra Dracula und Werwolf
 :MANUALLY_CHECKED_BY_AI: true
@@ -126919,7 +126773,6 @@
 :SUGGESTED_SEARCH: Female Prisoner Scorpion
 :TMDB_ID: 39872
 :AI_TITLE: Joshū Sasori: Dai-41 Zakkyo-bō
-:YEAR: 1972
 :AI_NOTES: 1972 Japanese women-in-prison film, Female Prisoner Scorpion
 :TMDB_TITLE: Sasori – Jailhouse 41
 :MANUALLY_CHECKED_BY_AI: true
@@ -126946,7 +126799,6 @@
 :ID: b19e16a3-f176-400f-accd-c673ab828e09
 :SUGGESTED_SEARCH: Sau Nummer vier
 :AI_TITLE: Sau Nummer vier
-:YEAR: 2010
 :AI_NOTES: German Bavarian crime film
 :TMDB_ID: 53309
 :TMDB_TITLE: Sau Nummer vier. Ein Niederbayernkrimi
@@ -126974,7 +126826,6 @@
 :ID: 20bc58b1-fec9-4666-83a6-035673ac4ab2
 :SUGGESTED_SEARCH: Sayonara Loreley
 :AI_TITLE: Sayonara Loreley
-:YEAR: 2022
 :AI_NOTES: 2022 German film, truncated: Rheinland or similar
 :TMDB_ID: 979671
 :TMDB_TITLE: Sayonara Loreley
@@ -127002,7 +126853,6 @@
 :SUGGESTED_SEARCH: Schändung Adler-Olsen
 :TMDB_ID: 254201
 :AI_TITLE: Schändung
-:YEAR: 2014
 :AI_NOTES: 2014 adaptation of Adler-Olsen novel, Department Q series
 :TMDB_TITLE: Schändung
 :MANUALLY_CHECKED_BY_AI: true
@@ -127033,7 +126883,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Schloss Kafka
 :AI_TITLE: Das Schloss
-:YEAR: 1997
 :AI_NOTES: Kafka adaptation, or Howl's Moving Castle if anime context
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1997
@@ -127063,7 +126912,6 @@
 :AI_VERIFIED: true
 :SUGGESTED_SEARCH: Luis Trenker schmale Grat
 :AI_TITLE: Luis Trenker - Der schmale Grat der Wahrheit
-:YEAR: 2015
 :AI_NOTES: Documentary about Luis Trenker
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2015
@@ -127093,7 +126941,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: umbră de nor
 :AI_TITLE: O umbră de nor
-:YEAR: 2013
 :AI_NOTES: 2013 Romanian film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2013
@@ -127120,7 +126967,6 @@
 :SUGGESTED_SEARCH: Meaning of Life Monty Python
 :TMDB_ID: 4543
 :AI_TITLE: Der Sinn des Lebens
-:YEAR: 1983
 :AI_NOTES: 1983 Monty Python film, or German adaptation
 :TMDB_TITLE: Monty Pythons - Der Sinn des Lebens
 :MANUALLY_CHECKED_BY_AI: true
@@ -127151,7 +126997,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Stage Beauty
 :AI_TITLE: Stage Beauty
-:YEAR: 2004
 :AI_NOTES: 2004 film with Billy Crudup about Restoration theater
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2004
@@ -127178,7 +127023,6 @@
 :SUGGESTED_SEARCH: Star Trek Generations
 :TMDB_ID: 193
 :AI_TITLE: Star Trek Generations
-:YEAR: 1994
 :AI_NOTES: 1994 Star Trek film, typos: Star Trek, Generationen
 :TMDB_TITLE: Star Trek - Treffen der Generationen
 :MANUALLY_CHECKED_BY_AI: true
@@ -127206,7 +127050,6 @@
 :SUGGESTED_SEARCH: Steig Nicht Aus
 :TMDB_ID: 497223
 :AI_TITLE: Steig. Nicht. Aus!
-:YEAR: 2018
 :AI_NOTES: 2018 German thriller with Wotan Wilke Möhring
 :TMDB_TITLE: Steig. Nicht. Aus!
 :MANUALLY_CHECKED_BY_AI: true
@@ -127262,7 +127105,6 @@
 :SUGGESTED_SEARCH: Strawberry Bubblegums
 :TMDB_ID: 413313
 :AI_TITLE: Strawberry Bubblegums
-:YEAR: 2016
 :AI_NOTES: 2016 German film
 :TMDB_TITLE: Strawberry Bubblegums
 :MANUALLY_CHECKED_BY_AI: true
@@ -127290,7 +127132,6 @@
 :SUGGESTED_SEARCH: Sedmikrásky
 :TMDB_ID: 46919
 :AI_TITLE: Sedmikrásky
-:YEAR: 1966
 :AI_NOTES: 1966 Czech New Wave film 'Daisies'
 :TMDB_TITLE: Tausendschönchen
 :MANUALLY_CHECKED_BY_AI: true
@@ -127318,7 +127159,6 @@
 :SUGGESTED_SEARCH: taxi pour Tobrouk
 :TMDB_ID: 33336
 :AI_TITLE: Un taxi pour Tobrouk
-:YEAR: 1961
 :AI_NOTES: 1961 French war film, German: Taxi nach Tobruk
 :TMDB_TITLE: Taxi nach Tobruk
 :MANUALLY_CHECKED_BY_AI: true
@@ -127349,7 +127189,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Teil von uns
 :AI_TITLE: Ein Teil von uns
-:YEAR: 2015
 :AI_NOTES: German film, needs verification
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1990
@@ -127402,7 +127241,6 @@
 :SUGGESTED_SEARCH: Tony Takitani
 :TMDB_ID: 29269
 :AI_TITLE: Tony Takitani
-:YEAR: 2004
 :AI_NOTES: 2004 Japanese film, typo: Takitani not Tahitani
 :TMDB_TITLE: Tony Takitani
 :MANUALLY_CHECKED_BY_AI: true
@@ -127433,7 +127271,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Kopftuchmafia Stinatz
 :AI_TITLE: Kopftuchmafia - Ein Stinatz-Krimi
-:YEAR: 2024
 :AI_NOTES: 2024 Austrian crime film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2024
@@ -127492,7 +127329,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Liens du sang
 :AI_TITLE: Les Liens du sang
-:YEAR: 2008
 :AI_NOTES: 2008 French crime thriller
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2008
@@ -127551,7 +127387,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Tout contre elle
 :AI_TITLE: Tout contre elle
-:YEAR: 2019
 :AI_NOTES: 2019 French psychological thriller
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2019
@@ -127581,7 +127416,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Bajirao Mastani
 :AI_TITLE: Bajirao Mastani
-:YEAR: 2015
 :AI_NOTES: 2015 Indian historical romance
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2015
@@ -127611,7 +127445,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Naissance des pieuvres
 :AI_TITLE: Naissance des pieuvres
-:YEAR: 2007
 :AI_NOTES: 2007 Céline Sciamma debut, English: Water Lilies
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2007
@@ -127638,7 +127471,6 @@
 :SUGGESTED_SEARCH: De ofrivilliga
 :TMDB_ID: 8927
 :AI_TITLE: De ofrivilliga
-:YEAR: 2008
 :AI_NOTES: 2008 Swedish film, English: Involuntary
 :TMDB_TITLE: De ofrivilliga
 :MANUALLY_CHECKED_BY_AI: true
@@ -127669,7 +127501,6 @@
 :AI_VERIFIED: true
 :SUGGESTED_SEARCH: Up in the Air
 :AI_TITLE: Up in the Air
-:YEAR: 2009
 :AI_NOTES: 2009 Jason Reitman film with George Clooney
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2009
@@ -127746,7 +127577,6 @@
 :SUGGESTED_SEARCH: Väter allein zu Haus
 :TMDB_ID: 631156
 :AI_TITLE: Väter allein zu Haus
-:YEAR: 2019
 :AI_NOTES: German TV movie series
 :TMDB_TITLE: Väter allein zu Haus: Mark
 :MANUALLY_CHECKED_BY_AI: true
@@ -127773,7 +127603,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Vinyan
 :AI_TITLE: Vinyan
-:YEAR: 2008
 :AI_NOTES: 2008 horror film with Emmanuelle Béart
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2008
@@ -127800,7 +127629,6 @@
 :SUGGESTED_SEARCH: Vita Virginia
 :TMDB_ID: 447034
 :AI_TITLE: Vita & Virginia
-:YEAR: 2018
 :AI_NOTES: 2018 film about Vita Sackville-West and Virginia Woolf
 :TMDB_TITLE: Vita & Virginia
 :MANUALLY_CHECKED_BY_AI: true
@@ -127827,7 +127655,6 @@
 :ID: b4bf7c34-af3f-427f-bd0b-cda16b349bd6
 :SUGGESTED_SEARCH: Viva Forever
 :AI_TITLE: Viva Forever
-:YEAR: 2021
 :AI_NOTES: German film, needs verification
 :TMDB_ID: 835363
 :TMDB_TITLE: Viva Forever
@@ -127859,7 +127686,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: The Birds
 :AI_TITLE: The Birds
-:YEAR: 1963
 :AI_NOTES: 1963 Hitchcock horror classic (not 1962)
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1963
@@ -127886,7 +127712,6 @@
 :SUGGESTED_SEARCH: Violette Nozière
 :TMDB_ID: 2813
 :AI_TITLE: Violette Nozière
-:YEAR: 1978
 :AI_NOTES: 1978 Chabrol film, typo: Violette not Voilette
 :TMDB_TITLE: Violette Nozière
 :MANUALLY_CHECKED_BY_AI: true
@@ -127941,7 +127766,6 @@
 :SUGGESTED_SEARCH: Vorwärts immer
 :TMDB_ID: 403899
 :AI_TITLE: Vorwärts immer!
-:YEAR: 2017
 :AI_NOTES: 2017 German comedy about East German idealist
 :TMDB_TITLE: Vorwärts immer!
 :MANUALLY_CHECKED_BY_AI: true
@@ -127972,7 +127796,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Au Poste
 :AI_TITLE: Au Poste!
-:YEAR: 2018
 :AI_NOTES: 2018 Quentin Dupieux French comedy
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2018
@@ -128002,7 +127825,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Les Gardiennes
 :AI_TITLE: Les Gardiennes
-:YEAR: 2017
 :AI_NOTES: 2017 Xavier Beauvois WWI drama
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2017
@@ -128029,7 +127851,6 @@
 :SUGGESTED_SEARCH: Wajma
 :TMDB_ID: 158455
 :AI_TITLE: Wajma
-:YEAR: 2013
 :AI_NOTES: 2013 Afghan-French film, correct: Wajma not Waijma
 :TMDB_TITLE: Wajma – Eine afghanische Liebesgeschichte
 :MANUALLY_CHECKED_BY_AI: true
@@ -128084,7 +127905,6 @@
 :AI_VERIFIED: true
 :SUGGESTED_SEARCH: Die Wand
 :AI_TITLE: Die Wand
-:YEAR: 2012
 :AI_NOTES: 2012 Austrian post-apocalyptic film with Martina Gedeck
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2012
@@ -128114,7 +127934,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Wicker Park
 :AI_TITLE: Wicker Park
-:YEAR: 2004
 :AI_NOTES: 2004 psychological thriller with Josh Hartnett
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2004
@@ -128144,7 +127963,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Mon beau-père mes parents
 :AI_TITLE: Mon beau-père, mes parents et moi
-:YEAR: 2018
 :AI_NOTES: French Christmas film, needs verification
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2004
@@ -128171,7 +127989,6 @@
 :SUGGESTED_SEARCH: The Notebook
 :TMDB_ID: 11036
 :AI_TITLE: The Notebook
-:YEAR: 2004
 :AI_NOTES: 2004 romance, German: Wie ein einziger Tag (spacing typo)
 :TMDB_TITLE: Wie ein einziger Tag
 :MANUALLY_CHECKED_BY_AI: true
@@ -128199,7 +128016,6 @@
 :SUGGESTED_SEARCH: The Wild Bunch
 :TMDB_ID: 576
 :AI_TITLE: The Wild Bunch
-:YEAR: 1969
 :AI_NOTES: 1969 Sam Peckinpah western, abbreviation: kein
 :TMDB_TITLE: The Wild Bunch - Sie kannten kein Gesetz
 :MANUALLY_CHECKED_BY_AI: true
@@ -128227,7 +128043,6 @@
 :SUGGESTED_SEARCH: Dynasties
 :TMDB_ID: 497528
 :AI_TITLE: Dynasties
-:YEAR: 2018
 :AI_NOTES: 2018 BBC nature documentary series
 :TMDB_TITLE: Der Streitwagen der chinesischen Zhou-Dynastie
 :MANUALLY_CHECKED_BY_AI: true
@@ -128258,7 +128073,6 @@
 :AI_VERIFIED: true
 :SUGGESTED_SEARCH: Les Garçons sauvages
 :AI_TITLE: Les Garçons sauvages
-:YEAR: 2017
 :AI_NOTES: 2017 French drama
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2017
@@ -128285,7 +128099,6 @@
 :SUGGESTED_SEARCH: Censored Voices
 :TMDB_ID: 319069
 :AI_TITLE: Censored Voices
-:YEAR: 2015
 :AI_NOTES: 2015 documentary about Six-Day War
 :TMDB_TITLE: Censored Voices
 :MANUALLY_CHECKED_BY_AI: true
@@ -128316,7 +128129,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Zero Dark Thirty
 :AI_TITLE: Zero Dark Thirty
-:YEAR: 2012
 :AI_NOTES: 2012 Kathryn Bigelow film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2012
@@ -128375,7 +128187,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Zomer
 :AI_TITLE: Zomer
-:YEAR: 2014
 :AI_NOTES: 2014 Dutch coming-of-age film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2014
@@ -128434,7 +128245,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Zulu 2013
 :AI_TITLE: Zulu
-:YEAR: 2013
 :AI_NOTES: 2013 crime thriller with Orlando Bloom
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2013
@@ -128493,7 +128303,6 @@
 :SUGGESTED_SEARCH: Lucky Loser Bredouille
 :TMDB_ID: 455518
 :AI_TITLE: Lucky Loser - Ein Sommer in der Bredouille
-:YEAR: 2017
 :AI_NOTES: 2017 German comedy
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2015
@@ -129673,7 +129482,6 @@
 :SUGGESTED_SEARCH: Always 1989 Spielberg
 :TMDB_ID: 792
 :AI_TITLE: Always
-:YEAR: 1989
 :AI_NOTES: 1989 Spielberg firefighter film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1986
@@ -130047,7 +129855,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Apocalypto
 :AI_TITLE: Apocalypto
-:YEAR: 2006
 :AI_NOTES: 2006 Mel Gibson film about Mayan civilization - typo: Apocalypto not Apocalyptico, spoken entirely in Yucatec Maya
 :YEAR: 2006
 :RUNTIME: 138
@@ -130099,7 +129906,6 @@
 :SUGGESTED_SEARCH: Appaloosa
 :TMDB_ID: 12690
 :AI_TITLE: Appaloosa
-:YEAR: 2008
 :AI_NOTES: 2008 Western directed by and starring Ed Harris with Viggo Mortensen, based on Robert B. Parker novel
 :MANUALLY_CHECKED_BY_AI: true
 :TMDB_TITLE: Appaloosa
@@ -130131,7 +129937,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Araf
 :AI_TITLE: Araf
-:YEAR: 2012
 :AI_NOTES: 2012 Turkish film, 'araf' means purgatory/limbo - very distinctive single word
 :YEAR: 2012
 :RUNTIME: 124
@@ -130161,7 +129966,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Arbitrage
 :AI_TITLE: Arbitrage
-:YEAR: 2012
 :AI_NOTES: 2012 Nicholas Jarecki thriller with Richard Gere as corrupt hedge fund manager
 :YEAR: 2012
 :RUNTIME: 107
@@ -130191,7 +129995,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Arbitrage
 :AI_TITLE: Arbitrage
-:YEAR: 2012
 :AI_NOTES: Same as line 907 - 2012 Richard Gere thriller, duplicate with different German subtitle
 :YEAR: 2012
 :RUNTIME: 107
@@ -130247,7 +130050,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Armans Geheimnis
 :AI_TITLE: Armans Geheimnis
-:YEAR: 2015
 :AI_NOTES: 2015 German TV movie/miniseries - distinctive title
 :YEAR: 2018
 :RUNTIME: 90
@@ -130272,7 +130074,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: In Deinen Armen
 :AI_TITLE: In Deinen Armen
-:YEAR: 2019
 :AI_NOTES: German title 'In Your Arms', 2019 Australian/British production - need to identify original English title
 :YEAR: 2020
 :RUNTIME: 105
@@ -130302,7 +130103,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Armored
 :AI_TITLE: Armored
-:YEAR: 2009
 :AI_NOTES: 2009 heist thriller with Matt Dillon, Jean Reno - armored car robbery
 :YEAR: 2009
 :RUNTIME: 88
@@ -130332,7 +130132,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Arsenal
 :AI_TITLE: Arsenal
-:YEAR: 1929
 :AI_NOTES: 1929 Alexander Dovzhenko Soviet silent film classic about Ukrainian Civil War
 :YEAR: 1925
 :RUNTIME: 0
@@ -130419,7 +130218,6 @@
 :SUGGESTED_SEARCH: A Snake of June
 :TMDB_ID: 33431
 :AI_TITLE: A Snake of June
-:YEAR: 2002
 :AI_NOTES: 2002 Shinya Tsukamoto experimental film, Japanese: Rokugatsu no hebi - shot in blue-tinted black & white
 :MANUALLY_CHECKED_BY_AI: true
 :TMDB_TITLE: A Snake of June
@@ -130503,7 +130301,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Comes a Horseman
 :AI_TITLE: Comes a Horseman
-:YEAR: 1978
 :AI_NOTES: 1978 Western with Jane Fonda and James Caan, German: Aufstand der Aufrechten
 :YEAR: 1978
 :RUNTIME: 114
@@ -130588,7 +130385,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Edge of Darkness
 :AI_TITLE: Edge of Darkness
-:YEAR: 2010
 :AI_NOTES: 2010 Mel Gibson thriller based on BBC series
 :YEAR: 2010
 :RUNTIME: 117
@@ -130657,7 +130453,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Un beau soleil intérieur
 :AI_TITLE: Un beau soleil intérieur
-:YEAR: 2017
 :AI_NOTES: 2017 Claire Denis film with Juliette Binoche, English: Let the Sunshine In
 :YEAR: 2017
 :RUNTIME: 94
@@ -130742,7 +130537,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Le Couperet
 :AI_TITLE: Le Couperet
-:YEAR: 2005
 :AI_NOTES: 2005 Costa-Gavras dark comedy based on Donald Westlake novel, French title more distinctive than German 'Die Axt'
 :YEAR: 2005
 :RUNTIME: 120
@@ -130772,7 +130566,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Babylon Berlin
 :AI_TITLE: Babylon Berlin
-:YEAR: 2017
 :AI_NOTES: Acclaimed German TV series set in 1920s Weimar Berlin - super distinctive title
 :YEAR: 1999
 :RUNTIME: 93
@@ -130801,7 +130594,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Neighbors
 :AI_TITLE: Neighbors
-:YEAR: 2014
 :AI_NOTES: 2014 comedy with Seth Rogen and Zac Efron, US title: Neighbors, UK/Germany: Bad Neighbours
 :YEAR: 2014
 :RUNTIME: 96
@@ -130869,7 +130661,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Barbara
 :AI_TITLE: Barbara
-:YEAR: 2012
 :AI_NOTES: 2012 Christian Petzold masterpiece with Nina Hoss as East German doctor planning escape - one of best German films of 2010s
 :YEAR: 2012
 :RUNTIME: 105
@@ -130998,7 +130789,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: The Tree
 :AI_TITLE: The Tree
-:YEAR: 2010
 :AI_NOTES: 2010 Julie Bertuccelli film with Charlotte Gainsbourg, based on Judy Pascoe novel
 :YEAR: 2010
 :RUNTIME: 103
@@ -131028,7 +130818,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Temblores
 :AI_TITLE: Temblores
-:YEAR: 2019
 :AI_NOTES: 2019 Guatemalan LGBTQ drama by Jayro Bustamante, Spanish title more distinctive, English: Tremors
 :YEAR: 2019
 :RUNTIME: 107
@@ -131058,7 +130847,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Fri os fra det onde
 :AI_TITLE: Fri os fra det onde
-:YEAR: 2009
 :AI_NOTES: 2009 Danish documentary, original title more distinctive
 :YEAR: 2009
 :RUNTIME: 93
@@ -131156,7 +130944,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Belle
 :AI_TITLE: Belle
-:YEAR: 2013
 :AI_NOTES: 2013 Amma Asante period drama about Dido Elizabeth Belle, mixed-race aristocrat in 18th century England
 :YEAR: 2013
 :RUNTIME: 104
@@ -131182,7 +130969,6 @@
 :SUGGESTED_SEARCH: Bent
 :TMDB_ID: 505579
 :AI_TITLE: Bent
-:YEAR: 2018
 :AI_NOTES: 2018 crime thriller with Karl Urban and Andy Garcia
 :MANUALLY_CHECKED_BY_AI: true
 :TMDB_TITLE: Bent - Korruption kennt keine Regeln
@@ -131530,7 +131316,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Billy Bathgate
 :AI_TITLE: Billy Bathgate
-:YEAR: 1991
 :AI_NOTES: 1991 Robert Benton gangster film with Dustin Hoffman, Nicole Kidman, Bruce Willis - based on E.L. Doctorow novel
 :YEAR: 1991
 :RUNTIME: 106
@@ -131560,7 +131345,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Bin-jip
 :AI_TITLE: Bin-jip
-:YEAR: 2004
 :AI_NOTES: 2004 Kim Ki-duk film, Korean title distinctive, English: 3-Iron, about squatters in empty houses
 :YEAR: 2004
 :RUNTIME: 88
@@ -131590,7 +131374,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Birdwatchers
 :AI_TITLE: Birdwatchers - La terra degli uomini rossi
-:YEAR: 2008
 :AI_NOTES: 2008 Marco Bechis film about Guarani-Kaiowá indigenous people in Brazil - Italian/Brazilian co-production
 :YEAR: 2008
 :RUNTIME: 108
@@ -131620,7 +131403,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Birth
 :AI_TITLE: Birth
-:YEAR: 2004
 :AI_NOTES: 2004 Jonathan Glazer psychological drama with Nicole Kidman about woman who believes boy is her reincarnated husband
 :YEAR: 2004
 :RUNTIME: 96
@@ -131679,7 +131461,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Blackhat
 :AI_TITLE: Blackhat
-:YEAR: 2015
 :AI_NOTES: 2015 Michael Mann cyber thriller with Chris Hemsworth - distinctive title
 :YEAR: 2015
 :RUNTIME: 133
@@ -131709,7 +131490,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Black Mass
 :AI_TITLE: Black Mass
-:YEAR: 2015
 :AI_NOTES: 2015 Scott Cooper film with Johnny Depp as Whitey Bulger - distinctive title
 :YEAR: 2015
 :RUNTIME: 122
@@ -131739,7 +131519,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Black Out
 :AI_TITLE: Black Out
-:YEAR: 2012
 :AI_NOTES: 2012 Dutch dark comedy
 :YEAR: 2012
 :RUNTIME: 105
@@ -131795,7 +131574,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Les Tontons flingueurs
 :AI_TITLE: Les Tontons flingueurs
-:YEAR: 1963
 :AI_NOTES: 1963 Georges Lautner French gangster comedy classic, German: Die großen Schnauzen
 :YEAR: 1963
 :RUNTIME: 109
@@ -131864,7 +131642,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Blue Velvet
 :AI_TITLE: Blue Velvet
-:YEAR: 1986
 :AI_NOTES: 1986 David Lynch psychological thriller with Isabella Rossellini, Kyle MacLachlan, Dennis Hopper - neo-noir masterpiece
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1986
@@ -131894,7 +131671,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Skyggen i mit øje
 :AI_TITLE: Skyggen i mit øje
-:YEAR: 2021
 :AI_NOTES: 2021 Danish war film about 1945 bombing of French School Copenhagen, original title more distinctive
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2021
@@ -131947,7 +131723,6 @@
 :SUGGESTED_SEARCH: Bonn
 :TMDB_ID: 995749
 :AI_TITLE: Bonn - Alte Freunde, neue Feinde
-:YEAR: 2023
 :AI_NOTES: 2023 German spy thriller series set in 1980s Cold War Bonn
 :MANUALLY_CHECKED_BY_AI: true
 :TMDB_TITLE: Die Bonnards – malen und lieben
@@ -131979,7 +131754,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Borga
 :AI_TITLE: Borga
-:YEAR: 2020
 :AI_NOTES: 2020 German film about Ghanaian diaspora, 'borga' means someone returning from abroad - very distinctive title
 :YEAR: 2020
 :RUNTIME: 10
@@ -132127,7 +131901,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Brecht 2019
 :AI_TITLE: Brecht
-:YEAR: 2019
 :AI_NOTES: 2019 Austrian-Czech-German miniseries about Bertolt Brecht
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2019
@@ -132153,7 +131926,6 @@
 :AI_VERIFIED: true
 :SUGGESTED_SEARCH: Die Brücke 1959
 :AI_TITLE: Die Brücke
-:YEAR: 1959
 :AI_NOTES: 1959 Bernhard Wicki anti-war classic (typo: Wicki not Vicky)
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2008
@@ -132248,7 +132020,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Buster
 :AI_TITLE: Buster
-:YEAR: 1988
 :AI_NOTES: 1988 British film with Phil Collins as Great Train Robbery's Buster Edwards
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1988
@@ -132304,7 +132075,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Caché
 :AI_TITLE: Caché
-:YEAR: 2005
 :AI_NOTES: 2005 Michael Haneke masterpiece with Daniel Auteuil, Juliette Binoche - psychological thriller about surveillance and guilt
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2005
@@ -132334,7 +132104,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Captivity
 :AI_TITLE: Captivity
-:YEAR: 2007
 :AI_NOTES: 2007 torture horror thriller with Elisha Cuthbert
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2007
@@ -132364,7 +132133,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Cartagena
 :AI_TITLE: Cartagena
-:YEAR: 2009
 :AI_NOTES: 2009 Spanish film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2009
@@ -132394,7 +132162,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Marius
 :AI_TITLE: Marius
-:YEAR: 1931
 :AI_NOTES: Marcel Pagnol's Marseille Trilogy: Marius (1931), Fanny (1932), César (1936) - this is collection entry, search for first film
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1931
@@ -132446,7 +132213,6 @@
 :ID: 5436c74a-1067-4388-bd39-41c775c0a737
 :SUGGESTED_SEARCH: Das andere Kind
 :AI_TITLE: Das andere Kind
-:YEAR: 2013
 :AI_NOTES: 2013 German TV movie with Marie Bäumer based on Charlotte Link thriller novel
 :MANUALLY_CHECKED_BY_AI: true
 :TMDB_ID: 38365
@@ -132980,7 +132746,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Crossing Over Ford
 :AI_TITLE: Crossing Over
-:YEAR: 2009
 :AI_NOTES: 2009 film with Harrison Ford about immigration
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2009
@@ -133007,7 +132772,6 @@
 :SUGGESTED_SEARCH: Curling Côté
 :TMDB_ID: 57392
 :AI_TITLE: Curling
-:YEAR: 2010
 :AI_NOTES: 2010 Canadian film by Denis Côté
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2011
@@ -133157,7 +132921,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: La Linea 2009
 :AI_TITLE: La Linea
-:YEAR: 2009
 :AI_NOTES: 2009 thriller, German release title
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2009
@@ -133774,7 +133537,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Racheengel eiskalter Plan
 :AI_TITLE: Racheengel - Ein eiskalter Plan
-:YEAR: 2011
 :AI_NOTES: German TV movie
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2010
@@ -133830,7 +133592,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Elephant King 2006
 :AI_TITLE: The Elephant King
-:YEAR: 2006
 :AI_NOTES: 2006 thriller
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1982
@@ -133873,7 +133634,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Misérables 1995 Belmondo
 :AI_TITLE: Les Misérables
-:YEAR: 1995
 :AI_NOTES: 1995 French adaptation with Belmondo
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1995
@@ -133929,7 +133689,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Elizabeth I Mirren
 :AI_TITLE: Elizabeth I
-:YEAR: 2005
 :AI_NOTES: 2005 HBO miniseries with Helen Mirren
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2007
@@ -134599,7 +134358,6 @@
 :SUGGESTED_SEARCH: Essential Killing Gallo
 :TMDB_ID: 57292
 :AI_TITLE: Essential Killing
-:YEAR: 2010
 :AI_NOTES: 2010 thriller with Vincent Gallo, singular 'Killing'
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2006
@@ -134640,7 +134398,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Everything Will Be Fine Wenders
 :AI_TITLE: Everything Will Be Fine
-:YEAR: 2015
 :AI_NOTES: 2015 Wim Wenders film with James Franco
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2014
@@ -134667,7 +134424,6 @@
 :SUGGESTED_SEARCH: Expendables Stallone
 :TMDB_ID: 27578
 :AI_TITLE: The Expendables
-:YEAR: 2010
 :AI_NOTES: Typo: Expendables not Expandables - Stallone action film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2010
@@ -134697,7 +134453,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Runaway Train 1985
 :AI_TITLE: Runaway Train
-:YEAR: 1985
 :AI_NOTES: 1985 Andrei Konchalovsky thriller
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2007
@@ -134779,7 +134534,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Fair Game Watts
 :AI_TITLE: Fair Game
-:YEAR: 2010
 :AI_NOTES: 2010 Doug Liman film with Naomi Watts
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2010
@@ -134860,7 +134614,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: The Fall
 :AI_TITLE: The Fall
-:YEAR: 2006
 :AI_NOTES: 2006 Tarsem Singh visually stunning fantasy film with Lee Pace - masterpiece of cinematography
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2006
@@ -134900,7 +134653,6 @@
 :SUGGESTED_SEARCH: Sauvage
 :TMDB_ID: 518496
 :AI_TITLE: Sauvage
-:YEAR: 2018
 :AI_NOTES: 2018 Camille Vidal-Naquet film about male prostitute, French title more distinctive
 :MANUALLY_CHECKED_BY_AI: true
 :TMDB_TITLE: Sauvage
@@ -135057,7 +134809,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: The Joneses
 :AI_TITLE: The Joneses
-:YEAR: 2009
 :AI_NOTES: 2009 Derrick Borte satire with Demi Moore and David Duchovny about fake family selling lifestyle products
 :YEAR: 2010
 :RUNTIME: 98
@@ -135151,7 +134902,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Fanny
 :AI_TITLE: Fanny
-:YEAR: 1932
 :AI_NOTES: Second film in Marcel Pagnol's Marseille Trilogy (1932) - collection entry
 :YEAR: 1932
 :RUNTIME: 127
@@ -135181,7 +134931,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: The Fan
 :AI_TITLE: The Fan
-:YEAR: 1996
 :AI_NOTES: 1996 Tony Scott thriller with Robert De Niro as obsessed baseball fan stalking Wesley Snipes
 :YEAR: 1996
 :RUNTIME: 116
@@ -135391,7 +135140,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Final Cut
 :AI_TITLE: The Editor
-:YEAR: 2014
 :AI_NOTES: 2014 British thriller with Jude Law as film editor discovering evidence in footage - distinctive meta-cinematic premise, or could be 1998 Dominic Anciano film
 :YEAR: 2012
 :RUNTIME: 84
@@ -135427,7 +135175,6 @@
 :SUGGESTED_SEARCH: Flags of Our Fathers
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Flags of Our Fathers
-:YEAR: 2006
 :AI_NOTES: 2006 Clint Eastwood WWII drama about Iwo Jima flag-raising photo with Ryan Phillippe - companion to Letters from Iwo Jima
 :TMDB_ID: 3683
 :TMDB_TITLE: Flags of Our Fathers
@@ -135459,7 +135206,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Flawless
 :AI_TITLE: Flawless
-:YEAR: 2007
 :AI_NOTES: 2007 Michael Radford heist film with Demi Moore, Michael Caine stealing diamonds from London Diamond Corporation - distinctive 1960s setting
 :YEAR: 2007
 :RUNTIME: 108
@@ -135631,7 +135377,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Foreigner Jackie Chan
 :AI_TITLE: The Foreigner
-:YEAR: 2017
 :AI_NOTES: 2017 Martin Campbell action thriller with Jackie Chan seeking revenge for daughter's IRA bombing death, Pierce Brosnan - distinctive serious Chan role
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2017
@@ -135685,7 +135430,6 @@
 :AI_TITLE: Zhenshchiny
 :AI_NOTES: 1965 Pavel Lyubimov Soviet drama about women in Ryazan region during WWII - Russian title distinctive, spelling: Rjasan/Ryazan
 :MANUALLY_CHECKED_BY_AI: true
-:YEAR: 1965
 :TMDB_ID: 77770
 :TMDB_TITLE: Женщины
 :YEAR: 1965
@@ -135742,7 +135486,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Anonyma Eine Frau in Berlin
 :AI_TITLE: Anonyma - Eine Frau in Berlin
-:YEAR: 2008
 :AI_NOTES: 2008 Max Färberböck WWII drama with Nina Hoss about Berlin women during 1945 Soviet occupation - based on anonymous diary, distinctive historical perspective
 :YEAR: 2008
 :RUNTIME: 131
@@ -135861,7 +135604,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Strangers on a Train
 :AI_TITLE: Strangers on a Train
-:YEAR: 1951
 :AI_NOTES: 1951 Alfred Hitchcock thriller with Farley Granger, Robert Walker about murder exchange proposal - based on Patricia Highsmith novel, distinctive Hitchcock suspense
 :YEAR: 1951
 :RUNTIME: 101
@@ -135901,7 +135643,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Fremd Fischen
 :AI_TITLE: Fremd Fischen
-:YEAR: 2005
 :AI_NOTES: 2005 Buket Alakuş German comedy about Turkish man in Bavaria - distinctive culture clash comedy
 :YEAR: 2011
 :RUNTIME: 112
@@ -135957,7 +135698,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Walker Harrelson
 :AI_TITLE: The Walker
-:YEAR: 2007
 :AI_NOTES: 2007 Paul Schrader thriller with Woody Harrelson as Washington DC society escort entangled in murder - distinctive political noir
 :YEAR: 2007
 :RUNTIME: 104
@@ -136052,7 +135792,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Fritz Lang Heino Ferch
 :AI_TITLE: Fritz Lang
-:YEAR: 2016
 :AI_NOTES: 2016 Gordon Flemyng German TV film with Heino Ferch as Fritz Lang in 1950s Hollywood during Communist witch hunts - distinctive director biopic
 :YEAR: 2016
 :RUNTIME: 104
@@ -136154,7 +135893,6 @@
 :SUGGESTED_SEARCH: Comme un avion
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Comme un avion
-:YEAR: 2015
 :AI_NOTES: 2015 Bruno Podalydès French comedy about man escaping routine by running to China - distinctive whimsical road movie
 :TMDB_ID: 343702
 :TMDB_TITLE: Nur Fliegen ist schöner
@@ -136234,7 +135972,6 @@
 :SUGGESTED_SEARCH: Full Metal Jacket
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Full Metal Jacket
-:YEAR: 1987
 :AI_NOTES: 1987 Stanley Kubrick Vietnam War masterpiece with Matthew Modine, R. Lee Ermey - distinctive two-part structure boot camp to combat
 :TMDB_ID: 600
 :TMDB_TITLE: Full Metal Jacket
@@ -136318,7 +136055,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: My Son What Have Ye Done
 :AI_TITLE: My Son, My Son, What Have Ye Done
-:YEAR: 2009
 :AI_NOTES: 2009 Werner Herzog psychological thriller with Michael Shannon, produced by David Lynch - based on true story of matricide, distinctive Herzog-Lynch collaboration
 :YEAR: 2010
 :RUNTIME: 90
@@ -136373,7 +136109,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Gathering 2002
 :AI_TITLE: The Gathering
-:YEAR: 2002
 :AI_NOTES: 2002 Brian Gilbert British supernatural horror with Christina Ricci about girl with visions of crucifixion - distinctive religious horror thriller
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2003
@@ -136559,7 +136294,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Das Gespenst Petzold
 :AI_TITLE: Das Gespenst
-:YEAR: 2005
 :AI_NOTES: 2005 Christian Petzold German drama about woman assuming identity of dead friend - distinctive Petzold identity exploration
 :YEAR: 1937
 :RUNTIME: 95
@@ -136610,7 +136344,6 @@
 :SUGGESTED_SEARCH: Gestern waren wir noch Kinder
 :TMDB_ID: 1501076
 :AI_TITLE: Gestern waren wir noch Kinder
-:YEAR: 2022
 :AI_NOTES: 2022 German TV miniseries based on Liv Strömquist novel about generation growing up in 1990s - distinctive coming-of-age period piece
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2017
@@ -136641,7 +136374,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Get Out
 :AI_TITLE: Get Out
-:YEAR: 2017
 :AI_NOTES: 2017 Jordan Peele directorial debut horror with Daniel Kaluuya about Black man visiting girlfriend's family - Oscar-winning screenplay, distinctive social thriller
 :YEAR: 2017
 :RUNTIME: 104
@@ -136671,7 +136403,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Getrieben 2019
 :AI_TITLE: Getrieben
-:YEAR: 2019
 :AI_NOTES: 2019 German thriller with Ulrike Tscharre - distinctive psychological thriller
 :YEAR: 2019
 :RUNTIME: 50
@@ -136725,7 +136456,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Girl 2018
 :AI_TITLE: Girl
-:YEAR: 2018
 :AI_NOTES: 2018 Lukas Dhont Belgian debut with Victor Polster as transgender ballet dancer - Caméra d'Or winner Cannes, distinctive trans coming-of-age
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2019
@@ -136778,7 +136508,6 @@
 :SUGGESTED_SEARCH: Der gleiche Himmel
 :TMDB_ID: 63301
 :AI_TITLE: Der gleiche Himmel
-:YEAR: 2017
 :AI_NOTES: 2017 German TV miniseries with Tom Schilling as East German Stasi Romeo spy in 1970s West Berlin - distinctive Cold War espionage drama
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1961
@@ -136874,7 +136603,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Go Fast
 :AI_TITLE: Go Fast
-:YEAR: 2008
 :AI_NOTES: 2008 Olivier Van Hoofstadt French action thriller with Roschdy Zem about drug smugglers on Spanish coast - distinctive high-octane crime drama
 :YEAR: 2008
 :RUNTIME: 110
@@ -136900,7 +136628,6 @@
 :SUGGESTED_SEARCH: Goliath96
 :TMDB_ID: 512824
 :AI_TITLE: Goliath96
-:YEAR: 2017
 :AI_NOTES: 2017 Marcus Richardt German documentary about 1996 techno scene and youth culture - distinctive 1990s Berlin club documentary
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2016
@@ -136928,7 +136655,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Gone 2012
 :AI_TITLE: Gone
-:YEAR: 2012
 :AI_NOTES: 2012 Heitor Dhalia thriller with Amanda Seyfried searching for kidnapped sister, nobody believes her - distinctive psychological thriller
 :YEAR: 2012
 :RUNTIME: 94
@@ -136958,7 +136684,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Goodfellas
 :AI_TITLE: Goodfellas
-:YEAR: 1990
 :AI_NOTES: 1990 Martin Scorsese crime masterpiece with Ray Liotta, Robert De Niro, Joe Pesci about rise and fall in mob - Oscar-winning, distinctive wiseguy chronicle
 :YEAR: 1990
 :RUNTIME: 146
@@ -137014,7 +136739,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Gotthard 2016
 :AI_TITLE: Gotthard
-:YEAR: 2016
 :AI_NOTES: 2016 Swiss TV miniseries about construction of Gotthard rail tunnel in 1870s - distinctive historical engineering drama
 :YEAR: 2002
 :RUNTIME: 115
@@ -137041,7 +136765,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Gott Schirach
 :AI_TITLE: Gott
-:YEAR: 2020
 :AI_NOTES: 2020 German TV ethics debate film by Ferdinand von Schirach about assisted suicide - distinctive theatrical courtroom drama format
 :YEAR: 2020
 :RUNTIME: 90
@@ -137071,7 +136794,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Over Her Dead Body
 :AI_TITLE: Over Her Dead Body
-:YEAR: 2008
 :AI_NOTES: 2008 Jeff Lowell romantic comedy with Eva Longoria as ghost haunting fiancé's new girlfriend - distinctive supernatural rom-com
 :YEAR: 2008
 :RUNTIME: 95
@@ -137288,7 +137010,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: große Stau Ottfried Fischer
 :AI_TITLE: Der große Stau
-:YEAR: 1992
 :AI_NOTES: 1992 German comedy with Ottfried Fischer about massive traffic jam - distinctive ensemble road comedy
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1979
@@ -137370,7 +137091,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Longwave 2013
 :AI_TITLE: Longwave
-:YEAR: 2013
 :AI_NOTES: 2013 German drama
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2013
@@ -137531,7 +137251,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Hagazussa
 :AI_TITLE: Hagazussa
-:YEAR: 2017
 :AI_NOTES: 2017 Lukas Feigelfeld Austrian folk horror about 15th century Alpine witch persecution - distinctive slow-burn period horror
 :YEAR: 2018
 :RUNTIME: 102
@@ -137613,7 +137332,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Hallam Foe
 :AI_TITLE: Hallam Foe
-:YEAR: 2007
 :AI_NOTES: 2007 David Mackenzie Scottish drama with Jamie Bell as disturbed voyeur in Edinburgh - distinctive coming-of-age psychological thriller
 :YEAR: 2007
 :RUNTIME: 91
@@ -137695,7 +137413,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Mr. Woodcock
 :AI_TITLE: Mr. Woodcock
-:YEAR: 2007
 :AI_NOTES: 2007 Craig Gillespie comedy with Billy Bob Thornton, Seann William Scott about man's nemesis gym teacher dating his mother - distinctive Thornton villain role
 :YEAR: 2007
 :RUNTIME: 87
@@ -137725,7 +137442,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Lord of War
 :AI_TITLE: Lord of War
-:YEAR: 2005
 :AI_NOTES: 2005 Andrew Niccol arms dealer drama with Nicolas Cage as Yuri Orlov - distinctive cynical geopolitical thriller
 :YEAR: 2005
 :RUNTIME: 122
@@ -137751,7 +137467,6 @@
 :SUGGESTED_SEARCH: Hanna K
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Hanna K.
-:YEAR: 1983
 :AI_NOTES: 1983 Costa-Gavras Israeli-Palestinian conflict drama with Jill Clayburgh as lawyer - distinctive political examination of occupied territories
 :TMDB_ID: 63665
 :TMDB_TITLE: Hanna K.
@@ -137791,7 +137506,6 @@
 :SUGGESTED_SEARCH: Cold Pursuit
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Cold Pursuit
-:YEAR: 2019
 :AI_NOTES: 2019 Hans Petter Moland remake of his own Kraftidioten with Liam Neeson as snowplow driver avenging son - distinctive black comedy revenge thriller
 :TMDB_ID: 438650
 :TMDB_TITLE: Hard Powder
@@ -137819,7 +137533,6 @@
 :SUGGESTED_SEARCH: Fuchi ni tatsu
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Fuchi ni tatsu
-:YEAR: 2016
 :AI_NOTES: 2016 Kôji Fukada Japanese family drama about ex-con disrupting suburban life - Cannes Jury Prize, Japanese title distinctive
 :TMDB_ID: 392795
 :TMDB_TITLE: Harmonium
@@ -137860,7 +137573,6 @@
 :SUGGESTED_SEARCH: Harry Tracy Desperado
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Harry Tracy, Desperado
-:YEAR: 1982
 :AI_NOTES: 1982 William A. Graham Western with Bruce Dern as real-life outlaw in 1900s Pacific Northwest - distinctive historical bandit biopic
 :TMDB_ID: 110661
 :TMDB_TITLE: Harry Tracy - Der letzte Desperado
@@ -137892,7 +137604,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Unter Anklage Harry Wörz
 :AI_TITLE: Unter Anklage: Der Fall Harry Wörz
-:YEAR: 2010
 :AI_NOTES: 2010 German TV film about Harry Wörz wrongful murder conviction and fight for exoneration - distinctive miscarriage of justice drama
 :YEAR: 2014
 :RUNTIME: 88
@@ -138039,7 +137750,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Das Haus 2021
 :AI_TITLE: Das Haus
-:YEAR: 2021
 :AI_NOTES: 2021 Rick Ostermann German thriller with Tobias Moretti about family trapped in high-tech house - distinctive smart home horror
 :YEAR: 2012
 :RUNTIME: 105
@@ -138116,7 +137826,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Haywire Soderbergh
 :AI_TITLE: Haywire
-:YEAR: 2011
 :AI_NOTES: 2011 Steven Soderbergh action thriller with MMA fighter Gina Carano as betrayed black ops operative - distinctive stylish spy film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2011
@@ -138185,7 +137894,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Midnight Hero 1987
 :AI_TITLE: Midnight Hero
-:YEAR: 1987
 :AI_NOTES: 1987 action film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1992
@@ -138214,7 +137922,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Heli Escalante
 :AI_TITLE: Heli
-:YEAR: 2013
 :AI_NOTES: 2013 Amat Escalante Mexican brutal crime drama about family caught in drug war - Cannes Best Director, distinctive unflinching violence
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1953
@@ -138244,7 +137951,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Henry Dunant rouge croix
 :AI_TITLE: Henry Dunant: Du rouge sur la croix
-:YEAR: 2006
 :AI_NOTES: 2006 Swiss/French TV film about Red Cross founder Henry Dunant and Battle of Solferino - distinctive historical biopic
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2007
@@ -138271,7 +137977,6 @@
 :SUGGESTED_SEARCH: Her Spike Jonze
 :TMDB_ID: 152601
 :AI_TITLE: Her
-:YEAR: 2013
 :AI_NOTES: 2013 Spike Jonze sci-fi romance with Joaquin Phoenix falling for AI voice assistant - Oscar-winning screenplay, distinctive near-future love story
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2013
@@ -138325,7 +138030,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: La Chamade Deneuve
 :AI_TITLE: La Chamade
-:YEAR: 1968
 :AI_NOTES: 1968 Alain Cavalier French romantic drama with Catherine Deneuve based on Françoise Sagan novel - distinctive New Wave romance
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1968
@@ -138393,7 +138097,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Hierro 2009
 :AI_TITLE: Hierro
-:YEAR: 2009 <
 :AI_NOTES: 2009 Gabe Ibáñez Spanish psychological thriller about missing child on Canary island - distinctive atmospheric mystery
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2009
@@ -138424,7 +138127,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Så som i himmelen
 :AI_TITLE: Så som i himmelen
-:YEAR: 2004
 :AI_NOTES: 2004 Kay Pollak Swedish drama with Michael Nyqvist as conductor returning to remote village to lead church choir - distinctive feel-good music drama
 :YEAR: 2004
 :RUNTIME: 133
@@ -138460,7 +138162,6 @@
 :SUGGESTED_SEARCH: Himmelsleiter Sehnsucht
 :TMDB_ID: 360598
 :AI_TITLE: Himmelsleiter - Sehnsucht nach Morgen
-:YEAR: 2015
 :AI_NOTES: 2015 German TV movie
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2008
@@ -138561,7 +138262,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Best Offer Tornatore
 :AI_TITLE: The Best Offer
-:YEAR: 2013
 :AI_NOTES: 2013 Giuseppe Tornatore Italian romantic thriller with Geoffrey Rush as auctioneer falling for reclusive heiress - distinctive art world mystery
 :YEAR: 2013
 :RUNTIME: 131
@@ -138601,7 +138301,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Szegénylegények
 :AI_TITLE: Szegénylegények
-:YEAR: 1965
 :AI_NOTES: 1965 Miklós Jancsó Hungarian masterpiece about Austro-Hungarian repression after 1848 revolution - distinctive choreographed long takes, international title The Round-Up
 :YEAR: 1965
 :RUNTIME: 97
@@ -138631,7 +138330,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Hope and Glory
 :AI_TITLE: Hope and Glory
-:YEAR: 1987
 :AI_NOTES: 1987 John Boorman semi-autobiographical WWII drama about London boy during Blitz - distinctive childhood perspective, Oscar-nominated
 :YEAR: 1987
 :RUNTIME: 108
@@ -138683,7 +138381,6 @@
 :SUGGESTED_SEARCH: Holiday 1938
 :TMDB_ID: 27560
 :AI_TITLE: Holiday
-:YEAR: 1938
 :AI_NOTES: 1938 George Cukor screwball comedy with Katharine Hepburn, Cary Grant about man choosing freedom over wealth - distinctive classic romantic comedy
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1953
@@ -138792,7 +138489,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Hollywood 1982
 :AI_TITLE: Hollywood 1982
-:YEAR: 2021
 :AI_NOTES: 2021 documentary about magical summer of 1982 cinema releases - E.T., Blade Runner, The Thing, Poltergeist, distinctive film history doc
 :YEAR: 2019
 :RUNTIME: 52
@@ -138874,7 +138570,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Honigfrauen
 :AI_TITLE: Honigfrauen
-:YEAR: 2017
 :AI_NOTES: 2017 German TV miniseries based on Elizabeth Berg novel about women starting beekeeping business - distinctive feel-good series
 :YEAR: 2025
 :RUNTIME: 44
@@ -138956,7 +138651,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Mekong Hotel
 :AI_TITLE: Mekong Hotel
-:YEAR: 2012
 :AI_NOTES: 2012 Apichatpong Weerasethakul experimental Thai ghost film about mother-daughter in riverside hotel - distinctive Southeast Asian art cinema
 :YEAR: 2012
 :RUNTIME: 61
@@ -138985,7 +138679,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Howl Ginsberg
 :AI_TITLE: Howl
-:YEAR: 2010
 :AI_NOTES: 2010 Rob Epstein/Jeffrey Friedman film with James Franco as Allen Ginsberg about famous poem and obscenity trial - distinctive Beat Generation biopic
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2010
@@ -139063,7 +138756,6 @@
 :SUGGESTED_SEARCH: Hundraettåringen smet från notan
 :TMDB_ID: 404791
 :AI_TITLE: Hundraettåringen som smet från notan och försvann
-:YEAR: 2016
 :AI_NOTES: 2016 Swedish sequel to 2013 hit comedy about Allan Karlsson's continued adventures - Swedish title distinctive
 :MANUALLY_CHECKED_BY_AI: true
 :TMDB_TITLE: Der Hunderteinjährige, der die Rechnung nicht bezahlte und verschwand
@@ -139094,7 +138786,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Hustlers Lopez
 :AI_TITLE: Hustlers
-:YEAR: 2019
 :AI_NOTES: 2019 Lorene Scafaria crime drama with Jennifer Lopez, Constance Wu as strippers scamming Wall Street clients - distinctive female-driven heist film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2019
@@ -139150,7 +138841,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Haganenet
 :AI_TITLE: Haganenet
-:YEAR: 2014
 :AI_NOTES: 2014 Nadav Lapid Israeli film, English: The Kindergarten Teacher, about teacher obsessed with child prodigy poet
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2014
@@ -139280,7 +138970,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Into the Wild
 :AI_TITLE: Into the Wild
-:YEAR: 2007
 :AI_NOTES: 2007 Sean Penn drama with Emile Hirsch as Chris McCandless abandoning society for Alaska wilderness - distinctive survival tragedy based on true story
 :YEAR: 2007
 :RUNTIME: 148
@@ -139332,7 +139021,6 @@
 :SUGGESTED_SEARCH: Irgendwann ist auch mal gut
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Irgendwann ist auch mal gut
-:YEAR: 2020
 :AI_NOTES: 2020 German film - typo: Irgendwann not Irgenwann, distinctive colloquial title
 :TMDB_ID: 655516
 :TMDB_TITLE: Irgendwann ist auch mal gut
@@ -139564,7 +139252,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Survivor 2015
 :AI_TITLE: Survivor
-:YEAR: 2015
 :AI_NOTES: 2015 James McTeigue thriller with Milla Jovovich as State Department employee framed, hunted through London - distinctive action conspiracy
 :YEAR: 2015
 :RUNTIME: 161
@@ -139620,7 +139307,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Jean de Florette
 :AI_TITLE: Jean de Florette
-:YEAR: 1986
 :AI_NOTES: 1986 Claude Berri French classic with Gérard Depardieu, Yves Montand about Provençal water rights intrigue - companion to Manon des Sources
 :YEAR: 1986
 :RUNTIME: 120
@@ -139650,7 +139336,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Seberg 2019
 :AI_TITLE: Seberg
-:YEAR: 2019
 :AI_NOTES: 2019 Benedict Andrews biopic with Kristen Stewart as Jean Seberg targeted by FBI COINTELPRO - distinctive actress persecution drama
 :YEAR: 2019
 :RUNTIME: 103
@@ -139776,7 +139461,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: John Rabe
 :AI_TITLE: John Rabe
-:YEAR: 2009
 :AI_NOTES: 2009 Florian Gallenberger historical drama with Ulrich Tukur as Siemens executive saving Chinese during Nanking Massacre - distinctive WWII hero biopic
 :YEAR: 2009
 :RUNTIME: 134
@@ -139806,7 +139490,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Jonas 2007
 :AI_TITLE: Jonas
-:YEAR: 2007
 :AI_NOTES: 2007 German film about school life - distinctive coming-of-age drama
 :YEAR: 2012
 :RUNTIME: 100
@@ -139999,7 +139682,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: From Time to Time Fellowes
 :AI_TITLE: From Time to Time
-:YEAR: 2009
 :AI_NOTES: 2009 Julian Fellowes time-travel fantasy with Maggie Smith about boy discovering WWII secrets - based on Lucy M. Boston's Green Knowe novels
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2009
@@ -140165,7 +139847,6 @@
 :SUGGESTED_SEARCH: Käthe und ich Papakind
 :TMDB_ID: 679859
 :AI_TITLE: Käthe und ich - Papakind
-:YEAR: 2020
 :AI_NOTES: 2020 German TV movie
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2007
@@ -140221,7 +139902,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: La petite Lili
 :AI_TITLE: La petite Lili
-:YEAR: 2003
 :AI_NOTES: 2003 Claude Miller French drama with Ludivine Sagnier, Nicole Garcia adapting Chekhov's The Seagull - distinctive theatrical adaptation
 :YEAR: 2003
 :RUNTIME: 104
@@ -140303,7 +139983,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Keoma
 :AI_TITLE: Keoma
-:YEAR: 1976
 :AI_NOTES: 1976 Enzo G. Castellari Spaghetti Western with Franco Nero as half-breed gunman - distinctive late-period poetic Western
 :YEAR: 1976
 :RUNTIME: 105
@@ -140443,7 +140122,6 @@
 :SUGGESTED_SEARCH: Kind wird gesucht
 :TMDB_ID: 489308
 :AI_TITLE: Ein Kind wird gesucht
-:YEAR: 2017
 :AI_NOTES: 2017 German TV movie about missing child - distinctive family drama thriller
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2017
@@ -140497,7 +140175,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Entre les murs
 :AI_TITLE: Entre les murs
-:YEAR: 2008
 :AI_NOTES: 2008 Laurent Cantet French classroom drama with François Bégaudeau - Palme d'Or winner, distinctive teacher-student dynamics
 :YEAR: 2008
 :RUNTIME: 128
@@ -140641,7 +140318,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Kongen av Bastøy
 :AI_TITLE: Kongen av Bastøy
-:YEAR: 2010
 :AI_NOTES: 2010 Marius Holst Norwegian drama about boys' reform school rebellion on island - distinctive historical youth institution film
 :YEAR: 2010
 :RUNTIME: 111
@@ -140697,7 +140373,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Kopftuchmafia
 :AI_TITLE: Kopftuchmafia
-:YEAR: 2024
 :AI_NOTES: 2024 Austrian TV crime series about Muslim women investigators - distinctive contemporary crime drama
 :YEAR: 2024
 :RUNTIME: 89
@@ -140765,7 +140440,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: The Crime 2012
 :AI_TITLE: The Crime
-:YEAR: 2012
 :AI_NOTES: 2012 British crime film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2012
@@ -140988,7 +140662,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Asphalt Jungle
 :AI_TITLE: The Asphalt Jungle
-:YEAR: 1950
 :AI_NOTES: 1950 John Huston heist noir classic with Sterling Hayden, Sam Jaffe planning jewelry robbery - distinctive influential crime film
 :YEAR: 1950
 :RUNTIME: 112
@@ -141018,7 +140691,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Sinking Laconia
 :AI_TITLE: The Sinking of the Laconia
-:YEAR: 2011
 :AI_NOTES: 2011 German/UK TV miniseries about RMS Laconia WWII sinking and U-boat rescue - distinctive historical maritime drama
 :YEAR: 2010
 :RUNTIME: 66
@@ -141103,7 +140775,6 @@
 :SUGGESTED_SEARCH: La grande bellezza
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: La grande bellezza
-:YEAR: 2013
 :AI_NOTES: 2013 Paolo Sorrentino Italian masterpiece with Toni Servillo about jaded Rome journalist - Oscar winner, distinctive visual poem about decadence
 :TMDB_ID: 179144
 :TMDB_TITLE: La Grande Bellezza - Die große Schönheit
@@ -141190,7 +140861,6 @@
 :SUGGESTED_SEARCH: Largo Winch
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Largo Winch
-:YEAR: 2008
 :AI_NOTES: 2008 Jérôme Salle French action thriller with Tomer Sisley as billionaire heir uncovering conspiracy - based on Belgian comic, distinctive corporate thriller
 :TMDB_ID: 14400
 :TMDB_TITLE: Largo Winch - Tödliches Erbe
@@ -141232,7 +140902,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Un monde
 :AI_TITLE: Un monde
-:YEAR: 2021
 :AI_NOTES: 2021 Laura Wandel Belgian playground bullying drama - Cannes Critics' Week winner, possible title confusion, or 2020 Romain Quirot French film
 :YEAR: 2021
 :RUNTIME: 72
@@ -141284,7 +140953,6 @@
 :SUGGESTED_SEARCH: Late Bloomers
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Late Bloomers
-:YEAR: 2011
 :AI_NOTES: 2011 Julie Gavras French-Belgian comedy with William Hurt, Isabella Rossellini about couple facing aging - distinctive late-life crisis romance
 :TMDB_ID: 79995
 :TMDB_TITLE: Late Bloomers
@@ -141366,7 +141034,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: La Zona
 :AI_TITLE: La Zona
-:YEAR: 2007
 :AI_NOTES: 2007 Rodrigo Plá Mexican thriller about gated community covering up killing of intruders - distinctive class warfare allegory
 :YEAR: 2007
 :RUNTIME: 91
@@ -141418,7 +141085,6 @@
 :SUGGESTED_SEARCH: Life Less Ordinary
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: A Life Less Ordinary
-:YEAR: 1997
 :AI_NOTES: 1997 Danny Boyle romantic comedy with Ewan McGregor, Cameron Diaz about kidnapping orchestrated by angels - distinctive quirky rom-com
 :TMDB_ID: 8067
 :TMDB_TITLE: Lebe lieber ungewöhnlich
@@ -141550,7 +141216,6 @@
 :SUGGESTED_SEARCH: Ba wang bie ji
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Ba wang bie ji
-:YEAR: 1993
 :AI_NOTES: 1993 Chen Kaige epic with Leslie Cheung about Peking Opera performers through 20th century China - Palme d'Or winner, distinctive historical drama
 :TMDB_ID: 10997
 :TMDB_TITLE: Lebewohl, meine Konkubine
@@ -141592,7 +141257,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Legend Kray
 :AI_TITLE: Legend
-:YEAR: 2015
 :AI_NOTES: 2015 Brian Helgeland crime film with Tom Hardy as both Kray twins ruling 1960s London underworld - distinctive dual performance
 :YEAR: 2015
 :RUNTIME: 115
@@ -141657,7 +141321,6 @@
 :SUGGESTED_SEARCH: Etz Limon
 :TMDB_ID: 7860
 :AI_TITLE: Etz Limon
-:YEAR: 2008
 :AI_NOTES: 2008 Eran Riklis Israeli-German-French drama about Palestinian widow's lemon grove threatened by Israeli defense minister - distinctive Middle East conflict allegory
 :MANUALLY_CHECKED_BY_AI: true
 :TMDB_TITLE: Lemon Tree
@@ -141816,7 +141479,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Leto Serebrennikov
 :AI_TITLE: Leto
-:YEAR: 2018
 :AI_NOTES: 2018 Kirill Serebrennikov Russian rock music biopic about 1980s Leningrad underground scene - Cannes competition, distinctive black-and-white musical drama
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2019
@@ -141923,7 +141585,6 @@
 :AI_VERIFIED: true
 :SUGGESTED_SEARCH: letzter Coup
 :AI_TITLE: Sein letzter Coup
-:YEAR: 2010
 :AI_NOTES: Article mismatch, likely 2010 film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2000
@@ -141954,7 +141615,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Charlotte Link letzte Spur
 :AI_TITLE: Charlotte Link - Die letzte Spur
-:YEAR: 2016
 :AI_NOTES: German TV film adaptation of Charlotte Link crime novel - distinctive mystery thriller
 :YEAR: 2017
 :RUNTIME: 88
@@ -142010,7 +141670,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Behind the Candelabra
 :AI_TITLE: Behind the Candelabra
-:YEAR: 2013
 :AI_NOTES: 2013 Steven Soderbergh HBO film with Michael Douglas as Liberace, Matt Damon as lover - Emmy-winning biopic, distinctive relationship drama
 :YEAR: 2013
 :RUNTIME: 118
@@ -142040,7 +141699,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Licht Barbara Albert
 :AI_TITLE: Licht
-:YEAR: 2017
 :AI_NOTES: 2017 Barbara Albert Austrian drama about woman escaping religious sect - distinctive faith crisis film
 :YEAR: 2016
 :RUNTIME: 122
@@ -142070,7 +141728,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Eagle vs Shark
 :AI_TITLE: Eagle vs Shark
-:YEAR: 2007
 :AI_NOTES: 2007 Taika Waititi New Zealand quirky romantic comedy about awkward couple - distinctive deadpan humor, Waititi debut
 :YEAR: 2007
 :RUNTIME: 88
@@ -142188,7 +141845,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Molière 2007
 :AI_TITLE: Molière
-:YEAR: 2007
 :AI_NOTES: 2007 Laurent Tirard French period comedy with Romain Duris as young Molière - distinctive playful biopic
 :YEAR: 2007
 :RUNTIME: 120
@@ -142218,7 +141874,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Les combattants
 :AI_TITLE: Les combattants
-:YEAR: 2014
 :AI_NOTES: 2014 Thomas Cailley French romantic comedy about survival training, apocalypse prep - distinctive offbeat romance, César winner
 :YEAR: 2014
 :RUNTIME: 98
@@ -142274,7 +141929,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Enduring Love
 :AI_TITLE: Enduring Love
-:YEAR: 2004
 :AI_NOTES: 2004 Roger Michell psychological thriller with Daniel Craig, Rhys Ifans about obsessive stalker - based on Ian McEwan novel
 :YEAR: 2004
 :RUNTIME: 100
@@ -142377,7 +142031,6 @@
 :SUGGESTED_SEARCH: Limbo 2020 German
 :TMDB_ID: 691473
 :AI_TITLE: Limbo
-:YEAR: 2020
 :AI_NOTES: 2020 Tim Dünschede German experimental single-take film about three interconnected lives - distinctive formal exercise
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2020
@@ -142407,7 +142060,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Limits of Control
 :AI_TITLE: The Limits of Control
-:YEAR: 2009
 :AI_NOTES: 2009 Jim Jarmusch minimalist thriller with Isaach De Bankolé as hitman in Spain - distinctive slow existential mystery
 :YEAR: 2009
 :RUNTIME: 106
@@ -142515,7 +142167,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Little Voice
 :AI_TITLE: Little Voice
-:YEAR: 1998
 :AI_NOTES: 1998 Mark Herman British drama with Jane Horrocks as shy woman with amazing singing voice, Ewan McGregor - distinctive vocal performance showcase
 :YEAR: 1998
 :RUNTIME: 96
@@ -142541,7 +142192,6 @@
 :SUGGESTED_SEARCH: Lollipop Monster
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Lollipop Monster
-:YEAR: 2011
 :AI_NOTES: 2011 Ziska Riemann German coming-of-age drama about two girls escaping difficult homes - distinctive youth rebellion film
 :TMDB_ID: 91973
 :TMDB_TITLE: Lollipop Monster
@@ -142598,7 +142248,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Love Machine 2019
 :AI_TITLE: Love Machine
-:YEAR: 2019
 :AI_NOTES: 2019 Austrian comedy about gigolo - distinctive Vienna-set comedy
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2019
@@ -142666,7 +142315,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Lymelife
 :AI_TITLE: Lymelife
-:YEAR: 2008
 :AI_NOTES: 2008 Derick Martini coming-of-age drama with Rory Culkin, Alec Baldwin about 1970s Long Island suburban dysfunction - distinctive indie family drama
 :YEAR: 2008
 :RUNTIME: 90
@@ -142722,7 +142370,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Simindis kundzuli
 :AI_TITLE: Simindis kundzuli
-:YEAR: 2014
 :AI_NOTES: 2014 George Ovashvili Georgian film about farmer and granddaughter on Inguri River island - distinctive minimalist pastoral drama
 :YEAR: 2014
 :RUNTIME: 100
@@ -142752,7 +142399,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Papa ou maman
 :AI_TITLE: Papa ou maman
-:YEAR: 2015
 :AI_NOTES: 2015 Martin Bourboulon French comedy about divorcing parents competing to lose custody - distinctive family comedy
 :YEAR: 2015
 :RUNTIME: 85
@@ -142782,7 +142428,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Mama kommt 2009
 :AI_TITLE: Mama kommt!
-:YEAR: 2009
 :AI_NOTES: 2009 German comedy about man whose mother interferes in his life - distinctive family comedy
 :YEAR: 2006
 :RUNTIME: 99
@@ -142808,7 +142453,6 @@
 :SUGGESTED_SEARCH: Maman chez coiffeur
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Maman est chez le coiffeur
-:YEAR: 2008
 :AI_NOTES: 2008 Léa Pool Canadian-French film about family breakdown in 1960s - distinctive Quebec period drama
 :TMDB_ID: 58841
 :TMDB_TITLE: Maman ist kurz beim Friseur
@@ -142866,7 +142510,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Endgame 2009
 :AI_TITLE: Endgame
-:YEAR: 2009
 :AI_NOTES: 2009 Pete Travis South African historical drama about secret talks ending apartheid - distinctive political negotiation thriller
 :YEAR: 2009
 :RUNTIME: 101
@@ -142896,7 +142539,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Manhunter
 :AI_TITLE: Manhunter
-:YEAR: 1986
 :AI_NOTES: 1986 Michael Mann stylish thriller with William Petersen hunting serial killer, first Hannibal Lecter film - distinctive neon-soaked neo-noir
 :YEAR: 1986
 :RUNTIME: 119
@@ -142926,7 +142568,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Mr Nobody
 :AI_TITLE: Mr. Nobody
-:YEAR: 2009
 :AI_NOTES: 2009 Jaco Van Dormael Belgian sci-fi with Jared Leto about life's diverging paths - distinctive philosophical puzzle film
 :YEAR: 2009
 :RUNTIME: 141
@@ -143056,7 +142697,6 @@
 :SUGGESTED_SEARCH: Marcello Marcello
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Marcello Marcello
-:YEAR: 2008
 :AI_NOTES: 2008 Denis Dercourt French drama with Christa Théret as girl discovering love in Provence summer - distinctive coming-of-age story
 :TMDB_ID: 86713
 :TMDB_TITLE: Marcello Marcello - Alles Liebe
@@ -143088,7 +142728,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Margin Call
 :AI_TITLE: Margin Call
-:YEAR: 2011
 :AI_NOTES: 2011 J.C. Chandor ensemble financial crisis drama with Kevin Spacey, Jeremy Irons about 24 hours before 2008 crash - distinctive Wall Street thriller
 :YEAR: 2011
 :RUNTIME: 107
@@ -143153,7 +142792,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: En attendant le carnaval
 :AI_TITLE: En attendant le carnaval
-:YEAR: 2022
 :AI_NOTES: 2022 Marcelo Gomes French-Brazilian film about woman's personal journey - distinctive introspective drama
 :YEAR: 2022
 :RUNTIME: 93
@@ -143183,7 +142821,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Marius Pagnol
 :AI_TITLE: Marius trilogy
-:YEAR: 1931
 :AI_NOTES: 1931-1936 Marcel Pagnol Marseille trilogy: Marius (1931), Fanny (1932), César (1936) - distinctive French classic family saga
 :YEAR: 1931
 :RUNTIME: 128
@@ -143288,7 +142925,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Apache 1954
 :AI_TITLE: Apache
-:YEAR: 1954
 :AI_NOTES: 1954 Robert Aldrich Western with Burt Lancaster as Apache warrior Massai resisting reservation - distinctive sympathetic Native American portrayal
 :YEAR: 1954
 :RUNTIME: 91
@@ -143327,7 +142963,6 @@
 :SUGGESTED_SEARCH: Maximilian Macht Liebe
 :TMDB_ID: 398685
 :AI_TITLE: Maximilian - Das Spiel von Macht und Liebe
-:YEAR: 2017
 :AI_NOTES: 2017 Austrian-Hungarian TV miniseries about Holy Roman Emperor Maximilian I - distinctive historical epic
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2016
@@ -143380,7 +143015,6 @@
 :SUGGESTED_SEARCH: McLintock John Wayne
 :TMDB_ID: 33252
 :AI_TITLE: McLintock!
-:YEAR: 1963
 :AI_NOTES: 1963 Andrew V. McLaglen Western comedy with John Wayne as cattle baron battling wife Maureen O'Hara - distinctive slapstick Western, famous mud fight scene
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2003
@@ -143489,7 +143123,6 @@
 :SUGGESTED_SEARCH: Messiah 2020
 :TMDB_ID: 90990
 :AI_TITLE: Messiah
-:YEAR: 2020
 :AI_NOTES: 2020 Netflix series about CIA investigating man claiming to be messiah - distinctive religious conspiracy thriller
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2010
@@ -143609,7 +143242,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Minus Man Owen Wilson
 :AI_TITLE: The Minus Man
-:YEAR: 1999
 :AI_NOTES: 1999 Hampton Fancher psychological thriller with Owen Wilson as charming serial killer - distinctive against-type Wilson role
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1999
@@ -143688,7 +143320,6 @@
 :SUGGESTED_SEARCH: Mittsommernachtstango
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Mittsommernachtstango
-:YEAR: 2013
 :AI_NOTES: 2013 German romantic comedy - distinctive midsummer romance film
 :TMDB_ID: 250129
 :TMDB_TITLE: Mittsommernachtstango
@@ -143757,7 +143388,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: moment d'égarement 2015
 :AI_TITLE: Un moment d'égarement
-:YEAR: 2015
 :AI_NOTES: 2015 Jean-François Richet French remake with Vincent Cassel about vacation complications - distinctive family comedy drama
 :YEAR: 1977
 :RUNTIME: 81
@@ -143901,7 +143531,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: And Soon Darkness 2010
 :AI_TITLE: And Soon the Darkness
-:YEAR: 2010
 :AI_NOTES: 2010 Marcos Efron thriller remake about Americans in Argentina stalked by killer - distinctive vacation horror
 :YEAR: 2010
 :RUNTIME: 91
@@ -143931,7 +143560,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Spinning Man
 :AI_TITLE: Spinning Man
-:YEAR: 2018
 :AI_NOTES: 2018 Simon Kaijser thriller with Guy Pearce, Pierce Brosnan about professor suspected in student disappearance - distinctive ambiguous mystery
 :YEAR: 2018
 :RUNTIME: 101
@@ -143987,7 +143615,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Loft 2014
 :AI_TITLE: The Loft
-:YEAR: 2014
 :AI_NOTES: 2014 Erik Van Looy English-language remake of his own Belgian thriller about shared apartment murder - distinctive ensemble mystery
 :YEAR: 2014
 :RUNTIME: 108
@@ -144104,7 +143731,6 @@
 :SUGGESTED_SEARCH: Mr Universo
 :TMDB_ID: 387662
 :AI_TITLE: Mr. Universo
-:YEAR: 2016
 :AI_NOTES: 2016 Tizza Covi/Rainer Frimmel Austrian-Italian road movie about circus strongman - distinctive neorealist style
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2001
@@ -144128,7 +143754,6 @@
 :SUGGESTED_SEARCH: müde Tod Lang
 :TMDB_ID: 10275
 :AI_TITLE: Der müde Tod
-:YEAR: 1921
 :AI_NOTES: 1921 Fritz Lang silent German Expressionist masterpiece about Death and doomed lovers - international title 'Destiny', distinctive three-tale structure
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1982
@@ -144183,7 +143808,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Mum Lesley Manville
 :AI_TITLE: Mum
-:YEAR: 2016
 :AI_NOTES: 2016-2019 British sitcom with Lesley Manville as recent widow - distinctive understated BBC comedy
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2008
@@ -144212,7 +143836,6 @@
 :AI_VERIFIED: true
 :SUGGESTED_SEARCH: Munich Spielberg
 :AI_TITLE: Munich
-:YEAR: 2005
 :AI_NOTES: 2005 Spielberg film about Munich Olympics aftermath
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1995
@@ -144294,7 +143917,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Cerro Torre Messner
 :AI_TITLE: Mythos Cerro Torre
-:YEAR: 2018
 :AI_NOTES: 2018 documentary with Reinhold Messner investigating Patagonian peak climbing controversy - distinctive mountaineering history
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2019
@@ -144351,7 +143973,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Nachbar 2009
 :AI_TITLE: Der Nachbar
-:YEAR: 2009
 :AI_NOTES: 2009 German thriller about suspicious neighbor - distinctive domestic suspense
 :YEAR: 1988
 :RUNTIME: 86
@@ -144377,7 +143998,6 @@
 :SUGGESTED_SEARCH: Nachbar Dackel
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Mein Nachbar, sein Dackel und ich
-:YEAR: 2009
 :AI_NOTES: 2009 German comedy about neighbor complications - distinctive lighthearted romantic comedy
 :TMDB_ID: 290894
 :TMDB_TITLE: Mein Nachbar, sein Dackel & ich
@@ -144450,7 +144070,6 @@
 :SUGGESTED_SEARCH: Hippocrate
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Hippocrate
-:YEAR: 2018
 :AI_NOTES: 2018-2022 French medical TV series about young doctor in Paris hospital - distinctive medical drama
 :TMDB_ID: 502097
 :TMDB_TITLE: Hippocrate aux enfers
@@ -144506,7 +144125,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Trouble with Being Born
 :AI_TITLE: The Trouble with Being Born
-:YEAR: 2020
 :AI_NOTES: 2020 Sandra Wollner Austrian sci-fi about android child - distinctive unsettling AI exploration
 :YEAR: 2020
 :RUNTIME: 90
@@ -144562,7 +144180,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Gingerbread Man Altman
 :AI_TITLE: The Gingerbread Man
-:YEAR: 1998
 :AI_NOTES: 1998 Robert Altman thriller with Kenneth Branagh as lawyer entangled with client - distinctive legal noir
 :YEAR: 1998
 :RUNTIME: 114
@@ -144663,7 +144280,6 @@
 :SUGGESTED_SEARCH: Kaze no tani no Naushika
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Kaze no tani no Naushika
-:YEAR: 1984
 :AI_NOTES: 1984 Hayao Miyazaki anime masterpiece about princess in post-apocalyptic world - distinctive environmental epic, pre-Ghibli
 :TMDB_ID: 81
 :TMDB_TITLE: Nausicaä aus dem Tal der Winde
@@ -144695,7 +144311,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Fratelli e sorelle
 :AI_TITLE: Fratelli e sorelle
-:YEAR: 2010
 :AI_NOTES: 2010 Pupi Avati Italian family drama about Neapolitan siblings - distinctive character ensemble
 :YEAR: 1978
 :RUNTIME: 130
@@ -144721,7 +144336,6 @@
 :SUGGESTED_SEARCH: Nelly Monsieur Arnaud
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Nelly et Monsieur Arnaud
-:YEAR: 1995
 :AI_NOTES: 1995 Claude Sautet French drama with Emmanuelle Béart, Michel Serrault about May-December relationship - distinctive intimate character study
 :TMDB_ID: 12652
 :TMDB_TITLE: Nelly & Monsieur Arnaud
@@ -144779,7 +144393,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Minus Man
 :AI_TITLE: The Minus Man
-:YEAR: 1999
 :AI_NOTES: 1999 Hampton Fancher psychological thriller with Owen Wilson as quiet serial killer - distinctive against-type Wilson casting
 :YEAR: 1999
 :RUNTIME: 115
@@ -144886,7 +144499,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Das Netz Dammbeck
 :AI_TITLE: Das Netz
-:YEAR: 2003
 :AI_NOTES: 2003 Lutz Dammbeck German documentary connecting Unabomber, LSD, internet culture - distinctive conspiracy investigation
 :YEAR: 2003
 :RUNTIME: 121
@@ -144916,7 +144528,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Die Neue 2015
 :AI_TITLE: Die Neue
-:YEAR: 2015
 :AI_NOTES: 2015 German film about Muslim convert - distinctive religious identity drama
 :YEAR: 2015
 :RUNTIME: 204
@@ -144993,7 +144604,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Nice Guys
 :AI_TITLE: The Nice Guys
-:YEAR: 2016
 :AI_NOTES: 2016 Shane Black 1970s LA detective comedy - distinctive buddy noir with Russell Crowe, Ryan Gosling
 :YEAR: 2016
 :RUNTIME: 116
@@ -145122,7 +144732,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: No Escape 2015
 :AI_TITLE: No Escape
-:YEAR: 2015
 :AI_NOTES: 2015 John Erick Dowdle thriller about American family trapped in Southeast Asian coup - distinctive survival action
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2015
@@ -145250,7 +144859,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: November 2021
 :AI_TITLE: Un + une
-:YEAR: 2021
 :AI_NOTES: 2021 Cédric Jimenez French police procedural about aftermath of 2015 Bataclan attacks - distinctive terrorism investigation thriller
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2021
@@ -145319,7 +144927,6 @@
 :SUGGESTED_SEARCH: Nymphomaniac Trier
 :TMDB_ID: 190320
 :AI_TITLE: Nymphomaniac
-:YEAR: 2013
 :AI_NOTES: 2013 Lars von Trier two-part epic with Charlotte Gainsbourg about sexual odyssey - distinctive provocative character study
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1929
@@ -145349,7 +144956,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: dossier 51
 :AI_TITLE: Le dossier 51
-:YEAR: 1978
 :AI_NOTES: 1978 Michel Deville French surveillance thriller about bureaucrat under state observation - distinctive paranoid conspiracy film
 :YEAR: 1978
 :RUNTIME: 108
@@ -145471,7 +145077,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: One Way 2006
 :AI_TITLE: One Way
-:YEAR: 2006
 :AI_NOTES: 2006 Reto Salimbeni German thriller about hitman with moral dilemma - distinctive crime drama
 :YEAR: 2006
 :RUNTIME: 116
@@ -145501,7 +145106,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Elsker dig for evigt
 :AI_TITLE: Elsker dig for evigt
-:YEAR: 2002
 :AI_NOTES: 2002 Susanne Bier Danish Dogme 95 drama about accident aftermath and affair - distinctive emotional realism
 :YEAR: 2002
 :RUNTIME: 113
@@ -145553,7 +145157,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Adventures Mathematician
 :AI_TITLE: Adventures of a Mathematician
-:YEAR: 2020
 :AI_NOTES: 2020 Thorsten Klein biopic about mathematician Stan Ulam and Los Alamos - distinctive scientist portrait
 :YEAR: 2021
 :RUNTIME: 102
@@ -145583,7 +145186,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Orangentage
 :AI_TITLE: Orangentage
-:YEAR: 2019
 :AI_NOTES: 2019 German romantic drama about first love - distinctive coming-of-age romance
 :YEAR: 2019
 :RUNTIME: 90
@@ -145637,7 +145239,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Bizim Büyük Çaresizliğimiz
 :AI_TITLE: Bizim Büyük Çaresizliğimiz
-:YEAR: 2011
 :AI_NOTES: 2011 Seyfi Teoman Turkish drama about two men and runaway girl - distinctive melancholic character study
 :YEAR: 2011
 :RUNTIME: 102
@@ -145666,7 +145267,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Outsiders Coppola
 :AI_TITLE: The Outsiders
-:YEAR: 1983
 :AI_NOTES: 1983 Francis Ford Coppola teen drama with ensemble cast about 1960s greasers - distinctive youth gang film based on S.E. Hinton novel
 :YEAR: 1983
 :RUNTIME: 91
@@ -145871,7 +145471,6 @@
 :AI_VERIFIED: true
 :SUGGESTED_SEARCH: Godfather 1972
 :AI_TITLE: The Godfather
-:YEAR: 1972
 :AI_NOTES: 1972 Coppola masterpiece
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1972
@@ -145901,7 +145500,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Pathfinder 2007
 :AI_TITLE: Pathfinder
-:YEAR: 2007
 :AI_NOTES: 2007 Marcus Nispel action remake of 1987 Norwegian film about Viking invasion of North America - distinctive Viking vs Native American action
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1987
@@ -145931,7 +145529,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Paulette 2012
 :AI_TITLE: Paulette
-:YEAR: 2012
 :AI_NOTES: 2012 Jérôme Enrico French comedy about grandmother becoming drug dealer - distinctive senior citizen crime comedy
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2012
@@ -145985,7 +145582,6 @@
 :AI_VERIFIED: true
 :SUGGESTED_SEARCH: Peeping Tom Powell
 :AI_TITLE: Peeping Tom
-:YEAR: 1960
 :AI_NOTES: 1960 Michael Powell horror classic
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1960
@@ -146015,7 +145611,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Perfect Sense
 :AI_TITLE: Perfect Sense
-:YEAR: 2011
 :AI_NOTES: 2011 David Mackenzie sci-fi romance about pandemic removing senses - distinctive apocalyptic love story
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2011
@@ -146055,7 +145650,6 @@
 :SUGGESTED_SEARCH: Pina Wenders
 :TMDB_ID: 45152
 :AI_TITLE: Pina
-:YEAR: 2011
 :AI_NOTES: 2011 Wim Wenders 3D documentary tribute to choreographer Pina Bausch - Oscar-nominated, distinctive dance film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2009
@@ -146085,7 +145679,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Plan A
 :AI_TITLE: Plan A
-:YEAR: 2021
 :AI_NOTES: 2021 Yoav Paz/Doron Paz thriller about Jewish Holocaust survivors plotting revenge - distinctive post-WWII revenge drama
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2021
@@ -146166,7 +145759,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Gake no ue no Ponyo
 :AI_TITLE: Gake no ue no Ponyo
-:YEAR: 2008
 :AI_NOTES: 2008 Hayao Miyazaki Studio Ghibli fantasy about goldfish becoming human - distinctive Little Mermaid-inspired anime
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2008
@@ -146197,7 +145789,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Gordos
 :AI_TITLE: Gordos
-:YEAR: 2009
 :AI_NOTES: 2009 Daniel Sánchez Arévalo Spanish comedy about weight loss support group - distinctive body-positive ensemble
 :YEAR: 2009
 :RUNTIME: 110
@@ -146288,7 +145879,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Princesas
 :AI_TITLE: Princesas
-:YEAR: 2005
 :AI_NOTES: 2005 Fernando León de Aranoa Spanish drama about Madrid prostitutes - Goya winner, distinctive social realism
 :YEAR: 2005
 :RUNTIME: 110
@@ -146318,7 +145908,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Professor 2018
 :AI_TITLE: The Professor
-:YEAR: 2018
 :AI_NOTES: 2018 Wayne Roberts dark comedy with Johnny Depp as terminal professor living freely - distinctive existential comedy
 :YEAR: 2018
 :RUNTIME: 90
@@ -146348,7 +145937,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Protokoll 2016
 :AI_TITLE: Das Protokoll
-:YEAR: 2016
 :AI_NOTES: 2016 Belgian political thriller about assassination investigation - distinctive conspiracy drama
 :YEAR: 2016
 :RUNTIME: 115
@@ -146410,7 +145998,6 @@
 :SUGGESTED_SEARCH: Public Enemies
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Public Enemies
-:YEAR: 2009
 :AI_NOTES: 2009 Michael Mann crime drama about John Dillinger - distinctive Depression-era gangster epic
 :TMDB_ID: 11322
 :TMDB_TITLE: Public Enemies
@@ -146460,7 +146047,6 @@
 :SUGGESTED_SEARCH: Pulp Fiction
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Pulp Fiction
-:YEAR: 1994
 :AI_NOTES: 1994 Quentin Tarantino nonlinear crime masterpiece - Palme d'Or winner, distinctive postmodern noir
 :TMDB_ID: 680
 :TMDB_TITLE: Pulp Fiction
@@ -146508,7 +146094,6 @@
 :SUGGESTED_SEARCH: Qissa
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Qissa
-:YEAR: 2013
 :AI_NOTES: 2013 Anup Singh Indian Partition drama about Sikh man raising daughter as son - distinctive gender identity ghost story
 :TMDB_ID: 214348
 :TMDB_TITLE: Qissa. Der Geist ist ein einsamer Wanderer
@@ -146566,7 +146151,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Quartet 2012
 :AI_TITLE: Quartet
-:YEAR: 2012
 :AI_NOTES: 2012 Dustin Hoffman directorial debut about opera singers in retirement home - distinctive senior ensemble drama
 :YEAR: 2012
 :RUNTIME: 54
@@ -146643,7 +146227,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: source des femmes
 :AI_TITLE: La source des femmes
-:YEAR: 2011
 :AI_NOTES: 2011 Radu Mihăileanu Moroccan women's strike comedy-drama - distinctive feminist water rights allegory
 :YEAR: 2011
 :RUNTIME: 125
@@ -146735,7 +146318,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Kraftidioten
 :AI_TITLE: Kraftidioten
-:YEAR: 2014
 :AI_NOTES: 2014 Hans Petter Moland Norwegian black comedy revenge thriller - later remade as Cold Pursuit
 :YEAR: 2014
 :RUNTIME: 116
@@ -146885,7 +146467,6 @@
 :SUGGESTED_SEARCH: Äkta människor
 :TMDB_ID: 56414
 :AI_TITLE: Äkta människor
-:YEAR: 2012
 :AI_NOTES: 2012-2014 Swedish sci-fi series about android integration into society - distinctive Scandinavian AI drama, later remade as Humans
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2008
@@ -146966,7 +146547,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Red Dust 2004
 :AI_TITLE: Red Dust
-:YEAR: 2004
 :AI_NOTES: 2004 Tom Hooper South African drama about Truth and Reconciliation Commission - distinctive apartheid aftermath film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2004
@@ -147019,7 +146599,6 @@
 :SUGGESTED_SEARCH: Reine Geschmackssache
 :TMDB_ID: 23618
 :AI_TITLE: Reine Geschmackssache
-:YEAR: 2007
 :AI_NOTES: 2007 German comedy about food and relationships - distinctive culinary rom-com
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2000
@@ -147075,7 +146654,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Judge 2014
 :AI_TITLE: The Judge
-:YEAR: 2014
 :AI_NOTES: 2014 David Dobkin legal drama - distinctive father-son courtroom confrontation
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2014
@@ -147105,7 +146683,6 @@
 :AI_VERIFIED: true
 :SUGGESTED_SEARCH: Rider Zhao
 :AI_TITLE: The Rider
-:YEAR: 2017
 :AI_NOTES: 2017 Chloé Zhao rodeo drama with Brady Jandreau as injured cowboy - distinctive naturalistic Western, prefigures Nomadland
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2018
@@ -147136,7 +146713,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Riesending
 :AI_TITLE: Das Riesending
-:YEAR: 2022
 :AI_NOTES: 2022 German documentary about cave rescue in Untersberg mountain - distinctive survival documentary
 :YEAR: 2021
 :RUNTIME: 90
@@ -147201,7 +146777,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Rocker 1972
 :AI_TITLE: Rocker
-:YEAR: 1972
 :AI_NOTES: 1972 Klaus Lemke German motorcycle gang film - distinctive New German Cinema youth rebellion
 :YEAR: 1971
 :RUNTIME: 88
@@ -147227,7 +146802,6 @@
 :SUGGESTED_SEARCH: Rollerball 1975
 :TMDB_ID: 13817
 :AI_TITLE: Rollerball
-:YEAR: 1975
 :AI_NOTES: 1975 Norman Jewison dystopian sci-fi about brutal futuristic sport - distinctive corporate control allegory
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1998
@@ -147254,7 +146828,6 @@
 :SUGGESTED_SEARCH: Rose 1979
 :TMDB_ID: 11854
 :AI_TITLE: The Rose
-:YEAR: 1979
 :AI_NOTES: 1979 Mark Rydell musical drama loosely based on Janis Joplin - distinctive rock star tragedy
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1998
@@ -147421,7 +146994,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Sabbah 2022
 :AI_TITLE: Sabbah
-:YEAR: 2022
 :AI_NOTES: 2022 Palestinian family drama - distinctive contemporary Middle Eastern cinema
 :YEAR: 1967
 :RUNTIME: 75
@@ -147450,7 +147022,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Sadistico
 :AI_TITLE: Sadistico
-:YEAR: 1969
 :AI_NOTES: 1969 Albert De Martino Italian giallo thriller - distinctive violent mystery
 :YEAR: 1971
 :RUNTIME: 102
@@ -147490,7 +147061,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Saturday Night Sunday Morning
 :AI_TITLE: Saturday Night and Sunday Morning
-:YEAR: 1960
 :AI_NOTES: 1960 Karel Reisz British kitchen sink drama with Albert Finney - distinctive working-class realism
 :YEAR: 1960
 :RUNTIME: 89
@@ -147516,7 +147086,6 @@
 :SUGGESTED_SEARCH: Saturday Night and Sunday Morning
 :TMDB_ID: 37230
 :AI_TITLE: Saturday Night and Sunday Morning
-:YEAR: 1960
 :AI_NOTES: 1960 Karel Reisz British kitchen sink realism with Albert Finney as rebellious factory worker - seminal New Wave film
 :MANUALLY_CHECKED_BY_AI: true
 :TMDB_TITLE: Samstagnacht bis Sonntagmorgen
@@ -147544,7 +147113,6 @@
 :SUGGESTED_SEARCH: Samson and Delilah
 :TMDB_ID: 47075
 :AI_TITLE: Samson and Delilah
-:YEAR: 2009
 :AI_NOTES: 2009 Warwick Thornton Australian film about Indigenous youth in central Australia - typo: Samson not Samsung, Caméra d'Or winner
 :MANUALLY_CHECKED_BY_AI: true
 :TMDB_TITLE: Samson and Delilah
@@ -147575,7 +147143,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Savages
 :AI_TITLE: Savages
-:YEAR: 2012
 :AI_NOTES: 2012 Oliver Stone crime thriller about California marijuana growers vs Mexican cartel with Taylor Kitsch, Blake Lively, Aaron Taylor-Johnson
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2012
@@ -147605,7 +147172,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Savoy 2022
 :AI_TITLE: Savoy
-:YEAR: 2022
 :AI_NOTES: 2022 Israeli film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2022
@@ -147713,7 +147279,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Schicksalsjahre 2011
 :AI_TITLE: Schicksalsjahre
-:YEAR: 2011
 :AI_NOTES: 2011 German TV two-part historical drama about German history and political developments - distinctive contemporary political chronicle
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1957
@@ -147796,7 +147361,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Schmetterlinge Verhoeven
 :AI_TITLE: Schmetterlinge
-:YEAR: 1987
 :AI_NOTES: 1987-1988 Michael Verhoeven German TV series about relationships - distinctive ensemble drama
 :YEAR: 1982
 :RUNTIME: 108
@@ -147852,7 +147416,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: belle vie 2008
 :AI_TITLE: La belle vie
-:YEAR: 2008
 :AI_NOTES: 2008 Jean Denizot French drama about rural life - distinctive contemporary French social realism
 :YEAR: 1997
 :RUNTIME: 116
@@ -147882,7 +147445,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: bella mugnaia
 :AI_TITLE: La bella mugnaia
-:YEAR: 1955
 :AI_NOTES: 1955 Mario Camerini Italian romantic comedy with Sophia Loren and Vittorio De Sica - distinctive rural romance
 :YEAR: 1955
 :RUNTIME: 98
@@ -147938,7 +147500,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: acacias
 :AI_TITLE: Las acacias
-:YEAR: 2011
 :AI_NOTES: 2011 Pablo Giorgelli Argentine road movie about truck driver and passenger - Camera d'Or winner at Cannes, distinctive minimalist character study
 :YEAR: 2011
 :RUNTIME: 85
@@ -148058,7 +147619,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Schuss Nacht Lübcke
 :AI_TITLE: Schuss in der Nacht - Die Ermordung Walter Lübckes
-:YEAR: 2020
 :AI_NOTES: 2020 German docudrama about 2019 assassination of politician Walter Lübcke by far-right extremist - distinctive political crime documentary
 :YEAR: 1956
 :RUNTIME: 77
@@ -148088,7 +147648,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Line of Fire
 :AI_TITLE: In the Line of Fire
-:YEAR: 1993
 :AI_NOTES: 1993 Wolfgang Petersen thriller with Clint Eastwood as Secret Service agent protecting president - distinctive presidential assassination thriller
 :YEAR: 1993
 :RUNTIME: 128
@@ -148170,7 +147729,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Black Dahlia
 :AI_TITLE: The Black Dahlia
-:YEAR: 2006
 :AI_NOTES: 2006 Brian De Palma noir about 1947 Hollywood murder - distinctive stylized period mystery with Josh Hartnett, Scarlett Johansson
 :YEAR: 2006
 :RUNTIME: 116
@@ -148226,7 +147784,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Secretary 2002
 :AI_TITLE: Secretary
-:YEAR: 2002
 :AI_NOTES: 2002 Steven Shainberg BDSM romantic drama with Maggie Gyllenhaal, James Spader - distinctive unconventional love story about dom/sub relationship
 :YEAR: 2002
 :RUNTIME: 111
@@ -148256,7 +147813,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Wicker Park
 :AI_TITLE: Wicker Park
-:YEAR: 2004
 :AI_NOTES: 2004 Paul McGuigan mystery romance with Josh Hartnett about obsessive search for lost love - distinctive psychological puzzle, remake of French L'Appartement
 :YEAR: 2004
 :RUNTIME: 114
@@ -148286,7 +147842,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: plein temps
 :AI_TITLE: À plein temps
-:YEAR: 2021
 :AI_NOTES: 2021 Eric Gravel French thriller with Laure Calamy as single mother in real-time race against clock during Paris transit strike - distinctive social pressure-cooker
 :YEAR: 2022
 :RUNTIME: 88
@@ -148316,7 +147871,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Seine Mutter und ich
 :AI_TITLE: Seine Mutter und ich
-:YEAR: 2020
 :AI_NOTES: 2020 German TV comedy about relationship complications with prospective mother-in-law - distinctive romantic comedy
 :YEAR: 2020
 :RUNTIME: 90
@@ -148372,7 +147926,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Seitengänge Harlan
 :AI_TITLE: Seitengänge
-:YEAR: 1976
 :AI_NOTES: 1976 Thomas Harlan experimental German film about political radicalization - distinctive avant-garde political cinema
 :YEAR: 2012
 :RUNTIME: 101
@@ -148415,7 +147968,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Seraphim Falls
 :AI_TITLE: Seraphim Falls
-:YEAR: 2006
 :AI_NOTES: 2006 David Von Ancken post-Civil War Western with Liam Neeson pursuing Pierce Brosnan - distinctive revenge chase across wilderness
 :YEAR: 2007
 :RUNTIME: 115
@@ -148470,7 +148022,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Sex Haugerud
 :AI_TITLE: Sex
-:YEAR: 2020
 :AI_NOTES: 2020 Dag Johan Haugerud Norwegian relationship drama - distinctive Scandinavian intimate portrait, Oslo Trilogy first film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2020
@@ -148500,7 +148051,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Sexy Beast
 :AI_TITLE: Sexy Beast
-:YEAR: 2000
 :AI_NOTES: 2000 Jonathan Glazer British crime thriller with Ray Winstone, Ben Kingsley as terrifying gangster - distinctive violent character study
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2001
@@ -148553,7 +148103,6 @@
 :SUGGESTED_SEARCH: Shéhérazade
 :TMDB_ID: 518671
 :AI_TITLE: Shéhérazade
-:YEAR: 2018
 :AI_NOTES: 2018 Jean-Bernard Marlin French social realism about young Marseille couple - distinctive contemporary French romance
 :MANUALLY_CHECKED_BY_AI: true
 :TMDB_TITLE: Shéhérazade
@@ -148584,7 +148133,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Manbiki kazoku
 :AI_TITLE: Manbiki kazoku
-:YEAR: 2018
 :AI_NOTES: 2018 Hirokazu Kore-eda Japanese family drama about makeshift family of shoplifters - Palme d'Or winner, distinctive social critique
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2018
@@ -148692,7 +148240,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Sin Nombre
 :AI_TITLE: Sin Nombre
-:YEAR: 2009
 :AI_NOTES: 2009 Cary Joji Fukunaga directorial debut about Central American migrants and gang member fleeing to US - Sundance winner, distinctive immigration drama
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2009
@@ -148836,7 +148383,6 @@
 :SUGGESTED_SEARCH: Snatch
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Snatch
-:YEAR: 2000
 :AI_NOTES: 2000 Guy Ritchie British crime comedy with ensemble cast about diamond heist gone wrong - distinctive stylized gangster film
 :TMDB_ID: 107
 :TMDB_TITLE: Snatch - Schweine und Diamanten
@@ -148900,7 +148446,6 @@
 :SUGGESTED_SEARCH: Solitary Man
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Solitary Man
-:YEAR: 2009
 :AI_NOTES: 2009 Brian Koppelman/David Levien drama with Michael Douglas as aging womanizer facing mortality - distinctive character study
 :TMDB_ID: 36691
 :TMDB_TITLE: Solitary Man
@@ -148993,7 +148538,6 @@
 :SUGGESTED_SEARCH: Sonny Boy
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Sonny Boy
-:YEAR: 2011
 :AI_NOTES: 2011 Maria Peters Dutch drama about interracial couple during Nazi occupation - distinctive WWII romance
 :TMDB_ID: 59424
 :TMDB_TITLE: Sonny Boy - Eine Liebe in dunkler Zeit
@@ -149021,7 +148565,6 @@
 :SUGGESTED_SEARCH: Only Angels Have Wings
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Only Angels Have Wings
-:YEAR: 1939
 :AI_NOTES: 1939 Howard Hawks aviation adventure with Cary Grant about mail pilots in South America - distinctive romantic action drama
 :TMDB_ID: 43832
 :TMDB_TITLE: SOS Feuer an Bord
@@ -149089,7 +148632,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Late Bloomers
 :AI_TITLE: Late Bloomers
-:YEAR: 2011
 :AI_NOTES: 2011 Julie Gavras French-British comedy about aging couple confronting retirement - distinctive senior romance
 :YEAR: 2011
 :RUNTIME: 88
@@ -149219,7 +148761,6 @@
 :SUGGESTED_SEARCH: Spinning Man
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Spinning Man
-:YEAR: 2018
 :AI_NOTES: 2018 Simon Kaijser thriller with Guy Pearce as professor suspected in student disappearance - distinctive psychological mystery
 :TMDB_ID: 458109
 :TMDB_TITLE: Spinning Man - Im Dunkel deiner Seele
@@ -149316,7 +148857,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Salvation 2014
 :AI_TITLE: The Salvation
-:YEAR: 2014
 :AI_NOTES: 2014 Kristian Levring Danish Western with Mads Mikkelsen as settler seeking revenge in 1870s America - distinctive European Western
 :YEAR: 2014
 :RUNTIME: 93
@@ -149411,7 +148951,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: High Crimes
 :AI_TITLE: High Crimes
-:YEAR: 2002
 :AI_NOTES: 2002 Carl Franklin military thriller with Ashley Judd defending husband accused of war crimes - distinctive courtroom conspiracy drama
 :YEAR: 2002
 :RUNTIME: 115
@@ -149441,7 +148980,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Agents secrets
 :AI_TITLE: Agents secrets
-:YEAR: 2004
 :AI_NOTES: 2004 Frédéric Schoendoerffer French spy thriller with Vincent Cassel, Monica Bellucci - distinctive European espionage action
 :YEAR: 2004
 :RUNTIME: 109
@@ -149471,7 +149009,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Spy City
 :AI_TITLE: Spy City
-:YEAR: 2020
 :AI_NOTES: 2020 Cold War spy series with Dominic Cooper set in 1961 Berlin - distinctive divided-city espionage thriller
 :YEAR: 2024
 :RUNTIME: 112
@@ -149500,7 +149037,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Stalingrad Vilsmaier
 :AI_TITLE: Stalingrad
-:YEAR: 1993
 :AI_NOTES: 1993 Joseph Vilsmaier German WWII epic about Wehrmacht soldiers in Stalingrad - distinctive anti-war film, released 1993 despite title
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1964
@@ -149530,7 +149066,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Dust of Time
 :AI_TITLE: The Dust of Time
-:YEAR: 2008
 :AI_NOTES: 2008 Theo Angelopoulos historical epic about 20th century Europe - distinctive poetic Greek cinema
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2008
@@ -149637,7 +149172,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Pod solntsem
 :AI_TITLE: Pod solntsem
-:YEAR: 2015
 :AI_NOTES: 2015 Vitaly Mansky North Korea documentary showing staged propaganda - distinctive subversive observational film
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2015
@@ -149693,7 +149227,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Stratos Economides
 :AI_TITLE: Stratos
-:YEAR: 2014
 :AI_NOTES: 2014 Yannis Economides Greek noir about violent drifter - distinctive dark character study
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2014
@@ -149720,7 +149253,6 @@
 :SUGGESTED_SEARCH: Straw Dogs 2011
 :TMDB_ID: 62214
 :AI_TITLE: Straw Dogs
-:YEAR: 2011
 :AI_NOTES: 2011 Rod Lurie remake of Peckinpah's 1971 home invasion thriller - distinctive violent confrontation
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2012
@@ -149829,7 +149361,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: St. Vincent
 :AI_TITLE: St. Vincent
-:YEAR: 2014
 :AI_NOTES: 2014 Theodore Melfi comedy-drama with Bill Murray as curmudgeonly neighbor becoming babysitter - distinctive feel-good character study
 :YEAR: 2014
 :RUNTIME: 102
@@ -149859,7 +149390,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Suburbicon
 :AI_TITLE: Suburbicon
-:YEAR: 2017
 :AI_NOTES: 2017 George Clooney dark satire about 1950s suburban crime and racism - distinctive noir from Coen Brothers script
 :YEAR: 2017
 :RUNTIME: 105
@@ -149885,7 +149415,6 @@
 :SUGGESTED_SEARCH: Seeking Friend End World
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Seeking a Friend for the End of the World
-:YEAR: 2012
 :AI_NOTES: 2012 Lorene Scafaria apocalyptic comedy-drama with Steve Carell - distinctive pre-apocalypse romance
 :TMDB_ID: 88005
 :TMDB_TITLE: Auf der Suche nach einem Freund fürs Ende der Welt
@@ -149930,7 +149459,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Suicide Tourist
 :AI_TITLE: Suicide Tourist
-:YEAR: 2019
 :AI_NOTES: 2019 Jonas Alexander Arnby Danish thriller about man seeking assisted suicide - distinctive dark psychological drama
 :YEAR: 2019
 :RUNTIME: 90
@@ -149956,7 +149484,6 @@
 :SUGGESTED_SEARCH: Khorshid
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Khorshid
-:YEAR: 2020
 :AI_NOTES: 2020 Majid Majidi Iranian social realism about street children - distinctive contemporary Iranian cinema
 :TMDB_ID: 670343
 :TMDB_TITLE: Sun Children
@@ -150053,7 +149580,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Survivor 2015
 :AI_TITLE: Survivor
-:YEAR: 2015
 :AI_NOTES: 2015 James McTeigue action thriller with Milla Jovovich as State Department employee framed - distinctive conspiracy action
 :YEAR: 2015
 :RUNTIME: 161
@@ -150170,7 +149696,6 @@
 :SUGGESTED_SEARCH: S.W.A.T. 2003
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: S.W.A.T.
-:YEAR: 2003
 :AI_NOTES: 2003 Clark Johnson action film about elite Los Angeles police unit - distinctive ensemble cop action
 :TMDB_ID: 9257
 :TMDB_TITLE: S.W.A.T. - Die Spezialeinheit
@@ -150202,7 +149727,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Swinger 1966
 :AI_TITLE: The Swinger
-:YEAR: 1966
 :AI_NOTES: 1966 George Sidney comedy with Ann-Margret about writer posing as swinger - distinctive 1960s sexual revolution satire
 :YEAR: 2002
 :RUNTIME: 93
@@ -150232,7 +149756,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Was tun Sybille
 :AI_TITLE: Was tun, Sybille?
-:YEAR: 2015
 :AI_NOTES: 2015 German TV film about former GDR activist after reunification - distinctive post-Wall identity drama
 :YEAR: 1938
 :RUNTIME: 86
@@ -150268,7 +149791,6 @@
 :SUGGESTED_SEARCH: Entre les murs
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Entre les murs
-:YEAR: 2008
 :AI_NOTES: 2008 Laurent Cantet Palme d'Or winner about Paris inner-city teacher - distinctive classroom realism
 :TMDB_ID: 8841
 :TMDB_TITLE: Die Klasse
@@ -150364,7 +149886,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Takers
 :AI_TITLE: Takers
-:YEAR: 2010
 :AI_NOTES: 2010 John Luessenhop heist action film with ensemble cast about bank robbers - distinctive stylish crime thriller
 :YEAR: 2010
 :RUNTIME: 107
@@ -150390,7 +149911,6 @@
 :SUGGESTED_SEARCH: Taaqat
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Taaqat
-:YEAR: 1995
 :AI_NOTES: 1995 Indian action thriller - distinctive Bollywood crime film, likely title variation
 :TMDB_ID: 302934
 :TMDB_TITLE: Taaqat
@@ -150445,7 +149965,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Maimuni prez zimata
 :AI_TITLE: Maimuni prez zimata
-:YEAR: 2006
 :AI_NOTES: 2006 Bulgarian comedy about three women in winter - distinctive Eastern European ensemble comedy
 :YEAR: 2006
 :RUNTIME: 111
@@ -150471,7 +149990,6 @@
 :SUGGESTED_SEARCH: Tango Rashevski
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Tango Rashevski
-:YEAR: 2003
 :AI_NOTES: 2003 Sam Garbarski Belgian-French comedy about Jewish family - distinctive identity comedy-drama
 :TMDB_ID: 60616
 :TMDB_TITLE: Der Tango der Rashevskis
@@ -150499,7 +150017,6 @@
 :SUGGESTED_SEARCH: Tannbach
 :TMDB_ID: 294473
 :AI_TITLE: Tannbach - Schicksal eines Dorfes
-:YEAR: 2015
 :AI_NOTES: 2015 German TV miniseries about divided village after WWII - distinctive post-war historical drama
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2012
@@ -150720,7 +150237,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Thérèse Raquin
 :AI_TITLE: Thérèse Raquin
-:YEAR: 1953
 :AI_NOTES: 1953 Marcel Carné Italian-French adaptation of Zola novel with Simone Signoret, Raf Vallone - distinctive noir melodrama
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1953
@@ -150776,7 +150292,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: This Is England
 :AI_TITLE: This Is England
-:YEAR: 2006
 :AI_NOTES: 2006 Shane Meadows British drama about 1983 skinhead culture - BAFTA winner, distinctive coming-of-age social realism
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2007
@@ -150803,7 +150318,6 @@
 :SUGGESTED_SEARCH: Ófærð
 :TMDB_ID: 63141
 :AI_TITLE: Ófærð
-:YEAR: 2015
 :AI_NOTES: 2015 Icelandic crime series 'Trapped' about isolated town murder investigation - distinctive Nordic noir
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2011
@@ -150882,7 +150396,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: bête 1975
 :AI_TITLE: La bête
-:YEAR: 1975
 :AI_NOTES: 1975 Walerian Borowczyk French erotic period drama - distinctive controversial art film
 :YEAR: 2006
 :RUNTIME: 82
@@ -150908,7 +150421,6 @@
 :SUGGESTED_SEARCH: Tier in mir
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Das Tier in mir
-:YEAR: 2009
 :AI_NOTES: 2009 German TV drama about man discovering his dark side - distinctive psychological thriller
 :TMDB_ID: 15338
 :TMDB_TITLE: Ace Ventura 3 - Der Tier-Detektiv
@@ -150962,7 +150474,6 @@
 :SUGGESTED_SEARCH: Tiger von Eschnapur
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Der Tiger von Eschnapur
-:YEAR: 1959
 :AI_NOTES: 1959 Fritz Lang adventure epic set in India - distinctive two-part Orientalist spectacle
 :TMDB_ID: 71041
 :TMDB_TITLE: Der Tiger von Eschnapur
@@ -151007,7 +150518,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Dom za vešanje
 :AI_TITLE: Dom za vešanje
-:YEAR: 1988
 :AI_NOTES: 1988 Emir Kusturica Palme d'Or winner about Romani boy - distinctive magical realist masterpiece
 :YEAR: 1988
 :RUNTIME: 135
@@ -151128,7 +150638,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Nordsjøen
 :AI_TITLE: Nordsjøen
-:YEAR: 2021
 :AI_NOTES: 2021 John Andreas Andersen Norwegian disaster thriller about North Sea oil rig collapse - distinctive Norwegian catastrophe film
 :YEAR: 2021
 :RUNTIME: 102
@@ -151182,7 +150691,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Insomnia 1997
 :AI_TITLE: Insomnia
-:YEAR: 1997
 :AI_NOTES: 1997 Erik Skjoldbjærg Norwegian psychological thriller with Stellan Skarsgård - distinctive Nordic noir, later remade by Nolan
 :YEAR: 1997
 :RUNTIME: 96
@@ -151225,7 +150733,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Rental 2020
 :AI_TITLE: The Rental
-:YEAR: 2020
 :AI_NOTES: 2020 Dave Franco directorial debut horror thriller about vacation rental gone wrong - distinctive contemporary suspense
 :YEAR: 2020
 :RUNTIME: 88
@@ -151251,7 +150758,6 @@
 :SUGGESTED_SEARCH: Arizona 2018
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Arizona
-:YEAR: 2018
 :AI_NOTES: 2018 Jonathan Watson dark comedy thriller set during housing crisis - distinctive suburban noir
 :TMDB_ID: 490004
 :TMDB_TITLE: Arizona
@@ -151283,7 +150789,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwart water
 :AI_TITLE: Zwart water
-:YEAR: 2010
 :AI_NOTES: 2010 Elbert van Strien Dutch psychological horror about haunted girl - distinctive creepy family drama
 :YEAR: 2010
 :RUNTIME: 112
@@ -151335,7 +150840,6 @@
 :SUGGESTED_SEARCH: Unthinkable
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Unthinkable
-:YEAR: 2010
 :AI_NOTES: 2010 Gregor Jordan thriller about torture ethics with Samuel L. Jackson - distinctive interrogation drama
 :TMDB_ID: 38199
 :TMDB_TITLE: Unthinkable - Der Preis der Wahrheit
@@ -151367,7 +150871,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Good Shepherd
 :AI_TITLE: The Good Shepherd
-:YEAR: 2006
 :AI_NOTES: 2006 Robert De Niro CIA origins epic with Matt Damon - distinctive spy drama about early agency history
 :YEAR: 2006
 :RUNTIME: 167
@@ -151449,7 +150952,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Riders of Justice
 :AI_TITLE: Riders of Justice
-:YEAR: 2020
 :AI_NOTES: 2020 Anders Thomas Jensen Danish dark comedy with Mads Mikkelsen about revenge conspiracy - distinctive violent tragicomedy
 :YEAR: 2020
 :RUNTIME: 116
@@ -151542,7 +151044,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Tombstone
 :AI_TITLE: Tombstone
-:YEAR: 1993
 :AI_NOTES: 1993 George P. Cosmatos Western about Wyatt Earp and OK Corral - distinctive revisionist Western
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 1993
@@ -151582,7 +151083,6 @@
 :SUGGESTED_SEARCH: Top of the Lake
 :TMDB_ID: 46562
 :AI_TITLE: Top of the Lake
-:YEAR: 2013
 :AI_NOTES: 2013 Jane Campion/Garth Davis New Zealand crime miniseries with Elisabeth Moss investigating missing girl - distinctive atmospheric mystery
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2010
@@ -151651,7 +151151,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Traitor 2008
 :AI_TITLE: Traitor
-:YEAR: 2008
 :AI_NOTES: 2008 Jeffrey Nachmanoff spy thriller with Don Cheadle as undercover operative - distinctive terrorism infiltration drama
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2008
@@ -151681,7 +151180,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Transfer 2010
 :AI_TITLE: Transfer
-:YEAR: 2010
 :AI_NOTES: 2010 Damir Lukacevic German sci-fi about consciousness transfer to younger bodies - distinctive aging allegory
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2010
@@ -151711,7 +151209,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Transit 2012
 :AI_TITLE: Transit
-:YEAR: 2012
 :AI_NOTES: 2012 Antonio Negret thriller with Jim Caviezel about road trip turning deadly - distinctive cat-and-mouse chase
 :MANUALLY_CHECKED_BY_AI: true
 :YEAR: 2012
@@ -151738,7 +151235,6 @@
 :SUGGESTED_SEARCH: Ófærð
 :TMDB_ID: 63141
 :AI_TITLE: Ófærð
-:YEAR: 2015
 :AI_NOTES: 2015 Icelandic crime series about small town murder investigation in isolated setting - distinctive Nordic noir
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2011
@@ -151765,7 +151261,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Tree 2010
 :AI_TITLE: The Tree
-:YEAR: 2010
 :AI_NOTES: 2010 Julie Bertuccelli Australian-French drama with Charlotte Gainsbourg about family grieving through connection to tree - distinctive magical realist family portrait
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2010
@@ -151878,7 +151373,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Tucker Man Dream
 :AI_TITLE: Tucker: The Man and His Dream
-:YEAR: 1988
 :AI_NOTES: 1988 Francis Ford Coppola biographical drama about innovative car designer Preston Tucker - distinctive American dream allegory
 :YEAR: 1988
 :RUNTIME: 111
@@ -151908,7 +151402,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Door in the Floor
 :AI_TITLE: The Door in the Floor
-:YEAR: 2004
 :AI_NOTES: 2004 Tod Williams drama with Jeff Bridges based on John Irving novel - distinctive literary adaptation about grief
 :YEAR: 2004
 :RUNTIME: 111
@@ -151938,7 +151431,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Tür 2009
 :AI_TITLE: Die Tür
-:YEAR: 2009
 :AI_NOTES: 2009 Anno Saul German thriller about parallel reality - distinctive time-slip mystery
 :YEAR: 2009
 :RUNTIME: 103
@@ -151968,7 +151460,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Turm 2012
 :AI_TITLE: Der Turm
-:YEAR: 2012
 :AI_NOTES: 2012 Christian Schwochow German TV miniseries about GDR intellectual family in 1980s - distinctive Wende-era drama based on Uwe Tellkamp novel
 :YEAR: 2007
 :RUNTIME: 93
@@ -151998,7 +151489,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Twentynine Palms
 :AI_TITLE: Twentynine Palms
-:YEAR: 2003
 :AI_NOTES: 2003 Bruno Dumont minimalist thriller set in California desert - distinctive slow-burn violence
 :YEAR: 2003
 :RUNTIME: 114
@@ -152024,7 +151514,6 @@
 :SUGGESTED_SEARCH: Run Silent Run Deep
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Run Silent, Run Deep
-:YEAR: 1958
 :AI_NOTES: 1958 Robert Wise submarine warfare drama with Clark Gable, Burt Lancaster - distinctive WWII Pacific theater tension
 :TMDB_ID: 18784
 :TMDB_TITLE: U 23 - Haie im Pazifik
@@ -152081,7 +151570,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Rabid Cronenberg
 :AI_TITLE: Rabid
-:YEAR: 1977
 :AI_NOTES: 1977 David Cronenberg body horror about surgical patient spreading rage-virus - distinctive early Cronenberg
 :YEAR: 1977
 :RUNTIME: 87
@@ -152111,7 +151599,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Überläufer 2020
 :AI_TITLE: Der Überläufer
-:YEAR: 2020
 :AI_NOTES: 2020 German TV miniseries about Wehrmacht soldier desertion in WWII - distinctive anti-war drama
 :YEAR: 1989
 :RUNTIME: 96
@@ -152141,7 +151628,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Translator 2020 Syria
 :AI_TITLE: The Translator
-:YEAR: 2020
 :AI_NOTES: 2020 Rana Kazkaz/Anas Khalaf Syrian refugee documentary about translator - distinctive exile portrait
 :YEAR: 2021
 :RUNTIME: 105
@@ -152171,7 +151657,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: In der Überzahl
 :AI_TITLE: In der Überzahl
-:YEAR: 2013
 :AI_NOTES: 2013 German TV drama about football hooliganism - distinctive sports violence study
 :YEAR: 2013
 :RUNTIME: 65
@@ -152201,7 +151686,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Das Boot
 :AI_TITLE: Das Boot
-:YEAR: 1981
 :AI_NOTES: 1981 Wolfgang Petersen WWII submarine epic - masterpiece of claustrophobic war film, distinctive German perspective
 :YEAR: 1981
 :RUNTIME: 150
@@ -152227,7 +151711,6 @@
 :SUGGESTED_SEARCH: unabsichtliche Entführung Elfriede Ott
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Die unabsichtliche Entführung der Frau Elfriede Ott
-:YEAR: 2010
 :AI_NOTES: 2010 Andreas Prochaska Austrian comedy about accidental kidnapping - distinctive quirky Austrian humor
 :TMDB_ID: 59255
 :TMDB_TITLE: Die unabsichtliche Entführung der Frau Elfriede Ott
@@ -152259,7 +151742,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Man Who Wasn't There
 :AI_TITLE: The Man Who Wasn't There
-:YEAR: 2001
 :AI_NOTES: 2001 Coen Brothers neo-noir with Billy Bob Thornton as passive barber - distinctive black-and-white existential crime
 :YEAR: 2001
 :RUNTIME: 116
@@ -152315,7 +151797,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Lerd
 :AI_TITLE: Lerd
-:YEAR: 2017
 :AI_NOTES: 2017 Mohammad Rasoulof Iranian drama about farmer fighting corruption - Cannes Un Certain Regard winner, distinctive social critique
 :YEAR: 2017
 :RUNTIME: 118
@@ -152367,7 +151848,6 @@
 :SUGGESTED_SEARCH: einer auf öffnet Fenster
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Und dann steht einer auf und öffnet das Fenster
-:YEAR: 2022
 :AI_NOTES: 2022 Til Schweiger German drama based on Dirk Kurbjuweit novel about school shooting - distinctive contemporary social issue film
 :TMDB_ID: 982389
 :TMDB_TITLE: Und dann steht einer auf und öffnet das Fenster
@@ -152399,7 +151879,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: 36 Quai Orfèvres
 :AI_TITLE: 36 Quai des Orfèvres
-:YEAR: 2004
 :AI_NOTES: 2004 Olivier Marchal French police thriller with Daniel Auteuil, Gérard Depardieu - distinctive gritty Paris cop drama
 :YEAR: 2004
 :RUNTIME: 110
@@ -152429,7 +151908,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Another Happy Day
 :AI_TITLE: Another Happy Day
-:YEAR: 2011
 :AI_NOTES: 2011 Sam Levinson family dysfunction drama with Ellen Barkin - distinctive dysfunctional family portrait
 :YEAR: 2011
 :RUNTIME: 119
@@ -152459,7 +151937,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Emmas Glück
 :AI_TITLE: Emmas Glück
-:YEAR: 2006
 :AI_NOTES: 2006 Sven Taddicken German romantic comedy about kidnapped woman falling for captor - distinctive unconventional romance
 :YEAR: 2006
 :RUNTIME: 99
@@ -152537,7 +152014,6 @@
 :SUGGESTED_SEARCH: Unsere wunderbaren Jahre
 :TMDB_ID: 121803
 :AI_TITLE: Unsere wunderbaren Jahre
-:YEAR: 2020
 :AI_NOTES: 2020 German TV miniseries about post-WWII family saga in Rhineland - distinctive multi-generational historical drama
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2012
@@ -152616,7 +152092,6 @@
 :SUGGESTED_SEARCH: Unterleuten
 :TMDB_ID: 494027
 :AI_TITLE: Unterleuten
-:YEAR: 2020
 :AI_NOTES: 2020 German TV miniseries based on Juli Zeh novel about village conflicts - distinctive contemporary rural drama
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 1993
@@ -152775,7 +152250,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Vatertag 2012
 :AI_TITLE: Vatertag
-:YEAR: 2012
 :AI_NOTES: 2012 Harald Sicheritz Austrian comedy about surprise fatherhood - distinctive feel-good family comedy
 :YEAR: 2012
 :RUNTIME: 93
@@ -152805,7 +152279,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Vaya con Dios
 :AI_TITLE: Vaya con Dios
-:YEAR: 2002
 :AI_NOTES: 2002 Zoltan Spirandelli German comedy about monks on road trip - distinctive religious buddy comedy
 :YEAR: 2002
 :RUNTIME: 106
@@ -152835,7 +152308,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Venus Talking
 :AI_TITLE: Venus Talking
-:YEAR: 2001
 :AI_NOTES: 2001 Rudolf Thome German romantic drama about online dating - distinctive early internet romance
 :YEAR: 2001
 :RUNTIME: 95
@@ -152863,7 +152335,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Kakushi-ken oni no tsume
 :AI_TITLE: Kakushi-ken oni no tsume
-:YEAR: 2004
 :AI_NOTES: 2004 Yoji Yamada Japanese samurai drama about secret sword technique - distinctive period character study
 :YEAR: 2004
 :RUNTIME: 132
@@ -152997,7 +152468,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Vinyan
 :AI_TITLE: Vinyan
-:YEAR: 2008
 :AI_NOTES: 2008 Fabrice Du Welz Belgian horror with Emmanuelle Béart searching for son in Burma jungle - distinctive psychological horror
 :YEAR: 2008
 :RUNTIME: 96
@@ -153078,7 +152548,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Fool for Love
 :AI_TITLE: Fool for Love
-:YEAR: 1985
 :AI_NOTES: 1985 Robert Altman adaptation of Sam Shepard play about toxic lovers - distinctive theatrical chamber piece
 :YEAR: 1985
 :RUNTIME: 103
@@ -153212,7 +152681,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Vertrau mir 2015
 :AI_TITLE: Vertrau mir
-:YEAR: 2015
 :AI_NOTES: 2015 German psychological thriller - distinctive trust manipulation drama
 :YEAR: 2014
 :RUNTIME: 98
@@ -153251,7 +152719,6 @@
 :SUGGESTED_SEARCH: Victoria 2015
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Victoria
-:YEAR: 2015
 :AI_NOTES: 2015 Sebastian Schipper German thriller shot in single continuous take about bank heist - distinctive real-time technical achievement
 :TMDB_ID: 320007
 :TMDB_TITLE: Victoria
@@ -153305,7 +152772,6 @@
 :SUGGESTED_SEARCH: quattro volte
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Le quattro volte
-:YEAR: 2010
 :AI_NOTES: 2010 Michelangelo Frammartino Italian slow cinema about cycles of life - distinctive contemplative visual poem
 :TMDB_ID: 57389
 :TMDB_TITLE: Vier Leben
@@ -153456,7 +152922,6 @@
 :AI_TITLE: The Sea of Trees
 :AI_NOTES: 2015 Gus Van Sant drama about suicide forest Aokigahara - distinctive contemplative tragedy
 :MANUALLY_CHECKED_BY_AI: true
-:YEAR: 2015
 :TMDB_ID: 291351
 :TMDB_TITLE: The Sea of Trees
 :YEAR: 2016
@@ -153486,7 +152951,6 @@
 :MANUAL_REVIEW_NEEDED: true
 :SUGGESTED_SEARCH: Tod in den Wäldern
 :AI_TITLE: Tod in den Wäldern
-:YEAR: 2024
 :AI_NOTES: 2024 German TV two-part thriller about forest murders - distinctive regional crime drama
 :MANUALLY_CHECKED_BY_AI: false
 :YEAR: 2020
@@ -153517,7 +152981,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: qu'il faut pour vivre
 :AI_TITLE: Ce qu'il faut pour vivre
-:YEAR: 2008
 :AI_NOTES: 2008 Benoît Pilon Canadian-French drama about Inuit tuberculosis patient - distinctive indigenous story
 :YEAR: 2008
 :RUNTIME: 102
@@ -153547,7 +153010,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: What Happened Monday
 :AI_TITLE: What Happened to Monday
-:YEAR: 2017
 :AI_NOTES: 2017 Tommy Wirkola sci-fi thriller with Noomi Rapace as seven identical sisters - distinctive one-child policy dystopia
 :YEAR: 2017
 :RUNTIME: 123
@@ -153573,7 +153035,6 @@
 :SUGGESTED_SEARCH: Ras vkhedavt
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Ras vkhedavt, rodesac cas vukurebt?
-:YEAR: 2021
 :AI_NOTES: 2021 Alexandre Koberidze Georgian magical realist romance - distinctive whimsical Tbilisi tale
 :TMDB_ID: 795815
 :TMDB_TITLE: Was sehen wir, wenn wir zum Himmel schauen?
@@ -153605,7 +153066,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Jean de Florette
 :AI_TITLE: Jean de Florette
-:YEAR: 1986
 :AI_NOTES: 1986 Claude Berri French rural drama with Gérard Depardieu - first part of Pagnol diptych with Manon des Sources
 :YEAR: 1986
 :RUNTIME: 120
@@ -153674,7 +153134,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Sur le chemin 2023
 :AI_TITLE: Sur le chemin
-:YEAR: 2023
 :AI_NOTES: 2023 French road movie - distinctive contemporary journey film
 :YEAR: 1964
 :RUNTIME: 91
@@ -153782,7 +153241,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Fehér isten
 :AI_TITLE: Fehér isten
-:YEAR: 2014
 :AI_NOTES: 2014 Kornél Mundruczó Hungarian allegory about abandoned dog rebellion - Cannes Un Certain Regard winner, distinctive animal uprising
 :YEAR: 2014
 :RUNTIME: 121
@@ -153864,7 +153322,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Welcome 2009
 :AI_TITLE: Welcome
-:YEAR: 2009
 :AI_NOTES: 2009 Philippe Lioret French drama about Kurdish refugee swimming to England - distinctive immigration story
 :YEAR: 2009
 :RUNTIME: 104
@@ -153920,7 +153377,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Welt ist noch zu retten
 :AI_TITLE: Die Welt ist noch zu retten
-:YEAR: 2018
 :AI_NOTES: 2018 German comedy about environmental activism - distinctive eco-comedy
 :YEAR: 2014
 :RUNTIME: 105
@@ -153950,7 +153406,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zaytoun
 :AI_TITLE: Zaytoun
-:YEAR: 2012
 :AI_NOTES: 2012 Eran Riklis drama about Israeli pilot and Palestinian boy during 1982 Lebanon War - distinctive unlikely friendship
 :YEAR: 2012
 :RUNTIME: 110
@@ -153989,7 +153444,6 @@
 :SUGGESTED_SEARCH: Postman Always Rings Twice
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: The Postman Always Rings Twice
-:YEAR: 1946
 :AI_NOTES: 1946 Tay Garnett noir with Lana Turner, John Garfield about fatal attraction - distinctive James M. Cain adaptation
 :TMDB_ID: 25736
 :TMDB_TITLE: Im Netz der Leidenschaften
@@ -154021,7 +153475,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Ride with Devil
 :AI_TITLE: Ride with the Devil
-:YEAR: 1999
 :AI_NOTES: 1999 Ang Lee Civil War Western about Missouri border conflict - distinctive revisionist guerrilla war film
 :YEAR: 1999
 :RUNTIME: 138
@@ -154077,7 +153530,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Westfront 1918
 :AI_TITLE: Westfront 1918
-:YEAR: 1930
 :AI_NOTES: 1930 G.W. Pabst WWI film about German soldiers - distinctive early anti-war sound film
 :YEAR: 1930
 :RUNTIME: 97
@@ -154107,7 +153559,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: West of Liberty
 :AI_TITLE: West of Liberty
-:YEAR: 2019
 :AI_NOTES: 2019 German-Swedish-Moroccan TV miniseries - distinctive international co-production
 :YEAR: 1979
 :RUNTIME: 116
@@ -154133,7 +153584,6 @@
 :SUGGESTED_SEARCH: Scalphunters
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: The Scalphunters
-:YEAR: 1968
 :AI_NOTES: 1968 Sydney Pollack Western comedy with Burt Lancaster - distinctive racial satire
 :TMDB_ID: 32068
 :TMDB_TITLE: Mit eisernen Fäusten
@@ -154380,7 +153830,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Seitengänge Harlan
 :AI_TITLE: Seitengänge
-:YEAR: 1976
 :AI_NOTES: 1976 Thomas Harlan experimental German political film - distinctive avant-garde cinema
 :YEAR: 2012
 :RUNTIME: 101
@@ -154423,7 +153872,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Sauvage 2018
 :AI_TITLE: Sauvage
-:YEAR: 2018
 :AI_NOTES: 2018 Camille Vidal-Naquet French drama about male prostitute - distinctive raw social realism
 :YEAR: 1998
 :RUNTIME: 90
@@ -154453,7 +153901,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Wild Target
 :AI_TITLE: Wild Target
-:YEAR: 2010
 :AI_NOTES: 2010 Jonathan Lynn British comedy with Bill Nighy as hitman - distinctive assassin rom-com
 :YEAR: 2010
 :RUNTIME: 98
@@ -154483,7 +153930,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Wilhelm Tell 1960
 :AI_TITLE: Wilhelm Tell
-:YEAR: 1960
 :AI_NOTES: 1960 Michel Dickoff Swiss historical epic about legendary hero - distinctive Swiss national film
 :YEAR: 1960
 :RUNTIME: 93
@@ -154512,7 +153958,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Wind River
 :AI_TITLE: Wind River
-:YEAR: 2017
 :AI_NOTES: 2017 Taylor Sheridan thriller about murder on Wyoming reservation - distinctive Native American crime drama
 :YEAR: 2017
 :RUNTIME: 110
@@ -154551,7 +153996,6 @@
 :SUGGESTED_SEARCH: Winterherz
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Winterherz: Tod in einer kalten Nacht
-:YEAR: 2018
 :AI_NOTES: 2018 German TV thriller about winter murder - distinctive crime mystery
 :TMDB_ID: 512903
 :TMDB_TITLE: Winterherz: Tod in einer kalten Nacht
@@ -154583,7 +154027,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: garçons Guillaume table
 :AI_TITLE: Les garçons et Guillaume, à table!
-:YEAR: 2013
 :AI_NOTES: 2013 Guillaume Gallienne French comedy about gay identity - César winner, distinctive autobiographical coming-of-age
 :YEAR: 2013
 :RUNTIME: 85
@@ -154613,7 +154056,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Wir haben einen Deal
 :AI_TITLE: Wir haben einen Deal
-:YEAR: 2022
 :AI_NOTES: 2022 German satirical documentary about climate negotiations - distinctive political satire
 :YEAR: 2013
 :RUNTIME: 112
@@ -154669,7 +154111,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Cartas da Guerra
 :AI_TITLE: Cartas da Guerra
-:YEAR: 2016
 :AI_NOTES: 2016 Ivo M. Ferreira Portuguese drama about colonial war letters - distinctive epistolary war film
 :YEAR: 2016
 :RUNTIME: 105
@@ -154719,7 +154160,6 @@
 :SUGGESTED_SEARCH: sind dann wohl Angehörigen
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Wir sind dann wohl die Angehörigen
-:YEAR: 2022
 :AI_NOTES: 2022 Hans-Christian Schmid German documentary about Reemtsma kidnapping aftermath - distinctive true crime family portrait
 :TMDB_ID: 915983
 :TMDB_TITLE: Wir sind dann wohl die Angehörigen
@@ -154764,7 +154204,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Cloud Atlas
 :AI_TITLE: Cloud Atlas
-:YEAR: 2012
 :AI_NOTES: 2012 Wachowskis/Tom Tykwer epic with interconnected stories across time - distinctive ambitious multi-narrative
 :YEAR: 2012
 :RUNTIME: 172
@@ -154807,7 +154246,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Wuff
 :AI_TITLE: Wuff
-:YEAR: 2018
 :AI_NOTES: 2018 Detlev Buck German comedy about dog detective - distinctive absurdist animal comedy
 :YEAR: 2018
 :RUNTIME: 114
@@ -154836,7 +154274,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Mistérios de Lisboa
 :AI_TITLE: Mistérios de Lisboa
-:YEAR: 2010
 :AI_NOTES: 2010 Raúl Ruiz Portuguese epic miniseries - distinctive labyrinthine 19th century narrative
 :YEAR: 2010
 :RUNTIME: 266
@@ -154862,7 +154299,6 @@
 :SUGGESTED_SEARCH: Wiplala
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Wiplala
-:YEAR: 2014
 :AI_NOTES: 2014 Dutch children's fantasy about tiny man - distinctive European family film
 :TMDB_ID: 297963
 :TMDB_TITLE: Der wunderbare Wiplala
@@ -154920,7 +154356,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Yakari 2020
 :AI_TITLE: Yakari
-:YEAR: 2020
 :AI_NOTES: 2020 Belgian-French-German animated film about Native American boy - distinctive European animation
 :YEAR: 2020
 :RUNTIME: 82
@@ -154950,7 +154385,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Yi yi
 :AI_TITLE: Yi yi
-:YEAR: 2000
 :AI_NOTES: 2000 Edward Yang Taiwanese family epic - Cannes Best Director winner, distinctive contemplative masterpiece
 :YEAR: 2000
 :RUNTIME: 173
@@ -154980,7 +154414,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Z 1969
 :AI_TITLE: Z
-:YEAR: 1969
 :AI_NOTES: 1969 Costa-Gavras political thriller about Greek assassination - Oscar winner, distinctive political cinema
 :YEAR: 1969
 :RUNTIME: 127
@@ -155010,7 +154443,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zardoz
 :AI_TITLE: Zardoz
-:YEAR: 1974
 :AI_NOTES: 1974 John Boorman dystopian sci-fi with Sean Connery - distinctive bizarre post-apocalyptic allegory
 :YEAR: 1974
 :RUNTIME: 104
@@ -155062,7 +154494,6 @@
 :SUGGESTED_SEARCH: Ten Canoes
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Ten Canoes
-:YEAR: 2006
 :AI_NOTES: 2006 Rolf de Heer/Peter Djigirr Australian aboriginal tale - distinctive indigenous storytelling in Ganalbingu language
 :TMDB_ID: 14064
 :TMDB_TITLE: 10 Kanus, 150 Speere und 3 Frauen
@@ -155094,7 +154525,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Dom za vešanje
 :AI_TITLE: Dom za vešanje
-:YEAR: 1988
 :AI_NOTES: 1988 Emir Kusturica Palme d'Or winner about Romani boy - distinctive magical realist masterpiece
 :YEAR: 1988
 :RUNTIME: 135
@@ -155124,7 +154554,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Much Loved
 :AI_TITLE: Much Loved
-:YEAR: 2015
 :AI_NOTES: 2015 Nabil Ayouch Moroccan drama about prostitutes in Marrakech - distinctive controversial social realism
 :YEAR: 2015
 :RUNTIME: 108
@@ -155150,7 +154579,6 @@
 :SUGGESTED_SEARCH: Nuit de chien
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Nuit de chien
-:YEAR: 2008
 :AI_NOTES: 2008 Werner Schroeter French-German drama - distinctive late Schroeter work
 :TMDB_ID: 12422
 :TMDB_TITLE: Diese Nacht
@@ -155273,7 +154701,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zur Hölle mit den anderen
 :AI_TITLE: Zur Hölle mit den anderen
-:YEAR: 2017
 :AI_NOTES: 2017 Hannes Stöhr German dark comedy about misanthrope - distinctive cynical character study
 :YEAR: 2017
 :RUNTIME: 99
@@ -155326,7 +154753,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwei Affären noch mehr Kinder
 :AI_TITLE: Zwei Affären und noch mehr Kinder
-:YEAR: 2002
 :AI_NOTES: 2002 German TV romantic comedy - distinctive relationship ensemble
 :YEAR: 2002
 :RUNTIME: 90
@@ -155381,7 +154807,6 @@
 :MANUALLY_CHECKED_BY_AI: false
 :SUGGESTED_SEARCH: Im Zweifel 2015
 :AI_TITLE: Im Zweifel
-:YEAR: 2015
 :AI_NOTES: 2015 German TV drama about legal doubt - distinctive courtroom thriller
 :YEAR: 2017
 :RUNTIME: 116
@@ -155407,7 +154832,6 @@
 :SUGGESTED_SEARCH: Bankiersfrau
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Die Bankiersfrau
-:YEAR: 1980
 :AI_NOTES: 1980 Francis Girod French-German drama with Romy Schneider about banker's wife - distinctive final Schneider role
 :TMDB_ID: 4370
 :TMDB_TITLE: Die Bankiersfrau
@@ -155435,7 +154859,6 @@
 :SUGGESTED_SEARCH: flexible Frau
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: Eine flexible Frau
-:YEAR: 2010
 :AI_NOTES: 2010 Tatjana Turanskyj German drama about woman's identity crisis - distinctive contemporary portrait
 :TMDB_ID: 75045
 :TMDB_TITLE: Eine flexible Frau
@@ -155515,7 +154938,6 @@
 :SUGGESTED_SEARCH: Homme du train
 :MANUALLY_CHECKED_BY_AI: true
 :AI_TITLE: L'Homme du train
-:YEAR: 2002
 :AI_NOTES: 2002 Patrice Leconte French drama about unlikely friendship - distinctive character study with Jean Rochefort
 :TMDB_ID: 22016
 :TMDB_TITLE: Das zweite Leben des Monsieur Manesquier
@@ -155599,7 +155021,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwingli
 :AI_TITLE: Zwingli
-:YEAR: 2019
 :AI_NOTES: 2019 Stefan Haupt Swiss biographical drama about Protestant reformer Huldrych Zwingli - distinctive Swiss Reformation film
 :YEAR: 2019
 :RUNTIME: 129
@@ -155629,7 +155050,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwischen den Jahren
 :AI_TITLE: Zwischen den Jahren
-:YEAR: 2017
 :AI_NOTES: 2017 Lars Kraume German drama about end-of-year family gathering - distinctive ensemble piece
 :YEAR: 2017
 :RUNTIME: 97
@@ -155659,7 +155079,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwischen Welten
 :AI_TITLE: Zwischen Welten
-:YEAR: 2014
 :AI_NOTES: 2014 Feo Aladag German war drama about interpreter in Afghanistan - distinctive modern conflict film
 :YEAR: 2014
 :RUNTIME: 98
@@ -155728,7 +155147,6 @@
 :MANUALLY_CHECKED_BY_AI: true
 :SUGGESTED_SEARCH: Zwölf Winter
 :AI_TITLE: Zwölf Winter
-:YEAR: 2009
 :AI_NOTES: 2009 Sandra Nettelbeck documentary about German competitive cross-country skier Tobias Angerer - distinctive sports documentary
 :YEAR: 2009
 :RUNTIME: 85
