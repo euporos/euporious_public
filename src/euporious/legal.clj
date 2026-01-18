@@ -16,10 +16,9 @@
 
      [:section
       [:h2.text-xl.font-semibold.mb-2 "Kontakt"]
-      [:p "E-Mail: "
-       [:a.text-blue-600.hover:text-blue-800.hover:underline
-        {:href "mailto:services@olivermotz.com"}
-        "services@olivermotz.com"]]]
+      [:p [:a.text-blue-600.hover:text-blue-800.hover:underline
+           {:data-ml "1"}
+           "E-Mail"]]]
 
      [:section
       [:h2.text-xl.font-semibold.mb-2 "Haftungsausschluss"]
@@ -84,10 +83,9 @@
       [:p "Oliver Motz"]
       [:p "Hummelblumenstraße 21"]
       [:p "80995 München"]
-      [:p "E-Mail: "
-       [:a.text-blue-600.hover:text-blue-800.hover:underline
-        {:href "mailto:services@olivermotz.com"}
-        "services@olivermotz.com"]]]]]))
+      [:p [:a.text-blue-600.hover:text-blue-800.hover:underline
+           {:data-ml "1"}
+           "E-Mail"]]]]]))
 
 (def module
   {:routes [["/impressum" {:get impressum-page}]
