@@ -29,15 +29,21 @@
 <head><title>Authorization Complete</title></head>
 <body>
 <p>Authorizing...</p>
+<pre id='debug'></pre>
 <script>
 (function() {
   var token = %s;
   var message = 'authorization:github:success:' + JSON.stringify({token: token, provider: 'github'});
+  var debug = document.getElementById('debug');
+  debug.textContent = 'Token: ' + token.substring(0,10) + '...\\nMessage: ' + message.substring(0,50) + '...\\nOpener: ' + (window.opener ? 'yes' : 'no');
+  console.log('Sending message:', message);
   if (window.opener) {
     window.opener.postMessage(message, '*');
-    window.close();
+    // Temporarily don't close for debugging
+    // window.close();
+    debug.textContent += '\\nMessage sent! Check parent console.';
   } else {
-    document.body.innerHTML = '<p>Authorization successful. You can close this window.</p>';
+    debug.textContent += '\\nNo opener window!';
   }
 })();
 </script>
