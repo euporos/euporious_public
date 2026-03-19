@@ -33,17 +33,31 @@
 <script>
 (function() {
   var token = %s;
-  var message = 'authorization:github:success:' + JSON.stringify({token: token, provider: 'github'});
   var debug = document.getElementById('debug');
-  debug.textContent = 'Token: ' + token.substring(0,10) + '...\\nMessage: ' + message.substring(0,50) + '...\\nOpener: ' + (window.opener ? 'yes' : 'no');
-  console.log('Sending message:', message);
+
+  // Try logging to parent console
+  try {
+    window.opener.console.log('=== OAuth callback received token ===');
+  } catch(e) {
+    debug.textContent += 'Cannot access opener console: ' + e + '\\n';
+  }
+
+  // The message format Decap expects
+  var message = 'authorization:github:success:' + JSON.stringify({token: token, provider: 'github'});
+
+  debug.textContent = 'Token: ' + token.substring(0,10) + '...\\n';
+  debug.textContent += 'Message: ' + message + '\\n';
+  debug.textContent += 'Opener: ' + (window.opener ? 'yes' : 'no') + '\\n';
+  debug.textContent += 'Opener origin: ' + (window.opener ? window.opener.location.origin : 'n/a') + '\\n';
+
   if (window.opener) {
+    // Send to any origin
     window.opener.postMessage(message, '*');
-    // Temporarily don't close for debugging
-    // window.close();
-    debug.textContent += '\\nMessage sent! Check parent console.';
-  } else {
-    debug.textContent += '\\nNo opener window!';
+    debug.textContent += 'postMessage sent with *\\n';
+
+    // Also try sending to specific origin
+    window.opener.postMessage(message, window.opener.location.origin);
+    debug.textContent += 'postMessage sent to ' + window.opener.location.origin + '\\n';
   }
 })();
 </script>
