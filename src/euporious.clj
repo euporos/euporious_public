@@ -6,6 +6,7 @@
             [com.biffweb.experimental :as biffx]
             [com.biffweb.experimental.auth :as biff-auth]
             [euporious.app :as app]
+            [euporious.decap-sites :as decap-sites]
             [euporious.email :as email]
             [euporious.home :as home]
             [euporious.legal :as legal]
@@ -38,7 +39,8 @@
 ;; Shared modules available on all sites
 (def shared-modules
   [legal/module
-   schema/module])
+   schema/module
+   decap-sites/module])
 
 ;; Site-specific modules (with shared modules already concatenated)
 (def site-modules
