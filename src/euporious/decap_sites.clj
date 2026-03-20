@@ -51,13 +51,20 @@
   debug.textContent += 'Opener origin: ' + (window.opener ? window.opener.location.origin : 'n/a') + '\\n';
 
   if (window.opener) {
-    // Send to any origin
+    // Send immediately
     window.opener.postMessage(message, '*');
-    debug.textContent += 'postMessage sent with *\\n';
+    debug.textContent += 'postMessage sent\\n';
 
-    // Also try sending to specific origin
-    window.opener.postMessage(message, window.opener.location.origin);
-    debug.textContent += 'postMessage sent to ' + window.opener.location.origin + '\\n';
+    // Also retry after delays in case of timing issues
+    setTimeout(function() {
+      window.opener.postMessage(message, '*');
+      debug.textContent += 'postMessage sent again (100ms)\\n';
+    }, 100);
+
+    setTimeout(function() {
+      window.opener.postMessage(message, '*');
+      debug.textContent += 'postMessage sent again (500ms)\\n';
+    }, 500);
   }
 })();
 </script>
@@ -93,19 +100,45 @@
 ;; GitHub OAuth Handlers
 ;; =============================================================================
 
+(defn oauth-auth-page
+  "Generate HTML page that sends 'authorizing' handshake then redirects to GitHub."
+  [github-auth-url base-url]
+  (format "<!DOCTYPE html>
+<html>
+<head><title>Authorizing...</title></head>
+<body>
+<p>Redirecting to GitHub...</p>
+<script>
+(function() {
+  // Send 'authorizing' handshake message that Decap expects first
+  if (window.opener) {
+    window.opener.postMessage('authorizing:github', '%s');
+  }
+  // Then redirect to GitHub OAuth
+  window.location.href = '%s';
+})();
+</script>
+</body>
+</html>"
+          base-url
+          github-auth-url))
+
 (defn oauth-auth
-  "Redirect to GitHub OAuth authorization page."
+  "Start GitHub OAuth flow - send handshake message then redirect to GitHub."
   [{:keys [path-params] :as ctx}]
   (let [{:keys [site-id]} path-params
         site-config (get-site ctx site-id)]
     (if-let [client-id (:client-id site-config)]
       (let [callback-url (:callback-url site-config)
-            scope "repo,user"]
-        (response/redirect
-         (str "https://github.com/login/oauth/authorize"
-              "?client_id=" client-id
-              "&redirect_uri=" (java.net.URLEncoder/encode callback-url "UTF-8")
-              "&scope=" scope)))
+            base-url (:base-url site-config)
+            scope "repo,user"
+            github-auth-url (str "https://github.com/login/oauth/authorize"
+                                 "?client_id=" client-id
+                                 "&redirect_uri=" (java.net.URLEncoder/encode callback-url "UTF-8")
+                                 "&scope=" scope)]
+        {:status 200
+         :headers {"Content-Type" "text/html"}
+         :body (oauth-auth-page github-auth-url base-url)})
       {:status 404
        :headers {"Content-Type" "application/json"}
        :body "{\"error\":\"Site not found\"}"})))
