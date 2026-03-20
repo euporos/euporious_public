@@ -5,8 +5,11 @@
    GitHub OAuth credentials. Routes use site-id path parameter."
   (:require [clj-http.client :as http]
             [clojure.tools.logging :as log]
+            [clojure.string :as str]
             [ring.util.response :as response]
-            [cheshire.core :as json]))
+            [cheshire.core :as json]
+            [euporious.email :as email]
+            [rum.core :as rum]))
 
 ;; =============================================================================
 ;; Site Configuration
@@ -178,9 +181,74 @@
        :body (oauth-error-page "Site not found")})))
 
 ;; =============================================================================
+;; Contact Form Handler
+;; =============================================================================
+
+;; Rate limiting (in-memory, per IP)
+(def contact-rate-limit (atom {}))
+
+(defn rate-limited?
+  "Check if IP has exceeded max requests per hour. Returns true if limited."
+  [ip max-per-hour]
+  (let [now (System/currentTimeMillis)
+        {:keys [count reset-at] :or {count 0 reset-at 0}} (get @contact-rate-limit ip)]
+    (if (> now reset-at)
+      ;; Reset window
+      (do (swap! contact-rate-limit assoc ip {:count 1 :reset-at (+ now 3600000)})
+          false)
+      (if (>= count max-per-hour)
+        true
+        (do (swap! contact-rate-limit update-in [ip :count] inc)
+            false)))))
+
+(defn contact-handler
+  "Handle contact form submissions with honeypot and rate limiting."
+  [{:keys [path-params params headers] :as ctx}]
+  (let [{:keys [site-id]} path-params
+        {:keys [contact-email site-name]} (get-site ctx site-id)
+        {:keys [name email message bot-field]} params
+        ip (get headers "x-real-ip" "unknown")]
+    (cond
+      ;; Honeypot triggered - fake success to confuse bots
+      (not (str/blank? bot-field))
+      {:status 200
+       :headers {"Content-Type" "application/json"}
+       :body "{\"status\":\"sent\"}"}
+
+      ;; Rate limited (10 per hour per IP)
+      (rate-limited? ip 10)
+      {:status 429
+       :headers {"Content-Type" "application/json"}
+       :body "{\"error\":\"rate_limited\"}"}
+
+      ;; Missing required fields
+      (not (and contact-email name email message))
+      {:status 400
+       :headers {"Content-Type" "application/json"}
+       :body "{\"error\":\"missing_fields\"}"}
+
+      ;; Success - send via MailerSend
+      :else
+      (do
+        (email/send-email ctx
+          {:to [{:email contact-email}]
+           :subject (str "[" (or site-name site-id) "] Contact from " name)
+           :reply_to {:email email :name name}
+           :text (str "From: " name " <" email ">\n\n" message)
+           :html (rum/render-static-markup
+                   [:html [:body
+                           [:p [:strong "From: "] name " <" email ">"]
+                           [:hr]
+                           [:p message]]])})
+        {:status 200
+         :headers {"Content-Type" "application/json"}
+         :body "{\"status\":\"sent\"}"}))))
+
+;; =============================================================================
 ;; Module Definition
 ;; =============================================================================
 
 (def module
   {:api-routes [["/api/decap/:site-id/oauth/auth" {:get oauth-auth}]
-                ["/api/decap/:site-id/oauth/callback" {:get oauth-callback}]]})
+                ["/api/decap/:site-id/oauth/callback" {:get oauth-callback}]
+                ["/api/decap/:site-id/contact" {:post contact-handler}]]})
