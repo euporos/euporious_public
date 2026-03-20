@@ -74,8 +74,7 @@
    :base-url "https://poleshook.olivermotz.net"
    :callback-url "https://poleshook.olivermotz.net/api/oauth/callback"
    :client-id #biff/env DECAP_POLESHOOK_CLIENT_ID
-   :client-secret-key :decap-poleshook/client-secret
-   :contact-email "technical@olivermotz.com"}}
+   :client-secret-key :decap-poleshook/client-secret}}
 
  ;; Decap site secrets (looked up by :client-secret-key from site config)
  :decap-poleshook/client-secret #biff/secret DECAP_POLESHOOK_CLIENT_SECRET
