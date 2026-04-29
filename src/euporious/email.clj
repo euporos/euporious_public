@@ -49,10 +49,30 @@
                 "Dieser Code läuft in drei Minuten ab. Falls Sie diesen Code nicht angefordert haben, "
                 "können Sie diese E-Mail ignorieren.")}))
 
+(defn incoming-secret [{:keys [to url label]}]
+  {:to [{:email to}]
+   :subject (str "Neues eingegangenes Secret" (when label (str ": " label)))
+   :html (rum/render-static-markup
+          [:html
+           [:body
+            [:p "Es wurde ein neues One-Time Secret an Sie übermittelt"
+             (when label [:span " (Label: " label ")"]) "."]
+            [:p [:a {:href url :target "_blank"} "Hier klicken, um das Secret einmalig anzuzeigen."]]
+            [:p "Sie müssen bei " settings/app-name " angemeldet sein, um das Secret abzurufen. "
+             "Der Link wird nach einmaligem Aufruf zerstört und läuft spätestens in 2 Stunden ab."]]])
+   :text (str "Es wurde ein neues One-Time Secret an Sie übermittelt"
+              (when label (str " (Label: " label ")")) ".\n"
+              "\n"
+              url "\n"
+              "\n"
+              "Sie müssen bei " settings/app-name " angemeldet sein, um das Secret abzurufen. "
+              "Der Link wird nach einmaligem Aufruf zerstört und läuft spätestens in 2 Stunden ab.")})
+
 (defn template [k opts]
   ((case k
      :signin-link signin-link
-     :signin-code signin-code)
+     :signin-code signin-code
+     :incoming-secret incoming-secret)
    opts))
 
 (defn send-mailersend [{:keys [biff/secret mailersend/from mailersend/reply-to]} form-params]
