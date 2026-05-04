@@ -12,8 +12,8 @@
 
 (defn set-foo [{:keys [session params] :as ctx}]
   (biffx/submit-tx ctx
-    [[:patch-docs :user {:xt/id (:uid session)
-                         :user/foo (:foo params)}]])
+                   [[:patch-docs :user {:xt/id (:uid session)
+                                        :user/foo (:foo params)}]])
   {:status 303
    :headers {"location" "/app"}})
 
@@ -34,7 +34,7 @@
 
 (defn set-bar [{:keys [session params] :as ctx}]
   (time (biffx/submit-tx ctx
-    [[:patch-docs :user {:xt/id (:uid session) :user/bar (:bar params)}]]))
+                         [[:patch-docs :user {:xt/id (:uid session) :user/bar (:bar params)}]]))
   (biff/render (bar-form {:value (:bar params)})))
 
 (defn message [{:msg/keys [content sent-at]}]
@@ -53,10 +53,10 @@
 (defn send-message [{:keys [session] :as ctx} {:keys [text]}]
   (let [{:keys [content]} (cheshire/parse-string text true)]
     (biffx/submit-tx ctx
-      [[:put-docs :msg {:xt/id (random-uuid)
-                        :msg/user (:uid session)
-                        :msg/content content
-                        :msg/sent-at (tick/zoned-date-time)}]])))
+                     [[:put-docs :msg {:xt/id (random-uuid)
+                                       :msg/user (:uid session)
+                                       :msg/content content
+                                       :msg/sent-at (tick/zoned-date-time)}]])))
 
 (defn chat [{:keys [biff/conn]}]
   (let [messages (biffx/q conn
@@ -103,6 +103,8 @@
      [:.h-6]
      [:div
       [:a.link {:href "/ots/new"} "Create a one-time secret"]]
+     [:div
+      [:a.link {:href "/ots/request/new"} "Request a one-time secret"]]
      [:.h-6]
      (biff/form
       {:action "/app/set-foo"}
