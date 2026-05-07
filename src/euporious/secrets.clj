@@ -55,7 +55,7 @@
         (when signed-in?
           [:a.btn.btn-secondary.btn-lg {:href "/ots/request/new"} "Neue Anfrage erstellen"])]
        [:div.text-sm.text-gray-500
-        [:p "Secrets werden nach 2 Stunden gelöscht"]
+        [:p "Secrets werden nach 16 Stunden gelöscht"]
         [:p "Jedes Secret kann nur einmal abgerufen werden"]]]])))
 
 (defn new-secret-page [{:keys [session] :as ctx}]
@@ -64,7 +64,7 @@
    [:div.max-w-2xl.mx-auto.p-6
     [:h1.text-3xl.font-bold.mb-6 "Create One-Time Secret"]
     [:p.mb-4.text-gray-600
-     "Create a secret that can be retrieved only once. The secret will expire in 2 hours."]
+     "Create a secret that can be retrieved only once. The secret will expire in 16 hours."]
     (biff/form
      {:action "/ots/new" :method "POST"}
      [:div.form-control.w-full.mb-4
@@ -80,7 +80,7 @@
   (let [secret-value (:secret params)
         secret-id (str (UUID/randomUUID))
         now (java.time.Instant/now)
-        expires-at (.plusSeconds now 7200)] ;; 2 hours
+        expires-at (.plusSeconds now (* 16 3600))] ;; 16 hours
     (swap! secrets assoc secret-id
            {:value secret-value
             :created-at now
@@ -105,7 +105,7 @@
          {:onclick "navigator.clipboard.writeText(this.previousElementSibling.querySelector('input').value)"}
          "Copy to Clipboard"]
         [:p.text-sm.text-gray-600.mb-4
-         "This link will expire in 2 hours and can only be viewed once."]
+         "This link will expire in 16 hours and can only be viewed once."]
         [:a.btn.btn-primary {:href "/ots/new"} "Create Another Secret"]]))))
 
 (defn retrieve-secret-confirmation [{:keys [path-params reitit.core/match reitit.core/router] :as ctx}]
@@ -290,7 +290,7 @@
               (request-not-found-page))
           (let [secret-value (:secret params)
                 secret-id (str (UUID/randomUUID))
-                expires-at (.plusSeconds now 7200)
+                expires-at (.plusSeconds now (* 16 3600))
                 inbox-path (-> (reitit/match-by-name router ::inbox-retrieve-secret {:uuid secret-id})
                                :path)
                 inbox-link (str (base-url ctx) inbox-path)]
