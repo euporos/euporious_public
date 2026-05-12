@@ -64,6 +64,7 @@
     setTimeout(function() {
       window.opener.postMessage(message, '*');
       debug.textContent += 'postMessage sent again (500ms)\\n';
+      window.close();
     }, 500);
   }
 })();

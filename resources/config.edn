@@ -71,8 +71,8 @@
  :decap/sites
  {:poleshook
   {:site-name "Oksana Poleshook"
-   :base-url "https://poleshook.olivermotz.net"
-   :callback-url "https://poleshook.olivermotz.net/api/oauth/callback"
+   :base-url "https://poleshook.com"
+   :callback-url "https://poleshook.com/api/oauth/callback"
    :client-id #biff/env DECAP_POLESHOOK_CLIENT_ID
    :client-secret-key :decap-poleshook/client-secret}}
 
