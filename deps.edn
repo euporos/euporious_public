@@ -4,9 +4,17 @@
                                           com.xtdb/xtdb-jdbc
                                           com.xtdb/xtdb-rocksdb
                                           org.postgresql/postgresql]}
-        com.xtdb/xtdb-api   {:mvn/version "2.x-SNAPSHOT"}
-        com.xtdb/xtdb-aws   {:mvn/version "2.x-SNAPSHOT"}
-        com.xtdb/xtdb-core  {:mvn/version "2.x-SNAPSHOT"}
+        ;; Pinned to a dated snapshot on purpose: a floating "2.x-SNAPSHOT"
+        ;; makes every deploy re-resolve to whatever XTDB published last, which
+        ;; broke prod once already (see CLAUDE.md, "XTDB snapshot pin").
+        com.xtdb/xtdb-api   {:mvn/version "2.x-20260713.123245-1"}
+        com.xtdb/xtdb-aws   {:mvn/version "2.x-20260713.123245-1"}
+        ;; xtdb-core drags in ring-jetty9-adapter, whose jetty-server 12.1.7
+        ;; supersedes the 12.1.0 that Biff's ring/ring-jetty-adapter needs; the
+        ;; ee9 shim jars stay at 12.1.0 and every request then dies with
+        ;; NoSuchFieldError HttpStream.CONTENT_NOT_CONSUMED.
+        com.xtdb/xtdb-core  {:mvn/version "2.x-20260713.123245-1"
+                             :exclusions [info.sunng/ring-jetty9-adapter]}
         com.zaxxer/HikariCP {:mvn/version "7.0.2"}
         cheshire/cheshire   {:mvn/version "6.1.0"}
         metosin/reitit-malli {:mvn/version "0.7.2"}

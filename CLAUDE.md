@@ -50,6 +50,15 @@ There is a hardcoded admin email used as an auth gate in the main namespace; gre
 
 XTDB 2.x is the primary database. Dev uses local storage; prod can be configured for S3 (DigitalOcean Spaces) via `XTDB_STORAGE_*` env vars.
 
+#### XTDB snapshot pin
+
+`com.xtdb/xtdb-{api,aws,core}` are pinned in `deps.edn` to the **dated** snapshot `2.x-20260713.123245-1`, not the floating `2.x-SNAPSHOT`. A floating snapshot means every deploy silently re-resolves to whatever XTDB last published — on 2026-07-30 that jumped ~6 months of snapshots at once and took prod down with a 502:
+
+- the newer snapshot added a `msgpack-core` dependency, and the first `clj -M:dev uberjar` after the version jump died with `ClassNotFoundException: org.msgpack.core.MessageInsufficientBufferException` loading `xtdb/serde.clj`. Re-running dependency resolution (`clj -A:dev -Spath`) fixed it, so the stale classpath cache written during the deploy was the culprit, not the jar — but it left no `target/jar/app.jar`, and the redeploy script started the service anyway.
+- the newer snapshot also pulls `info.sunng/ring-jetty9-adapter`, whose **jetty-server 12.1.7** supersedes the **12.1.0** that Biff's `ring/ring-jetty-adapter 1.15.1` depends on. The `jetty-ee9-*` shim jars stay at 12.1.0, so *every* request logged `NoSuchFieldError: Class org.eclipse.jetty.server.HttpStream does not have member field 'java.lang.Exception CONTENT_NOT_CONSUMED'` and got aborted at completion (pages still rendered — the abort happens after the body is written — so this is easy to miss). Hence the `:exclusions [info.sunng/ring-jetty9-adapter]` on `xtdb-core`: the app runs Biff's own Jetty, never XTDB's HTTP server module.
+
+When bumping XTDB, bump to another dated snapshot and check `clj -A:dev -Stree | grep jetty` stays on a single 12.1.x line.
+
 ### Configuration
 
 `config.env` (gitignored) holds runtime config: `DOMAIN`, `TV_ARCHIV_DOMAIN`, `SECRETS_DOMAIN`, `TMDB_API_KEY`, `MAILERSEND_API_KEY`, `MAILERSEND_FROM`, `RECAPTCHA_SITE_KEY`, `RECAPTCHA_SECRET_KEY`, `COOKIE_SECRET`, `JWT_SECRET`, `NREPL_PORT`, and the optional `XTDB_STORAGE_*` set.
@@ -61,7 +70,7 @@ Production is **not** deployed the standard Biff way (`server-setup.sh` / `clj -
 - `euporious_public.nix` in that repo defines everything: nginx vhosts `ots.olivermotz.net` and `tobys-archiv.de` (ACME/SSL, gzip, `client_max_body_size`) both proxying to `127.0.0.1:5000`, plus the `euporious_public` systemd service running the uberjar from `/home/phylax/projects/euporious_public/target/jar/app.jar` with `BIFF_PROFILE=prod`.
 - Note the prod port is **5000**, not the dev 8080.
 - nginx/system changes ship via `nix run .#deploy` in the server repo — commit **and push** first; the deploy hard-resets the box to `origin/main` and rebuilds there.
-- App code changes: run **`nix run .#deploy-prod`** from this repo. The flake app checks `main` against `origin/main` (offering a `--force-with-lease` push), runs `/etc/nixos/scripts/euporious_public_redeploy.sh` over `ssh vps-2`, then tags the deployed commit `deployed-<UTC timestamp>` and pushes the tag. The server script stops the service, hard-resets the box's checkout (`/home/phylax/projects/euporious_public/euporious_public`) to `origin/main`, builds the uberjar (`nix develop --command clj -M:dev uberjar`), and starts the service again — so there is downtime during the build, and the in-memory OTS secrets are lost on every redeploy.
+- App code changes: run **`nix run .#deploy-prod`** from this repo. The flake app checks `main` against `origin/main` (offering a `--force-with-lease` push), runs `/etc/nixos/scripts/euporious_public_redeploy.sh` over `ssh vps-2`, then tags the deployed commit `deployed-<UTC timestamp>` and pushes the tag. The server script stops the service, hard-resets the box's checkout (`/home/phylax/projects/euporious_public/euporious_public`) to `origin/main`, builds the uberjar (`nix develop --command clj -M:dev uberjar`), and starts the service again — so there is downtime during the build, and the in-memory OTS secrets are lost on every redeploy. The script runs under `set -euo pipefail` and copies the current jar to `/home/phylax/projects/euporious_public/app.jar.prev` before building; a failed build is rolled back to that jar and the script exits non-zero (it used to ignore the build's exit code and restart the service against a jar the `clean` step had just deleted — that is the 502 in "XTDB snapshot pin" above).
 
 ## Python TMDB enrichment scripts
 
