@@ -10,12 +10,85 @@
   (:import [java.util UUID]))
 
 ;; In-memory atoms to store secrets and inbound requests ephemerally.
-;; secrets:         secret-id  -> {:value :created-at :expires-at :admin-only?}
+;; secrets: secret-id -> {:value "..."  ; text secret, XOR
+;;                        :file {:filename :content-type :size :bytes}  ; raw bytes, never on disk
+;;                        :created-at :expires-at :admin-only?}
 ;; secret-requests: request-id -> {:label :created-at :expires-at}
 (defonce secrets (atom {}))
 (defonce secret-requests (atom {}))
 
 (def ^:private admin-email "services@olivermotz.com")
+(def ^:private max-file-bytes mid/max-upload-bytes)
+
+(defn- human-size [n]
+  (cond
+    (< n 1024) (str n " B")
+    (< n (* 1024 1024)) (format "%.1f KiB" (/ n 1024.0))
+    :else (format "%.1f MiB" (/ n 1024.0 1024.0))))
+
+(defn- content-disposition-attachment
+  "Attachment header with an ASCII fallback plus RFC 5987 filename* so
+  non-ASCII names survive; strips characters that could break the header."
+  [filename]
+  (let [safe (str/replace filename #"[\\/\"\r\n]" "_")
+        ascii (str/replace safe #"[^\x20-\x7e]" "_")
+        encoded (-> (java.net.URLEncoder/encode safe "UTF-8")
+                    (str/replace "+" "%20"))]
+    (str "attachment; filename=\"" ascii "\"; filename*=UTF-8''" encoded)))
+
+(def ^:private input-errors
+  {:en {:neither "Please enter a secret or attach a file."
+        :both "Please provide either text or a file, not both."
+        :too-large "The file exceeds the 20 MiB limit."}
+   :de {:neither "Bitte geben Sie ein Secret ein oder hängen Sie eine Datei an."
+        :both "Bitte entweder Text oder eine Datei übermitteln, nicht beides."
+        :too-large "Die Datei überschreitet das Limit von 20 MiB."}})
+
+(defn- extract-secret-input
+  "Returns {:value text} or {:file {...}} on success, {:error msg} otherwise.
+  Browsers send an empty file part when nothing is selected — treated as no file."
+  [params lang]
+  (let [messages (input-errors lang)
+        text (some-> (:secret params) str/trim not-empty)
+        {:keys [filename content-type bytes]} (:file params)
+        file (when (and bytes
+                        (not (str/blank? filename))
+                        (pos? (alength ^bytes bytes)))
+               {:filename filename
+                :content-type (or (not-empty content-type) "application/octet-stream")
+                :size (alength ^bytes bytes)
+                :bytes bytes})]
+    (cond
+      (and file (> (:size file) max-file-bytes)) {:error (:too-large messages)}
+      (and text file) {:error (:both messages)}
+      text {:value text}
+      file {:file file}
+      :else {:error (:neither messages)})))
+
+(defn- upload-script-head []
+  [[:script {:src (ui/static-path "/js/ots-upload.js") :defer true}]])
+
+(defn- secret-form-fields
+  "Textarea + file input + drop zone shared by the outbound and inbound forms.
+  Exactly one of text/file is enforced server-side, so neither field is required."
+  [{:keys [textarea-label textarea-placeholder file-label drop-text error-message]}]
+  (list
+   [:div.form-control.w-full.mb-4
+    [:label.label [:span.label-text textarea-label]]
+    [:textarea.textarea.textarea-bordered.w-full
+     {:name "secret"
+      :rows 5
+      :placeholder textarea-placeholder}]]
+   [:div.form-control.w-full.mb-4
+    [:label.label [:span.label-text file-label]]
+    [:input#ots-file.file-input.file-input-bordered.w-full
+     {:type "file" :name "file"}]
+    [:div#ots-dropzone.border-2.border-dashed.border-base-300.rounded-lg.p-6.mt-2.text-center.text-gray-500
+     {:data-input "ots-file" :data-max-bytes (str max-file-bytes)}
+     drop-text
+     [:div#ots-file-name.font-mono.text-sm.mt-2]]
+    [:p#ots-file-error.text-error.text-sm.mt-2
+     {:hidden true :data-message error-message}]]))
 
 (defn- base-url [ctx]
   (str (name (:scheme ctx))
@@ -58,33 +131,36 @@
         [:p "Secrets werden nach 16 Stunden gelöscht"]
         [:p "Jedes Secret kann nur einmal abgerufen werden"]]]])))
 
-(defn new-secret-page [{:keys [session] :as ctx}]
+(defn- new-secret-form-page [error]
   (ui/page
-   {}
+   {:base/head (upload-script-head)}
    [:div.max-w-2xl.mx-auto.p-6
     [:h1.text-3xl.font-bold.mb-6 "Create One-Time Secret"]
     [:p.mb-4.text-gray-600
      "Create a secret that can be retrieved only once. The secret will expire in 16 hours."]
+    (when error
+      [:div.alert.alert-error.mb-4 [:span error]])
     (biff/form
-     {:action "/ots/new" :method "POST"}
-     [:div.form-control.w-full.mb-4
-      [:label.label [:span.label-text "Secret"]]
-      [:textarea.textarea.textarea-bordered.w-full
-       {:name "secret"
-        :rows 5
-        :required true
-        :placeholder "Enter your secret here..."}]]
+     {:action "/ots/new" :method "POST" :enctype "multipart/form-data"}
+     (secret-form-fields
+      {:textarea-label "Secret"
+       :textarea-placeholder "Enter your secret here, or attach a file below..."
+       :file-label "File (max 20 MiB)"
+       :drop-text "Drag & drop a file here"
+       :error-message (get-in input-errors [:en :too-large])})
      [:button.btn.btn-primary {:type "submit"} "Create Secret Link"])]))
 
-(defn create-secret [{:keys [params reitit.core/router] :as ctx}]
-  (let [secret-value (:secret params)
-        secret-id (str (UUID/randomUUID))
+(defn new-secret-page [_ctx]
+  (new-secret-form-page nil))
+
+(defn- create-secret* [{:keys [reitit.core/router] :as ctx} input]
+  (let [secret-id (str (UUID/randomUUID))
         now (java.time.Instant/now)
         expires-at (.plusSeconds now (* 16 3600))] ;; 16 hours
     (swap! secrets assoc secret-id
-           {:value secret-value
-            :created-at now
-            :expires-at expires-at})
+           (merge input
+                  {:created-at now
+                   :expires-at expires-at}))
     (let [retrieve-path (-> (reitit/match-by-name router ::retrieve-secret {:uuid secret-id})
                             :path)
           secret-link (str (base-url ctx) retrieve-path)]
@@ -108,6 +184,12 @@
          "This link will expire in 16 hours and can only be viewed once."]
         [:a.btn.btn-primary {:href "/ots/new"} "Create Another Secret"]]))))
 
+(defn create-secret [{:keys [params] :as ctx}]
+  (let [input (extract-secret-input params :en)]
+    (if-let [error (:error input)]
+      (new-secret-form-page error)
+      (create-secret* ctx input))))
+
 (defn retrieve-secret-confirmation [{:keys [path-params reitit.core/match reitit.core/router] :as ctx}]
   (let [secret-id (:uuid path-params)
         secret-data (get @secrets secret-id)
@@ -130,13 +212,18 @@
         (if expired?
           (expired-page secret-id)
           (let [reveal-path (-> (reitit/match-by-name router reveal-route {:uuid secret-id})
-                                :path)]
+                                :path)
+                file (:file secret-data)]
             (ui/page
              {}
              [:div.max-w-2xl.mx-auto.p-6
               [:h1.text-3xl.font-bold.mb-6 "View Secret"]
               [:div.alert.alert-warning.mb-4
                [:span "Warning: This secret can only be viewed once!"]]
+              (when file
+                [:p.mb-4
+                 [:strong "File: "] (:filename file)
+                 " (" (human-size (:size file)) ")"])
               [:p.mb-6.text-gray-600
                "Once you click the button below, the secret will be revealed and immediately destroyed. "
                "Make sure you're ready to view it."]
@@ -144,7 +231,32 @@
                {:action reveal-path :method "POST"}
                [:button.btn.btn-primary.btn-lg
                 {:type "submit"}
-                "Reveal Secret"])])))))))
+                (if file "Reveal & Download" "Reveal Secret")])])))))))
+
+(defn- reveal-text-page [secret-value]
+  (ui/page
+   {}
+   [:div.max-w-2xl.mx-auto.p-6
+    [:h1.text-3xl.font-bold.mb-6 "Your Secret"]
+    [:div.alert.alert-info.mb-4
+     [:span "This secret has been destroyed and cannot be viewed again."]]
+    [:div.form-control.w-full.mb-4
+     [:label.label [:span.label-text "Secret content:"]]
+     [:textarea.textarea.textarea-bordered.w-full.font-mono
+      {:readonly true
+       :rows 10
+       :value secret-value}]]
+    [:button.btn.btn-secondary
+     {:onclick "navigator.clipboard.writeText(this.previousElementSibling.querySelector('textarea').value)"}
+     "Copy to Clipboard"]]))
+
+(defn- file-download-response [{:keys [filename content-type size bytes]}]
+  {:status 200
+   :headers {"content-type" (or content-type "application/octet-stream")
+             "content-disposition" (content-disposition-attachment filename)
+             "content-length" (str size)
+             "cache-control" "no-store"}
+   :body bytes})
 
 (defn reveal-secret [{:keys [path-params reitit.core/match]}]
   (let [secret-id (:uuid path-params)
@@ -163,23 +275,12 @@
             expired? (.isAfter now expires-at)]
         (if expired?
           (expired-page secret-id)
-          (let [secret-value (:value secret-data)]
+          (let [{:keys [value file]} secret-data]
+            ;; Destroy first; the bytes/text live on in the local binding.
             (swap! secrets dissoc secret-id)
-            (ui/page
-             {}
-             [:div.max-w-2xl.mx-auto.p-6
-              [:h1.text-3xl.font-bold.mb-6 "Your Secret"]
-              [:div.alert.alert-info.mb-4
-               [:span "This secret has been destroyed and cannot be viewed again."]]
-              [:div.form-control.w-full.mb-4
-               [:label.label [:span.label-text "Secret content:"]]
-               [:textarea.textarea.textarea-bordered.w-full.font-mono
-                {:readonly true
-                 :rows 10
-                 :value secret-value}]]
-              [:button.btn.btn-secondary
-               {:onclick "navigator.clipboard.writeText(this.previousElementSibling.querySelector('textarea').value)"}
-               "Copy to Clipboard"]])))))))
+            (if file
+              (file-download-response file)
+              (reveal-text-page value))))))))
 
 ;; ---------------------------------------------------------------------------
 ;; Inbound: someone sends a secret TO the admin via a one-time request link.
@@ -247,6 +348,30 @@
     [:div.alert.alert-error
      [:span "Diese Anfrage existiert nicht, ist abgelaufen oder wurde bereits verwendet."]]]))
 
+(defn- submit-secret-form-page [request-id request-data error]
+  (ui/page
+   {:base/head (upload-script-head)}
+   [:div.max-w-2xl.mx-auto.p-6
+    [:h1.text-3xl.font-bold.mb-6 "Secret übermitteln"]
+    (when-let [label (:label request-data)]
+      [:p.mb-4 [:strong "Anfrage: "] label])
+    [:p.mb-4.text-gray-600
+     "Geben Sie Ihr Secret unten ein. Es wird verschlüsselt übertragen "
+     "und kann nur einmal vom Empfänger abgerufen werden. Der Empfänger "
+     "wird per E-Mail benachrichtigt."]
+    (when error
+      [:div.alert.alert-error.mb-4 [:span error]])
+    (biff/form
+     {:action (str "/ots/submit/" request-id) :method "POST"
+      :enctype "multipart/form-data"}
+     (secret-form-fields
+      {:textarea-label "Secret"
+       :textarea-placeholder "Geben Sie hier Ihr Secret ein oder hängen Sie unten eine Datei an..."
+       :file-label "Datei (max. 20 MiB)"
+       :drop-text "Datei hierher ziehen"
+       :error-message (get-in input-errors [:de :too-large])})
+     [:button.btn.btn-primary {:type "submit"} "Sicher übermitteln"])]))
+
 (defn submit-secret-page [{:keys [path-params]}]
   (let [request-id (:uuid path-params)
         request-data (get @secret-requests request-id)]
@@ -257,28 +382,35 @@
         (if expired?
           (do (swap! secret-requests dissoc request-id)
               (request-not-found-page))
-          (ui/page
-           {}
-           [:div.max-w-2xl.mx-auto.p-6
-            [:h1.text-3xl.font-bold.mb-6 "Secret übermitteln"]
-            (when-let [label (:label request-data)]
-              [:p.mb-4 [:strong "Anfrage: "] label])
-            [:p.mb-4.text-gray-600
-             "Geben Sie Ihr Secret unten ein. Es wird verschlüsselt übertragen "
-             "und kann nur einmal vom Empfänger abgerufen werden. Der Empfänger "
-             "wird per E-Mail benachrichtigt."]
-            (biff/form
-             {:action (str "/ots/submit/" request-id) :method "POST"}
-             [:div.form-control.w-full.mb-4
-              [:label.label [:span.label-text "Secret"]]
-              [:textarea.textarea.textarea-bordered.w-full
-               {:name "secret"
-                :rows 5
-                :required true
-                :placeholder "Geben Sie hier Ihr Secret ein..."}]]
-             [:button.btn.btn-primary {:type "submit"} "Sicher übermitteln"])]))))))
+          (submit-secret-form-page request-id request-data nil))))))
 
-(defn accept-submitted-secret [{:keys [params path-params reitit.core/router] :as ctx}]
+(defn- accept-submitted-secret* [{:keys [reitit.core/router] :as ctx} request-id request-data input now]
+  (let [secret-id (str (UUID/randomUUID))
+        expires-at (.plusSeconds now (* 16 3600))
+        inbox-path (-> (reitit/match-by-name router ::inbox-retrieve-secret {:uuid secret-id})
+                       :path)
+        inbox-link (str (base-url ctx) inbox-path)]
+    (swap! secrets assoc secret-id
+           (merge input
+                  {:created-at now
+                   :expires-at expires-at
+                   :admin-only? true}))
+    (swap! secret-requests dissoc request-id)
+    (email/send-email ctx
+                      {:template :incoming-secret
+                       :to admin-email
+                       :url inbox-link
+                       :label (:label request-data)})
+    (ui/page
+     {}
+     [:div.max-w-2xl.mx-auto.p-6
+      [:h1.text-3xl.font-bold.mb-6 "Secret übermittelt"]
+      [:div.alert.alert-success.mb-4
+       [:span "Ihr Secret wurde sicher übermittelt. Der Empfänger wurde per E-Mail benachrichtigt."]]
+      [:p.text-sm.text-gray-600
+       "Sie können dieses Fenster jetzt schließen."]])))
+
+(defn accept-submitted-secret [{:keys [params path-params] :as ctx}]
   (let [request-id (:uuid path-params)
         request-data (get @secret-requests request-id)]
     (if (nil? request-data)
@@ -288,34 +420,28 @@
         (if expired?
           (do (swap! secret-requests dissoc request-id)
               (request-not-found-page))
-          (let [secret-value (:secret params)
-                secret-id (str (UUID/randomUUID))
-                expires-at (.plusSeconds now (* 16 3600))
-                inbox-path (-> (reitit/match-by-name router ::inbox-retrieve-secret {:uuid secret-id})
-                               :path)
-                inbox-link (str (base-url ctx) inbox-path)]
-            (swap! secrets assoc secret-id
-                   {:value secret-value
-                    :created-at now
-                    :expires-at expires-at
-                    :admin-only? true})
-            (swap! secret-requests dissoc request-id)
-            (email/send-email ctx
-                              {:template :incoming-secret
-                               :to admin-email
-                               :url inbox-link
-                               :label (:label request-data)})
-            (ui/page
-             {}
-             [:div.max-w-2xl.mx-auto.p-6
-              [:h1.text-3xl.font-bold.mb-6 "Secret übermittelt"]
-              [:div.alert.alert-success.mb-4
-               [:span "Ihr Secret wurde sicher übermittelt. Der Empfänger wurde per E-Mail benachrichtigt."]]
-              [:p.text-sm.text-gray-600
-               "Sie können dieses Fenster jetzt schließen."]])))))))
+          (let [input (extract-secret-input params :de)]
+            (if-let [error (:error input)]
+              (submit-secret-form-page request-id request-data error)
+              (accept-submitted-secret* ctx request-id request-data input now))))))))
+
+(defn purge-expired!
+  "Removes expired entries from both atoms. Expiry is otherwise only enforced
+  lazily on access, which would pin unopened file secrets in memory forever."
+  [_ctx]
+  (let [now (java.time.Instant/now)
+        prune (fn [entries]
+                (reduce-kv (fn [m k {:keys [expires-at] :as v}]
+                             (if (.isAfter now expires-at) m (assoc m k v)))
+                           {} entries))]
+    (swap! secrets prune)
+    (swap! secret-requests prune)))
 
 (def module
-  {:routes [["/" {:get #'secrets-home}]
+  {:tasks [{:task #'purge-expired!
+            :schedule #(iterate (fn [t] (.plusSeconds ^java.time.Instant t 600))
+                                (java.time.Instant/now))}]
+   :routes [["/" {:get #'secrets-home}]
             ["/ots" {:middleware [mid/wrap-signed-in]}
              ["/new" {:get #'new-secret-page
                       :post #'create-secret
