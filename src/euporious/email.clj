@@ -68,21 +68,26 @@
               "Sie müssen bei " settings/app-name " angemeldet sein, um das Secret abzurufen. "
               "Der Link wird nach einmaligem Aufruf zerstört und läuft spätestens in 2 Stunden ab.")})
 
-(defn template [k opts]
-  ((case k
-     :signin-link signin-link
-     :signin-code signin-code
-     :incoming-secret incoming-secret)
+(defn template
+  "A site can override templates with :email-templates {template-key (fn [opts] …)}
+  in its site map (the family site has its own sign-in mails)."
+  [ctx k opts]
+  ((or (get-in ctx [:site :email-templates k])
+       (case k
+         :signin-link signin-link
+         :signin-code signin-code
+         :incoming-secret incoming-secret))
    opts))
 
-(defn send-mailersend [{:keys [biff/secret mailersend/from mailersend/reply-to]} form-params]
-  (let [result (http/post "https://api.mailersend.com/v1/email"
+(defn send-mailersend [{:keys [biff/secret mailersend/from mailersend/reply-to site]} form-params]
+  (let [sender (:name site settings/app-name)
+        result (http/post "https://api.mailersend.com/v1/email"
                           {:oauth-token (secret :mailersend/api-key)
                            :content-type :json
                            :throw-exceptions false
                            :as :json
-                           :form-params (merge {:from {:email from :name settings/app-name}
-                                                :reply_to {:email reply-to :name settings/app-name}}
+                           :form-params (merge {:from {:email from :name sender}
+                                                :reply_to {:email reply-to :name sender}}
                                                form-params)})
         success (< (:status result) 400)]
     (when-not success
@@ -101,10 +106,13 @@
 
 (defn send-email [{:keys [biff/secret recaptcha/site-key] :as ctx} opts]
   (let [form-params (if-some [template-key (:template opts)]
-                      (template template-key opts)
+                      (template ctx template-key opts)
                       opts)]
-    (if (every? some? [(secret :mailersend/api-key)
-                       (secret :recaptcha/secret-key)
-                       site-key])
+    ;; Real mail needs the MailerSend key plus reCAPTCHA configured (Biff's dev
+    ;; heuristic) — or a site that opted out of reCAPTCHA: its auth routes see no
+    ;; recaptcha secret on purpose (euporious.auth/wrap-no-recaptcha).
+    (if (and (some? (secret :mailersend/api-key))
+             (or (:euporious.auth/no-recaptcha ctx)
+                 (every? some? [(secret :recaptcha/secret-key) site-key])))
       (send-mailersend ctx form-params)
       (send-console ctx form-params))))

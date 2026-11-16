@@ -10,6 +10,7 @@ the mechanism lives in `src/euporious/sites.clj`.
 | `:tv-archiv` | `tobys-archiv.de`    | `tv.localhost`, `localhost`  | `euporious.tv-archiv/site`  |
 | `:secrets`   | `ots.olivermotz.net` | `ots.localhost`              | `euporious.secrets/site`    |
 | `:decap`     | `poleshook.com`      | `decap.localhost`            | `euporious.decap-sites/site`|
+| `:family`    | `family.olivermotz.net` | `family.localhost`        | `euporious.family/site`     |
 
 Any other host gets a 404.
 
@@ -29,6 +30,12 @@ Any other host gets a 404.
       :headers   {"X-Robots-Tag" "noindex"}})   ; optional: on every response
    ```
 
+   More optional keys (see `euporious.sites`): `:name` (sender name in sign-in
+   mails), `:email-templates` (own sign-in mails), `:on-error` (own 404/500
+   pages), and in `:auth`: `:emails :some/config-key` (allowlist read from
+   config per request), `:recaptcha? false`, `:code-minutes 10`.
+   `euporious.family/site` uses all of them.
+
    Nothing is shared implicitly: add `legal/module` (Impressum/Datenschutz,
    linked from `ui/footer`) or `home/module` (sign-in pages) if the site needs
    them.
@@ -36,9 +43,9 @@ Any other host gets a 404.
 2. **Register it** in `euporious/sites` (`src/euporious.clj`).
 
 3. **Server** (`/media/lapdaten/ARBEITSSD/dev/servers/vps2/netcup-vps-2`):
-   add an nginx vhost with ACME in `euporious_public.nix` that proxies to
-   `127.0.0.1:5000` with `proxy_set_header Host $host;`, and make sure DNS
-   points at vps-2. Deploy the server repo first, then the app.
+   add the host to the `sites` list in `euporious_public.nix` (one entry =
+   one ACME vhost proxying to the app; extra locations per entry), and make
+   sure DNS points at vps-2. Deploy the server repo first, then the app.
 
 ## Development
 

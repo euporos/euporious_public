@@ -6,6 +6,7 @@
             [com.biffweb.experimental :as biffx]
             [euporious.decap-sites :as decap-sites]
             [euporious.email :as email]
+            [euporious.family :as family]
             [euporious.middleware :as mid]
             [euporious.schema :as schema]
             [euporious.secrets :as secrets]
@@ -23,7 +24,8 @@
 (def sites
   [tv-archiv/site
    secrets/site
-   decap-sites/site])
+   decap-sites/site
+   family/site])
 
 ;; Modules without routes that the whole process needs.
 (def base-modules

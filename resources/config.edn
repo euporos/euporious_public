@@ -26,6 +26,20 @@
  :biff.middleware/cookie-secret #biff/secret COOKIE_SECRET
  :biff/jwt-secret               #biff/secret JWT_SECRET
  :biff.refresh/enabled          #profile {:dev true :default false}
+ ;; Sign-ins last a year (Biff's default is 60 days). App-wide: the family site's
+ ;; relatives should not have to sign in again every two months.
+ :biff.middleware/session-max-age #long #or [#biff/env SESSION_MAX_AGE 31536000]
+
+ ;; Family videos site (euporious.family). FAMILY_EMAILS: comma-separated
+ ;; allowlist, set in the prod config.env only (Oliver edits it, no deploy needed).
+ :family/emails    #biff/env FAMILY_EMAILS
+ ;; In prod nginx serves the MP4s/posters via X-Accel-Redirect from an internal
+ ;; location (netcup-vps-2/euporious_public.nix); in dev the app streams them
+ ;; itself from this directory.
+ :family/x-accel?  #profile {:prod true :default false}
+ :family/video-dir #or [#biff/env FAMILY_VIDEO_DIR
+                        #profile {:prod "/srv/familienvideos"
+                                  :default "/media/NAS/2/S2/DVDcopy/Familienvideos/web"}]
 
  :mailersend/api-key  #biff/secret MAILERSEND_API_KEY
  :mailersend/from     #biff/env MAILERSEND_FROM

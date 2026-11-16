@@ -9,15 +9,21 @@
      :hosts     #{\"tobys-archiv.de\"}     ; exact Host matches (no port), prod
      :dev-hosts #{\"tv.localhost\"}        ; only honoured when :euporious/dev-hosts? is true
      :modules   [home/module ...]          ; Biff modules whose :routes/:api-routes this site serves
+     :name      \"Familienvideos\"         ; optional: shown in sign-in emails (default settings/app-name)
      :auth      {:emails #{\"a@b.c\"}}     ; optional: email sign-in, restricted to this allowlist
+                                           ;   (see auth-module for :recaptcha?, :code-minutes)
+     :email-templates {:signin-code f}     ; optional: per-site mail templates (euporious.email)
+     :on-error  (fn [ctx] response)        ; optional: own 404/500 pages (default ui/on-error)
      :headers   {\"X-Robots-Tag\" \"noindex\"}} ; optional: added to every response of the site
 
   Everything else is derived from that list: host lookup, one Reitit handler
   per site, the per-site Biff auth module, and the global module list Biff uses
   for schema, tasks, queues and :on-tx."
   (:require [clojure.string :as str]
+            [clojure.tools.logging :as log]
             [com.biffweb :as biff]
             [com.biffweb.experimental.auth :as biff-auth]
+            [euporious.auth :as auth]
             [euporious.middleware :as mid]
             [reitit.ring.coercion :as coercion]))
 
@@ -39,15 +45,41 @@
           {}
           sites))
 
+(defn parse-emails
+  "Comma/whitespace separated addresses (a config.env value) -> lower-case set."
+  [s]
+  (into #{}
+        (comp (map str/trim) (remove str/blank?) (map str/lower-case))
+        (str/split (or s "") #"[,\s]+")))
+
+(defn allowed-emails
+  "`emails` is either a set, or a config key whose value (read per request, so
+  config.env changes need no code change) is a comma-separated list."
+  [ctx emails]
+  (if (keyword? emails)
+    (parse-emails (get ctx emails))
+    emails))
+
 (defn auth-module
-  "Biff's email auth module for one site; only allowlisted emails can sign in."
-  [{:keys [emails] :as auth}]
-  (biff-auth/module
-   (merge (dissoc auth :emails)
-          {:biff.auth/email-validator
-           (fn [ctx email]
-             (and (biff-auth/email-valid? ctx email)
-                  (contains? emails email)))})))
+  "Biff's email auth module for one site; only allowlisted emails can sign in.
+
+  Site-level options next to the biff.auth ones:
+    :emails        set of addresses, or a config key (see `allowed-emails`)
+    :recaptcha?    false to skip reCAPTCHA on this site (default true)
+    :code-minutes  lifetime of the sign-in code (Biff's default is 3)"
+  [{:keys [emails recaptcha? code-minutes] :or {recaptcha? true} :as auth}]
+  (let [module (biff-auth/module
+                (merge (dissoc auth :emails :recaptcha? :code-minutes)
+                       {:euporious.auth/code-minutes (or code-minutes 3)
+                        :biff.auth/email-validator
+                        (fn [ctx email]
+                          (and (biff-auth/email-valid? ctx email)
+                               (contains? (allowed-emails ctx emails) email)))}))]
+    (cond-> module
+      code-minutes      (update :routes auth/replace-verify-code code-minutes)
+      (not recaptcha?)  (update :routes (fn [routes]
+                                          [["" {:middleware [auth/wrap-no-recaptcha]}
+                                            routes]])))))
 
 (defn site-modules
   "The modules whose routes a site serves (including its auth module)."
@@ -75,6 +107,19 @@
     (fn [req]
       (some-> (handler req) (update :headers merge headers)))))
 
+(defn wrap-site-error
+  "With a site :on-error, exceptions render the site's own error page (the
+  global biff on-error in wrap-base-defaults would use the shared ui frame)."
+  [handler {:keys [on-error]}]
+  (if-not on-error
+    handler
+    (fn [req]
+      (try
+        (handler req)
+        (catch Throwable t
+          (log/error t "Exception while handling request")
+          (on-error (assoc req :status 500 :ex t)))))))
+
 (defn site-routes [site]
   (let [modules (site-modules site)]
     [["" {:middleware [mid/wrap-site-defaults
@@ -89,7 +134,9 @@
   [sites]
   (into {}
         (for [site sites]
-          [(:id site) (-> (biff/reitit-handler {:routes (site-routes site)})
+          [(:id site) (-> (biff/reitit-handler {:routes   (site-routes site)
+                                                :on-error (:on-error site)})
+                          (wrap-site-error site)
                           (wrap-site-headers site))])))
 
 (def not-found
