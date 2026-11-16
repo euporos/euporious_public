@@ -185,3 +185,11 @@
 (def module
   {:api-routes [["/api/decap/:site-id/oauth/auth" {:get oauth-auth}]
                 ["/api/decap/:site-id/oauth/callback" {:get oauth-callback}]]})
+
+(def site
+  ;; Decap CMS sites proxy their OAuth paths to this app with their own Host
+  ;; (see oksana.nix on vps-2). Keep in sync with :decap/sites in config.edn.
+  {:id        :decap
+   :hosts     #{"poleshook.com"}
+   :dev-hosts #{"decap.localhost"}
+   :modules   [module]})

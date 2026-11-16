@@ -3,6 +3,8 @@
    [cheshire.core :as cheshire]
    [clojure.string :as str]
    [com.biffweb :as biff]
+   [euporious.home :as home]
+   [euporious.legal :as legal]
    [euporious.tmdb :as tmdb]
    [euporious.tv-archiv.db-interaction :as db]
    [euporious.ui :as ui]
@@ -476,3 +478,10 @@
                                 :get #'filter-options}]
             ["/tmdb-description/:tmdb-id" {:name ::tmdb-description
                                            :get #'tmdb-description}]]})
+
+(def site
+  {:id        :tv-archiv
+   :hosts     #{"tobys-archiv.de"}
+   ;; plain localhost too, so `clj -M:dev dev` works without /etc/hosts entries
+   :dev-hosts #{"tv.localhost" "localhost"}
+   :modules   [legal/module home/module module]})

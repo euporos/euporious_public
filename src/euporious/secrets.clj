@@ -1,8 +1,12 @@
 (ns euporious.secrets
   (:require [clojure.string :as str]
             [com.biffweb :as biff :refer [q]]
+            [euporious.app :as app]
             [euporious.email :as email]
+            [euporious.home :as home]
+            [euporious.legal :as legal]
             [euporious.middleware :as mid]
+            [euporious.settings :as settings]
             [euporious.ui :as ui]
             [reitit.core :as reitit]
             [rum.core :as rum]
@@ -17,7 +21,6 @@
 (defonce secrets (atom {}))
 (defonce secret-requests (atom {}))
 
-(def ^:private admin-email "services@olivermotz.com")
 (def ^:private max-file-bytes mid/max-upload-bytes)
 
 (defn- human-size [n]
@@ -91,11 +94,8 @@
      {:hidden true :data-message error-message}]]))
 
 (defn- base-url [ctx]
-  (str (name (:scheme ctx))
-       "://"
-       (:server-name ctx)
-       (when-not (contains? #{443 80} (:server-port ctx))
-         (str ":" (:server-port ctx)))))
+  ;; set per request by euporious.sites/handler from the (registered) Host
+  (:biff/base-url ctx))
 
 (defn- not-found-page []
   (ui/page
@@ -398,7 +398,7 @@
     (swap! secret-requests dissoc request-id)
     (email/send-email ctx
                       {:template :incoming-secret
-                       :to admin-email
+                       :to settings/admin-email
                        :url inbox-link
                        :label (:label request-data)})
     (ui/page
@@ -464,3 +464,10 @@
                                     :name ::retrieve-secret}]
             ["/ots/reveal/:uuid" {:post #'reveal-secret
                                   :name ::reveal-secret}]]})
+
+(def site
+  {:id        :secrets
+   :hosts     #{"ots.olivermotz.net"}
+   :dev-hosts #{"ots.localhost"}
+   :modules   [legal/module home/module module app/module]
+   :auth      {:emails #{settings/admin-email}}})

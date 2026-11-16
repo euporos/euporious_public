@@ -4,85 +4,37 @@
             [clojure.tools.namespace.repl :as tn-repl]
             [com.biffweb :as biff]
             [com.biffweb.experimental :as biffx]
-            [com.biffweb.experimental.auth :as biff-auth]
-            [euporious.app :as app]
             [euporious.decap-sites :as decap-sites]
             [euporious.email :as email]
-            [euporious.home :as home]
-            [euporious.legal :as legal]
             [euporious.middleware :as mid]
             [euporious.schema :as schema]
             [euporious.secrets :as secrets]
+            [euporious.sites :as sites]
             [euporious.tv-archiv :as tv-archiv]
             [euporious.ui :as ui]
             [euporious.worker :as worker]
             [malli.core :as malc]
             [malli.registry :as malr]
-            [nrepl.cmdline :as nrepl-cmd]
-            [reitit.ring.coercion :as coercion])
+            [nrepl.cmdline :as nrepl-cmd])
   (:gen-class))
 
-(def modules
-  [app/module
-   (biff-auth/module {:biff.auth/email-validator
-                      (fn [ctx email]
-                        (and
-                         (biff-auth/email-valid? ctx email)
-                         (contains? #{"services@olivermotz.com"} email)))})
-   home/module
-   legal/module
-   secrets/module
-   tv-archiv/module
-   schema/module
+;; Every site this process serves, selected by exact Host match.
+;; See euporious.sites for the shape of a site map.
+(def sites
+  [tv-archiv/site
+   secrets/site
+   decap-sites/site])
+
+;; Modules without routes that the whole process needs.
+(def base-modules
+  [schema/module
    worker/module])
 
-;; Shared modules available on all sites
-(def shared-modules
-  [legal/module
-   schema/module
-   decap-sites/module])
+;; Global module list: Biff takes schema, tasks, queues and :on-tx from here.
+;; Routes are served per site by `handler`, never from this list.
+(def modules (sites/all-modules base-modules sites))
 
-;; Site-specific modules (with shared modules already concatenated)
-(def site-modules
-  {:tv-archiv (concat shared-modules
-                      [home/module
-                       tv-archiv/module])
-   :secrets   (concat shared-modules
-                      [home/module
-                       secrets/module
-                       app/module
-                       (biff-auth/module {:biff.auth/email-validator
-                                          (fn [ctx email]
-                                            (and
-                                             (biff-auth/email-valid? ctx email)
-                                             (contains? #{"services@olivermotz.com"} email)))})])})
-
-(defn site-routes
-  "Generates routes filtered by the site context."
-  [site]
-  (let [modules (get site-modules site [])]
-    [["" {:middleware [mid/wrap-site-defaults
-                       coercion/coerce-request-middleware
-                       coercion/coerce-response-middleware]}
-      (keep :routes modules)]
-     ["" {:middleware [mid/wrap-api-defaults]}
-      (keep :api-routes modules)]]))
-
-;; Pre-compile routers for each site at module load time
-(def site-handlers
-  (into {}
-        (for [site [:tv-archiv :secrets]]
-          [site (biff/reitit-handler {:routes (site-routes site)})])))
-
-(defn site-aware-handler
-  "Handler that routes based on the :site key in the request."
-  [req]
-  (let [site (:site req :tv-archiv)  ; Default to tv-archiv if :site is missing
-        handler (get site-handlers site)]
-    (handler req)))
-
-(def handler (-> site-aware-handler
-                 mid/wrap-site-context
+(def handler (-> (sites/handler sites)
                  mid/wrap-base-defaults))
 
 (def static-pages (apply biff/safe-merge (map :static modules)))

@@ -1,6 +1,5 @@
 (ns euporious.middleware
-  (:require [clojure.string :as str]
-            [com.biffweb :as biff]
+  (:require [com.biffweb :as biff]
             [muuntaja.middleware :as muuntaja]
             [ring.middleware.anti-forgery :as csrf]
             [ring.middleware.defaults :as rd]
@@ -53,11 +52,30 @@
   ([req respond _raise]
    (respond (file-too-large-handler req))))
 
+(defn wrap-site-session
+  "Ties a signed-in session to the site it was created on.
+
+  Sessions are cookies, which browsers already keep per host, but a cookie
+  copied to another host would otherwise be accepted there. On the way in, a
+  :uid from another site (or from before this check existed) is dropped; on
+  the way out, every session that carries a :uid is tagged with the site."
+  [handler]
+  (fn [{:keys [site session] :as req}]
+    (let [site-id (:id site)
+          req     (if (and (:uid session) (not= site-id (:site session)))
+                    (update req :session dissoc :uid)
+                    req)
+          resp    (handler req)]
+      (if (some-> resp :session :uid)
+        (assoc-in resp [:session :site] site-id)
+        resp))))
+
 (defn wrap-site-defaults [handler]
   (-> handler
       biff/wrap-render-rum
       biff/wrap-anti-forgery-websockets
       csrf/wrap-anti-forgery
+      wrap-site-session
       biff/wrap-session
       muuntaja/wrap-params
       muuntaja/wrap-format
@@ -87,26 +105,3 @@
       biff/wrap-internal-error
       biff/wrap-ssl
       biff/wrap-log-requests))
-
-(defn determine-site
-  "Determines which site to serve based on the Host header.
-  Returns :tv-archiv or :secrets."
-  [host]
-  (cond
-    ;; Production domains
-    (str/includes? host "tobys-archiv") :tv-archiv
-    (str/includes? host "ots") :secrets
-    ;; Development domains (tv.localhost, ots.localhost)
-    (str/starts-with? host "tv.") :tv-archiv
-    (str/starts-with? host "ots.") :secrets
-    ;; Default fallback - shouldn't happen in normal operation
-    :else :tv-archiv))
-
-(defn wrap-site-context
-  "Middleware that adds :site key to the request context based on Host header."
-  [handler]
-  (fn [req]
-    (let [host (get-in req [:headers "host"] "")
-          site (determine-site host)
-          req-with-site (assoc req :site site)]
-      (handler req-with-site))))

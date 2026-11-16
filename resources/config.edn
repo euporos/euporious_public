@@ -14,6 +14,10 @@
  :biff.xtdb2.storage/access-key #biff/env XTDB_STORAGE_ACCESS_KEY
  :biff.xtdb2.storage/secret-key #biff/secret XTDB_STORAGE_SECRET_KEY
 
+ ;; Honour the sites' :dev-hosts (tv.localhost, ots.localhost, ...). Never in
+ ;; prod: there only the registered public hosts are served.
+ :euporious/dev-hosts? #profile {:dev true :default false}
+
  :biff.beholder/enabled         #profile {:dev true :default false}
  :biff.beholder/paths           ["src" "resources" "test"]
  :biff.add-libs/aliases         #profile {:dev [:dev] :prod [:prod]}

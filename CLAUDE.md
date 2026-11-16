@@ -24,13 +24,14 @@ This is a **Biff** (Jacob O'Bryant's Clojure web framework) app: Ring + Reitit +
 
 ### Multi-domain host-based routing
 
-A single server process serves multiple sites by inspecting the `Host` header. See `MULTI_DOMAIN_SETUP.md` for the full setup guide.
+One process serves several sites, chosen by **exact** `Host` match (port stripped, case-insensitive). See `MULTI_DOMAIN_SETUP.md` for how to add a site.
 
-- `src/euporious/middleware.clj` defines `determine-site`: hosts starting with `tv.` → `:tv-archiv`, hosts starting with `ots.` → `:secrets`, otherwise `:shared`.
-- Site-specific Reitit routers are pre-compiled at startup for the `:tv-archiv` and `:secrets` sites; the wrapping middleware dispatches each request to the right one.
-- For local development you must add `/etc/hosts` entries for `tv.localhost` and `ots.localhost`, then access `http://tv.localhost:8080` and `http://ots.localhost:8080`. `localhost:8080` itself serves the shared/legacy routes.
-- All legacy routes (`/tv-archiv`, `/ots/*`) remain reachable on every domain — keep that backward compatibility when adding routes.
-- Production sets `DOMAIN`, `TV_ARCHIV_DOMAIN`, and `SECRETS_DOMAIN`; both subdomains point at the same backend through the reverse proxy.
+- Each site is a map (`:id`, `:hosts`, `:dev-hosts`, `:modules`, optional `:auth {:emails #{…}}` and `:headers`) defined next to its feature code (`tv-archiv/site`, `secrets/site`, `decap-sites/site`) and listed in `euporious/sites`. `src/euporious/sites.clj` derives everything from that list: one Reitit handler per site, a per-site Biff auth module with its own email allowlist, and the global `modules` list (schema/tasks/queues/:on-tx only; routes are never served from it).
+- Unknown hosts get a plain 404 — there is no fallback site. `:dev-hosts` (`tv.localhost`, `localhost`, `ots.localhost`, `decap.localhost`) are only honoured when `:euporious/dev-hosts?` is true (`#profile`, dev only).
+- `:biff/base-url` is set per request from the registered host, so sign-in links and the OTS share links point at the site the user is on. (`DOMAIN` is unset in prod; before this, Biff's magic links would have pointed at `https:///…`.)
+- Sessions are tagged with the site id at login (`mid/wrap-site-session`); a session whose `:site` differs from the current site is treated as signed out. Sessions from before this check have no tag, so everyone signs in once more after the deploy.
+- **poleshook.com** (Decap CMS OAuth) reaches the app through `oksana.nix`, which proxies `/api/oauth/` there with `Host: poleshook.com` — that is what the `:decap` site is for. It used to work only through the old "unknown host → tv-archiv" fallback.
+- `wrap-resource` (CSS/JS and the exported `:static` pages such as `/about/`) still runs before site dispatch, so those files are reachable on every registered host *and* on unknown ones.
 
 ### Feature modules (under `src/euporious/`)
 
@@ -44,7 +45,7 @@ A single server process serves multiple sites by inspecting the `Host` header. S
 - `schema.clj` — Malli schemas (users, messages, etc.).
 - `legal.clj`, `ui.clj`, `worker.clj`, `settings.clj`, `calendar/` — supporting modules.
 
-There is a hardcoded admin email used as an auth gate in the main namespace; grep before assuming a generic auth flow when reasoning about access control.
+The admin email is `settings/admin-email`; sites restrict sign-in via their `:auth :emails` allowlist.
 
 ### Storage
 
