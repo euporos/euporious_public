@@ -53,8 +53,9 @@
         (str/split (or s "") #"[,\s]+")))
 
 (defn allowed-emails
-  "`emails` is either a set, or a config key whose value (read per request, so
-  config.env changes need no code change) is a comma-separated list."
+  "`emails` is either a set, or a config key whose value is a comma-separated
+  list (config.env is only read at startup: changing it needs a service restart,
+  not a code change)."
   [ctx emails]
   (if (keyword? emails)
     (parse-emails (get ctx emails))

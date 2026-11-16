@@ -32,8 +32,8 @@ Any other host gets a 404.
 
    More optional keys (see `euporious.sites`): `:name` (sender name in sign-in
    mails), `:email-templates` (own sign-in mails), `:on-error` (own 404/500
-   pages), and in `:auth`: `:emails :some/config-key` (allowlist read from
-   config per request), `:recaptcha? false`, `:code-minutes 10`.
+   pages), and in `:auth`: `:emails :some/config-key` (allowlist from a
+   config.env value; needs a service restart when changed), `:recaptcha? false`, `:code-minutes 10`.
    `euporious.family/site` uses all of them.
 
    Nothing is shared implicitly: add `legal/module` (Impressum/Datenschutz,

@@ -31,7 +31,9 @@
  :biff.middleware/session-max-age #long #or [#biff/env SESSION_MAX_AGE 31536000]
 
  ;; Family videos site (euporious.family). FAMILY_EMAILS: comma-separated
- ;; allowlist, set in the prod config.env only (Oliver edits it, no deploy needed).
+ ;; allowlist, set in the prod config.env only (Oliver edits it).
+ ;; config.env is read at startup only: after editing, restart the service
+ ;; (sudo systemctl restart euporious_public.service on vps-2).
  :family/emails    #biff/env FAMILY_EMAILS
  ;; In prod nginx serves the MP4s/posters via X-Accel-Redirect from an internal
  ;; location (netcup-vps-2/euporious_public.nix); in dev the app streams them
