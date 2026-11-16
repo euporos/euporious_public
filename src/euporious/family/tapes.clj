@@ -16,4 +16,89 @@
                {:start 771.76 :title "Trauung"}
                {:start 1354.36 :title "weitere Feier"}
               ]}
+   {:id "03" :name "Mallorca '89" :disc "DVD01" :duration 2439.16
+    :chapters [
+               {:start 0.00 :title "Abflug"}
+               {:start 332.60 :title "Ankunft"}
+               {:start 977.60 :title "Baden"}
+               {:start 1372.40 :title "Ausflug"}
+              ]}
+   {:id "04" :name "Hans-Böckler-1" :disc "DVD01" :duration 996.52
+    :chapters [
+               {:start 0.00 :title "Wallarbeiten u. Garten"}
+               {:start 115.20 :title "Marlene kocht u. blinde Kuh"}
+               {:start 294.60 :title "Robert etc."}
+               {:start 610.80 :title "Park"}
+              ]}
+   {:id "05" :name "Weihnachten '90" :disc "DVD01" :duration 1975.12
+    :chapters [
+               {:start 0.00 :title "Nikolaus"}
+               {:start 730.20 :title "Schlittenfahren"}
+               {:start 985.20 :title "Heiligabend"}
+               {:start 1528.20 :title "Bescherung Oma"}
+               {:start 1651.80 :title "Bescherung Zwiesel"}
+              ]}
+   {:id "06" :name "Zwiesel 90-91" :disc "DVD01" :duration 1947.52
+    :chapters [
+               {:start 0.00 :title "Baden u. Doktorspiele"}
+               {:start 289.80 :title "Divers"}
+               {:start 1005.60 :title "Bleigießen"}
+               {:start 1515.00 :title "Computer"}
+              ]}
+   {:id "07" :name "Hans-Böckler-2" :disc "DVD01" :duration 473.32
+    :chapters [
+               {:start 0.00 :title "Westpark"}
+               {:start 291.60 :title "Divers"}
+              ]}
+   {:id "08" :name "Ostern '91" :disc "DVD01" :duration 756.48
+    :chapters [
+               {:start 0.00 :title "Basteln"}
+               {:start 82.20 :title "Suchen HB53"}
+               {:start 268.80 :title "Suchen Grünwald"}
+              ]}
+   {:id "09" :name "Kommunion David" :disc "DVD02" :duration 1719.64
+    :chapters [
+               {:start 0.00 :title "Vorabend"}
+               {:start 188.48 :title "Die Kommunion"}
+               {:start 556.28 :title "Ausflug Schwellhäusl"}
+               {:start 1179.68 :title "Ohne Titel 1 (Garten, Sandkasten)"}
+               {:start 1313.48 :title "Ohne Titel 2 (Haare schneiden?)"}
+               {:start 1381.28 :title "Ohne Titel 3 (See, Dampfer)"}
+               {:start 1470.68 :title "Ohne Titel 4 (Kindergeburtstag?)"}
+              ]}
+   {:id "10" :name "Sommer '91a" :disc "DVD02" :duration 199.72
+    :chapters [
+               {:start 0.00 :title "Sommerfest Freizeitheim"}
+               {:start 88.80 :title "Grünwald"}
+               {:start 161.40 :title "HB53 – Grillen"}
+              ]}
+   {:id "11" :name "Sommerfest KiGa" :disc "DVD02" :duration 1137.52
+    :chapters [
+               {:start 0.00 :title "Anfang"}
+               {:start 263.40 :title "Wettbewerb"}
+               {:start 574.80 :title "Vogelhochzeit"}
+               {:start 866.40 :title "Urkunden"}
+              ]}
+   {:id "12" :name "Sommer '91 b m. Anna" :disc "DVD02" :duration 450.24
+    :chapters [
+               {:start 0.00 :title "Marlene lernt Radeln"}
+               {:start 36.60 :title "mit Anna im Garten"}
+               {:start 120.00 :title "Quiz mit Anna"}
+              ]}
+   {:id "13" :name "Zwiesel Sommer '91" :disc "DVD02" :duration 2237.24
+    :chapters [
+               {:start 0.00 :title "Garten 1"}
+               {:start 287.40 :title "Schafe"}
+               {:start 837.00 :title "Toben"}
+               {:start 1173.00 :title "Garten 2"}
+               {:start 1428.60 :title "Küken"}
+               {:start 1503.00 :title "Reiten"}
+               {:start 1678.80 :title "Spielplatz"}
+               {:start 1981.20 :title "Churpfalz Park"}
+              ]}
+   {:id "14" :name "Alltag + Michael" :disc "DVD02" :duration 953.76
+    :chapters [
+               {:start 0.00 :title "Alltag"}
+               {:start 66.60 :title "Spielplatz mit Michael"}
+              ]}
   ])
