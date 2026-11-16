@@ -86,3 +86,12 @@
                                     :euporious/dev-hosts? true
                                     :biff.middleware/cookie-secret "AAAAAAAAAAAAAAAAAAAAAA=="
                                     :request-method :get :uri "/robots.txt"})))))))
+
+(deftest protokoll-admin-only-test
+  (testing "signed-in family members who are not the admin get a 404"
+    (with-redefs [family/user-email (constantly "susannemotz@gmx.de")]
+      (is (= 404 (:status (family/protokoll-page {:session {:uid (random-uuid)}}))))
+      (is (not (family/admin? {})))))
+  (testing "only the admin address counts as admin"
+    (with-redefs [family/user-email (constantly "services@olivermotz.com")]
+      (is (family/admin? {})))))
