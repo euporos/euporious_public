@@ -48,7 +48,7 @@
         ;; Add keys for any other secrets you've added to resources/config.edn
         secret-keys [:biff.middleware/cookie-secret
                      :biff/jwt-secret
-                     :mailersend/api-key
+                     :smtp/pass
                      :recaptcha/secret-key
                      ; ...
                      ]

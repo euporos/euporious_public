@@ -1,14 +1,17 @@
 (ns euporious.email
-  (:require [clj-http.client :as http]
-            [euporious.settings :as settings]
+  (:require [euporious.settings :as settings]
             [clojure.tools.logging :as log]
-            [rum.core :as rum]))
+            [rum.core :as rum])
+  (:import [jakarta.mail Authenticator Message$RecipientType PasswordAuthentication
+            Session Transport]
+           [jakarta.mail.internet InternetAddress MimeBodyPart MimeMessage MimeMultipart]
+           [java.util Properties]))
 
 (defn signin-link [{:keys [to url user-exists]}]
   (let [[subject action action-infinitive] (if user-exists
                            [(str "Anmelden bei " settings/app-name) "anmelden" "anzumelden"]
                            [(str "Registrieren für " settings/app-name) "registrieren" "zu registrieren"])]
-    {:to [{:email to}]
+    {:to to
      :subject subject
      :html (rum/render-static-markup
             [:html
@@ -30,7 +33,7 @@
   (let [[subject action action-infinitive] (if user-exists
                            [(str "Anmelden bei " settings/app-name) "anmelden" "anzumelden"]
                            [(str "Registrieren für " settings/app-name) "registrieren" "zu registrieren"])]
-    {:to [{:email to}]
+    {:to to
      :subject subject
      :html (rum/render-static-markup
             [:html
@@ -50,7 +53,7 @@
                 "können Sie diese E-Mail ignorieren.")}))
 
 (defn incoming-secret [{:keys [to url label]}]
-  {:to [{:email to}]
+  {:to to
    :subject (str "Neues eingegangenes Secret" (when label (str ": " label)))
    :html (rum/render-static-markup
           [:html
@@ -79,20 +82,63 @@
          :incoming-secret incoming-secret))
    opts))
 
-(defn send-mailersend [{:keys [biff/secret mailersend/from mailersend/reply-to site]} form-params]
-  (let [sender (:name site settings/app-name)
-        result (http/post "https://api.mailersend.com/v1/email"
-                          {:oauth-token (secret :mailersend/api-key)
-                           :content-type :json
-                           :throw-exceptions false
-                           :as :json
-                           :form-params (merge {:from {:email from :name sender}
-                                                :reply_to {:email reply-to :name sender}}
-                                               form-params)})
-        success (< (:status result) 400)]
-    (when-not success
-      (log/error (:body result)))
-    success))
+(defn smtp-configured?
+  "True once enough SMTP settings are present to actually send. The password is
+   a #biff/secret, so it must be resolved through the `secret` fn."
+  [{:keys [smtp/host smtp/user biff/secret]}]
+  (every? some? [host user (secret :smtp/pass)]))
+
+(defn- smtp-session
+  "jakarta.mail Session for STARTTLS (default, port 587) or implicit TLS
+   (:smtp/ssl true, port 465), authenticating as the configured user.
+   jakarta.mail (Angus) on purpose, same as euporious2: never add postal /
+   com.sun.mail next to it -- two providers collide on
+   META-INF/javamail.default.providers in the uberjar (NoSuchProviderException: smtp)."
+  [{:keys [smtp/host smtp/port smtp/user smtp/tls smtp/ssl biff/secret]}]
+  (let [pass  (secret :smtp/pass)
+        props (doto (Properties.)
+                (.put "mail.smtp.host" host)
+                (.put "mail.smtp.port" (str port))
+                (.put "mail.smtp.auth" "true")
+                (.put "mail.smtp.connectiontimeout" "15000")
+                (.put "mail.smtp.timeout" "15000"))]
+    (cond
+      ssl (doto props
+            (.put "mail.smtp.ssl.enable" "true")
+            (.put "mail.smtp.ssl.checkserveridentity" "true"))
+      (if (some? tls) tls true)
+      (doto props
+        (.put "mail.smtp.starttls.enable" "true")
+        (.put "mail.smtp.starttls.required" "true")))
+    (Session/getInstance
+     props
+     (proxy [Authenticator] []
+       (getPasswordAuthentication []
+         (PasswordAuthentication. user pass))))))
+
+(defn send-smtp
+  "Send one message over SMTP through the own mail account. Returns true on
+   success; on any failure logs and returns false, so the auth flow shows a
+   clean `send-failed` message instead of a 500."
+  [{:keys [smtp/user smtp/from site] :as ctx} {:keys [to subject html text]}]
+  (try
+    (let [sender    (:name site settings/app-name)
+          session   (smtp-session ctx)
+          text-part (doto (MimeBodyPart.) (.setText text "utf-8"))
+          body      (doto (MimeMultipart. "alternative") (.addBodyPart text-part))
+          _         (when html
+                      (.addBodyPart body (doto (MimeBodyPart.)
+                                           (.setContent html "text/html; charset=utf-8"))))
+          msg       (doto (MimeMessage. session)
+                      (.setFrom (InternetAddress. (or from user) sender "utf-8"))
+                      (.setRecipients Message$RecipientType/TO (InternetAddress/parse to))
+                      (.setSubject subject "utf-8")
+                      (.setContent body))]
+      (Transport/send msg)
+      true)
+    (catch Exception e
+      (log/error e "SMTP send failed for" to)
+      false)))
 
 (defn send-console [_ctx form-params]
   (println "AN:" (:to form-params))
@@ -101,18 +147,18 @@
   (println (:text form-params))
   (println)
   (println "Um E-Mails zu versenden, anstatt sie in der Konsole auszugeben, fügen Sie Ihre"
-           "API-Schlüssel für MailerSend und Recaptcha zu config.env hinzu.")
+           "SMTP-Zugangsdaten (SMTP_HOST/USER/PASS) und reCAPTCHA-Schlüssel zu config.env hinzu.")
   true)
 
 (defn send-email [{:keys [biff/secret recaptcha/site-key] :as ctx} opts]
   (let [form-params (if-some [template-key (:template opts)]
                       (template ctx template-key opts)
                       opts)]
-    ;; Real mail needs the MailerSend key plus reCAPTCHA configured (Biff's dev
+    ;; Real mail needs SMTP plus reCAPTCHA configured (Biff's dev
     ;; heuristic) — or a site that opted out of reCAPTCHA: its auth routes see no
     ;; recaptcha secret on purpose (euporious.auth/wrap-no-recaptcha).
-    (if (and (some? (secret :mailersend/api-key))
+    (if (and (smtp-configured? ctx)
              (or (:euporious.auth/no-recaptcha ctx)
                  (every? some? [(secret :recaptcha/secret-key) site-key])))
-      (send-mailersend ctx form-params)
+      (send-smtp ctx form-params)
       (send-console ctx form-params))))

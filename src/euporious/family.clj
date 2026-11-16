@@ -206,7 +206,7 @@
                   code "\n\n"
                   "Gib ihn auf der Anmeldeseite ein. Er gilt " code-minutes " Minuten.\n\n"
                   "Wenn du keinen Code angefordert hast, kannst du diese E-Mail einfach ignorieren.")]
-    {:to      [{:email to}]
+    {:to      to
      :subject (str "Dein Code für die Familienvideos: " code)
      :text    text
      :html    (rum/render-static-markup
@@ -219,7 +219,7 @@
                  [:p "Wenn du keinen Code angefordert hast, kannst du diese E-Mail einfach ignorieren."]]])}))
 
 (defn signin-link-email [{:keys [to url]}]
-  {:to      [{:email to}]
+  {:to      to
    :subject "Dein Anmeldelink für die Familienvideos"
    :text    (str "Hallo,\n\nmit diesem Link meldest du dich bei den Familienvideos an:\n\n"
                  url "\n\nEr gilt eine Stunde. Wenn du ihn nicht angefordert hast, "

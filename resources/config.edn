@@ -43,9 +43,15 @@
                         #profile {:prod "/srv/familienvideos"
                                   :default "/media/NAS/2/S2/DVDcopy/Familienvideos/web"}]
 
- :mailersend/api-key  #biff/secret MAILERSEND_API_KEY
- :mailersend/from     #biff/env MAILERSEND_FROM
- :mailersend/reply-to #biff/env MAILERSEND_REPLY_TO
+ ;; Outgoing mail goes over plain SMTP through the own mail account (no
+ ;; third-party service). Leave blank to print sign-in mails to the console.
+ :smtp/host #biff/env SMTP_HOST
+ :smtp/port #long #or [#biff/env SMTP_PORT 587]
+ :smtp/user #biff/env SMTP_USER
+ :smtp/pass #biff/secret SMTP_PASS
+ :smtp/from #biff/env SMTP_FROM
+ :smtp/tls  #boolean #or [#biff/env SMTP_TLS true]
+ :smtp/ssl  #boolean #or [#biff/env SMTP_SSL false]
 
  :recaptcha/secret-key #biff/secret RECAPTCHA_SECRET_KEY
  :recaptcha/site-key   #biff/env RECAPTCHA_SITE_KEY

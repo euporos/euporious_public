@@ -6,7 +6,7 @@
 
 (def email-disabled-notice
   [:.alert.alert-info.mt-3
-   [:span "Bis Sie API-Schlüssel für MailerSend und reCAPTCHA hinzufügen, wird Ihr Anmeldelink "
+   [:span "Bis Sie SMTP-Zugangsdaten und reCAPTCHA-Schlüssel hinzufügen, wird Ihr Anmeldelink "
     "in der Konsole ausgegeben. Siehe config.edn."]])
 
 (defn home-page [{:keys [recaptcha/site-key params] :as ctx}]

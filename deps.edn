@@ -21,6 +21,12 @@
 
         org.clojure/clojure {:mvn/version "1.12.0"}
 
+        ;; Outbound sign-in mail over SMTP (euporious.email). Do NOT add postal /
+        ;; com.sun.mail as well: a second javax.mail provider collides on
+        ;; META-INF/javamail.default.providers in the uberjar
+        ;; (NoSuchProviderException: smtp).
+        org.eclipse.angus/angus-mail {:mvn/version "2.0.3"}
+
         orgmode/orgmode {:git/url "https://github.com/bnbeckwith/orgmode"
                  :sha "52c153649ebff4c90f50be32458d413ef416aeb7"}
 
