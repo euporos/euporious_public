@@ -61,10 +61,10 @@
                {:start 0.00 :title "Vorabend"}
                {:start 188.48 :title "Die Kommunion"}
                {:start 556.28 :title "Ausflug Schwellhäusl"}
-               {:start 1179.68 :title "Ohne Titel 1 (Garten, Sandkasten)"}
-               {:start 1313.48 :title "Ohne Titel 2 (Haare schneiden?)"}
-               {:start 1381.28 :title "Ohne Titel 3 (See, Dampfer)"}
-               {:start 1470.68 :title "Ohne Titel 4 (Kindergeburtstag?)"}
+               {:start 1179.68 :title "Garten, Sandkasten"}
+               {:start 1313.48 :title "Haare schneiden"}
+               {:start 1381.28 :title "See, Dampfer"}
+               {:start 1470.68 :title "Kindergeburtstag"}
               ]}
    {:id "10" :name "Sommer '91a" :disc "DVD02" :duration 199.72
     :chapters [
@@ -100,5 +100,139 @@
     :chapters [
                {:start 0.00 :title "Alltag"}
                {:start 66.60 :title "Spielplatz mit Michael"}
+              ]}
+   {:id "15" :name "6ter Oli + HB53" :disc "DVD02" :duration 1872.36
+    :chapters [
+               {:start 0.00 :title "6ter Oliver"}
+               {:start 208.80 :title "Drinnen; Geburtstag Pepe-Toby 1990, Sylvester 90-91"}
+               {:start 424.20 :title "Modellboote"}
+               {:start 1046.40 :title "Baden im See"}
+               {:start 1284.00 :title "Puppentheater"}
+               {:start 1427.40 :title "Grillen Winkler"}
+               {:start 1744.80 :title "Ständchen Oma"}
+              ]}
+   {:id "16" :name "Oliver 7ter" :disc "DVD02" :duration 685.72
+    :chapters [
+               {:start 0.00 :title "Anfang"}
+               {:start 85.80 :title "Schatzsuche"}
+               {:start 602.40 :title "Weiteres"}
+              ]}
+   {:id "17" :name "HB53" :disc "DVD02" :duration 344.92
+    :chapters [
+               {:start 0.00 :title "Aquarium"}
+               {:start 217.80 :title "Kinder Gymnastik"}
+              ]}
+   {:id "18" :name "Weihnachten" :disc "DVD02" :duration 907.56
+    :chapters [
+               {:start 0.00 :title "Nikolaus"}
+               {:start 618.00 :title "Schneemann"}
+               {:start 704.40 :title "Heiligabend"}
+              ]}
+   {:id "19" :name "Kommunion Anna" :disc "DVD03" :duration 1539.66
+    :chapters [
+               {:start 0.00 :title "Vorlauf"}
+               {:start 211.72 :title "Zeremonie"}
+               {:start 1234.12 :title "Danach"}
+              ]}
+   {:id "20" :name "Alltag" :disc "DVD03" :duration 857.32
+    :chapters [
+               {:start 0.00 :title "Zähneputzen"}
+               {:start 82.80 :title "Garten"}
+               {:start 459.60 :title "Aufstehen"}
+              ]}
+   {:id "21" :name "Omas 71ster" :disc "DVD03" :duration 568.12
+    :chapters [
+               {:start 0.00 :title "Geschenke"}
+               {:start 255.60 :title "Kaffee & Kuchen"}
+               {:start 362.40 :title "Topfschlagen"}
+              ]}
+   {:id "22" :name "Michael + BR" :disc "DVD03" :duration 2155.52
+    :chapters [
+               {:start 0.00 :title "Drinnen"}
+               {:start 213.60 :title "Draußen"}
+               {:start 365.36 :title "Sommerfest BR"}
+               {:start 649.76 :title "Grillen Freunde u. Familie"}
+               {:start 851.96 :title "Abends drinnen, Kinder spielen"}
+              ]}
+   {:id "23" :name "Kommunion Mädels" :disc "DVD03" :duration 673.04
+    :chapters [
+               {:start 0.00 :title "Fußball"}
+               {:start 38.40 :title "Vorbereitungen"}
+               {:start 69.60 :title "Spiel im Garten"}
+               {:start 119.40 :title "Wohnzimmer"}
+               {:start 389.40 :title "bei Tisch"}
+              ]}
+   {:id "24" :name "Meerschweinchen" :disc "DVD03" :duration 217.86
+    :chapters [
+               {:start 0.00 :title "Fahrradputzen"}
+               {:start 26.40 :title "Experimente"}
+               {:start 41.40 :title "Kartenspiel"}
+               {:start 136.80 :title "Meerschweinchen"}
+              ]}
+   {:id "25" :name "Zwiesel mit Bujos" :disc "DVD03" :duration 1144.12
+    :chapters [
+               {:start 0.00 :title "Abfahrt und Ankunft"}
+               {:start 166.80 :title "Hundeshow"}
+               {:start 321.00 :title "Peepshow"}
+               {:start 688.80 :title "Freizeitpark"}
+               {:start 1000.80 :title "Frühstück"}
+              ]}
+   {:id "26" :name "JuJutsu-Show" :disc "DVD03" :duration 377.84
+    :chapters [
+               {:start 0.00 :title "JuJutsu-Show"}
+              ]}
+   {:id "27" :name "Grabensee 1996" :disc "DVD04" :duration 2610.12
+    :chapters [
+               {:start 0.00 :title "Anreise"}
+               {:start 220.80 :title "Scrabble"}
+               {:start 539.40 :title "See"}
+               {:start 794.40 :title "Reiten …"}
+               {:start 1954.80 :title "Fest"}
+               {:start 2065.20 :title "Eishöhle"}
+              ]}
+   {:id "28" :name "Mias 75ster" :disc "DVD04" :duration 2312.76
+    :chapters [
+               {:start 0.00 :title "Ankunft"}
+               {:start 79.80 :title "Wanderung"}
+               {:start 421.80 :title "Kaffee und Schrank"}
+               {:start 635.40 :title "Proben"}
+               {:start 728.40 :title "Sketch"}
+               {:start 1144.20 :title "Der Geburtstag"}
+               {:start 1680.00 :title "Ausflug im Schnee, Gasthaus"}
+               {:start 2122.20 :title "Heimfahrt"}
+              ]}
+   {:id "29" :name "Christines 50ster" :disc "DVD04" :duration 2606.00
+    :chapters [
+               {:start 0.00 :title "Vorlauf"}
+               {:start 98.40 :title "Vorbereitung, Gäste kommen"}
+               {:start 552.00 :title "Beginn"}
+               {:start 884.40 :title "Macarena"}
+               {:start 1078.80 :title "Ständchen"}
+               {:start 1543.20 :title "Rede"}
+               {:start 1669.80 :title "Sketch"}
+               {:start 2053.80 :title "Ausklang"}
+              ]}
+   {:id "30" :name "Sylvester Zwiesel 97" :disc "DVD04" :duration 1104.12
+    :chapters [
+               {:start 0.00 :title "Vorlauf"}
+               {:start 210.00 :title "Dinner for one"}
+               {:start 444.00 :title "Abendessen"}
+               {:start 597.60 :title "Draußen"}
+               {:start 702.00 :title "Wanderung"}
+               {:start 988.20 :title "Abschluss"}
+              ]}
+   {:id "31" :name "Pepe zum 70sten" :disc "DVD04" :duration 406.26
+    :chapters [
+               {:start 0.00 :title "Einleitung"}
+               {:start 144.00 :title "Interviews"}
+              ]}
+   {:id "32" :name "Neueste" :disc "DVD04" :duration 1112.08
+    :chapters [
+               {:start 0.00 :title "Olivers 18ter"}
+               {:start 105.00 :title "Johannas Freundinnen"}
+               {:start 214.20 :title "Marlene singt"}
+               {:start 239.40 :title "Hund auf dem Bett"}
+               {:start 298.76 :title "Rede Pepes 70ster"}
+               {:start 530.96 :title "Seeabend mit Jan"}
               ]}
   ])
